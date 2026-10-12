@@ -1,8 +1,802 @@
-=== odds_parse RUN 2026-10-01T18:32:51.725301 ===
-2026-10-01T18:32:51.725571 | Processing 2026_10_01.json
-2026-10-01T18:32:51.726053 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_10_01_MLB.csv (1 games)
-2026-10-01T18:32:51.726085 |   games_parsed=1, games_skipped=0
-2026-10-01T18:32:51.726141 | --- SUMMARY ---
-2026-10-01T18:32:51.726178 | Files written: 1
-2026-10-01T18:32:51.726201 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_10_01_MLB.csv (1 games)
-2026-10-01T18:32:51.726223 | STATUS: SUCCESS
+=== odds_parse RUN 2026-10-12T03:44:57.108596 ===
+2026-10-12T03:44:57.109561 | Processing 2026_03_25.json
+2026-10-12T03:44:57.110143 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_03_26_MLB.csv (11 games)
+2026-10-12T03:44:57.110328 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_03_27_MLB.csv (3 games)
+2026-10-12T03:44:57.110343 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.110450 | Processing 2026_03_26.json
+2026-10-12T03:44:57.110838 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_03_26_MLB.csv (11 games)
+2026-10-12T03:44:57.111054 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_03_27_MLB.csv (3 games)
+2026-10-12T03:44:57.111070 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.111170 | Processing 2026_03_27.json
+2026-10-12T03:44:57.111492 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_03_27_MLB.csv (8 games)
+2026-10-12T03:44:57.111508 |   games_parsed=8, games_skipped=0
+2026-10-12T03:44:57.111595 | Processing 2026_03_28.json
+2026-10-12T03:44:57.112011 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_03_28_MLB.csv (15 games)
+2026-10-12T03:44:57.112027 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.112120 | Processing 2026_03_29.json
+2026-10-12T03:44:57.112464 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_03_29_MLB.csv (12 games)
+2026-10-12T03:44:57.112480 |   games_parsed=12, games_skipped=0
+2026-10-12T03:44:57.112562 | Processing 2026_03_30.json
+2026-10-12T03:44:57.113074 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_03_30_MLB.csv (15 games)
+2026-10-12T03:44:57.113090 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.113181 | Processing 2026_03_31.json
+2026-10-12T03:44:57.113536 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_03_31_MLB.csv (14 games)
+2026-10-12T03:44:57.113550 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.113642 | Processing 2026_04_01.json
+2026-10-12T03:44:57.114050 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_01_MLB.csv (15 games)
+2026-10-12T03:44:57.114065 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.114156 | Processing 2026_04_02.json
+2026-10-12T03:44:57.114407 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_02_MLB.csv (3 games)
+2026-10-12T03:44:57.114421 |   games_parsed=3, games_skipped=0
+2026-10-12T03:44:57.114501 | Processing 2026_04_03.json
+2026-10-12T03:44:57.114899 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_03_MLB.csv (15 games)
+2026-10-12T03:44:57.114914 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.114996 | Processing 2026_04_04.json
+2026-10-12T03:44:57.115375 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_04_MLB.csv (15 games)
+2026-10-12T03:44:57.115390 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.115478 | Processing 2026_04_05.json
+2026-10-12T03:44:57.115879 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_05_MLB.csv (16 games)
+2026-10-12T03:44:57.115894 |   games_parsed=16, games_skipped=1
+2026-10-12T03:44:57.115985 | Processing 2026_04_06.json
+2026-10-12T03:44:57.116318 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_06_MLB.csv (13 games)
+2026-10-12T03:44:57.116333 |   games_parsed=13, games_skipped=0
+2026-10-12T03:44:57.116413 | Processing 2026_04_07.json
+2026-10-12T03:44:57.116781 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_07_MLB.csv (15 games)
+2026-10-12T03:44:57.116796 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.116883 | Processing 2026_04_08.json
+2026-10-12T03:44:57.117243 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_08_MLB.csv (15 games)
+2026-10-12T03:44:57.117257 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.117344 | Processing 2026_04_09.json
+2026-10-12T03:44:57.117617 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_09_MLB.csv (6 games)
+2026-10-12T03:44:57.117632 |   games_parsed=6, games_skipped=0
+2026-10-12T03:44:57.117728 | Processing 2026_04_10.json
+2026-10-12T03:44:57.118118 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_10_MLB.csv (15 games)
+2026-10-12T03:44:57.118137 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.118226 | Processing 2026_04_11.json
+2026-10-12T03:44:57.118590 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_11_MLB.csv (15 games)
+2026-10-12T03:44:57.118604 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.118702 | Processing 2026_04_12.json
+2026-10-12T03:44:57.119083 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_12_MLB.csv (15 games)
+2026-10-12T03:44:57.119096 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.119181 | Processing 2026_04_13.json
+2026-10-12T03:44:57.119508 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_13_MLB.csv (10 games)
+2026-10-12T03:44:57.119522 |   games_parsed=10, games_skipped=0
+2026-10-12T03:44:57.119603 | Processing 2026_04_14.json
+2026-10-12T03:44:57.119971 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_14_MLB.csv (15 games)
+2026-10-12T03:44:57.119985 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.120062 | Processing 2026_04_15.json
+2026-10-12T03:44:57.125065 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_15_MLB.csv (15 games)
+2026-10-12T03:44:57.125079 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.125166 | Processing 2026_04_16.json
+2026-10-12T03:44:57.126788 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_16_MLB.csv (10 games)
+2026-10-12T03:44:57.126802 |   games_parsed=10, games_skipped=0
+2026-10-12T03:44:57.126880 | Processing 2026_04_17.json
+2026-10-12T03:44:57.127271 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_17_MLB.csv (15 games)
+2026-10-12T03:44:57.127285 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.127372 | Processing 2026_04_18.json
+2026-10-12T03:44:57.127764 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_18_MLB.csv (15 games)
+2026-10-12T03:44:57.127778 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.127863 | Processing 2026_04_19.json
+2026-10-12T03:44:57.128240 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_19_MLB.csv (15 games)
+2026-10-12T03:44:57.128255 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.128339 | Processing 2026_04_20.json
+2026-10-12T03:44:57.128694 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_20_MLB.csv (10 games)
+2026-10-12T03:44:57.128708 |   games_parsed=10, games_skipped=0
+2026-10-12T03:44:57.128793 | Processing 2026_04_21.json
+2026-10-12T03:44:57.129170 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_21_MLB.csv (15 games)
+2026-10-12T03:44:57.129184 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.129269 | Processing 2026_04_22.json
+2026-10-12T03:44:57.129644 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_22_MLB.csv (15 games)
+2026-10-12T03:44:57.129657 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.129756 | Processing 2026_04_23.json
+2026-10-12T03:44:57.130058 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_23_MLB.csv (9 games)
+2026-10-12T03:44:57.130072 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.130153 | Processing 2026_04_24.json
+2026-10-12T03:44:57.130508 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_24_MLB.csv (14 games)
+2026-10-12T03:44:57.130521 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.130599 | Processing 2026_04_25.json
+2026-10-12T03:44:57.130985 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_25_MLB.csv (15 games)
+2026-10-12T03:44:57.130998 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.131078 | Processing 2026_04_26.json
+2026-10-12T03:44:57.131495 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_26_MLB.csv (16 games)
+2026-10-12T03:44:57.131509 |   games_parsed=16, games_skipped=0
+2026-10-12T03:44:57.131593 | Processing 2026_04_27.json
+2026-10-12T03:44:57.131908 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_27_MLB.csv (8 games)
+2026-10-12T03:44:57.131922 |   games_parsed=8, games_skipped=0
+2026-10-12T03:44:57.131997 | Processing 2026_04_28.json
+2026-10-12T03:44:57.132369 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_28_MLB.csv (15 games)
+2026-10-12T03:44:57.132386 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.132465 | Processing 2026_04_29.json
+2026-10-12T03:44:57.132846 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_29_MLB.csv (15 games)
+2026-10-12T03:44:57.132860 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.132944 | Processing 2026_04_30.json
+2026-10-12T03:44:57.133268 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_04_30_MLB.csv (10 games)
+2026-10-12T03:44:57.133281 |   games_parsed=10, games_skipped=0
+2026-10-12T03:44:57.133362 | Processing 2026_05_01.json
+2026-10-12T03:44:57.133750 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_01_MLB.csv (15 games)
+2026-10-12T03:44:57.133765 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.133853 | Processing 2026_05_02.json
+2026-10-12T03:44:57.134220 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_02_MLB.csv (15 games)
+2026-10-12T03:44:57.134234 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.134319 | Processing 2026_05_03.json
+2026-10-12T03:44:57.134689 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_03_MLB.csv (15 games)
+2026-10-12T03:44:57.134704 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.134790 | Processing 2026_05_04.json
+2026-10-12T03:44:57.135117 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_04_MLB.csv (12 games)
+2026-10-12T03:44:57.135131 |   games_parsed=12, games_skipped=0
+2026-10-12T03:44:57.135213 | Processing 2026_05_05.json
+2026-10-12T03:44:57.135565 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_05_MLB.csv (15 games)
+2026-10-12T03:44:57.135579 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.135665 | Processing 2026_05_06.json
+2026-10-12T03:44:57.136038 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_06_MLB.csv (15 games)
+2026-10-12T03:44:57.136052 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.136142 | Processing 2026_05_07.json
+2026-10-12T03:44:57.136441 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_07_MLB.csv (10 games)
+2026-10-12T03:44:57.136455 |   games_parsed=10, games_skipped=0
+2026-10-12T03:44:57.136533 | Processing 2026_05_08.json
+2026-10-12T03:44:57.136916 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_08_MLB.csv (14 games)
+2026-10-12T03:44:57.136930 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.137016 | Processing 2026_05_09.json
+2026-10-12T03:44:57.137381 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_09_MLB.csv (15 games)
+2026-10-12T03:44:57.137394 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.137473 | Processing 2026_05_10.json
+2026-10-12T03:44:57.138791 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_10_MLB.csv (15 games)
+2026-10-12T03:44:57.138808 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.138892 | Processing 2026_05_11.json
+2026-10-12T03:44:57.139159 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_11_MLB.csv (6 games)
+2026-10-12T03:44:57.139172 |   games_parsed=6, games_skipped=0
+2026-10-12T03:44:57.139246 | Processing 2026_05_12.json
+2026-10-12T03:44:57.139637 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_12_MLB.csv (15 games)
+2026-10-12T03:44:57.139650 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.139747 | Processing 2026_05_13.json
+2026-10-12T03:44:57.140118 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_13_MLB.csv (15 games)
+2026-10-12T03:44:57.140132 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.140210 | Processing 2026_05_14.json
+2026-10-12T03:44:57.140534 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_14_MLB.csv (11 games)
+2026-10-12T03:44:57.140547 |   games_parsed=11, games_skipped=0
+2026-10-12T03:44:57.140628 | Processing 2026_05_15.json
+2026-10-12T03:44:57.140992 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_15_MLB.csv (14 games)
+2026-10-12T03:44:57.141005 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.141085 | Processing 2026_05_16.json
+2026-10-12T03:44:57.141454 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_16_MLB.csv (15 games)
+2026-10-12T03:44:57.141470 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.141548 | Processing 2026_05_17.json
+2026-10-12T03:44:57.141936 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_17_MLB.csv (15 games)
+2026-10-12T03:44:57.141950 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.142028 | Processing 2026_05_18.json
+2026-10-12T03:44:57.142422 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_18_MLB.csv (14 games)
+2026-10-12T03:44:57.142435 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.142519 | Processing 2026_05_19.json
+2026-10-12T03:44:57.142909 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_19_MLB.csv (15 games)
+2026-10-12T03:44:57.142923 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.143004 | Processing 2026_05_20.json
+2026-10-12T03:44:57.143374 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_20_MLB.csv (15 games)
+2026-10-12T03:44:57.143387 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.143470 | Processing 2026_05_21.json
+2026-10-12T03:44:57.143749 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_21_MLB.csv (7 games)
+2026-10-12T03:44:57.143762 |   games_parsed=7, games_skipped=0
+2026-10-12T03:44:57.143838 | Processing 2026_05_22.json
+2026-10-12T03:44:57.144205 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_22_MLB.csv (15 games)
+2026-10-12T03:44:57.144219 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.144302 | Processing 2026_05_23.json
+2026-10-12T03:44:57.144684 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_23_MLB.csv (16 games)
+2026-10-12T03:44:57.144700 |   games_parsed=16, games_skipped=0
+2026-10-12T03:44:57.144788 | Processing 2026_05_24.json
+2026-10-12T03:44:57.145174 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_24_MLB.csv (16 games)
+2026-10-12T03:44:57.145188 |   games_parsed=16, games_skipped=0
+2026-10-12T03:44:57.145268 | Processing 2026_05_25.json
+2026-10-12T03:44:57.145622 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_25_MLB.csv (13 games)
+2026-10-12T03:44:57.145636 |   games_parsed=13, games_skipped=0
+2026-10-12T03:44:57.145732 | Processing 2026_05_26.json
+2026-10-12T03:44:57.146088 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_26_MLB.csv (15 games)
+2026-10-12T03:44:57.146102 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.146182 | Processing 2026_05_27.json
+2026-10-12T03:44:57.146554 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_27_MLB.csv (15 games)
+2026-10-12T03:44:57.146567 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.146650 | Processing 2026_05_28.json
+2026-10-12T03:44:57.146927 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_28_MLB.csv (6 games)
+2026-10-12T03:44:57.146941 |   games_parsed=6, games_skipped=0
+2026-10-12T03:44:57.147019 | Processing 2026_05_29.json
+2026-10-12T03:44:57.147514 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_29_MLB.csv (15 games)
+2026-10-12T03:44:57.147708 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_30_MLB.csv (12 games)
+2026-10-12T03:44:57.147721 |   games_parsed=27, games_skipped=1
+2026-10-12T03:44:57.147812 | Processing 2026_05_30.json
+2026-10-12T03:44:57.148171 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_30_MLB.csv (15 games)
+2026-10-12T03:44:57.148185 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.148270 | Processing 2026_05_31.json
+2026-10-12T03:44:57.148623 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_05_31_MLB.csv (15 games)
+2026-10-12T03:44:57.148637 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.148730 | Processing 2026_06_01.json
+2026-10-12T03:44:57.149153 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_01_MLB.csv (9 games)
+2026-10-12T03:44:57.149336 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_02_MLB.csv (11 games)
+2026-10-12T03:44:57.149505 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_03_MLB.csv (2 games)
+2026-10-12T03:44:57.149520 |   games_parsed=22, games_skipped=0
+2026-10-12T03:44:57.149610 | Processing 2026_06_02.json
+2026-10-12T03:44:57.150123 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_02_MLB.csv (15 games)
+2026-10-12T03:44:57.150322 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_03_MLB.csv (13 games)
+2026-10-12T03:44:57.150465 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_04_MLB.csv (1 games)
+2026-10-12T03:44:57.150477 |   games_parsed=29, games_skipped=0
+2026-10-12T03:44:57.150570 | Processing 2026_06_03.json
+2026-10-12T03:44:57.150964 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_03_MLB.csv (15 games)
+2026-10-12T03:44:57.150978 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.151063 | Processing 2026_06_04.json
+2026-10-12T03:44:57.151354 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_04_MLB.csv (9 games)
+2026-10-12T03:44:57.151368 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.151447 | Processing 2026_06_05.json
+2026-10-12T03:44:57.151800 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_05_MLB.csv (15 games)
+2026-10-12T03:44:57.151813 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.151891 | Processing 2026_06_06.json
+2026-10-12T03:44:57.152248 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_06_MLB.csv (15 games)
+2026-10-12T03:44:57.152261 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.152339 | Processing 2026_06_07.json
+2026-10-12T03:44:57.152910 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_07_MLB.csv (15 games)
+2026-10-12T03:44:57.152924 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.153002 | Processing 2026_06_08.json
+2026-10-12T03:44:57.153314 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_08_MLB.csv (8 games)
+2026-10-12T03:44:57.153328 |   games_parsed=8, games_skipped=0
+2026-10-12T03:44:57.153404 | Processing 2026_06_09.json
+2026-10-12T03:44:57.153737 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_09_MLB.csv (9 games)
+2026-10-12T03:44:57.153751 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.153829 | Processing 2026_06_10.json
+2026-10-12T03:44:57.154132 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_10_MLB.csv (9 games)
+2026-10-12T03:44:57.154145 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.154227 | Processing 2026_06_11.json
+2026-10-12T03:44:57.154483 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_11_MLB.csv (6 games)
+2026-10-12T03:44:57.154496 |   games_parsed=6, games_skipped=0
+2026-10-12T03:44:57.154570 | Processing 2026_06_12.json
+2026-10-12T03:44:57.154885 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_12_MLB.csv (8 games)
+2026-10-12T03:44:57.154899 |   games_parsed=8, games_skipped=0
+2026-10-12T03:44:57.154973 | Processing 2026_06_13.json
+2026-10-12T03:44:57.155270 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_13_MLB.csv (8 games)
+2026-10-12T03:44:57.155283 |   games_parsed=8, games_skipped=0
+2026-10-12T03:44:57.155361 | Processing 2026_06_14.json
+2026-10-12T03:44:57.155646 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_14_MLB.csv (8 games)
+2026-10-12T03:44:57.155659 |   games_parsed=8, games_skipped=0
+2026-10-12T03:44:57.155753 | Processing 2026_06_15.json
+2026-10-12T03:44:57.156053 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_15_MLB.csv (9 games)
+2026-10-12T03:44:57.156067 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.156145 | Processing 2026_06_16.json
+2026-10-12T03:44:57.156482 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_16_MLB.csv (14 games)
+2026-10-12T03:44:57.156495 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.156573 | Processing 2026_06_17.json
+2026-10-12T03:44:57.156957 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_17_MLB.csv (13 games)
+2026-10-12T03:44:57.156971 |   games_parsed=13, games_skipped=0
+2026-10-12T03:44:57.157049 | Processing 2026_06_18.json
+2026-10-12T03:44:57.157350 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_18_MLB.csv (9 games)
+2026-10-12T03:44:57.157366 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.157439 | Processing 2026_06_19.json
+2026-10-12T03:44:57.157779 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_19_MLB.csv (13 games)
+2026-10-12T03:44:57.157792 |   games_parsed=13, games_skipped=0
+2026-10-12T03:44:57.157869 | Processing 2026_06_20.json
+2026-10-12T03:44:57.158220 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_20_MLB.csv (14 games)
+2026-10-12T03:44:57.158233 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.158315 | Processing 2026_06_21.json
+2026-10-12T03:44:57.158695 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_21_MLB.csv (14 games)
+2026-10-12T03:44:57.158709 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.158792 | Processing 2026_06_22.json
+2026-10-12T03:44:57.159130 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_22_MLB.csv (13 games)
+2026-10-12T03:44:57.159143 |   games_parsed=13, games_skipped=0
+2026-10-12T03:44:57.159218 | Processing 2026_06_23.json
+2026-10-12T03:44:57.159616 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_23_MLB.csv (14 games)
+2026-10-12T03:44:57.159631 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.159737 | Processing 2026_06_24.json
+2026-10-12T03:44:57.160095 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_24_MLB.csv (14 games)
+2026-10-12T03:44:57.160108 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.160194 | Processing 2026_06_25.json
+2026-10-12T03:44:57.160490 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_25_MLB.csv (9 games)
+2026-10-12T03:44:57.160503 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.160584 | Processing 2026_06_26.json
+2026-10-12T03:44:57.160939 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_26_MLB.csv (14 games)
+2026-10-12T03:44:57.160953 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.161036 | Processing 2026_06_27.json
+2026-10-12T03:44:57.161392 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_27_MLB.csv (15 games)
+2026-10-12T03:44:57.161405 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.161488 | Processing 2026_06_28.json
+2026-10-12T03:44:57.161856 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_28_MLB.csv (15 games)
+2026-10-12T03:44:57.161870 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.161954 | Processing 2026_06_29.json
+2026-10-12T03:44:57.162296 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_29_MLB.csv (13 games)
+2026-10-12T03:44:57.162309 |   games_parsed=13, games_skipped=0
+2026-10-12T03:44:57.162395 | Processing 2026_06_30.json
+2026-10-12T03:44:57.162765 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_06_30_MLB.csv (15 games)
+2026-10-12T03:44:57.162778 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.162860 | Processing 2026_07_01.json
+2026-10-12T03:44:57.163225 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_01_MLB.csv (14 games)
+2026-10-12T03:44:57.163238 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.163321 | Processing 2026_07_02.json
+2026-10-12T03:44:57.163623 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_02_MLB.csv (9 games)
+2026-10-12T03:44:57.163636 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.163730 | Processing 2026_07_03.json
+2026-10-12T03:44:57.164083 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_03_MLB.csv (13 games)
+2026-10-12T03:44:57.164096 |   games_parsed=13, games_skipped=0
+2026-10-12T03:44:57.164179 | Processing 2026_07_04.json
+2026-10-12T03:44:57.164566 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_04_MLB.csv (15 games)
+2026-10-12T03:44:57.164579 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.164656 | Processing 2026_07_05.json
+2026-10-12T03:44:57.165082 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_05_MLB.csv (14 games)
+2026-10-12T03:44:57.165095 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.165178 | Processing 2026_07_06.json
+2026-10-12T03:44:57.165511 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_06_MLB.csv (8 games)
+2026-10-12T03:44:57.165528 |   games_parsed=8, games_skipped=0
+2026-10-12T03:44:57.165607 | Processing 2026_07_07.json
+2026-10-12T03:44:57.165995 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_07_MLB.csv (15 games)
+2026-10-12T03:44:57.166008 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.166091 | Processing 2026_07_08.json
+2026-10-12T03:44:57.166463 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_08_MLB.csv (15 games)
+2026-10-12T03:44:57.166476 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.166558 | Processing 2026_07_09.json
+2026-10-12T03:44:57.166912 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_09_MLB.csv (13 games)
+2026-10-12T03:44:57.166925 |   games_parsed=13, games_skipped=0
+2026-10-12T03:44:57.167006 | Processing 2026_07_10.json
+2026-10-12T03:44:57.167362 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_10_MLB.csv (15 games)
+2026-10-12T03:44:57.167375 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.167457 | Processing 2026_07_11.json
+2026-10-12T03:44:57.167752 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_11_MLB.csv (10 games)
+2026-10-12T03:44:57.167765 |   games_parsed=10, games_skipped=0
+2026-10-12T03:44:57.167840 | Processing 2026_07_12.json
+2026-10-12T03:44:57.168194 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_12_MLB.csv (14 games)
+2026-10-12T03:44:57.168208 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.168289 | Processing 2026_07_13.json
+2026-10-12T03:44:57.168326 |   games_parsed=0, games_skipped=0
+2026-10-12T03:44:57.168388 | Processing 2026_07_14.json
+2026-10-12T03:44:57.168419 |   games_parsed=0, games_skipped=0
+2026-10-12T03:44:57.168481 | Processing 2026_07_15.json
+2026-10-12T03:44:57.168512 |   games_parsed=0, games_skipped=0
+2026-10-12T03:44:57.168571 | Processing 2026_07_16.json
+2026-10-12T03:44:57.168786 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_16_MLB.csv (1 games)
+2026-10-12T03:44:57.168799 |   games_parsed=1, games_skipped=0
+2026-10-12T03:44:57.168872 | Processing 2026_07_17.json
+2026-10-12T03:44:57.169221 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_17_MLB.csv (14 games)
+2026-10-12T03:44:57.169234 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.169315 | Processing 2026_07_18.json
+2026-10-12T03:44:57.169628 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_18_MLB.csv (9 games)
+2026-10-12T03:44:57.169641 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.169732 | Processing 2026_07_19.json
+2026-10-12T03:44:57.170071 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_19_MLB.csv (13 games)
+2026-10-12T03:44:57.170084 |   games_parsed=13, games_skipped=0
+2026-10-12T03:44:57.170167 | Processing 2026_07_20.json
+2026-10-12T03:44:57.170518 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_20_MLB.csv (15 games)
+2026-10-12T03:44:57.170532 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.170613 | Processing 2026_07_21.json
+2026-10-12T03:44:57.170920 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_21_MLB.csv (9 games)
+2026-10-12T03:44:57.170933 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.171011 | Processing 2026_07_22.json
+2026-10-12T03:44:57.171240 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_22_MLB.csv (3 games)
+2026-10-12T03:44:57.171252 |   games_parsed=3, games_skipped=0
+2026-10-12T03:44:57.171327 | Processing 2026_07_23.json
+2026-10-12T03:44:57.171586 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_23_MLB.csv (5 games)
+2026-10-12T03:44:57.171599 |   games_parsed=5, games_skipped=0
+2026-10-12T03:44:57.171689 | Processing 2026_07_24.json
+2026-10-12T03:44:57.172066 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_24_MLB.csv (15 games)
+2026-10-12T03:44:57.172079 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.172163 | Processing 2026_07_25.json
+2026-10-12T03:44:57.172514 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_25_MLB.csv (15 games)
+2026-10-12T03:44:57.172527 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.172610 | Processing 2026_07_26.json
+2026-10-12T03:44:57.172992 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_26_MLB.csv (15 games)
+2026-10-12T03:44:57.173006 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.173084 | Processing 2026_07_27.json
+2026-10-12T03:44:57.173409 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_27_MLB.csv (12 games)
+2026-10-12T03:44:57.173422 |   games_parsed=12, games_skipped=0
+2026-10-12T03:44:57.173502 | Processing 2026_07_28.json
+2026-10-12T03:44:57.173907 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_28_MLB.csv (16 games)
+2026-10-12T03:44:57.173921 |   games_parsed=16, games_skipped=0
+2026-10-12T03:44:57.174006 | Processing 2026_07_29.json
+2026-10-12T03:44:57.174365 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_29_MLB.csv (16 games)
+2026-10-12T03:44:57.174378 |   games_parsed=16, games_skipped=0
+2026-10-12T03:44:57.174462 | Processing 2026_07_30.json
+2026-10-12T03:44:57.174767 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_30_MLB.csv (10 games)
+2026-10-12T03:44:57.174780 |   games_parsed=10, games_skipped=0
+2026-10-12T03:44:57.174857 | Processing 2026_07_31.json
+2026-10-12T03:44:57.175212 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_07_31_MLB.csv (15 games)
+2026-10-12T03:44:57.175225 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.175307 | Processing 2026_08_01.json
+2026-10-12T03:44:57.175692 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_01_MLB.csv (15 games)
+2026-10-12T03:44:57.175706 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.175789 | Processing 2026_08_02.json
+2026-10-12T03:44:57.176214 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_02_MLB.csv (15 games)
+2026-10-12T03:44:57.176227 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.176308 | Processing 2026_08_03.json
+2026-10-12T03:44:57.176583 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_03_MLB.csv (8 games)
+2026-10-12T03:44:57.176596 |   games_parsed=8, games_skipped=0
+2026-10-12T03:44:57.176688 | Processing 2026_08_04.json
+2026-10-12T03:44:57.177056 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_04_MLB.csv (15 games)
+2026-10-12T03:44:57.177069 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.177151 | Processing 2026_08_05.json
+2026-10-12T03:44:57.177573 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_05_MLB.csv (15 games)
+2026-10-12T03:44:57.177586 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.177667 | Processing 2026_08_06.json
+2026-10-12T03:44:57.178000 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_06_MLB.csv (11 games)
+2026-10-12T03:44:57.178014 |   games_parsed=11, games_skipped=0
+2026-10-12T03:44:57.178094 | Processing 2026_08_07.json
+2026-10-12T03:44:57.178444 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_07_MLB.csv (15 games)
+2026-10-12T03:44:57.178457 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.178536 | Processing 2026_08_08.json
+2026-10-12T03:44:57.178912 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_08_MLB.csv (15 games)
+2026-10-12T03:44:57.178925 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.179010 | Processing 2026_08_09.json
+2026-10-12T03:44:57.179368 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_09_MLB.csv (15 games)
+2026-10-12T03:44:57.179381 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.179463 | Processing 2026_08_10.json
+2026-10-12T03:44:57.179778 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_10_MLB.csv (10 games)
+2026-10-12T03:44:57.179792 |   games_parsed=10, games_skipped=0
+2026-10-12T03:44:57.179874 | Processing 2026_08_11.json
+2026-10-12T03:44:57.180243 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_11_MLB.csv (15 games)
+2026-10-12T03:44:57.180264 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.180356 | Processing 2026_08_12.json
+2026-10-12T03:44:57.180734 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_12_MLB.csv (15 games)
+2026-10-12T03:44:57.180750 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.180833 | Processing 2026_08_13.json
+2026-10-12T03:44:57.181129 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_13_MLB.csv (9 games)
+2026-10-12T03:44:57.181142 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.181222 | Processing 2026_08_14.json
+2026-10-12T03:44:57.181565 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_14_MLB.csv (14 games)
+2026-10-12T03:44:57.181578 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.181654 | Processing 2026_08_15.json
+2026-10-12T03:44:57.182040 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_15_MLB.csv (15 games)
+2026-10-12T03:44:57.182054 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.182136 | Processing 2026_08_16.json
+2026-10-12T03:44:57.182483 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_16_MLB.csv (15 games)
+2026-10-12T03:44:57.182496 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.182577 | Processing 2026_08_17.json
+2026-10-12T03:44:57.182884 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_17_MLB.csv (9 games)
+2026-10-12T03:44:57.182897 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.182976 | Processing 2026_08_18.json
+2026-10-12T03:44:57.183342 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_18_MLB.csv (15 games)
+2026-10-12T03:44:57.183355 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.183436 | Processing 2026_08_19.json
+2026-10-12T03:44:57.183811 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_19_MLB.csv (15 games)
+2026-10-12T03:44:57.183825 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.183906 | Processing 2026_08_20.json
+2026-10-12T03:44:57.184213 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_20_MLB.csv (9 games)
+2026-10-12T03:44:57.184226 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.184304 | Processing 2026_08_24.json
+2026-10-12T03:44:57.184623 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_24_MLB.csv (10 games)
+2026-10-12T03:44:57.184636 |   games_parsed=10, games_skipped=0
+2026-10-12T03:44:57.184728 | Processing 2026_08_25.json
+2026-10-12T03:44:57.185087 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_25_MLB.csv (15 games)
+2026-10-12T03:44:57.185100 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.185182 | Processing 2026_08_26.json
+2026-10-12T03:44:57.185505 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_26_MLB.csv (12 games)
+2026-10-12T03:44:57.185518 |   games_parsed=12, games_skipped=0
+2026-10-12T03:44:57.185599 | Processing 2026_08_27.json
+2026-10-12T03:44:57.185884 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_27_MLB.csv (7 games)
+2026-10-12T03:44:57.185897 |   games_parsed=7, games_skipped=0
+2026-10-12T03:44:57.185975 | Processing 2026_08_28.json
+2026-10-12T03:44:57.186341 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_28_MLB.csv (15 games)
+2026-10-12T03:44:57.186354 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.186436 | Processing 2026_08_29.json
+2026-10-12T03:44:57.186837 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_29_MLB.csv (17 games)
+2026-10-12T03:44:57.186850 |   games_parsed=17, games_skipped=0
+2026-10-12T03:44:57.186928 | Processing 2026_08_30.json
+2026-10-12T03:44:57.187282 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_30_MLB.csv (14 games)
+2026-10-12T03:44:57.187295 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.187376 | Processing 2026_08_31.json
+2026-10-12T03:44:57.190064 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_08_31_MLB.csv (12 games)
+2026-10-12T03:44:57.190077 |   games_parsed=12, games_skipped=0
+2026-10-12T03:44:57.190159 | Processing 2026_09_01.json
+2026-10-12T03:44:57.190548 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_01_MLB.csv (15 games)
+2026-10-12T03:44:57.190561 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.190643 | Processing 2026_09_02.json
+2026-10-12T03:44:57.191042 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_02_MLB.csv (15 games)
+2026-10-12T03:44:57.191058 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.191141 | Processing 2026_09_03.json
+2026-10-12T03:44:57.191516 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_03_MLB.csv (9 games)
+2026-10-12T03:44:57.191529 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.191602 | Processing 2026_09_04.json
+2026-10-12T03:44:57.191993 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_04_MLB.csv (16 games)
+2026-10-12T03:44:57.192006 |   games_parsed=16, games_skipped=0
+2026-10-12T03:44:57.192089 | Processing 2026_09_05.json
+2026-10-12T03:44:57.192469 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_05_MLB.csv (15 games)
+2026-10-12T03:44:57.192484 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.192564 | Processing 2026_09_06.json
+2026-10-12T03:44:57.192969 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_06_MLB.csv (15 games)
+2026-10-12T03:44:57.192982 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.193065 | Processing 2026_09_07.json
+2026-10-12T03:44:57.193383 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_07_MLB.csv (11 games)
+2026-10-12T03:44:57.193396 |   games_parsed=11, games_skipped=0
+2026-10-12T03:44:57.193474 | Processing 2026_09_08.json
+2026-10-12T03:44:57.193826 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_08_MLB.csv (15 games)
+2026-10-12T03:44:57.193839 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.193919 | Processing 2026_09_09.json
+2026-10-12T03:44:57.194270 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_09_MLB.csv (14 games)
+2026-10-12T03:44:57.194283 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.194363 | Processing 2026_09_10.json
+2026-10-12T03:44:57.194607 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_10_MLB.csv (5 games)
+2026-10-12T03:44:57.194620 |   games_parsed=5, games_skipped=0
+2026-10-12T03:44:57.194710 | Processing 2026_09_11.json
+2026-10-12T03:44:57.195054 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_11_MLB.csv (14 games)
+2026-10-12T03:44:57.195067 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.195147 | Processing 2026_09_12.json
+2026-10-12T03:44:57.195480 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_12_MLB.csv (14 games)
+2026-10-12T03:44:57.195493 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.195572 | Processing 2026_09_13.json
+2026-10-12T03:44:57.195919 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_13_MLB.csv (13 games)
+2026-10-12T03:44:57.195932 |   games_parsed=13, games_skipped=0
+2026-10-12T03:44:57.196011 | Processing 2026_09_14.json
+2026-10-12T03:44:57.196306 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_14_MLB.csv (10 games)
+2026-10-12T03:44:57.196319 |   games_parsed=10, games_skipped=0
+2026-10-12T03:44:57.196397 | Processing 2026_09_15.json
+2026-10-12T03:44:57.196749 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_15_MLB.csv (14 games)
+2026-10-12T03:44:57.196762 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.196844 | Processing 2026_09_16.json
+2026-10-12T03:44:57.197193 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_16_MLB.csv (15 games)
+2026-10-12T03:44:57.197206 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.197287 | Processing 2026_09_17.json
+2026-10-12T03:44:57.197566 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_17_MLB.csv (9 games)
+2026-10-12T03:44:57.197579 |   games_parsed=9, games_skipped=0
+2026-10-12T03:44:57.197658 | Processing 2026_09_18.json
+2026-10-12T03:44:57.198003 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_18_MLB.csv (14 games)
+2026-10-12T03:44:57.198017 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.198096 | Processing 2026_09_19.json
+2026-10-12T03:44:57.198426 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_19_MLB.csv (14 games)
+2026-10-12T03:44:57.198439 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.198513 | Processing 2026_09_20.json
+2026-10-12T03:44:57.198862 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_20_MLB.csv (14 games)
+2026-10-12T03:44:57.198877 |   games_parsed=14, games_skipped=0
+2026-10-12T03:44:57.198958 | Processing 2026_09_21.json
+2026-10-12T03:44:57.199181 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_21_MLB.csv (3 games)
+2026-10-12T03:44:57.199194 |   games_parsed=3, games_skipped=0
+2026-10-12T03:44:57.199269 | Processing 2026_09_22.json
+2026-10-12T03:44:57.199627 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_22_MLB.csv (16 games)
+2026-10-12T03:44:57.199640 |   games_parsed=16, games_skipped=0
+2026-10-12T03:44:57.199730 | Processing 2026_09_23.json
+2026-10-12T03:44:57.200120 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_23_MLB.csv (16 games)
+2026-10-12T03:44:57.200134 |   games_parsed=16, games_skipped=0
+2026-10-12T03:44:57.200217 | Processing 2026_09_24.json
+2026-10-12T03:44:57.200535 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_24_MLB.csv (12 games)
+2026-10-12T03:44:57.200549 |   games_parsed=12, games_skipped=0
+2026-10-12T03:44:57.200628 | Processing 2026_09_25.json
+2026-10-12T03:44:57.201004 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_25_MLB.csv (15 games)
+2026-10-12T03:44:57.201018 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.201099 | Processing 2026_09_26.json
+2026-10-12T03:44:57.201413 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_26_MLB.csv (12 games)
+2026-10-12T03:44:57.201428 |   games_parsed=12, games_skipped=0
+2026-10-12T03:44:57.201502 | Processing 2026_09_27.json
+2026-10-12T03:44:57.201925 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_27_MLB.csv (15 games)
+2026-10-12T03:44:57.201938 |   games_parsed=15, games_skipped=0
+2026-10-12T03:44:57.202021 | Processing 2026_09_28.json
+2026-10-12T03:44:57.202057 |   games_parsed=0, games_skipped=0
+2026-10-12T03:44:57.202119 | Processing 2026_09_29.json
+2026-10-12T03:44:57.202367 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_29_MLB.csv (4 games)
+2026-10-12T03:44:57.202380 |   games_parsed=4, games_skipped=0
+2026-10-12T03:44:57.202455 | Processing 2026_09_30.json
+2026-10-12T03:44:57.202725 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_09_30_MLB.csv (4 games)
+2026-10-12T03:44:57.202738 |   games_parsed=4, games_skipped=0
+2026-10-12T03:44:57.202818 | Processing 2026_10_01.json
+2026-10-12T03:44:57.203021 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_10_01_MLB.csv (1 games)
+2026-10-12T03:44:57.203034 |   games_parsed=1, games_skipped=0
+2026-10-12T03:44:57.203106 | Processing 2026_10_02.json
+2026-10-12T03:44:57.203142 |   games_parsed=0, games_skipped=0
+2026-10-12T03:44:57.203202 | Processing 2026_10_03.json
+2026-10-12T03:44:57.203441 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_10_03_MLB.csv (4 games)
+2026-10-12T03:44:57.203453 |   games_parsed=4, games_skipped=0
+2026-10-12T03:44:57.203530 | Processing 2026_10_04.json
+2026-10-12T03:44:57.203738 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_10_04_MLB.csv (2 games)
+2026-10-12T03:44:57.203750 |   games_parsed=2, games_skipped=0
+2026-10-12T03:44:57.203824 | Processing 2026_10_05.json
+2026-10-12T03:44:57.204038 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_10_05_MLB.csv (2 games)
+2026-10-12T03:44:57.204050 |   games_parsed=2, games_skipped=0
+2026-10-12T03:44:57.204123 | Processing 2026_10_06.json
+2026-10-12T03:44:57.204331 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_10_06_MLB.csv (2 games)
+2026-10-12T03:44:57.204343 |   games_parsed=2, games_skipped=0
+2026-10-12T03:44:57.204416 | Processing 2026_10_07.json
+2026-10-12T03:44:57.204645 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_10_07_MLB.csv (4 games)
+2026-10-12T03:44:57.204657 |   games_parsed=4, games_skipped=0
+2026-10-12T03:44:57.204746 | Processing 2026_10_08.json
+2026-10-12T03:44:57.204946 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_10_08_MLB.csv (1 games)
+2026-10-12T03:44:57.204958 |   games_parsed=1, games_skipped=0
+2026-10-12T03:44:57.205031 | Processing 2026_10_09.json
+2026-10-12T03:44:57.205069 |   games_parsed=0, games_skipped=0
+2026-10-12T03:44:57.205129 | Processing 2026_10_10.json
+2026-10-12T03:44:57.205323 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_10_10_MLB.csv (1 games)
+2026-10-12T03:44:57.205336 |   games_parsed=1, games_skipped=0
+2026-10-12T03:44:57.205406 | Processing 2026_10_11.json
+2026-10-12T03:44:57.205603 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_10_11_MLB.csv (1 games)
+2026-10-12T03:44:57.205616 |   games_parsed=1, games_skipped=0
+2026-10-12T03:44:57.205697 | Processing 2026_10_12.json
+2026-10-12T03:44:57.205830 |   WROTE docs/win/baseball/mlb/00_intake/sportsbook/2026_10_12_MLB.csv (2 games)
+2026-10-12T03:44:57.205842 |   games_parsed=2, games_skipped=0
+2026-10-12T03:44:57.205855 | --- SUMMARY ---
+2026-10-12T03:44:57.205867 | Files written: 200
+2026-10-12T03:44:57.205878 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_03_26_MLB.csv (11 games)
+2026-10-12T03:44:57.205888 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_03_27_MLB.csv (3 games)
+2026-10-12T03:44:57.205899 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_03_26_MLB.csv (11 games)
+2026-10-12T03:44:57.205910 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_03_27_MLB.csv (3 games)
+2026-10-12T03:44:57.205920 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_03_27_MLB.csv (8 games)
+2026-10-12T03:44:57.205931 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_03_28_MLB.csv (15 games)
+2026-10-12T03:44:57.205941 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_03_29_MLB.csv (12 games)
+2026-10-12T03:44:57.205952 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_03_30_MLB.csv (15 games)
+2026-10-12T03:44:57.205962 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_03_31_MLB.csv (14 games)
+2026-10-12T03:44:57.205973 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_01_MLB.csv (15 games)
+2026-10-12T03:44:57.205983 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_02_MLB.csv (3 games)
+2026-10-12T03:44:57.205994 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_03_MLB.csv (15 games)
+2026-10-12T03:44:57.206004 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_04_MLB.csv (15 games)
+2026-10-12T03:44:57.206015 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_05_MLB.csv (16 games)
+2026-10-12T03:44:57.206025 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_06_MLB.csv (13 games)
+2026-10-12T03:44:57.206035 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_07_MLB.csv (15 games)
+2026-10-12T03:44:57.206046 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_08_MLB.csv (15 games)
+2026-10-12T03:44:57.206057 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_09_MLB.csv (6 games)
+2026-10-12T03:44:57.206067 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_10_MLB.csv (15 games)
+2026-10-12T03:44:57.206078 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_11_MLB.csv (15 games)
+2026-10-12T03:44:57.206088 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_12_MLB.csv (15 games)
+2026-10-12T03:44:57.206099 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_13_MLB.csv (10 games)
+2026-10-12T03:44:57.206109 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_14_MLB.csv (15 games)
+2026-10-12T03:44:57.206120 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_15_MLB.csv (15 games)
+2026-10-12T03:44:57.206130 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_16_MLB.csv (10 games)
+2026-10-12T03:44:57.206140 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_17_MLB.csv (15 games)
+2026-10-12T03:44:57.206151 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_18_MLB.csv (15 games)
+2026-10-12T03:44:57.206161 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_19_MLB.csv (15 games)
+2026-10-12T03:44:57.206172 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_20_MLB.csv (10 games)
+2026-10-12T03:44:57.206182 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_21_MLB.csv (15 games)
+2026-10-12T03:44:57.206195 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_22_MLB.csv (15 games)
+2026-10-12T03:44:57.206205 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_23_MLB.csv (9 games)
+2026-10-12T03:44:57.206215 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_24_MLB.csv (14 games)
+2026-10-12T03:44:57.206226 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_25_MLB.csv (15 games)
+2026-10-12T03:44:57.206236 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_26_MLB.csv (16 games)
+2026-10-12T03:44:57.206246 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_27_MLB.csv (8 games)
+2026-10-12T03:44:57.206257 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_28_MLB.csv (15 games)
+2026-10-12T03:44:57.206267 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_29_MLB.csv (15 games)
+2026-10-12T03:44:57.206277 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_04_30_MLB.csv (10 games)
+2026-10-12T03:44:57.206288 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_01_MLB.csv (15 games)
+2026-10-12T03:44:57.206298 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_02_MLB.csv (15 games)
+2026-10-12T03:44:57.206308 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_03_MLB.csv (15 games)
+2026-10-12T03:44:57.206318 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_04_MLB.csv (12 games)
+2026-10-12T03:44:57.206329 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_05_MLB.csv (15 games)
+2026-10-12T03:44:57.206339 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_06_MLB.csv (15 games)
+2026-10-12T03:44:57.206349 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_07_MLB.csv (10 games)
+2026-10-12T03:44:57.206360 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_08_MLB.csv (14 games)
+2026-10-12T03:44:57.206370 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_09_MLB.csv (15 games)
+2026-10-12T03:44:57.206380 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_10_MLB.csv (15 games)
+2026-10-12T03:44:57.206391 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_11_MLB.csv (6 games)
+2026-10-12T03:44:57.206401 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_12_MLB.csv (15 games)
+2026-10-12T03:44:57.206411 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_13_MLB.csv (15 games)
+2026-10-12T03:44:57.206421 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_14_MLB.csv (11 games)
+2026-10-12T03:44:57.206432 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_15_MLB.csv (14 games)
+2026-10-12T03:44:57.206442 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_16_MLB.csv (15 games)
+2026-10-12T03:44:57.206452 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_17_MLB.csv (15 games)
+2026-10-12T03:44:57.206462 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_18_MLB.csv (14 games)
+2026-10-12T03:44:57.206473 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_19_MLB.csv (15 games)
+2026-10-12T03:44:57.206483 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_20_MLB.csv (15 games)
+2026-10-12T03:44:57.206493 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_21_MLB.csv (7 games)
+2026-10-12T03:44:57.206504 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_22_MLB.csv (15 games)
+2026-10-12T03:44:57.206514 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_23_MLB.csv (16 games)
+2026-10-12T03:44:57.206524 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_24_MLB.csv (16 games)
+2026-10-12T03:44:57.206534 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_25_MLB.csv (13 games)
+2026-10-12T03:44:57.206545 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_26_MLB.csv (15 games)
+2026-10-12T03:44:57.206555 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_27_MLB.csv (15 games)
+2026-10-12T03:44:57.206565 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_28_MLB.csv (6 games)
+2026-10-12T03:44:57.206577 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_29_MLB.csv (15 games)
+2026-10-12T03:44:57.206587 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_30_MLB.csv (12 games)
+2026-10-12T03:44:57.206598 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_30_MLB.csv (15 games)
+2026-10-12T03:44:57.206608 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_05_31_MLB.csv (15 games)
+2026-10-12T03:44:57.206618 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_01_MLB.csv (9 games)
+2026-10-12T03:44:57.206628 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_02_MLB.csv (11 games)
+2026-10-12T03:44:57.206639 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_03_MLB.csv (2 games)
+2026-10-12T03:44:57.206649 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_02_MLB.csv (15 games)
+2026-10-12T03:44:57.206659 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_03_MLB.csv (13 games)
+2026-10-12T03:44:57.206669 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_04_MLB.csv (1 games)
+2026-10-12T03:44:57.206691 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_03_MLB.csv (15 games)
+2026-10-12T03:44:57.206701 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_04_MLB.csv (9 games)
+2026-10-12T03:44:57.206712 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_05_MLB.csv (15 games)
+2026-10-12T03:44:57.206722 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_06_MLB.csv (15 games)
+2026-10-12T03:44:57.206732 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_07_MLB.csv (15 games)
+2026-10-12T03:44:57.206743 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_08_MLB.csv (8 games)
+2026-10-12T03:44:57.206753 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_09_MLB.csv (9 games)
+2026-10-12T03:44:57.206763 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_10_MLB.csv (9 games)
+2026-10-12T03:44:57.206774 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_11_MLB.csv (6 games)
+2026-10-12T03:44:57.206784 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_12_MLB.csv (8 games)
+2026-10-12T03:44:57.206794 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_13_MLB.csv (8 games)
+2026-10-12T03:44:57.206804 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_14_MLB.csv (8 games)
+2026-10-12T03:44:57.206815 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_15_MLB.csv (9 games)
+2026-10-12T03:44:57.206825 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_16_MLB.csv (14 games)
+2026-10-12T03:44:57.206835 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_17_MLB.csv (13 games)
+2026-10-12T03:44:57.206845 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_18_MLB.csv (9 games)
+2026-10-12T03:44:57.206856 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_19_MLB.csv (13 games)
+2026-10-12T03:44:57.206866 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_20_MLB.csv (14 games)
+2026-10-12T03:44:57.206876 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_21_MLB.csv (14 games)
+2026-10-12T03:44:57.206886 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_22_MLB.csv (13 games)
+2026-10-12T03:44:57.206897 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_23_MLB.csv (14 games)
+2026-10-12T03:44:57.206907 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_24_MLB.csv (14 games)
+2026-10-12T03:44:57.206917 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_25_MLB.csv (9 games)
+2026-10-12T03:44:57.206927 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_26_MLB.csv (14 games)
+2026-10-12T03:44:57.206938 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_27_MLB.csv (15 games)
+2026-10-12T03:44:57.206948 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_28_MLB.csv (15 games)
+2026-10-12T03:44:57.206958 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_29_MLB.csv (13 games)
+2026-10-12T03:44:57.206969 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_06_30_MLB.csv (15 games)
+2026-10-12T03:44:57.206981 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_01_MLB.csv (14 games)
+2026-10-12T03:44:57.206991 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_02_MLB.csv (9 games)
+2026-10-12T03:44:57.207001 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_03_MLB.csv (13 games)
+2026-10-12T03:44:57.207011 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_04_MLB.csv (15 games)
+2026-10-12T03:44:57.207022 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_05_MLB.csv (14 games)
+2026-10-12T03:44:57.207032 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_06_MLB.csv (8 games)
+2026-10-12T03:44:57.207042 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_07_MLB.csv (15 games)
+2026-10-12T03:44:57.207052 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_08_MLB.csv (15 games)
+2026-10-12T03:44:57.207062 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_09_MLB.csv (13 games)
+2026-10-12T03:44:57.207073 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_10_MLB.csv (15 games)
+2026-10-12T03:44:57.207083 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_11_MLB.csv (10 games)
+2026-10-12T03:44:57.207093 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_12_MLB.csv (14 games)
+2026-10-12T03:44:57.207103 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_16_MLB.csv (1 games)
+2026-10-12T03:44:57.207114 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_17_MLB.csv (14 games)
+2026-10-12T03:44:57.207124 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_18_MLB.csv (9 games)
+2026-10-12T03:44:57.207134 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_19_MLB.csv (13 games)
+2026-10-12T03:44:57.207144 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_20_MLB.csv (15 games)
+2026-10-12T03:44:57.207155 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_21_MLB.csv (9 games)
+2026-10-12T03:44:57.207165 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_22_MLB.csv (3 games)
+2026-10-12T03:44:57.207175 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_23_MLB.csv (5 games)
+2026-10-12T03:44:57.207185 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_24_MLB.csv (15 games)
+2026-10-12T03:44:57.207196 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_25_MLB.csv (15 games)
+2026-10-12T03:44:57.207206 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_26_MLB.csv (15 games)
+2026-10-12T03:44:57.207216 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_27_MLB.csv (12 games)
+2026-10-12T03:44:57.207226 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_28_MLB.csv (16 games)
+2026-10-12T03:44:57.207237 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_29_MLB.csv (16 games)
+2026-10-12T03:44:57.207247 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_30_MLB.csv (10 games)
+2026-10-12T03:44:57.207257 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_07_31_MLB.csv (15 games)
+2026-10-12T03:44:57.207268 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_01_MLB.csv (15 games)
+2026-10-12T03:44:57.207278 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_02_MLB.csv (15 games)
+2026-10-12T03:44:57.207288 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_03_MLB.csv (8 games)
+2026-10-12T03:44:57.207299 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_04_MLB.csv (15 games)
+2026-10-12T03:44:57.207309 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_05_MLB.csv (15 games)
+2026-10-12T03:44:57.207319 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_06_MLB.csv (11 games)
+2026-10-12T03:44:57.207329 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_07_MLB.csv (15 games)
+2026-10-12T03:44:57.207340 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_08_MLB.csv (15 games)
+2026-10-12T03:44:57.207350 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_09_MLB.csv (15 games)
+2026-10-12T03:44:57.207362 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_10_MLB.csv (10 games)
+2026-10-12T03:44:57.207372 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_11_MLB.csv (15 games)
+2026-10-12T03:44:57.207382 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_12_MLB.csv (15 games)
+2026-10-12T03:44:57.207393 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_13_MLB.csv (9 games)
+2026-10-12T03:44:57.207403 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_14_MLB.csv (14 games)
+2026-10-12T03:44:57.207413 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_15_MLB.csv (15 games)
+2026-10-12T03:44:57.207423 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_16_MLB.csv (15 games)
+2026-10-12T03:44:57.207434 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_17_MLB.csv (9 games)
+2026-10-12T03:44:57.207444 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_18_MLB.csv (15 games)
+2026-10-12T03:44:57.207454 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_19_MLB.csv (15 games)
+2026-10-12T03:44:57.207464 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_20_MLB.csv (9 games)
+2026-10-12T03:44:57.207474 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_24_MLB.csv (10 games)
+2026-10-12T03:44:57.207485 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_25_MLB.csv (15 games)
+2026-10-12T03:44:57.207495 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_26_MLB.csv (12 games)
+2026-10-12T03:44:57.207505 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_27_MLB.csv (7 games)
+2026-10-12T03:44:57.207516 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_28_MLB.csv (15 games)
+2026-10-12T03:44:57.207526 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_29_MLB.csv (17 games)
+2026-10-12T03:44:57.207536 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_30_MLB.csv (14 games)
+2026-10-12T03:44:57.207546 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_08_31_MLB.csv (12 games)
+2026-10-12T03:44:57.207556 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_01_MLB.csv (15 games)
+2026-10-12T03:44:57.207566 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_02_MLB.csv (15 games)
+2026-10-12T03:44:57.207577 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_03_MLB.csv (9 games)
+2026-10-12T03:44:57.207587 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_04_MLB.csv (16 games)
+2026-10-12T03:44:57.207597 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_05_MLB.csv (15 games)
+2026-10-12T03:44:57.207607 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_06_MLB.csv (15 games)
+2026-10-12T03:44:57.207618 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_07_MLB.csv (11 games)
+2026-10-12T03:44:57.207628 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_08_MLB.csv (15 games)
+2026-10-12T03:44:57.207638 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_09_MLB.csv (14 games)
+2026-10-12T03:44:57.207648 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_10_MLB.csv (5 games)
+2026-10-12T03:44:57.207659 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_11_MLB.csv (14 games)
+2026-10-12T03:44:57.207669 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_12_MLB.csv (14 games)
+2026-10-12T03:44:57.207686 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_13_MLB.csv (13 games)
+2026-10-12T03:44:57.207696 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_14_MLB.csv (10 games)
+2026-10-12T03:44:57.207706 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_15_MLB.csv (14 games)
+2026-10-12T03:44:57.207716 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_16_MLB.csv (15 games)
+2026-10-12T03:44:57.207727 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_17_MLB.csv (9 games)
+2026-10-12T03:44:57.207737 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_18_MLB.csv (14 games)
+2026-10-12T03:44:57.207749 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_19_MLB.csv (14 games)
+2026-10-12T03:44:57.207759 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_20_MLB.csv (14 games)
+2026-10-12T03:44:57.207770 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_21_MLB.csv (3 games)
+2026-10-12T03:44:57.207780 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_22_MLB.csv (16 games)
+2026-10-12T03:44:57.207790 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_23_MLB.csv (16 games)
+2026-10-12T03:44:57.207800 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_24_MLB.csv (12 games)
+2026-10-12T03:44:57.207811 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_25_MLB.csv (15 games)
+2026-10-12T03:44:57.207821 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_26_MLB.csv (12 games)
+2026-10-12T03:44:57.207831 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_27_MLB.csv (15 games)
+2026-10-12T03:44:57.207841 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_29_MLB.csv (4 games)
+2026-10-12T03:44:57.207851 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_09_30_MLB.csv (4 games)
+2026-10-12T03:44:57.207862 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_10_01_MLB.csv (1 games)
+2026-10-12T03:44:57.207872 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_10_03_MLB.csv (4 games)
+2026-10-12T03:44:57.207882 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_10_04_MLB.csv (2 games)
+2026-10-12T03:44:57.207892 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_10_05_MLB.csv (2 games)
+2026-10-12T03:44:57.207903 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_10_06_MLB.csv (2 games)
+2026-10-12T03:44:57.207913 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_10_07_MLB.csv (4 games)
+2026-10-12T03:44:57.207923 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_10_08_MLB.csv (1 games)
+2026-10-12T03:44:57.207934 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_10_10_MLB.csv (1 games)
+2026-10-12T03:44:57.207944 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_10_11_MLB.csv (1 games)
+2026-10-12T03:44:57.207954 |   FILE: docs/win/baseball/mlb/00_intake/sportsbook/2026_10_12_MLB.csv (2 games)
+2026-10-12T03:44:57.207964 | STATUS: SUCCESS

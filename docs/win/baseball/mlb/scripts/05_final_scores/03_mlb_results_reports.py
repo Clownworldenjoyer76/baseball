@@ -519,6 +519,23 @@ def run(completion_label: str = "MLB reports"):
         return
 
     df = pd.read_csv(INPUT_FILE, dtype=str)
+
+    # Morning historical reports must never include bets outside the CURRENT
+    # markets_AM.yaml bands, even if an older intermediate CSV remains.
+    # Use the same refiltering implementation as morning grading.
+    if SUMMARY_DIR.name.lower() == "morning":
+        from importlib.util import module_from_spec, spec_from_file_location
+        morning_grade_path = Path(__file__).with_name("01_mlb_results_grade_AM.py")
+        spec = spec_from_file_location("mlb_morning_report_refilter", morning_grade_path)
+        if spec is None or spec.loader is None:
+            raise ImportError(f"Cannot load morning refilter: {morning_grade_path}")
+        module = module_from_spec(spec)
+        spec.loader.exec_module(module)
+        old_rows = len(df)
+        df = module.refilter_historical_bets(df)
+        print(f"MLB morning report refilter | before={old_rows} "
+              f"after={len(df)} excluded={old_rows - len(df)}")
+
     df = enrich(df)
 
     build_top_summary(df)

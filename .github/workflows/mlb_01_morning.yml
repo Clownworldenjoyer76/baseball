@@ -6,6 +6,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: mlb-01-morning-pipeline
+  cancel-in-progress: false
+
 jobs:
   MLB_Model_Train_And_Morning:
     runs-on: ubuntu-24.04
@@ -17,6 +21,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -129,12 +135,28 @@ jobs:
         shell: bash
         run: |
           YESTERDAY="$(date -d 'yesterday' +'%Y_%m_%d')"
+          GAME_FILE="docs/win/baseball/mlb/00_intake/games/${YESTERDAY}_games.csv"
           FINAL_FILE="docs/win/baseball/mlb/05_final_scores/results/final_scores/${YESTERDAY}_final_scores_MLB.csv"
 
+          echo "Checking yesterday game file: ${GAME_FILE}"
+
+          if [ ! -f "${GAME_FILE}" ]; then
+            echo "No yesterday game file exists for ${YESTERDAY}. No final-score file is required."
+            exit 0
+          fi
+
+          GAME_ROWS="$(awk 'END { print (NR > 1 ? NR - 1 : 0) }' "${GAME_FILE}")"
+
+          if [ "${GAME_ROWS}" -eq 0 ]; then
+            echo "Yesterday game file contains no game rows for ${YESTERDAY}. No final-score file is required."
+            exit 0
+          fi
+
+          echo "Yesterday contains ${GAME_ROWS} game row(s)."
           echo "Verifying yesterday final-score file before run-model training: ${FINAL_FILE}"
 
           if [ ! -s "${FINAL_FILE}" ]; then
-            echo "ERROR: Yesterday final-score CSV is missing or empty before build_run_training_set.py: ${FINAL_FILE}"
+            echo "ERROR: Yesterday had games, but its final-score CSV is missing or empty before build_run_training_set.py: ${FINAL_FILE}"
             exit 1
           fi
 
@@ -147,7 +169,20 @@ jobs:
         shell: bash
         run: |
           YESTERDAY="$(date -d 'yesterday' +'%Y_%m_%d')"
+          GAME_FILE="docs/win/baseball/mlb/00_intake/games/${YESTERDAY}_games.csv"
           TRAIN_LOG="docs/win/baseball/mlb/errors/modeling/build_run_training_set.txt"
+
+          if [ ! -f "${GAME_FILE}" ]; then
+            echo "No yesterday game file exists for ${YESTERDAY}. Late-final-score verification is not applicable."
+            exit 0
+          fi
+
+          GAME_ROWS="$(awk 'END { print (NR > 1 ? NR - 1 : 0) }' "${GAME_FILE}")"
+
+          if [ "${GAME_ROWS}" -eq 0 ]; then
+            echo "Yesterday game file contains no game rows for ${YESTERDAY}. Late-final-score verification is not applicable."
+            exit 0
+          fi
 
           if [ ! -f "${TRAIN_LOG}" ]; then
             echo "ERROR: Training log not found: ${TRAIN_LOG}"
@@ -644,35 +679,142 @@ jobs:
         run: python docs/win/baseball/mlb/scripts/pipeline_health.py
 
       # ============================================================
-      # COMMIT MODELS + MORNING OUTPUTS
+      # PUBLISH MLB OUTPUTS ON TOP OF LATEST MAIN
       # ============================================================
 
-      - name: Commit MLB models and morning outputs
-        if: always()
+      - name: Publish MLB outputs
+        if: success()
+        shell: bash
         run: |
+          set -euo pipefail
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          # Stage only the outputs this workflow is allowed to publish.
           git add docs/win/baseball/mlb/
-          git add frontend/baseball_dashboard.html
-          git add frontend/mlb_dashboard.html
+          git add frontend/data/dashboards/baseball.json
+          git add frontend/data/pipeline_health/mlb.json
 
-          git restore --staged \
+          # Never publish these generated training/audit artifacts.
+          git restore --staged -- \
             docs/win/baseball/mlb/audit/leakage_audit.csv \
+            2>/dev/null || true
+
+          git restore --staged -- \
             docs/win/baseball/mlb/models/run_projection/candidates/ \
             2>/dev/null || true
 
-          git diff --cached --quiet || \
-            git commit -m "chore: update MLB models and morning pipeline outputs"
+          if git diff --cached --quiet; then
+            echo "No MLB output changes to publish."
+            exit 0
+          fi
 
-          git push
+          # Snapshot this run once. The parent is the repository state that
+          # the workflow originally checked out.
+          git commit -m "chore: capture MLB morning pipeline outputs"
 
-      - name: Commit MLB pipeline health frontend
-        if: always()
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/win/baseball/mlb/pipeline_health.json
-          git add frontend/data/pipeline_health/mlb.json
-          git diff --cached --quiet || git commit -m "chore: update MLB pipeline health"
-          git push
+          SOURCE_COMMIT="$(git rev-parse HEAD)"
+          BASE_COMMIT="$(git rev-parse "${SOURCE_COMMIT}^")"
+          CHANGED_PATHS="${RUNNER_TEMP}/mlb_changed_paths.z"
+
+          git diff-tree \
+            --no-commit-id \
+            --name-only \
+            -r \
+            -z \
+            "${SOURCE_COMMIT}" \
+            > "${CHANGED_PATHS}"
+
+          if [ ! -s "${CHANGED_PATHS}" ]; then
+            echo "No changed MLB paths were captured."
+            exit 0
+          fi
+
+          for ATTEMPT in 1 2 3 4 5; do
+            echo "Publish attempt ${ATTEMPT}/5"
+
+            if ! git fetch origin main; then
+              echo "Fetch failed; retrying publish from newest main."
+              continue
+            fi
+
+            if ! git reset --hard origin/main; then
+              echo "Reset to newest main failed; retrying publish."
+              continue
+            fi
+
+            # Record every path whose latest-main version differs from the
+            # checkout used to produce this Morning run. Latest main wins on
+            # same-path collisions so this run cannot overwrite newer work.
+            declare -A REMOTE_CHANGED=()
+            while IFS= read -r -d '' REMOTE_PATH; do
+              REMOTE_CHANGED["${REMOTE_PATH}"]=1
+            done < <(
+              git diff \
+                --name-only \
+                -z \
+                "${BASE_COMMIT}" \
+                origin/main
+            )
+
+            SKIPPED_CONFLICTS=0
+
+            while IFS= read -r -d '' PATHNAME; do
+              # Pipeline health is regenerated after the Morning changes are
+              # applied to latest main so newer workflow health is preserved.
+              case "${PATHNAME}" in
+                docs/win/baseball/mlb/pipeline_health.json|\
+                docs/win/baseball/mlb/errors/pipeline_health.txt|\
+                frontend/data/pipeline_health/mlb.json)
+                  continue
+                  ;;
+              esac
+
+              if [[ -n "${REMOTE_CHANGED[${PATHNAME}]+x}" ]]; then
+                echo "Preserving newer main version: ${PATHNAME}"
+                SKIPPED_CONFLICTS=$((SKIPPED_CONFLICTS + 1))
+                continue
+              fi
+
+              if git cat-file -e "${SOURCE_COMMIT}:${PATHNAME}" 2>/dev/null; then
+                git restore \
+                  --source="${SOURCE_COMMIT}" \
+                  --worktree \
+                  -- \
+                  "${PATHNAME}"
+
+                git add -A -- "${PATHNAME}"
+              else
+                git rm -rf --ignore-unmatch -- "${PATHNAME}"
+              fi
+            done < "${CHANGED_PATHS}"
+
+            # Rebuild health against the combined newest-main + Morning state.
+            MLB_PIPELINE_WORKFLOW=morning \
+            MLB_PIPELINE_JOB_STATUS=success \
+              python docs/win/baseball/mlb/scripts/pipeline_health.py
+
+            git add docs/win/baseball/mlb/pipeline_health.json
+            git add docs/win/baseball/mlb/errors/pipeline_health.txt
+            git add frontend/data/pipeline_health/mlb.json
+
+            if git diff --cached --quiet; then
+              echo "Newest main already contains all publishable Morning changes."
+              echo "Same-path newer-main files preserved: ${SKIPPED_CONFLICTS}"
+              exit 0
+            fi
+
+            git commit -m "chore: update MLB morning pipeline outputs"
+
+            if git push origin HEAD:main; then
+              echo "MLB outputs published successfully."
+              echo "Same-path newer-main files preserved: ${SKIPPED_CONFLICTS}"
+              exit 0
+            fi
+
+            echo "main changed before the push completed; retrying from newest main."
+          done
+
+          echo "ERROR: Failed to publish MLB outputs after 5 attempts."
+          exit 1

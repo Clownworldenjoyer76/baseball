@@ -1,0 +1,65 @@
+[
+  {
+    "id": "401908030",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-10-12T00:00Z",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Los Angeles Dodgers",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-10-11T07:43:38.419726Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-10-11T07:43:38.419726Z",
+            "outcomes": [
+              {
+                "name": "Milwaukee Brewers",
+                "price": 1.88
+              },
+              {
+                "name": "Los Angeles Dodgers",
+                "price": 1.93
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-10-11T07:43:38.419726Z",
+            "outcomes": [
+              {
+                "name": "Milwaukee Brewers",
+                "price": 1.49,
+                "point": 1.5
+              },
+              {
+                "name": "Los Angeles Dodgers",
+                "price": 2.65,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-10-11T07:43:38.419726Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.89,
+                "point": 6.0
+              },
+              {
+                "name": "Under",
+                "price": 1.92,
+                "point": 6.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

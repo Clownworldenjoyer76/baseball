@@ -51,27 +51,24 @@ markets:
       home:
         enabled: true
         odds_bands:
-          - [-124, -110]
+          - [-999, 999]
         ev_bands:
-          - [0.00, 0.0199]
-          - [0.075, 99.99]
+          - [0.00, 99.99]
         kelly_bands:
-          - [0.00, 0.0199]
-          - [0.15, 99.99]
+          - [0.00, 99.99]
         prob_bands:
-          - [0.60, 0.6999]
+          - [0.50, 1.00]
 
       away:
         enabled: true
         odds_bands:
-          - [-250, -150]
+          - [-999, -125]
         ev_bands:
-          - [0.10, 99.99]
+          - [0.00, 99.99]
         kelly_bands:
-          - [0.20, 99.99]
+          - [0.00, 99.99]
         prob_bands:
-          - [0.70, 0.7499]
-          - [0.80, 0.99]
+          - [0.80, 1.00]
 
     ###################################################
     # ── Run Line ─────────────────────────────────────
@@ -81,31 +78,30 @@ markets:
       enabled: true
       # Selector requires best_ev for run line.
       # At most one run-line side is selected per game.
-      pick_preference: best_prob
+      pick_preference: best_ev
       home:
         enabled: true
         line_bands:
           - [1.5, 1.5]
         odds_bands:
-          - [-200, -110]
+          - [-999, 999]
         ev_bands:
           - [0.00, 99.99]
         kelly_bands:
           - [0.00, 99.99]
         prob_bands:
-          - [0.70, 0.7499]
+          - [0.65, 0.80]
 
       away:
         enabled: true
         line_bands:
           - [1.5, 1.5]
         odds_bands:
-          - [-250, -150]
-          - [-100, 1000]
+          - [-999, 999]
         ev_bands:
-          - [0.075, 99.99]
+          - [0.00, 99.99]
         kelly_bands:
-          - [0.15, 99.99]
+          - [0.00, 99.99]
         prob_bands:
           - [0.70, 0.80]
 
@@ -115,36 +111,30 @@ markets:
 
     total:
       enabled: true
-      # Allow both over and under if they pass.
       pick_preference: best_prob
       over:
         enabled: true
         line_bands:
-          - [7.0, 7.999]
-          - [10.0, 10.999]
+          - [0.0, 20.0]
         odds_bands:
-          - [-124, 1000]
+          - [-124, 100]
         ev_bands:
           - [0.00, 99.99]
         kelly_bands:
-          - [0.02, 0.1499]
-          - [0.20, 99.99]
+          - [0.00, 99.99]
         prob_bands:
-          - [0.60, 0.6499]
-          - [0.70, 0.7499]
+          - [0.60, 0.6999]
+          - [0.75, 0.7999]
 
       under:
         enabled: true
         line_bands:
-          - [7.5, 8.99]
-          - [9.5, 11.99]
+          - [0.0, 20.0]
         odds_bands:
-          - [-250, -110]
+          - [-124, -101]
         ev_bands:
-          - [0.05, 99.99]
+          - [0.00, 99.99]
         kelly_bands:
-          - [0.00, 0.0199]
-          - [0.05, 99.99]
+          - [0.00, 99.99]
         prob_bands:
-          - [0.50, 0.5499]
-          - [0.70, 0.7499]
+          - [0.55, 1.00]

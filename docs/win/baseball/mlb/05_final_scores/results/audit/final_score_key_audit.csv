@@ -2289,7 +2289,6 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,duplicate_count,status,n
 2026_09_26,401817093,823407,1,Tampa Bay Rays,Philadelphia Phillies,1,unique_game_id,accepted; primary key game_id
 2026_09_26,401817099,823245,1,Arizona Diamondbacks,San Diego Padres,1,unique_game_id,accepted; primary key game_id
 2026_09_26,401817098,823083,1,Los Angeles Angels,Seattle Mariners,1,unique_game_id,accepted; primary key game_id
-2026_09_26,401817100,824949,1,Houston Astros,Athletics,1,unique_game_id,accepted; primary key game_id
 2026_09_27,401817106,822679,1,New York Mets,Washington Nationals,1,unique_game_id,accepted; primary key game_id
 2026_09_27,401817108,823408,1,Tampa Bay Rays,Philadelphia Phillies,1,unique_game_id,accepted; primary key game_id
 2026_09_27,401817115,824948,1,Houston Astros,Athletics,1,unique_game_id,accepted; primary key game_id
@@ -2312,6 +2311,23 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,duplicate_count,status,n
 2026_09_30,401907897,849846,1,Chicago White Sox,Houston Astros,1,unique_game_id,accepted; primary key game_id
 2026_09_30,401907963,849848,1,Boston Red Sox,New York Yankees,1,unique_game_id,accepted; primary key game_id
 2026_09_30,401907975,849842,1,Chicago Cubs,San Diego Padres,1,unique_game_id,accepted; primary key game_id
+2026_10_01,401907973,849844,1,Philadelphia Phillies,Atlanta Braves,1,unique_game_id,accepted; primary key game_id
+2026_10_03,401907990,849829,1,Chicago White Sox,Cleveland Guardians,1,unique_game_id,accepted; primary key game_id
+2026_10_03,401908007,849828,1,Atlanta Braves,Los Angeles Dodgers,1,unique_game_id,accepted; primary key game_id
+2026_10_03,401907985,849835,1,New York Yankees,Tampa Bay Rays,1,unique_game_id,accepted; primary key game_id
+2026_10_03,401908002,849830,1,San Diego Padres,Milwaukee Brewers,1,unique_game_id,accepted; primary key game_id
+2026_10_04,401908014,849823,1,Atlanta Braves,Los Angeles Dodgers,1,unique_game_id,accepted; primary key game_id
+2026_10_04,401908003,849825,1,San Diego Padres,Milwaukee Brewers,1,unique_game_id,accepted; primary key game_id
+2026_10_05,401907991,849834,1,Chicago White Sox,Cleveland Guardians,1,unique_game_id,accepted; primary key game_id
+2026_10_05,401907986,849839,1,New York Yankees,Tampa Bay Rays,1,unique_game_id,accepted; primary key game_id
+2026_10_06,401908015,849819,1,Los Angeles Dodgers,Atlanta Braves,1,unique_game_id,accepted; primary key game_id
+2026_10_06,401908004,849826,1,Milwaukee Brewers,San Diego Padres,1,unique_game_id,accepted; primary key game_id
+2026_10_07,401907992,849833,1,Cleveland Guardians,Chicago White Sox,1,unique_game_id,accepted; primary key game_id
+2026_10_07,401908016,849822,1,Los Angeles Dodgers,Atlanta Braves,1,unique_game_id,accepted; primary key game_id
+2026_10_07,401907987,849838,1,Tampa Bay Rays,New York Yankees,1,unique_game_id,accepted; primary key game_id
+2026_10_07,401908005,849827,1,Milwaukee Brewers,San Diego Padres,1,unique_game_id,accepted; primary key game_id
+2026_10_08,401907993,849832,1,Cleveland Guardians,Chicago White Sox,1,unique_game_id,accepted; primary key game_id
+2026_10_10,401907994,849831,1,Chicago White Sox,Cleveland Guardians,1,unique_game_id,accepted; primary key game_id
 2026_03_26,5c8789e78ef558dfaf6b887deacec21c,823163,1,Cleveland Guardians,Seattle Mariners,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
 2026_03_26,a6a0dde319f89b70eb1cf1e004b81fe6,823974,1,Arizona Diamondbacks,Los Angeles Dodgers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
 2026_03_26,cfdeb0596b2f626db8901c8a4dc5ea7c,823081,1,Tampa Bay Rays,St. Louis Cardinals,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
@@ -4845,7 +4861,6 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,duplicate_count,status,n
 2026_09_25,401817078,823409,1,Tampa Bay Rays,Philadelphia Phillies,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
 2026_09_25,401817074,824706,2,Chicago Cubs,Boston Red Sox,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
 2026_09_25,401817088,823491,1,Baltimore Orioles,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
-2026_09_26,401817100,824949,1,Houston Astros,Oakland Athletics,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
 2026_09_26,401817098,823083,1,Los Angeles Angels,Seattle Mariners,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
 2026_09_26,401817099,823245,1,Arizona Diamondbacks,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
 2026_09_26,401817093,823407,1,Tampa Bay Rays,Philadelphia Phillies,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
@@ -4889,3 +4904,148 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,duplicate_count,status,n
 2026_09_27,401817111,823731,1,St. Louis Cardinals,Milwaukee Brewers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
 2026_09_27,401817105,822761,1,Cincinnati Reds,Toronto Blue Jays,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
 2026_09_27,401817089,824705,1,Chicago Cubs,Boston Red Sox,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907975,849842,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907963,849848,1,Boston Red Sox,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907897,849846,1,Chicago White Sox,Houston Astros,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907972,849841,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907974,849843,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907924,849851,1,Boston Red Sox,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907896,849849,1,Chicago White Sox,Houston Astros,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907965,849845,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817107,824217,1,Pittsburgh Pirates,Detroit Tigers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817110,824542,1,Colorado Rockies,Chicago White Sox,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817113,823084,1,Los Angeles Angels,Seattle Mariners,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817112,823650,1,Texas Rangers,Minnesota Twins,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817109,824055,1,Cleveland Guardians,Kansas City Royals,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817102,823814,1,Atlanta Braves,Miami Marlins,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817114,823246,1,Arizona Diamondbacks,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817111,823731,1,St. Louis Cardinals,Milwaukee Brewers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_01,401907973,849844,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907975,849842,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907963,849848,1,Boston Red Sox,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907897,849846,1,Chicago White Sox,Houston Astros,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907972,849841,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907974,849843,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907924,849851,1,Boston Red Sox,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907896,849849,1,Chicago White Sox,Houston Astros,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907965,849845,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817107,824217,1,Pittsburgh Pirates,Detroit Tigers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817110,824542,1,Colorado Rockies,Chicago White Sox,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817113,823084,1,Los Angeles Angels,Seattle Mariners,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817112,823650,1,Texas Rangers,Minnesota Twins,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817109,824055,1,Cleveland Guardians,Kansas City Royals,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817102,823814,1,Atlanta Braves,Miami Marlins,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817114,823246,1,Arizona Diamondbacks,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401907990,849829,1,Chicago White Sox,Cleveland Guardians,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_01,401907973,849844,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907975,849842,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907963,849848,1,Boston Red Sox,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907897,849846,1,Chicago White Sox,Houston Astros,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907972,849841,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907974,849843,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907924,849851,1,Boston Red Sox,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907896,849849,1,Chicago White Sox,Houston Astros,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907965,849845,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817107,824217,1,Pittsburgh Pirates,Detroit Tigers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817110,824542,1,Colorado Rockies,Chicago White Sox,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817113,823084,1,Los Angeles Angels,Seattle Mariners,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817112,823650,1,Texas Rangers,Minnesota Twins,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817109,824055,1,Cleveland Guardians,Kansas City Royals,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817102,823814,1,Atlanta Braves,Miami Marlins,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401908002,849830,1,San Diego Padres,Milwaukee Brewers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401907985,849835,1,New York Yankees,Tampa Bay Rays,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401908007,849828,1,Atlanta Braves,Los Angeles Dodgers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401907990,849829,1,Chicago White Sox,Cleveland Guardians,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_01,401907973,849844,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907975,849842,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907963,849848,1,Boston Red Sox,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907897,849846,1,Chicago White Sox,Houston Astros,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907972,849841,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907974,849843,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907924,849851,1,Boston Red Sox,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907896,849849,1,Chicago White Sox,Houston Astros,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907965,849845,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817107,824217,1,Pittsburgh Pirates,Detroit Tigers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817110,824542,1,Colorado Rockies,Chicago White Sox,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817113,823084,1,Los Angeles Angels,Seattle Mariners,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_04,401908014,849823,1,Atlanta Braves,Los Angeles Dodgers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_04,401908003,849825,1,San Diego Padres,Milwaukee Brewers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401908002,849830,1,San Diego Padres,Milwaukee Brewers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401907985,849835,1,New York Yankees,Tampa Bay Rays,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401908007,849828,1,Atlanta Braves,Los Angeles Dodgers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401907990,849829,1,Chicago White Sox,Cleveland Guardians,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_01,401907973,849844,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907975,849842,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907963,849848,1,Boston Red Sox,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907897,849846,1,Chicago White Sox,Houston Astros,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907972,849841,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907974,849843,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907924,849851,1,Boston Red Sox,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907896,849849,1,Chicago White Sox,Houston Astros,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907965,849845,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_27,401817107,824217,1,Pittsburgh Pirates,Detroit Tigers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_05,401907986,849839,1,New York Yankees,Tampa Bay Rays,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_05,401907991,849834,1,Chicago White Sox,Cleveland Guardians,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_04,401908014,849823,1,Atlanta Braves,Los Angeles Dodgers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_04,401908003,849825,1,San Diego Padres,Milwaukee Brewers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401908002,849830,1,San Diego Padres,Milwaukee Brewers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401907985,849835,1,New York Yankees,Tampa Bay Rays,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401908007,849828,1,Atlanta Braves,Los Angeles Dodgers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401907990,849829,1,Chicago White Sox,Cleveland Guardians,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_01,401907973,849844,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907975,849842,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907963,849848,1,Boston Red Sox,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907897,849846,1,Chicago White Sox,Houston Astros,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907972,849841,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907974,849843,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907924,849851,1,Boston Red Sox,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907896,849849,1,Chicago White Sox,Houston Astros,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_06,401908004,849826,1,Milwaukee Brewers,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_06,401908015,849819,1,Los Angeles Dodgers,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_05,401907986,849839,1,New York Yankees,Tampa Bay Rays,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_05,401907991,849834,1,Chicago White Sox,Cleveland Guardians,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_04,401908014,849823,1,Atlanta Braves,Los Angeles Dodgers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_04,401908003,849825,1,San Diego Padres,Milwaukee Brewers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401908002,849830,1,San Diego Padres,Milwaukee Brewers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401907985,849835,1,New York Yankees,Tampa Bay Rays,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401908007,849828,1,Atlanta Braves,Los Angeles Dodgers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401907990,849829,1,Chicago White Sox,Cleveland Guardians,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_01,401907973,849844,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907975,849842,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907963,849848,1,Boston Red Sox,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907897,849846,1,Chicago White Sox,Houston Astros,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907972,849841,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_29,401907974,849843,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_07,401908005,849827,1,Milwaukee Brewers,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_07,401907987,849838,1,Tampa Bay Rays,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_07,401908016,849822,1,Los Angeles Dodgers,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_07,401907992,849833,1,Cleveland Guardians,Chicago White Sox,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_06,401908004,849826,1,Milwaukee Brewers,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_06,401908015,849819,1,Los Angeles Dodgers,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_05,401907986,849839,1,New York Yankees,Tampa Bay Rays,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_05,401907991,849834,1,Chicago White Sox,Cleveland Guardians,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_04,401908014,849823,1,Atlanta Braves,Los Angeles Dodgers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_04,401908003,849825,1,San Diego Padres,Milwaukee Brewers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401908002,849830,1,San Diego Padres,Milwaukee Brewers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401907985,849835,1,New York Yankees,Tampa Bay Rays,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401908007,849828,1,Atlanta Braves,Los Angeles Dodgers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401907990,849829,1,Chicago White Sox,Cleveland Guardians,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_01,401907973,849844,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_09_30,401907975,849842,1,Chicago Cubs,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_08,401907993,849832,1,Cleveland Guardians,Chicago White Sox,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_07,401908005,849827,1,Milwaukee Brewers,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_07,401907987,849838,1,Tampa Bay Rays,New York Yankees,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_07,401908016,849822,1,Los Angeles Dodgers,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_07,401907992,849833,1,Cleveland Guardians,Chicago White Sox,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_06,401908004,849826,1,Milwaukee Brewers,San Diego Padres,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_06,401908015,849819,1,Los Angeles Dodgers,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_05,401907986,849839,1,New York Yankees,Tampa Bay Rays,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_05,401907991,849834,1,Chicago White Sox,Cleveland Guardians,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_04,401908014,849823,1,Atlanta Braves,Los Angeles Dodgers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_04,401908003,849825,1,San Diego Padres,Milwaukee Brewers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401908002,849830,1,San Diego Padres,Milwaukee Brewers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401907985,849835,1,New York Yankees,Tampa Bay Rays,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401908007,849828,1,Atlanta Braves,Los Angeles Dodgers,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_03,401907990,849829,1,Chicago White Sox,Cleveland Guardians,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_01,401907973,849844,1,Philadelphia Phillies,Atlanta Braves,2,identical_duplicate_collapsed,duplicate game_id row was identical and had compatible gamePk/gameNumber/time
+2026_10_11,401908030,849809,1,Los Angeles Dodgers,Milwaukee Brewers,1,unique_game_id,accepted; primary key game_id

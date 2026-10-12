@@ -1,595 +1,770 @@
 game_date,game_id,market_type,bet_side,line,final_away_score,final_home_score,final_total,result,calculation
-2026_03_29,691a2e76d0dd8b75857aa006417cd71f,total,over,7.5,0,8,8,Win,total over 7.5: final_total=8 vs line=7.5 => win
+2026_03_29,1cc0a701f7797bb7a857a7b86d813bc3,moneyline,home,,6,3,9,Loss,"moneyline home: away_score=6, home_score=3 => loss"
+2026_03_29,24c5b56e3ca8ad6f391c82da33200b32,moneyline,home,,7,9,16,Win,"moneyline home: away_score=7, home_score=9 => win"
 2026_03_29,7082df2b4cf69fb66b014bcf17e6e2d4,run_line,home,1.5,11,7,18,Loss,"run_line home 1.5: selected_score=7, opposing_score=11, adjusted_score=8.5 => loss"
+2026_03_29,844d46d06a891478c7e9933444ef67f7,moneyline,home,,2,5,7,Win,"moneyline home: away_score=2, home_score=5 => win"
+2026_03_29,b14a5b9c91da30ed32754a658ccd291a,total,under,8.0,2,3,5,Win,total under 8: final_total=5 vs line=8 => win
+2026_03_29,cba87f51d6aaf782f15d618c9783d976,run_line,away,1.5,4,1,5,Win,"run_line away 1.5: selected_score=4, opposing_score=1, adjusted_score=5.5 => win"
+2026_03_29,efc716ec5ed02ff75164fec236e0d60b,moneyline,home,,7,9,16,Win,"moneyline home: away_score=7, home_score=9 => win"
 2026_03_30,24e5dec72a26c2b5304dda6d4fc9b9d4,run_line,home,1.5,6,9,15,Win,"run_line home 1.5: selected_score=9, opposing_score=6, adjusted_score=10.5 => win"
-2026_03_30,27331c71f78dcb268af96a5483952ca2,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
-2026_03_30,2f906e6f0a0b0f77103ad3de874d8d6c,moneyline,away,,4,2,6,Win,"moneyline away: away_score=4, home_score=2 => win"
-2026_03_30,640970e11703be5ad9c5087e476eecc7,run_line,home,1.5,5,2,7,Loss,"run_line home 1.5: selected_score=2, opposing_score=5, adjusted_score=3.5 => loss"
-2026_03_31,445445096cf76e57c1a9dee969e15995,run_line,home,1.5,8,3,11,Loss,"run_line home 1.5: selected_score=3, opposing_score=8, adjusted_score=4.5 => loss"
-2026_03_31,85518e9fa7d88ada5c7ef6acc3fb06fc,run_line,home,1.5,5,7,12,Win,"run_line home 1.5: selected_score=7, opposing_score=5, adjusted_score=8.5 => win"
-2026_03_31,b294b3f2eb02e42a436d439795c7f125,run_line,home,1.5,0,3,3,Win,"run_line home 1.5: selected_score=3, opposing_score=0, adjusted_score=4.5 => win"
-2026_04_01,03100440c2d895c0a6ffd0e94af916a9,run_line,home,1.5,0,1,1,Win,"run_line home 1.5: selected_score=1, opposing_score=0, adjusted_score=2.5 => win"
-2026_04_01,0ab4430c93f4388372c2e69d5d140069,run_line,home,1.5,8,3,11,Loss,"run_line home 1.5: selected_score=3, opposing_score=8, adjusted_score=4.5 => loss"
-2026_04_01,25b209388bb30aa144af568ffd0b3921,run_line,home,1.5,5,3,8,Loss,"run_line home 1.5: selected_score=3, opposing_score=5, adjusted_score=4.5 => loss"
-2026_04_01,4dabf3c25d679f972f575c9dfd6f7c94,run_line,home,1.5,3,8,11,Win,"run_line home 1.5: selected_score=8, opposing_score=3, adjusted_score=9.5 => win"
-2026_04_01,7d8eb7e9ca4020fe2b949197c47e54a4,run_line,home,1.5,4,6,10,Win,"run_line home 1.5: selected_score=6, opposing_score=4, adjusted_score=7.5 => win"
-2026_04_01,bdae690ae030bd8c713b1b5a3f21cfee,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
-2026_04_01,cc33d68ceec04cd9b09a8c631d7574a0,run_line,home,1.5,9,13,22,Win,"run_line home 1.5: selected_score=13, opposing_score=9, adjusted_score=14.5 => win"
+2026_03_30,302b4128aeb5c50b679d20539e8816c4,run_line,away,1.5,9,4,13,Win,"run_line away 1.5: selected_score=9, opposing_score=4, adjusted_score=10.5 => win"
+2026_03_31,293dc85524404aab44c5329de3f56664,moneyline,away,,9,3,12,Win,"moneyline away: away_score=9, home_score=3 => win"
+2026_03_31,c49833eafa15bdd83a074d3229783d86,total,under,8.5,2,9,11,Loss,total under 8.5: final_total=11 vs line=8.5 => loss
+2026_04_01,0ab4430c93f4388372c2e69d5d140069,total,over,7.5,8,3,11,Win,total over 7.5: final_total=11 vs line=7.5 => win
+2026_04_01,24f243aa4931d665a39634650fab8767,total,over,7.5,2,1,3,Loss,total over 7.5: final_total=3 vs line=7.5 => loss
+2026_04_01,25b209388bb30aa144af568ffd0b3921,total,over,7.5,5,3,8,Win,total over 7.5: final_total=8 vs line=7.5 => win
+2026_04_01,321f53de67eea12b85a524534e30a5ba,total,over,7.5,0,10,10,Win,total over 7.5: final_total=10 vs line=7.5 => win
+2026_04_01,6adbbe821c88271b3ccca51eb9d54dee,total,over,7.0,2,8,10,Win,total over 7: final_total=10 vs line=7 => win
+2026_04_01,7d8eb7e9ca4020fe2b949197c47e54a4,total,over,7.0,4,6,10,Win,total over 7: final_total=10 vs line=7 => win
 2026_04_02,c7e9785b27cff0b87f132c7c63daea75,run_line,home,1.5,2,7,9,Win,"run_line home 1.5: selected_score=7, opposing_score=2, adjusted_score=8.5 => win"
-2026_04_03,453461c70d67fa8012419eeefc30e149,run_line,home,1.5,2,0,2,Loss,"run_line home 1.5: selected_score=0, opposing_score=2, adjusted_score=1.5 => loss"
-2026_04_03,d9a1b05c6ab0703ea7c26b6fc732451f,run_line,home,1.5,10,3,13,Loss,"run_line home 1.5: selected_score=3, opposing_score=10, adjusted_score=4.5 => loss"
+2026_04_02,c7e9785b27cff0b87f132c7c63daea75,total,over,7.0,2,7,9,Win,total over 7: final_total=9 vs line=7 => win
+2026_04_03,02a4ac33822ef29632a98a54a26c6e72,total,over,7.5,4,10,14,Win,total over 7.5: final_total=14 vs line=7.5 => win
+2026_04_03,0f9bae674791b2ef6540b6c885ca8d67,moneyline,away,,13,6,19,Win,"moneyline away: away_score=13, home_score=6 => win"
+2026_04_03,2bb9ef2181cdb59b76492b604e5256d6,total,over,7.5,2,8,10,Win,total over 7.5: final_total=10 vs line=7.5 => win
+2026_04_03,9c1e11abdcd795ef8ff437128ea5e829,total,under,8.0,1,4,5,Win,total under 8: final_total=5 vs line=8 => win
+2026_04_03,c58c47a59e543a1a6aa0202a6ca69a25,moneyline,away,,3,1,4,Win,"moneyline away: away_score=3, home_score=1 => win"
 2026_04_03,d9a1b05c6ab0703ea7c26b6fc732451f,moneyline,away,,10,3,13,Win,"moneyline away: away_score=10, home_score=3 => win"
-2026_04_04,2f55ab2592008c576ce6bba0557199d8,total,over,7.5,6,11,17,Win,total over 7.5: final_total=17 vs line=7.5 => win
+2026_04_03,dcf384a7692bd7df83a96e49919f2dc0,moneyline,away,,10,1,11,Win,"moneyline away: away_score=10, home_score=1 => win"
+2026_04_04,2c78d22f888a922842d18ab0938e9db4,moneyline,away,,2,1,3,Win,"moneyline away: away_score=2, home_score=1 => win"
 2026_04_04,415818bc74e8e550d87f1a25d6276e94,run_line,home,1.5,9,0,9,Loss,"run_line home 1.5: selected_score=0, opposing_score=9, adjusted_score=1.5 => loss"
+2026_04_04,415818bc74e8e550d87f1a25d6276e94,total,over,7.5,9,0,9,Win,total over 7.5: final_total=9 vs line=7.5 => win
+2026_04_04,489e828d67b83a0f938e9fc1910929af,run_line,home,1.5,3,6,9,Win,"run_line home 1.5: selected_score=6, opposing_score=3, adjusted_score=7.5 => win"
 2026_04_04,a17bc682d534fc4be2a0873853346c69,run_line,home,1.5,0,1,1,Win,"run_line home 1.5: selected_score=1, opposing_score=0, adjusted_score=2.5 => win"
-2026_04_04,aa08785add4f89977cb0595e43894b03,run_line,home,1.5,7,1,8,Loss,"run_line home 1.5: selected_score=1, opposing_score=7, adjusted_score=2.5 => loss"
 2026_04_04,b3e6bdc5fabee63ec7b5666bb48e3a9a,run_line,home,1.5,2,8,10,Win,"run_line home 1.5: selected_score=8, opposing_score=2, adjusted_score=9.5 => win"
 2026_04_04,bb76dc664e8c6ea5005c7c5328bb484f,run_line,home,1.5,11,0,11,Loss,"run_line home 1.5: selected_score=0, opposing_score=11, adjusted_score=1.5 => loss"
+2026_04_04,cb5d17981ace91c9c0c11d20c49ea047,moneyline,away,,10,5,15,Win,"moneyline away: away_score=10, home_score=5 => win"
 2026_04_04,da18e0cacf2048f6b3e14df98e9a184c,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
 2026_04_04,fea2e77645688e161aa980c0b830c080,run_line,home,1.5,5,2,7,Loss,"run_line home 1.5: selected_score=2, opposing_score=5, adjusted_score=3.5 => loss"
+2026_04_05,29fe747229e417a970662db96f7b507a,moneyline,away,,1,0,1,Win,"moneyline away: away_score=1, home_score=0 => win"
+2026_04_05,6cfb88cfd2f02bcfc42f9513be8da728,run_line,away,1.5,7,6,13,Win,"run_line away 1.5: selected_score=7, opposing_score=6, adjusted_score=8.5 => win"
+2026_04_05,91cb43db006ffd2bfb2bb937ec974414,moneyline,away,,1,4,5,Loss,"moneyline away: away_score=1, home_score=4 => loss"
 2026_04_05,ac0a6ca9e9cf87ea71536972e31230cc,run_line,home,1.5,10,12,22,Win,"run_line home 1.5: selected_score=12, opposing_score=10, adjusted_score=13.5 => win"
-2026_04_05,e7c8fd226080f70fcf82e59c4705ede9,run_line,home,1.5,4,1,5,Loss,"run_line home 1.5: selected_score=1, opposing_score=4, adjusted_score=2.5 => loss"
 2026_04_05,f546541ad061224570d6c2508ff82661,run_line,home,1.5,5,2,7,Loss,"run_line home 1.5: selected_score=2, opposing_score=5, adjusted_score=3.5 => loss"
 2026_04_06,0bbb2fe84dad148ca7acd671cfd4278a,run_line,home,1.5,2,6,8,Win,"run_line home 1.5: selected_score=6, opposing_score=2, adjusted_score=7.5 => win"
-2026_04_06,48b9e30cc5595d9696cc12db0aef6114,run_line,home,1.5,4,6,10,Win,"run_line home 1.5: selected_score=6, opposing_score=4, adjusted_score=7.5 => win"
+2026_04_06,5c34cdfbbae06991923848f910bcad7e,moneyline,away,,14,2,16,Win,"moneyline away: away_score=14, home_score=2 => win"
 2026_04_06,6852a6697b356bb6e8a0216138056714,run_line,home,1.5,8,6,14,Loss,"run_line home 1.5: selected_score=6, opposing_score=8, adjusted_score=7.5 => loss"
 2026_04_06,7b162981e371aa40406814eda380bb75,run_line,home,1.5,2,1,3,Win,"run_line home 1.5: selected_score=1, opposing_score=2, adjusted_score=2.5 => win"
+2026_04_06,9587d8ccb994fa95ccf0d6ea51bb3393,total,over,7.0,3,7,10,Win,total over 7: final_total=10 vs line=7 => win
 2026_04_06,990a59a7449ed13a05090cf52c0e8d90,run_line,home,1.5,6,9,15,Win,"run_line home 1.5: selected_score=9, opposing_score=6, adjusted_score=10.5 => win"
 2026_04_06,e7bc40f9611b8baa6328e83959820910,run_line,home,1.5,4,2,6,Loss,"run_line home 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
-2026_04_06,e7bc40f9611b8baa6328e83959820910,total,under,7.5,4,2,6,Win,total under 7.5: final_total=6 vs line=7.5 => win
-2026_04_07,1a5f8eab5c69c278ea5154ff16256884,moneyline,away,,0,6,6,Loss,"moneyline away: away_score=0, home_score=6 => loss"
-2026_04_07,2f6016ab5acb82146f38a5f9453224fa,run_line,home,1.5,4,2,6,Loss,"run_line home 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
-2026_04_07,a8ff4cf1d716757bfb7db919dd280201,moneyline,away,,1,5,6,Loss,"moneyline away: away_score=1, home_score=5 => loss"
+2026_04_07,102415b79cd3e2bf336ad8c7792ba6a2,run_line,away,1.5,3,5,8,Loss,"run_line away 1.5: selected_score=3, opposing_score=5, adjusted_score=4.5 => loss"
+2026_04_07,6884c2daf73ff285509cbbcc3d531c93,moneyline,away,,2,4,6,Loss,"moneyline away: away_score=2, home_score=4 => loss"
+2026_04_07,96d192b9d73482f9d651313a2422fb78,moneyline,away,,4,1,5,Win,"moneyline away: away_score=4, home_score=1 => win"
+2026_04_07,a028589ce492c9027a1dcaf75f436276,run_line,away,1.5,2,3,5,Win,"run_line away 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
 2026_04_07,cdbfd5e28cb2a7740714cfb069042ee5,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
 2026_04_08,160de2c0d9ab7767e9268364d732e3a3,run_line,home,1.5,2,10,12,Win,"run_line home 1.5: selected_score=10, opposing_score=2, adjusted_score=11.5 => win"
-2026_04_08,160de2c0d9ab7767e9268364d732e3a3,total,over,7.0,2,10,12,Win,total over 7: final_total=12 vs line=7 => win
 2026_04_08,2f7d7c64bfe4e6ab5864b9f70ae4ba1a,run_line,home,1.5,6,2,8,Loss,"run_line home 1.5: selected_score=2, opposing_score=6, adjusted_score=3.5 => loss"
 2026_04_08,3096b597fdfee7ae162b7e06d7b349db,run_line,home,1.5,0,3,3,Win,"run_line home 1.5: selected_score=3, opposing_score=0, adjusted_score=4.5 => win"
-2026_04_08,3905b085d9465ee22fdad2d16362cd7a,run_line,home,1.5,6,8,14,Win,"run_line home 1.5: selected_score=8, opposing_score=6, adjusted_score=9.5 => win"
-2026_04_08,672bd33686c333c6153712db080ee8a9,run_line,home,1.5,3,4,7,Win,"run_line home 1.5: selected_score=4, opposing_score=3, adjusted_score=5.5 => win"
-2026_04_08,d52d861ea5ed462b15486ffb7493bbc4,run_line,home,1.5,8,2,10,Loss,"run_line home 1.5: selected_score=2, opposing_score=8, adjusted_score=3.5 => loss"
+2026_04_08,3905b085d9465ee22fdad2d16362cd7a,total,under,8.0,6,8,14,Loss,total under 8: final_total=14 vs line=8 => loss
+2026_04_08,4ef0a953d5a2ee85f161aca8c6c49b3c,total,over,7.5,4,7,11,Win,total over 7.5: final_total=11 vs line=7.5 => win
+2026_04_08,74300b0d6c081e81f663475a7fbc6023,total,under,8.0,0,5,5,Win,total under 8: final_total=5 vs line=8 => win
+2026_04_08,74300b0d6c081e81f663475a7fbc6023,moneyline,away,,0,5,5,Loss,"moneyline away: away_score=0, home_score=5 => loss"
+2026_04_08,9537056b3351f36946c499786e40cfa7,moneyline,away,,6,1,7,Win,"moneyline away: away_score=6, home_score=1 => win"
+2026_04_08,e82c967c1c766b4626e30f8560c26373,total,under,8.5,8,2,10,Loss,total under 8.5: final_total=10 vs line=8.5 => loss
+2026_04_08,e82c967c1c766b4626e30f8560c26373,moneyline,away,,8,2,10,Win,"moneyline away: away_score=8, home_score=2 => win"
+2026_04_09,4a900f08d0a609bca4a6bda0d78e00a5,total,under,8.0,1,3,4,Win,total under 8: final_total=4 vs line=8 => win
+2026_04_09,4a900f08d0a609bca4a6bda0d78e00a5,moneyline,away,,1,3,4,Loss,"moneyline away: away_score=1, home_score=3 => loss"
+2026_04_10,23f579057c07153cd0fc94f5986b5182,moneyline,home,,5,4,9,Loss,"moneyline home: away_score=5, home_score=4 => loss"
 2026_04_10,36591f5636cf3c3e62dda6b7e8fb3440,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
+2026_04_10,39a0ae7c44c6cccf57ea26ef0948ff20,run_line,away,1.5,4,0,4,Win,"run_line away 1.5: selected_score=4, opposing_score=0, adjusted_score=5.5 => win"
 2026_04_10,b8b97be2c6361ef8c7839ad60c57adc3,run_line,home,1.5,3,5,8,Win,"run_line home 1.5: selected_score=5, opposing_score=3, adjusted_score=6.5 => win"
+2026_04_10,cba7f4f927e5e141eef8113b0ae66a4b,moneyline,home,,7,3,10,Loss,"moneyline home: away_score=7, home_score=3 => loss"
 2026_04_10,eff6484dd3596abf15d8ee0f27b5e9ba,run_line,home,1.5,6,3,9,Loss,"run_line home 1.5: selected_score=3, opposing_score=6, adjusted_score=4.5 => loss"
+2026_04_10,fde5a00c9e07284677e2086060505663,run_line,away,1.5,4,10,14,Loss,"run_line away 1.5: selected_score=4, opposing_score=10, adjusted_score=5.5 => loss"
 2026_04_11,5242327588eadc6af4c8050a32d92f63,run_line,home,1.5,6,0,6,Loss,"run_line home 1.5: selected_score=0, opposing_score=6, adjusted_score=1.5 => loss"
-2026_04_12,09f98bac3897ce216acb197781ef8add,run_line,home,1.5,4,5,9,Win,"run_line home 1.5: selected_score=5, opposing_score=4, adjusted_score=6.5 => win"
+2026_04_11,5242327588eadc6af4c8050a32d92f63,total,under,8.0,6,0,6,Win,total under 8: final_total=6 vs line=8 => win
+2026_04_11,8d82bf3147f99fc93e30a28642eb19c1,moneyline,away,,7,1,8,Win,"moneyline away: away_score=7, home_score=1 => win"
+2026_04_11,a0e79d40ffa34443e7b94247edbd9363,run_line,home,1.5,4,5,9,Win,"run_line home 1.5: selected_score=5, opposing_score=4, adjusted_score=6.5 => win"
+2026_04_11,ead7229cac20dbbe3dbf60560e0434bb,total,over,7.5,7,8,15,Win,total over 7.5: final_total=15 vs line=7.5 => win
+2026_04_11,ff2eed0425501f8822f495d136bacbb3,run_line,away,1.5,11,6,17,Win,"run_line away 1.5: selected_score=11, opposing_score=6, adjusted_score=12.5 => win"
+2026_04_12,396adc6bdadc61665a790a130d131bec,run_line,away,1.5,5,2,7,Win,"run_line away 1.5: selected_score=5, opposing_score=2, adjusted_score=6.5 => win"
+2026_04_12,b71115505615845619d9ea17e964e30f,run_line,away,1.5,6,5,11,Win,"run_line away 1.5: selected_score=6, opposing_score=5, adjusted_score=7.5 => win"
+2026_04_12,bed40c80b9530acfcc89be0795309682,moneyline,away,,9,3,12,Win,"moneyline away: away_score=9, home_score=3 => win"
 2026_04_12,f032258401e01dc5335139248b940efc,run_line,home,1.5,9,6,15,Loss,"run_line home 1.5: selected_score=6, opposing_score=9, adjusted_score=7.5 => loss"
-2026_04_13,970acfb69adcb4bf8fc9ce89662aa43e,run_line,home,1.5,9,3,12,Loss,"run_line home 1.5: selected_score=3, opposing_score=9, adjusted_score=4.5 => loss"
-2026_04_13,a5f186ae13718f117194fdc34bae1f01,total,under,9.0,8,1,9,Push,total under 9: final_total=9 vs line=9 => push
-2026_04_13,af4723d660204fd1fb7719261eb7f74b,total,under,9.0,0,4,4,Win,total under 9: final_total=4 vs line=9 => win
-2026_04_13,d10f53a6fb57a00a4e08f7d5fe1d10de,total,over,7.5,2,6,8,Win,total over 7.5: final_total=8 vs line=7.5 => win
-2026_04_13,d68d87788cfa956ebee8d3a758c79ff0,run_line,home,1.5,6,13,19,Win,"run_line home 1.5: selected_score=13, opposing_score=6, adjusted_score=14.5 => win"
+2026_04_13,d10f53a6fb57a00a4e08f7d5fe1d10de,moneyline,home,,2,6,8,Win,"moneyline home: away_score=2, home_score=6 => win"
+2026_04_13,d68d87788cfa956ebee8d3a758c79ff0,total,over,7.5,6,13,19,Win,total over 7.5: final_total=19 vs line=7.5 => win
+2026_04_13,dcb7f3b019ab5e225b354b9e8c2b291e,total,under,8.0,7,13,20,Loss,total under 8: final_total=20 vs line=8 => loss
+2026_04_13,eb7b6453caa8162c84f45e9a1f779847,total,under,8.0,10,4,14,Loss,total under 8: final_total=14 vs line=8 => loss
+2026_04_13,f0a7004057c75d3a27566a9cadac71de,total,under,8.5,7,9,16,Loss,total under 8.5: final_total=16 vs line=8.5 => loss
+2026_04_14,3de0bc35b00fae1cd6acfbadcf023411,moneyline,away,,8,5,13,Win,"moneyline away: away_score=8, home_score=5 => win"
+2026_04_14,42f96d05fcb3bf3aefe7588b7e0de883,total,over,9.5,10,4,14,Win,total over 9.5: final_total=14 vs line=9.5 => win
 2026_04_14,441105a5d9e63b9467a1b49e493aff1f,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
-2026_04_14,62e56fb8e25706db1f4b277d3dab18de,run_line,home,1.5,0,6,6,Win,"run_line home 1.5: selected_score=6, opposing_score=0, adjusted_score=7.5 => win"
-2026_04_14,70099d392f8cdba638b5d8e7d6dce3e2,run_line,home,1.5,1,4,5,Win,"run_line home 1.5: selected_score=4, opposing_score=1, adjusted_score=5.5 => win"
 2026_04_14,9d2cb684d156eddca29c13df0d0bce22,run_line,home,1.5,9,7,16,Loss,"run_line home 1.5: selected_score=7, opposing_score=9, adjusted_score=8.5 => loss"
-2026_04_14,9d2cb684d156eddca29c13df0d0bce22,total,over,7.0,9,7,16,Win,total over 7: final_total=16 vs line=7 => win
+2026_04_14,be2fbbe5b663cd7dc72d23031f2498ec,moneyline,home,,5,6,11,Win,"moneyline home: away_score=5, home_score=6 => win"
+2026_04_14,bf8721941657f63c8758e23bdee938ba,moneyline,home,,1,2,3,Win,"moneyline home: away_score=1, home_score=2 => win"
 2026_04_14,c0eef6d4f9ed3511fcfdb17153b8f0a3,run_line,home,1.5,5,6,11,Win,"run_line home 1.5: selected_score=6, opposing_score=5, adjusted_score=7.5 => win"
 2026_04_14,fb1c5d37a9a3812d5d1e0b5ab2f3e768,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
 2026_04_15,e1d1d3bf816d477e6f48db9e600d48bf,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
 2026_04_15,f3b41be4bbb9dbffe13b5c0c9f57bb50,run_line,home,1.5,6,7,13,Win,"run_line home 1.5: selected_score=7, opposing_score=6, adjusted_score=8.5 => win"
 2026_04_16,01461c715fdcb8321ca3e4ed2762e436,run_line,home,1.5,9,10,19,Win,"run_line home 1.5: selected_score=10, opposing_score=9, adjusted_score=11.5 => win"
+2026_04_16,01461c715fdcb8321ca3e4ed2762e436,total,under,8.0,9,10,19,Loss,total under 8: final_total=19 vs line=8 => loss
 2026_04_16,1be686414809592c870949866675b3f0,run_line,home,1.5,9,6,15,Loss,"run_line home 1.5: selected_score=6, opposing_score=9, adjusted_score=7.5 => loss"
+2026_04_16,25ef39bccec531e95be4427ad60576d2,run_line,away,1.5,11,4,15,Win,"run_line away 1.5: selected_score=11, opposing_score=4, adjusted_score=12.5 => win"
 2026_04_16,34fa181a3e06104ac8bb8d652bffbae7,run_line,home,1.5,2,5,7,Win,"run_line home 1.5: selected_score=5, opposing_score=2, adjusted_score=6.5 => win"
 2026_04_16,50a6b335289549d2d3f41d9072e8d031,run_line,home,1.5,2,4,6,Win,"run_line home 1.5: selected_score=4, opposing_score=2, adjusted_score=5.5 => win"
-2026_04_16,74f39156689a078022ede0ab999cd304,total,under,9.0,8,7,15,Loss,total under 9: final_total=15 vs line=9 => loss
 2026_04_16,99d0656dfdf7a804df87e510c4687f62,moneyline,away,,5,3,8,Win,"moneyline away: away_score=5, home_score=3 => win"
-2026_04_17,49988d9d2bd029a05b88766f7a72ca27,total,under,8.5,0,8,8,Win,total under 8.5: final_total=8 vs line=8.5 => win
+2026_04_17,0d33220f9d453b16cf8525818ee29051,run_line,away,1.5,5,0,5,Win,"run_line away 1.5: selected_score=5, opposing_score=0, adjusted_score=6.5 => win"
+2026_04_17,49988d9d2bd029a05b88766f7a72ca27,run_line,away,1.5,0,8,8,Loss,"run_line away 1.5: selected_score=0, opposing_score=8, adjusted_score=1.5 => loss"
 2026_04_17,7067ff8b35400b4b9c0c1b2cf807fe58,run_line,home,1.5,9,0,9,Loss,"run_line home 1.5: selected_score=0, opposing_score=9, adjusted_score=1.5 => loss"
 2026_04_17,72adcb72b594dcf90c1756f4f9358d4c,run_line,home,1.5,10,5,15,Loss,"run_line home 1.5: selected_score=5, opposing_score=10, adjusted_score=6.5 => loss"
-2026_04_18,18200eb582e3bee33b38016accc8cc4e,run_line,home,1.5,4,1,5,Loss,"run_line home 1.5: selected_score=1, opposing_score=4, adjusted_score=2.5 => loss"
-2026_04_18,f191de07e9e709e1723e5815840236c0,total,over,7.5,5,2,7,Loss,total over 7.5: final_total=7 vs line=7.5 => loss
-2026_04_18,ff3a4cea8f327d320fac1af61a34e8c3,moneyline,away,,7,6,13,Win,"moneyline away: away_score=7, home_score=6 => win"
-2026_04_19,0d7765b227447b5fb746d1178be90177,run_line,home,1.5,4,2,6,Loss,"run_line home 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
-2026_04_19,0e8cd1402139869a8535c9d0d09acb45,run_line,home,1.5,10,4,14,Loss,"run_line home 1.5: selected_score=4, opposing_score=10, adjusted_score=5.5 => loss"
-2026_04_19,1048fb9b5524c70651232a93456ec26c,moneyline,away,,0,3,3,Loss,"moneyline away: away_score=0, home_score=3 => loss"
-2026_04_19,4c4e3a56911954f45c048e7f6a7f4822,run_line,home,1.5,4,8,12,Win,"run_line home 1.5: selected_score=8, opposing_score=4, adjusted_score=9.5 => win"
-2026_04_19,4c4e3a56911954f45c048e7f6a7f4822,moneyline,home,,4,8,12,Win,"moneyline home: away_score=4, home_score=8 => win"
-2026_04_19,d97433d24ce14d05b02b695c3cb6d537,total,over,7.5,3,6,9,Win,total over 7.5: final_total=9 vs line=7.5 => win
+2026_04_17,f396e7f6c0d265d701a8b7123bbcee83,total,over,7.5,0,1,1,Loss,total over 7.5: final_total=1 vs line=7.5 => loss
+2026_04_18,912d3bf4c4f1b996c5903aa3b6e3bc2a,total,over,7.0,3,1,4,Loss,total over 7: final_total=4 vs line=7 => loss
+2026_04_18,9b611b49a26ba77a07349b2b50bab4ad,run_line,away,1.5,8,7,15,Win,"run_line away 1.5: selected_score=8, opposing_score=7, adjusted_score=9.5 => win"
+2026_04_18,9b611b49a26ba77a07349b2b50bab4ad,total,over,7.0,8,7,15,Win,total over 7: final_total=15 vs line=7 => win
+2026_04_18,b4b4c5e63320cc913bd4ac9d7c447f23,total,over,7.0,3,7,10,Win,total over 7: final_total=10 vs line=7 => win
+2026_04_19,045dc8de81396e0de88fa0884e58750f,run_line,away,1.5,7,5,12,Win,"run_line away 1.5: selected_score=7, opposing_score=5, adjusted_score=8.5 => win"
+2026_04_19,0e8cd1402139869a8535c9d0d09acb45,total,under,8.0,10,4,14,Loss,total under 8: final_total=14 vs line=8 => loss
+2026_04_19,22dc10f0ffdfd73bd79c7bdf5266e95f,total,over,7.0,2,5,7,Push,total over 7: final_total=7 vs line=7 => push
+2026_04_19,4c4e3a56911954f45c048e7f6a7f4822,total,over,7.0,4,8,12,Win,total over 7: final_total=12 vs line=7 => win
+2026_04_19,77c097e15cdac31a63aa34c4a10c9c91,run_line,away,1.5,6,2,8,Win,"run_line away 1.5: selected_score=6, opposing_score=2, adjusted_score=7.5 => win"
+2026_04_19,bf75db04c73633ad4f6241bd5ae2d3eb,run_line,away,1.5,7,4,11,Win,"run_line away 1.5: selected_score=7, opposing_score=4, adjusted_score=8.5 => win"
+2026_04_19,de5baa6a9b1b0c7a10c628770ffff6ff,run_line,away,1.5,7,4,11,Win,"run_line away 1.5: selected_score=7, opposing_score=4, adjusted_score=8.5 => win"
 2026_04_19,e1d026d4b97697ac7e0862b37a1e26a5,run_line,home,1.5,2,1,3,Win,"run_line home 1.5: selected_score=1, opposing_score=2, adjusted_score=2.5 => win"
-2026_04_20,0d70750c31542bcfe935969cb9ccc66e,moneyline,away,,1,5,6,Loss,"moneyline away: away_score=1, home_score=5 => loss"
+2026_04_19,e1d026d4b97697ac7e0862b37a1e26a5,total,under,8.5,2,1,3,Win,total under 8.5: final_total=3 vs line=8.5 => win
+2026_04_20,0d70750c31542bcfe935969cb9ccc66e,run_line,home,1.5,1,5,6,Win,"run_line home 1.5: selected_score=5, opposing_score=1, adjusted_score=6.5 => win"
 2026_04_20,6a0b76ac89fd72cc8272b53212004e44,run_line,home,1.5,7,5,12,Loss,"run_line home 1.5: selected_score=5, opposing_score=7, adjusted_score=6.5 => loss"
 2026_04_21,0438fd942a9f1f07557cef989b1a4e4d,run_line,home,1.5,1,3,4,Win,"run_line home 1.5: selected_score=3, opposing_score=1, adjusted_score=4.5 => win"
-2026_04_21,8dd01844bbaffc7ec461c4e06ea83b42,run_line,home,1.5,1,5,6,Win,"run_line home 1.5: selected_score=5, opposing_score=1, adjusted_score=6.5 => win"
-2026_04_21,d5285248b8322f4781920eb06d586c63,run_line,home,1.5,4,0,4,Loss,"run_line home 1.5: selected_score=0, opposing_score=4, adjusted_score=1.5 => loss"
+2026_04_21,b1f2c684186f6906566a63d457c86009,moneyline,away,,4,11,15,Loss,"moneyline away: away_score=4, home_score=11 => loss"
+2026_04_21,c3a389932a73d413d0f0e503a36712ea,run_line,away,1.5,5,8,13,Loss,"run_line away 1.5: selected_score=5, opposing_score=8, adjusted_score=6.5 => loss"
 2026_04_21,fd082c9fac90847ff16ee7691851778f,run_line,home,1.5,4,7,11,Win,"run_line home 1.5: selected_score=7, opposing_score=4, adjusted_score=8.5 => win"
+2026_04_22,07187e7c60013c66b4831e61391ded49,run_line,away,1.5,1,6,7,Loss,"run_line away 1.5: selected_score=1, opposing_score=6, adjusted_score=2.5 => loss"
+2026_04_22,388c461670fe1eacbca3a3601d06ea5d,total,under,8.5,1,4,5,Win,total under 8.5: final_total=5 vs line=8.5 => win
+2026_04_22,b8cea4e418d432cea65f9d995118a4bf,total,over,7.5,4,5,9,Win,total over 7.5: final_total=9 vs line=7.5 => win
+2026_04_22,e308577ae69b60256ed912a05d931a57,run_line,away,1.5,3,7,10,Loss,"run_line away 1.5: selected_score=3, opposing_score=7, adjusted_score=4.5 => loss"
+2026_04_22,e308577ae69b60256ed912a05d931a57,total,under,8.0,3,7,10,Loss,total under 8: final_total=10 vs line=8 => loss
+2026_04_22,e33bac43c9aeb7a52713962ae0686e1f,run_line,away,1.5,2,0,2,Win,"run_line away 1.5: selected_score=2, opposing_score=0, adjusted_score=3.5 => win"
+2026_04_22,ebdf17398c47e7ea946db3d1e80d50e7,total,over,7.5,4,1,5,Loss,total over 7.5: final_total=5 vs line=7.5 => loss
 2026_04_22,ebdf17398c47e7ea946db3d1e80d50e7,moneyline,away,,4,1,5,Win,"moneyline away: away_score=4, home_score=1 => win"
-2026_04_23,1e66733b3f851159b9299af54335356a,total,over,7.5,8,10,18,Win,total over 7.5: final_total=18 vs line=7.5 => win
 2026_04_23,7350a8d7c4145d7f644e02a87a4bb365,run_line,home,1.5,3,0,3,Loss,"run_line home 1.5: selected_score=0, opposing_score=3, adjusted_score=1.5 => loss"
-2026_04_23,a1b5b1f882e1c817603a505107a56d2f,total,under,9.0,4,1,5,Win,total under 9: final_total=5 vs line=9 => win
+2026_04_23,a1b5b1f882e1c817603a505107a56d2f,moneyline,home,,4,1,5,Loss,"moneyline home: away_score=4, home_score=1 => loss"
 2026_04_23,ce566623c1d73c8d56830bafe9334cbb,moneyline,away,,4,2,6,Win,"moneyline away: away_score=4, home_score=2 => win"
 2026_04_23,ce701a760fa0f743a20a0f8c455c6f67,run_line,home,1.5,7,2,9,Loss,"run_line home 1.5: selected_score=2, opposing_score=7, adjusted_score=3.5 => loss"
 2026_04_23,de14a27d2ad6df38427c5adcc15cb1c1,run_line,home,1.5,10,8,18,Loss,"run_line home 1.5: selected_score=8, opposing_score=10, adjusted_score=9.5 => loss"
-2026_04_24,0bbbb2fddbaa8b74fdca003a5d074d6f,run_line,home,1.5,6,0,6,Loss,"run_line home 1.5: selected_score=0, opposing_score=6, adjusted_score=1.5 => loss"
+2026_04_23,eb87da969b550c21334d689f9113d312,moneyline,home,,4,5,9,Win,"moneyline home: away_score=4, home_score=5 => win"
 2026_04_24,1a7da3935dee427bcfb5038b6aca6b69,run_line,home,1.5,4,5,9,Win,"run_line home 1.5: selected_score=5, opposing_score=4, adjusted_score=6.5 => win"
-2026_04_24,1daf20445fbf24373621ac69d10909d6,total,over,7.5,4,3,7,Loss,total over 7.5: final_total=7 vs line=7.5 => loss
-2026_04_24,392c482c74dac60779aaf9841598058b,run_line,home,1.5,9,4,13,Loss,"run_line home 1.5: selected_score=4, opposing_score=9, adjusted_score=5.5 => loss"
+2026_04_24,2c16b21f64ac893fc7dd8fd60f2a018c,run_line,home,1.5,8,9,17,Win,"run_line home 1.5: selected_score=9, opposing_score=8, adjusted_score=10.5 => win"
+2026_04_24,392c482c74dac60779aaf9841598058b,total,over,7.5,9,4,13,Win,total over 7.5: final_total=13 vs line=7.5 => win
 2026_04_24,6dfa085cbcdafd48dfe2b4a3ec7d5e04,moneyline,away,,3,2,5,Win,"moneyline away: away_score=3, home_score=2 => win"
-2026_04_24,781378f4580bd5ca464d5bfa8f1035a2,run_line,home,1.5,3,6,9,Win,"run_line home 1.5: selected_score=6, opposing_score=3, adjusted_score=7.5 => win"
-2026_04_24,932ab74f8b661c6fcaea03f907780fce,run_line,home,1.5,3,10,13,Win,"run_line home 1.5: selected_score=10, opposing_score=3, adjusted_score=11.5 => win"
-2026_04_25,b266f49858dc754c6db869ecff6d52d5,moneyline,away,,8,3,11,Win,"moneyline away: away_score=8, home_score=3 => win"
+2026_04_24,988cc0182b2c8cc4ce2bd71787602b09,total,over,7.5,2,6,8,Win,total over 7.5: final_total=8 vs line=7.5 => win
+2026_04_25,0230d646bd78d15e54bbc955a0e7d747,run_line,away,1.5,4,12,16,Loss,"run_line away 1.5: selected_score=4, opposing_score=12, adjusted_score=5.5 => loss"
+2026_04_25,0ba37739cdf2986dfc1463c1da6a09f1,run_line,away,1.5,3,0,3,Win,"run_line away 1.5: selected_score=3, opposing_score=0, adjusted_score=4.5 => win"
+2026_04_25,4231dc4bed4b8aac32157bce916837c9,run_line,away,1.5,8,5,13,Win,"run_line away 1.5: selected_score=8, opposing_score=5, adjusted_score=9.5 => win"
+2026_04_25,4231dc4bed4b8aac32157bce916837c9,total,under,8.5,8,5,13,Loss,total under 8.5: final_total=13 vs line=8.5 => loss
+2026_04_25,76173d6fb6052a6141d640d803185876,run_line,away,1.5,3,5,8,Loss,"run_line away 1.5: selected_score=3, opposing_score=5, adjusted_score=4.5 => loss"
+2026_04_25,be47d30294aeb48696725d5dbe33216a,moneyline,away,,11,9,20,Win,"moneyline away: away_score=11, home_score=9 => win"
+2026_04_26,02dcaedecc84abb3770b936306df02d9,run_line,home,1.5,7,12,19,Win,"run_line home 1.5: selected_score=12, opposing_score=7, adjusted_score=13.5 => win"
 2026_04_26,4bd84afb941f32d8212a16abd49c992b,run_line,home,1.5,9,11,20,Win,"run_line home 1.5: selected_score=11, opposing_score=9, adjusted_score=12.5 => win"
-2026_04_26,4bfe574e7c5269d65b3a9936e5793ada,run_line,home,1.5,8,3,11,Loss,"run_line home 1.5: selected_score=3, opposing_score=8, adjusted_score=4.5 => loss"
+2026_04_26,70d642527538cc1ee9ace67b17830b01,moneyline,away,,3,2,5,Win,"moneyline away: away_score=3, home_score=2 => win"
+2026_04_26,7ec692536ced485b4f6b8d0e30b4fef8,run_line,away,1.5,5,3,8,Win,"run_line away 1.5: selected_score=5, opposing_score=3, adjusted_score=6.5 => win"
+2026_04_26,b5cfe25f8464fa7df106032a0f8176cb,total,over,9.5,4,7,11,Win,total over 9.5: final_total=11 vs line=9.5 => win
+2026_04_26,d8f901c0fc526d986a568d86c64039d5,total,under,8.5,2,1,3,Win,total under 8.5: final_total=3 vs line=8.5 => win
 2026_04_26,f837a42730f5b62ac990bb62b5c144a3,total,over,7.5,3,6,9,Win,total over 7.5: final_total=9 vs line=7.5 => win
-2026_04_27,0b45fce085ac92932833ba131d0e395d,run_line,home,1.5,4,11,15,Win,"run_line home 1.5: selected_score=11, opposing_score=4, adjusted_score=12.5 => win"
-2026_04_27,371ff765cd40348073b510b2f45d81e9,moneyline,away,,4,2,6,Win,"moneyline away: away_score=4, home_score=2 => win"
-2026_04_27,717163f13d80f9495ad5b88b9396ca1a,run_line,home,1.5,7,9,16,Win,"run_line home 1.5: selected_score=9, opposing_score=7, adjusted_score=10.5 => win"
-2026_04_27,aede5ca829ddcbc5ee6726a1c0a03117,moneyline,away,,7,8,15,Loss,"moneyline away: away_score=7, home_score=8 => loss"
+2026_04_26,f98073ff54e69128fe75a3c5776fb520,run_line,away,1.5,2,4,6,Loss,"run_line away 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
+2026_04_27,1a4159875887b1b0c4fe65b367df29a7,run_line,away,1.5,3,2,5,Win,"run_line away 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
+2026_04_27,1a4159875887b1b0c4fe65b367df29a7,total,over,7.5,3,2,5,Loss,total over 7.5: final_total=5 vs line=7.5 => loss
+2026_04_27,eb2a21d7a425f6a975d1eae9da93e4c7,run_line,away,1.5,5,0,5,Win,"run_line away 1.5: selected_score=5, opposing_score=0, adjusted_score=6.5 => win"
+2026_04_28,3c9ebf868da49e615e589bd0d839b640,run_line,away,1.5,3,5,8,Loss,"run_line away 1.5: selected_score=3, opposing_score=5, adjusted_score=4.5 => loss"
+2026_04_28,54e35854b4573f13cd3a3491cd75cfa1,moneyline,home,,2,1,3,Loss,"moneyline home: away_score=2, home_score=1 => loss"
+2026_04_28,5a82b72d720f0eb369a8aaea7d673273,run_line,away,1.5,11,7,18,Win,"run_line away 1.5: selected_score=11, opposing_score=7, adjusted_score=12.5 => win"
 2026_04_28,6015a24988595d49a325507fa8543243,run_line,home,1.5,2,5,7,Win,"run_line home 1.5: selected_score=5, opposing_score=2, adjusted_score=6.5 => win"
-2026_04_28,630b5c008c0741c01c32f890068fa598,run_line,home,1.5,4,1,5,Loss,"run_line home 1.5: selected_score=1, opposing_score=4, adjusted_score=2.5 => loss"
 2026_04_28,72f79061defb394c2e533967c55edb30,run_line,home,1.5,2,13,15,Win,"run_line home 1.5: selected_score=13, opposing_score=2, adjusted_score=14.5 => win"
-2026_04_28,7401e0a3694fdfd518a0b949987e61b4,moneyline,away,,7,1,8,Win,"moneyline away: away_score=7, home_score=1 => win"
-2026_04_28,781a040a058473c689200f515770de83,total,under,9.0,2,7,9,Push,total under 9: final_total=9 vs line=9 => push
-2026_04_28,bb7e51c3ed5e76ca658d46e6b586c0fa,run_line,home,1.5,3,2,5,Win,"run_line home 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
-2026_04_29,0b82fc67da784ef2d4225438c8e33b6a,total,over,7.0,5,6,11,Win,total over 7: final_total=11 vs line=7 => win
-2026_04_29,3bf2df80de60f0bf82343a646a188fb2,moneyline,away,,5,3,8,Win,"moneyline away: away_score=5, home_score=3 => win"
+2026_04_28,b2b5566d4285c0ab7ca9f78f4d1a6de7,total,over,7.5,1,0,1,Loss,total over 7.5: final_total=1 vs line=7.5 => loss
+2026_04_28,fbf763600d3ccdeb10333812e326159f,total,over,7.5,0,8,8,Win,total over 7.5: final_total=8 vs line=7.5 => win
+2026_04_29,1893671667b0416333a1bb815e98c138,run_line,home,1.5,2,5,7,Win,"run_line home 1.5: selected_score=5, opposing_score=2, adjusted_score=6.5 => win"
+2026_04_29,3bf2df80de60f0bf82343a646a188fb2,total,over,7.5,5,3,8,Win,total over 7.5: final_total=8 vs line=7.5 => win
 2026_04_29,7459efe5719c27130877cc640b75f8ba,run_line,home,1.5,11,5,16,Loss,"run_line home 1.5: selected_score=5, opposing_score=11, adjusted_score=6.5 => loss"
-2026_04_29,af3e6454c0293bcd38866af00fb22cc1,moneyline,away,,0,3,3,Loss,"moneyline away: away_score=0, home_score=3 => loss"
 2026_04_29,dbb1f14488d5ad0f783dce845101d4c1,run_line,home,1.5,6,2,8,Loss,"run_line home 1.5: selected_score=2, opposing_score=6, adjusted_score=3.5 => loss"
-2026_04_30,6f84f4f2e016877657f3d3ae23ce6760,run_line,home,1.5,3,10,13,Win,"run_line home 1.5: selected_score=10, opposing_score=3, adjusted_score=11.5 => win"
-2026_04_30,e5babd0fb427836d74e73a544af17f39,run_line,home,1.5,1,13,14,Win,"run_line home 1.5: selected_score=13, opposing_score=1, adjusted_score=14.5 => win"
+2026_04_29,e837e7b2a838ec74034cfbc99b119fb2,run_line,away,1.5,5,4,9,Win,"run_line away 1.5: selected_score=5, opposing_score=4, adjusted_score=6.5 => win"
+2026_04_30,0abd6580f0a4c91cb98db1774d582be8,run_line,away,1.5,5,2,7,Win,"run_line away 1.5: selected_score=5, opposing_score=2, adjusted_score=6.5 => win"
+2026_04_30,a43beaa62a7673615a11856370287f3b,run_line,away,1.5,10,5,15,Win,"run_line away 1.5: selected_score=10, opposing_score=5, adjusted_score=11.5 => win"
 2026_05_01,153461ac6d07b9cf3c047b0052a27400,run_line,home,1.5,8,5,13,Loss,"run_line home 1.5: selected_score=5, opposing_score=8, adjusted_score=6.5 => loss"
 2026_05_01,4331dd522336be02de34b61018be0cc9,run_line,home,1.5,2,7,9,Win,"run_line home 1.5: selected_score=7, opposing_score=2, adjusted_score=8.5 => win"
 2026_05_01,99cbbfbfd9560db3b77799bea7dfc475,run_line,home,1.5,4,3,7,Win,"run_line home 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
 2026_05_01,d4c3dbfeab9d45e50dea2e86b3da477a,run_line,home,1.5,7,3,10,Loss,"run_line home 1.5: selected_score=3, opposing_score=7, adjusted_score=4.5 => loss"
+2026_05_01,d4c3dbfeab9d45e50dea2e86b3da477a,total,under,8.5,7,3,10,Loss,total under 8.5: final_total=10 vs line=8.5 => loss
 2026_05_01,eb5e5ee05cf9e2c9e3df8f51d9835b52,run_line,home,1.5,5,4,9,Win,"run_line home 1.5: selected_score=4, opposing_score=5, adjusted_score=5.5 => win"
+2026_05_02,2a3a64708f7d4e8c0f5ee57ea757d07c,total,over,7.0,0,2,2,Loss,total over 7: final_total=2 vs line=7 => loss
 2026_05_02,3d047ad3bc82a8e990a4aeafa447568f,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_05_02,7dd5007f59f84948d08db8b63132cdec,moneyline,away,,4,1,5,Win,"moneyline away: away_score=4, home_score=1 => win"
 2026_05_02,a5c3ef5e48ad39a2a1e04b385a33f7f0,run_line,home,1.5,1,5,6,Win,"run_line home 1.5: selected_score=5, opposing_score=1, adjusted_score=6.5 => win"
 2026_05_02,c0137f0b36b1eea6d91260c926fe437e,run_line,home,1.5,11,4,15,Loss,"run_line home 1.5: selected_score=4, opposing_score=11, adjusted_score=5.5 => loss"
-2026_05_02,c0137f0b36b1eea6d91260c926fe437e,total,over,7.5,11,4,15,Win,total over 7.5: final_total=15 vs line=7.5 => win
-2026_05_03,092612a571aeb504211ec7f4950924e3,total,under,9.0,3,11,14,Loss,total under 9: final_total=14 vs line=9 => loss
 2026_05_03,257b715ef1fa8b967fb27a46de2d3021,run_line,home,1.5,5,1,6,Loss,"run_line home 1.5: selected_score=1, opposing_score=5, adjusted_score=2.5 => loss"
 2026_05_03,4c6f75a0f0a2e467d79983253235c3a9,moneyline,away,,7,2,9,Win,"moneyline away: away_score=7, home_score=2 => win"
 2026_05_03,8ca3a46477683553d785413b73444311,run_line,home,1.5,4,1,5,Loss,"run_line home 1.5: selected_score=1, opposing_score=4, adjusted_score=2.5 => loss"
-2026_05_03,8ca3a46477683553d785413b73444311,total,under,9.5,4,1,5,Win,total under 9.5: final_total=5 vs line=9.5 => win
+2026_05_03,9e48c32033c5db8cdc98fcd3ecdc2aa2,moneyline,away,,11,6,17,Win,"moneyline away: away_score=11, home_score=6 => win"
 2026_05_03,b713b3ae079ed7d21c2a9f7edb043f6b,run_line,home,1.5,1,7,8,Win,"run_line home 1.5: selected_score=7, opposing_score=1, adjusted_score=8.5 => win"
-2026_05_03,b7ad1d7b238b8062d64011d24d284989,total,under,12.0,4,8,12,Push,total under 12: final_total=12 vs line=12 => push
 2026_05_03,b7ecafff68e95721e956a1a960acdd98,run_line,home,1.5,0,1,1,Win,"run_line home 1.5: selected_score=1, opposing_score=0, adjusted_score=2.5 => win"
 2026_05_03,b7ecafff68e95721e956a1a960acdd98,total,over,7.5,0,1,1,Loss,total over 7.5: final_total=1 vs line=7.5 => loss
-2026_05_03,e05ec850dc5af5d56ee55a4acb831ae9,run_line,home,1.5,4,1,5,Loss,"run_line home 1.5: selected_score=1, opposing_score=4, adjusted_score=2.5 => loss"
+2026_05_03,c07320ad7cda17703d445ae8f3b85376,run_line,away,1.5,3,1,4,Win,"run_line away 1.5: selected_score=3, opposing_score=1, adjusted_score=4.5 => win"
+2026_05_04,25d5af851ff059eb0a390e1f5908f926,run_line,away,1.5,4,5,9,Win,"run_line away 1.5: selected_score=4, opposing_score=5, adjusted_score=5.5 => win"
 2026_05_04,286159b7ccc29dea1805a4ce6218be0e,run_line,home,1.5,2,6,8,Win,"run_line home 1.5: selected_score=6, opposing_score=2, adjusted_score=7.5 => win"
-2026_05_04,42cd2c9d9860ded679366dcdfe136ea7,total,over,7.0,5,4,9,Win,total over 7: final_total=9 vs line=7 => win
-2026_05_04,6768391de7087c252e7f2dae8ec9bd0b,moneyline,away,,3,6,9,Loss,"moneyline away: away_score=3, home_score=6 => loss"
+2026_05_04,42cd2c9d9860ded679366dcdfe136ea7,moneyline,home,,5,4,9,Loss,"moneyline home: away_score=5, home_score=4 => loss"
 2026_05_04,724956d85946d94ae169ea8b4f5299b3,run_line,home,1.5,1,5,6,Win,"run_line home 1.5: selected_score=5, opposing_score=1, adjusted_score=6.5 => win"
-2026_05_04,80044e6fc3586ebcf9f4df924a6f9519,moneyline,away,,4,2,6,Win,"moneyline away: away_score=4, home_score=2 => win"
-2026_05_04,a8b6869ab87cab44f73e7d8fe9c435f5,run_line,home,1.5,1,0,1,Win,"run_line home 1.5: selected_score=0, opposing_score=1, adjusted_score=1.5 => win"
-2026_05_05,4f532987fa9021753e499704cc1998d0,run_line,home,1.5,4,3,7,Win,"run_line home 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
-2026_05_05,642027e0dc5d6fe0e383f9c8b6453d6c,run_line,home,1.5,4,7,11,Win,"run_line home 1.5: selected_score=7, opposing_score=4, adjusted_score=8.5 => win"
+2026_05_05,692aeb05691cac285d594067d9c4a24e,total,under,8.5,9,7,16,Loss,total under 8.5: final_total=16 vs line=8.5 => loss
 2026_05_05,6a03ee8f26eea9160cbb5d12946cb37c,run_line,home,1.5,2,6,8,Win,"run_line home 1.5: selected_score=6, opposing_score=2, adjusted_score=7.5 => win"
-2026_05_05,8ce45c11dc2d0ef2edaaf6ecd5f2b8ff,run_line,home,1.5,0,9,9,Win,"run_line home 1.5: selected_score=9, opposing_score=0, adjusted_score=10.5 => win"
+2026_05_05,71ef508a8cbaa38a8e77f003e58f92aa,moneyline,home,,10,3,13,Loss,"moneyline home: away_score=10, home_score=3 => loss"
+2026_05_05,732ae7d99e94ec771af4f2525709bb66,run_line,away,1.5,3,2,5,Win,"run_line away 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
+2026_05_05,7cdd4e1d6b845aedaf71e33a78a0f164,moneyline,home,,2,3,5,Win,"moneyline home: away_score=2, home_score=3 => win"
+2026_05_05,90becb516bb091bc1f699dadd4f5e4ef,run_line,away,1.5,10,5,15,Win,"run_line away 1.5: selected_score=10, opposing_score=5, adjusted_score=11.5 => win"
+2026_05_05,90becb516bb091bc1f699dadd4f5e4ef,total,over,7.5,10,5,15,Win,total over 7.5: final_total=15 vs line=7.5 => win
+2026_05_06,1f8259cdeb29bfd068ffa5cbaea3e8d7,total,under,8.0,1,3,4,Win,total under 8: final_total=4 vs line=8 => win
+2026_05_06,30985b2de1c1ed30f2e2fd8caf711d21,total,over,7.5,0,3,3,Loss,total over 7.5: final_total=3 vs line=7.5 => loss
+2026_05_06,30d2a93f1ca79f37c19806e74ed1cdab,run_line,away,1.5,3,1,4,Win,"run_line away 1.5: selected_score=3, opposing_score=1, adjusted_score=4.5 => win"
 2026_05_06,3d9ff7b926b247cb73447ca5c7a7428e,run_line,home,1.5,10,5,15,Loss,"run_line home 1.5: selected_score=5, opposing_score=10, adjusted_score=6.5 => loss"
-2026_05_06,50bf885c9e829f1de48161f3ec47e5dc,moneyline,away,,2,15,17,Loss,"moneyline away: away_score=2, home_score=15 => loss"
 2026_05_06,71fad9f636c723c1e774d7aa9651880b,run_line,home,1.5,6,2,8,Loss,"run_line home 1.5: selected_score=2, opposing_score=6, adjusted_score=3.5 => loss"
 2026_05_06,7c30fa11564865dd19f2a9c4a7e9d937,run_line,home,1.5,2,8,10,Win,"run_line home 1.5: selected_score=8, opposing_score=2, adjusted_score=9.5 => win"
+2026_05_06,7dd3ac6bd80317fdd884080b8d94dd77,run_line,away,1.5,7,4,11,Win,"run_line away 1.5: selected_score=7, opposing_score=4, adjusted_score=8.5 => win"
+2026_05_06,8379550b6a949466b56d6ddffad2b2fe,total,under,8.5,3,6,9,Loss,total under 8.5: final_total=9 vs line=8.5 => loss
+2026_05_06,8379550b6a949466b56d6ddffad2b2fe,moneyline,home,,3,6,9,Win,"moneyline home: away_score=3, home_score=6 => win"
 2026_05_06,de899b461227924fc52c2f9492e9fe56,run_line,home,1.5,1,0,1,Win,"run_line home 1.5: selected_score=0, opposing_score=1, adjusted_score=1.5 => win"
-2026_05_07,4d8a7d6f10d4e381df3410c93345b071,run_line,home,1.5,4,2,6,Loss,"run_line home 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
 2026_05_07,db06eeec096bc60532c3b1aa5d4235a0,run_line,home,1.5,2,6,8,Win,"run_line home 1.5: selected_score=6, opposing_score=2, adjusted_score=7.5 => win"
+2026_05_08,6aa50c59681975bb7beff37ab4f46bb5,run_line,away,1.5,3,4,7,Win,"run_line away 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
+2026_05_08,6aa50c59681975bb7beff37ab4f46bb5,total,under,8.5,3,4,7,Win,total under 8.5: final_total=7 vs line=8.5 => win
+2026_05_08,739421696ed76f3cffaf12c7db22c763,run_line,away,1.5,0,2,2,Loss,"run_line away 1.5: selected_score=0, opposing_score=2, adjusted_score=1.5 => loss"
+2026_05_08,76929aa734500b152f347bbddf390165,run_line,away,1.5,4,3,7,Win,"run_line away 1.5: selected_score=4, opposing_score=3, adjusted_score=5.5 => win"
 2026_05_08,79db8c5227deae699a7b9c123aaf6d3f,run_line,home,1.5,12,8,20,Loss,"run_line home 1.5: selected_score=8, opposing_score=12, adjusted_score=9.5 => loss"
 2026_05_08,ad17b69505e6a7e7c4c06dc7f6b91ac6,run_line,home,1.5,3,2,5,Win,"run_line home 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
-2026_05_08,bb96582815dabc42936e794a19c74217,run_line,home,1.5,3,1,4,Loss,"run_line home 1.5: selected_score=1, opposing_score=3, adjusted_score=2.5 => loss"
-2026_05_09,6c26284a3ba72def6e7e0c9db9893fc8,moneyline,away,,1,6,7,Loss,"moneyline away: away_score=1, home_score=6 => loss"
+2026_05_08,d03f5e26dab4993281752b81c816fe4b,moneyline,away,,7,1,8,Win,"moneyline away: away_score=7, home_score=1 => win"
+2026_05_09,07fcb9aa4b08eff491227a6d817d08a7,total,under,8.5,7,8,15,Loss,total under 8.5: final_total=15 vs line=8.5 => loss
+2026_05_09,177cdddf981aae461d064d643293c5f4,run_line,away,1.5,6,2,8,Win,"run_line away 1.5: selected_score=6, opposing_score=2, adjusted_score=7.5 => win"
 2026_05_09,9fd60ef171dd7d6b753c07fe32aa37f6,run_line,home,1.5,2,1,3,Win,"run_line home 1.5: selected_score=1, opposing_score=2, adjusted_score=2.5 => win"
-2026_05_10,1a0f51cf52137e602d477a383aededcd,run_line,home,1.5,1,5,6,Win,"run_line home 1.5: selected_score=5, opposing_score=1, adjusted_score=6.5 => win"
-2026_05_10,24f0fb743655b2176ff9d2f1d17bc2d0,run_line,home,1.5,6,7,13,Win,"run_line home 1.5: selected_score=7, opposing_score=6, adjusted_score=8.5 => win"
-2026_05_10,42a6a833eaecf112c826202eb1d596f9,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
+2026_05_09,a1e4d36a83b260dbab61a4f965b6abea,run_line,away,1.5,0,10,10,Loss,"run_line away 1.5: selected_score=0, opposing_score=10, adjusted_score=1.5 => loss"
+2026_05_10,3751eb6375883244bf07ebaa76d74e35,run_line,away,1.5,0,5,5,Loss,"run_line away 1.5: selected_score=0, opposing_score=5, adjusted_score=1.5 => loss"
+2026_05_10,73c2cde50707b32c9767a0a8fbb2e7d2,total,under,8.0,4,1,5,Win,total under 8: final_total=5 vs line=8 => win
 2026_05_10,9bfd5fd962a5ede4a98e0c595c9db46f,run_line,home,1.5,6,1,7,Loss,"run_line home 1.5: selected_score=1, opposing_score=6, adjusted_score=2.5 => loss"
-2026_05_10,d58ee5722b0d27c98714b46a090df16f,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
-2026_05_10,e254b4d802742c85bc156989d1b71346,run_line,home,1.5,3,4,7,Win,"run_line home 1.5: selected_score=4, opposing_score=3, adjusted_score=5.5 => win"
+2026_05_10,9bfd5fd962a5ede4a98e0c595c9db46f,total,under,8.0,6,1,7,Win,total under 8: final_total=7 vs line=8 => win
+2026_05_10,e254b4d802742c85bc156989d1b71346,total,under,8.0,3,4,7,Win,total under 8: final_total=7 vs line=8 => win
+2026_05_11,5469c15e3925b64e5437f4ebe23e9b60,moneyline,home,,2,7,9,Win,"moneyline home: away_score=2, home_score=7 => win"
 2026_05_11,80622319ceec1faf47baaee869656e13,run_line,home,1.5,3,1,4,Loss,"run_line home 1.5: selected_score=1, opposing_score=3, adjusted_score=2.5 => loss"
 2026_05_11,a96772c4a288f0b16b88697b8dfdd837,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
 2026_05_12,07b1faa56850a94bfd3921725fe520a2,run_line,home,1.5,2,1,3,Win,"run_line home 1.5: selected_score=1, opposing_score=2, adjusted_score=2.5 => win"
+2026_05_12,265d87925f501ac50a2a12c6b5a91354,moneyline,home,,6,4,10,Loss,"moneyline home: away_score=6, home_score=4 => loss"
 2026_05_12,6d160243347bd35cdb3abf1b2690fda8,run_line,home,1.5,6,2,8,Loss,"run_line home 1.5: selected_score=2, opposing_score=6, adjusted_score=3.5 => loss"
 2026_05_12,744c4597586797d5f7e9be094f031f11,run_line,home,1.5,2,5,7,Win,"run_line home 1.5: selected_score=5, opposing_score=2, adjusted_score=6.5 => win"
+2026_05_12,79fa6c856d2a95ff10cb955ab2d424e2,moneyline,home,,1,3,4,Win,"moneyline home: away_score=1, home_score=3 => win"
+2026_05_12,9936f843966ef49b29f8f61cd41491f1,total,under,8.5,2,3,5,Win,total under 8.5: final_total=5 vs line=8.5 => win
+2026_05_12,a0929cf66d445eec19f118010165e95c,run_line,away,1.5,6,2,8,Win,"run_line away 1.5: selected_score=6, opposing_score=2, adjusted_score=7.5 => win"
 2026_05_12,a1fa0d550bd68cf44d71f0657fa93d6a,run_line,home,1.5,10,2,12,Loss,"run_line home 1.5: selected_score=2, opposing_score=10, adjusted_score=3.5 => loss"
 2026_05_12,ad3552c4909328a0be4de1ec98e97bcf,run_line,home,1.5,0,3,3,Win,"run_line home 1.5: selected_score=3, opposing_score=0, adjusted_score=4.5 => win"
-2026_05_12,ad3552c4909328a0be4de1ec98e97bcf,total,under,9.0,0,3,3,Win,total under 9: final_total=3 vs line=9 => win
-2026_05_12,b2c44ca94237edf5b7270d7dde706835,run_line,home,1.5,7,6,13,Win,"run_line home 1.5: selected_score=6, opposing_score=7, adjusted_score=7.5 => win"
+2026_05_12,fe40950314ca87c69985e8a1a37c8822,moneyline,home,,2,10,12,Win,"moneyline home: away_score=2, home_score=10 => win"
+2026_05_13,15bc05498c54cf822aedf7434d3a8bc6,moneyline,home,,3,1,4,Loss,"moneyline home: away_score=3, home_score=1 => loss"
 2026_05_13,18791fe8f5ff31b64bb2cff4f5af59a0,run_line,home,1.5,9,5,14,Loss,"run_line home 1.5: selected_score=5, opposing_score=9, adjusted_score=6.5 => loss"
 2026_05_13,1ae3a00c8d26de69bd61ddda56e9dba1,run_line,home,1.5,1,4,5,Win,"run_line home 1.5: selected_score=4, opposing_score=1, adjusted_score=5.5 => win"
+2026_05_13,1ae3a00c8d26de69bd61ddda56e9dba1,total,under,8.5,1,4,5,Win,total under 8.5: final_total=5 vs line=8.5 => win
 2026_05_13,21ff18fdfd96a55a86867197e834497e,run_line,home,1.5,0,7,7,Win,"run_line home 1.5: selected_score=7, opposing_score=0, adjusted_score=8.5 => win"
 2026_05_13,4d53bfb528444dbb7721172c9851e6c9,run_line,home,1.5,5,6,11,Win,"run_line home 1.5: selected_score=6, opposing_score=5, adjusted_score=7.5 => win"
 2026_05_13,4ea6eeeb6626c218d536f9bca6edbeae,run_line,home,1.5,5,6,11,Win,"run_line home 1.5: selected_score=6, opposing_score=5, adjusted_score=7.5 => win"
+2026_05_13,67da7d89e932aa7075b0600f26224572,moneyline,home,,2,4,6,Win,"moneyline home: away_score=2, home_score=4 => win"
+2026_05_13,7018d88c446b88b45928fc75ec91e83c,moneyline,home,,0,4,4,Win,"moneyline home: away_score=0, home_score=4 => win"
 2026_05_13,70e80bbf99890d3a610a98c21f3a7419,total,over,7.5,3,5,8,Win,total over 7.5: final_total=8 vs line=7.5 => win
-2026_05_13,ca6c0da9264577ed9bb23ff05ee77801,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_05_13,d27ba1c4cb8a441ca047f3a9054aab48,total,under,10.0,2,6,8,Win,total under 10: final_total=8 vs line=10 => win
 2026_05_14,07fe304b5fb4622bc1a942801ac904f6,run_line,home,1.5,5,4,9,Win,"run_line home 1.5: selected_score=4, opposing_score=5, adjusted_score=5.5 => win"
-2026_05_14,0fd9dcf5dd607b0b9074ed98709c23da,run_line,home,1.5,1,9,10,Win,"run_line home 1.5: selected_score=9, opposing_score=1, adjusted_score=10.5 => win"
-2026_05_14,3e233aef78a3a5c98e1d9fc4ba450901,run_line,home,1.5,2,6,8,Win,"run_line home 1.5: selected_score=6, opposing_score=2, adjusted_score=7.5 => win"
+2026_05_14,3e233aef78a3a5c98e1d9fc4ba450901,total,under,8.0,2,6,8,Push,total under 8: final_total=8 vs line=8 => push
 2026_05_14,6e7d9b2e9bc1d87a475e2a29d5c86b92,run_line,home,1.5,3,1,4,Loss,"run_line home 1.5: selected_score=1, opposing_score=3, adjusted_score=2.5 => loss"
+2026_05_14,901a26e0d74ceaadd9981af23f8e1a15,moneyline,away,,8,3,11,Win,"moneyline away: away_score=8, home_score=3 => win"
+2026_05_14,b707c40c030d32a5c6a52e12bdee39fd,total,over,7.5,2,7,9,Win,total over 7.5: final_total=9 vs line=7.5 => win
+2026_05_14,e24302ea9f75de2f74247cff5426bb72,total,over,7.5,4,9,13,Win,total over 7.5: final_total=13 vs line=7.5 => win
+2026_05_15,0a103297db91d5bd1abf13d04b710c2a,total,under,8.0,2,3,5,Win,total under 8: final_total=5 vs line=8 => win
+2026_05_15,0a103297db91d5bd1abf13d04b710c2a,moneyline,home,,2,3,5,Win,"moneyline home: away_score=2, home_score=3 => win"
 2026_05_15,19b80d07edae4ffcb25b42667963c877,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_05_15,204926b2f2e00788f62385d3af31d828,run_line,home,1.5,9,1,10,Loss,"run_line home 1.5: selected_score=1, opposing_score=9, adjusted_score=2.5 => loss"
 2026_05_15,2aee6b065d2ab7dd34a7bf34c50ecf64,run_line,home,1.5,2,7,9,Win,"run_line home 1.5: selected_score=7, opposing_score=2, adjusted_score=8.5 => win"
 2026_05_15,36e963840422a477a4a60c1d4b1b2879,run_line,home,1.5,10,5,15,Loss,"run_line home 1.5: selected_score=5, opposing_score=10, adjusted_score=6.5 => loss"
-2026_05_15,4323e1f1f88640843f73a6482a7730d5,run_line,home,1.5,0,2,2,Win,"run_line home 1.5: selected_score=2, opposing_score=0, adjusted_score=3.5 => win"
 2026_05_15,44a4350d4a8392d58e49e092bee941e9,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
 2026_05_15,857412c718e5a9787f2d262c8ad16cd5,run_line,home,1.5,4,5,9,Win,"run_line home 1.5: selected_score=5, opposing_score=4, adjusted_score=6.5 => win"
 2026_05_15,8a72d8b519cc92911419682fb63aaf67,moneyline,away,,6,0,6,Win,"moneyline away: away_score=6, home_score=0 => win"
-2026_05_16,2638aded4f2e2359a902072c9d2fba22,run_line,home,1.5,6,0,6,Loss,"run_line home 1.5: selected_score=0, opposing_score=6, adjusted_score=1.5 => loss"
+2026_05_15,919b933a4af691070848a940a7d07a84,total,over,7.0,2,0,2,Loss,total over 7: final_total=2 vs line=7 => loss
+2026_05_15,a051c6df269a83813b248ea222859c65,total,under,8.0,11,9,20,Loss,total under 8: final_total=20 vs line=8 => loss
 2026_05_16,4b228f8e92985dcf7be730bd8e8c2c5d,run_line,home,1.5,3,8,11,Win,"run_line home 1.5: selected_score=8, opposing_score=3, adjusted_score=9.5 => win"
-2026_05_16,6b2d5ebb90ade419f4d5c59b95c1b301,total,under,8.5,2,1,3,Win,total under 8.5: final_total=3 vs line=8.5 => win
 2026_05_16,a6224f9c00c2799d9f58de009bf48393,run_line,home,1.5,15,2,17,Loss,"run_line home 1.5: selected_score=2, opposing_score=15, adjusted_score=3.5 => loss"
 2026_05_16,c53d7080fd560dbde65770d1a7facbfd,run_line,home,1.5,3,6,9,Win,"run_line home 1.5: selected_score=6, opposing_score=3, adjusted_score=7.5 => win"
-2026_05_16,c53d7080fd560dbde65770d1a7facbfd,total,under,8.5,3,6,9,Loss,total under 8.5: final_total=9 vs line=8.5 => loss
-2026_05_16,cc7b9980605dd66040b354031b4491c8,run_line,home,1.5,3,13,16,Win,"run_line home 1.5: selected_score=13, opposing_score=3, adjusted_score=14.5 => win"
-2026_05_16,f1f5588e7499f45638568bb30db784a3,run_line,home,1.5,2,4,6,Win,"run_line home 1.5: selected_score=4, opposing_score=2, adjusted_score=5.5 => win"
+2026_05_17,0d9a62c64d2a238adaad12a20dcdbf30,moneyline,away,,4,1,5,Win,"moneyline away: away_score=4, home_score=1 => win"
 2026_05_17,0fb188572539c3bf9558877136a1c260,run_line,home,1.5,4,5,9,Win,"run_line home 1.5: selected_score=5, opposing_score=4, adjusted_score=6.5 => win"
-2026_05_17,116182ae8e8405948f5510df38eec4e8,moneyline,away,,8,9,17,Loss,"moneyline away: away_score=8, home_score=9 => loss"
-2026_05_17,202f16f2a36544c76cedfaacc4e45ada,run_line,home,1.5,2,0,2,Loss,"run_line home 1.5: selected_score=0, opposing_score=2, adjusted_score=1.5 => loss"
-2026_05_17,36d5609a0cc871bc0455884cbbeb54a7,run_line,home,1.5,7,3,10,Loss,"run_line home 1.5: selected_score=3, opposing_score=7, adjusted_score=4.5 => loss"
-2026_05_17,36d5609a0cc871bc0455884cbbeb54a7,total,under,10.5,7,3,10,Win,total under 10.5: final_total=10 vs line=10.5 => win
+2026_05_17,116182ae8e8405948f5510df38eec4e8,run_line,home,1.5,8,9,17,Win,"run_line home 1.5: selected_score=9, opposing_score=8, adjusted_score=10.5 => win"
+2026_05_17,4a7ed5c0f59bf539dffd13712f0d22e3,run_line,away,1.5,8,3,11,Win,"run_line away 1.5: selected_score=8, opposing_score=3, adjusted_score=9.5 => win"
 2026_05_17,8669868fab8f7f8ccddf468e6ac88d5b,run_line,home,1.5,6,7,13,Win,"run_line home 1.5: selected_score=7, opposing_score=6, adjusted_score=8.5 => win"
 2026_05_17,8732923778f83df576e551800c5f68d9,run_line,home,1.5,8,6,14,Loss,"run_line home 1.5: selected_score=6, opposing_score=8, adjusted_score=7.5 => loss"
-2026_05_17,c4ad12dbd84b0112939a27411ee0bf4d,run_line,home,1.5,8,0,8,Loss,"run_line home 1.5: selected_score=0, opposing_score=8, adjusted_score=1.5 => loss"
-2026_05_17,d125d71e5b57f505a63c57086e78bfea,total,over,7.0,6,0,6,Loss,total over 7: final_total=6 vs line=7 => loss
-2026_05_17,dd1591797593585fc5c6ed59ebb7a738,run_line,home,1.5,10,1,11,Loss,"run_line home 1.5: selected_score=1, opposing_score=10, adjusted_score=2.5 => loss"
+2026_05_17,bfb9f1713a1e1d5af34925cdf9b13a7e,total,under,8.5,1,8,9,Loss,total under 8.5: final_total=9 vs line=8.5 => loss
+2026_05_17,dd1591797593585fc5c6ed59ebb7a738,moneyline,away,,10,1,11,Win,"moneyline away: away_score=10, home_score=1 => win"
+2026_05_18,0659b2fd47b200a2c0fe612b8a32e5b1,total,over,10.0,4,5,9,Loss,total over 10: final_total=9 vs line=10 => loss
+2026_05_18,13038bc4537d05af00935232c7a96b21,moneyline,home,,6,7,13,Win,"moneyline home: away_score=6, home_score=7 => win"
 2026_05_18,13c307bac70250bed56ce2a649cc492e,run_line,home,1.5,6,7,13,Win,"run_line home 1.5: selected_score=7, opposing_score=6, adjusted_score=8.5 => win"
-2026_05_18,82ca2e0ae47260f1183ee3abf8a69169,run_line,home,1.5,3,1,4,Loss,"run_line home 1.5: selected_score=1, opposing_score=3, adjusted_score=2.5 => loss"
-2026_05_18,8bf07e3c1ae5450be5661196332a989f,total,under,10.5,16,7,23,Loss,total under 10.5: final_total=23 vs line=10.5 => loss
-2026_05_18,a8e5153e31f262e9df1bef1566519c3f,total,under,9.0,1,2,3,Win,total under 9: final_total=3 vs line=9 => win
+2026_05_18,14c70bb665938baff9719079a82cbb93,run_line,away,1.5,1,6,7,Loss,"run_line away 1.5: selected_score=1, opposing_score=6, adjusted_score=2.5 => loss"
+2026_05_18,a8e5153e31f262e9df1bef1566519c3f,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
 2026_05_18,d98976061eadebf5d9ba5c0632212976,run_line,home,1.5,0,1,1,Win,"run_line home 1.5: selected_score=1, opposing_score=0, adjusted_score=2.5 => win"
-2026_05_18,d98976061eadebf5d9ba5c0632212976,total,over,7.5,0,1,1,Loss,total over 7.5: final_total=1 vs line=7.5 => loss
+2026_05_19,00aa355eed768f248a9d925736ced07e,run_line,home,1.5,3,5,8,Win,"run_line home 1.5: selected_score=5, opposing_score=3, adjusted_score=6.5 => win"
+2026_05_19,00aa355eed768f248a9d925736ced07e,total,under,8.5,3,5,8,Win,total under 8.5: final_total=8 vs line=8.5 => win
+2026_05_19,36672faae36a4b8104686a4a2068f311,run_line,away,1.5,14,6,20,Win,"run_line away 1.5: selected_score=14, opposing_score=6, adjusted_score=15.5 => win"
+2026_05_19,71b59fe2207f3970c30c5dacc7d3956d,run_line,away,1.5,4,5,9,Win,"run_line away 1.5: selected_score=4, opposing_score=5, adjusted_score=5.5 => win"
+2026_05_19,97bf3716f67af1bbeb31d15893f46ec1,run_line,away,1.5,2,1,3,Win,"run_line away 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
+2026_05_19,9ba5958467f2222cf1204d56f898ed51,moneyline,away,,6,9,15,Loss,"moneyline away: away_score=6, home_score=9 => loss"
 2026_05_19,9dc0d5b7cb72b6692039e5b9a98b9c02,run_line,home,1.5,6,9,15,Win,"run_line home 1.5: selected_score=9, opposing_score=6, adjusted_score=10.5 => win"
+2026_05_19,a1ca821baa20137a228b1dff8e70c21d,total,under,8.0,5,2,7,Win,total under 8: final_total=7 vs line=8 => win
 2026_05_19,ae09768ff9ace4d90b4d8b78be0ac325,run_line,home,1.5,8,4,12,Loss,"run_line home 1.5: selected_score=4, opposing_score=8, adjusted_score=5.5 => loss"
 2026_05_19,c974a8cecb0d3237e2c78f1920c5eaf3,run_line,home,1.5,1,4,5,Win,"run_line home 1.5: selected_score=4, opposing_score=1, adjusted_score=5.5 => win"
 2026_05_19,d66cf630e36e9449d187a5ac8311303c,run_line,home,1.5,5,4,9,Win,"run_line home 1.5: selected_score=4, opposing_score=5, adjusted_score=5.5 => win"
 2026_05_19,ec5b231b8737543f956f9575bc81de01,run_line,home,1.5,7,1,8,Loss,"run_line home 1.5: selected_score=1, opposing_score=7, adjusted_score=2.5 => loss"
 2026_05_20,005a4910f335d19816293b6d19644bd0,run_line,home,1.5,4,3,7,Win,"run_line home 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
 2026_05_20,2d368724e0c14ae2d63c7f7016e17330,run_line,home,1.5,4,8,12,Win,"run_line home 1.5: selected_score=8, opposing_score=4, adjusted_score=9.5 => win"
-2026_05_20,9090dcea2ce4abd32e09245a44d713d7,run_line,home,1.5,7,0,7,Loss,"run_line home 1.5: selected_score=0, opposing_score=7, adjusted_score=1.5 => loss"
-2026_05_20,b0078538407a959dc03f5469df863662,total,over,7.5,4,5,9,Win,total over 7.5: final_total=9 vs line=7.5 => win
-2026_05_20,cc55d7d8e85462a3aa9f55084d696c51,run_line,home,1.5,3,2,5,Win,"run_line home 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
+2026_05_20,359cc9aec9f8a43ddd53ba06ce331765,moneyline,away,,6,5,11,Win,"moneyline away: away_score=6, home_score=5 => win"
+2026_05_20,3846930337f62766087b0490c958713e,moneyline,away,,5,4,9,Win,"moneyline away: away_score=5, home_score=4 => win"
+2026_05_20,cc55d7d8e85462a3aa9f55084d696c51,moneyline,away,,3,2,5,Win,"moneyline away: away_score=3, home_score=2 => win"
+2026_05_20,ce352adc7aae36822a5575bb25b54ff8,run_line,home,1.5,9,1,10,Loss,"run_line home 1.5: selected_score=1, opposing_score=9, adjusted_score=2.5 => loss"
+2026_05_20,eb71b24bcac6134977abdc1add17dd0a,run_line,home,1.5,4,0,4,Loss,"run_line home 1.5: selected_score=0, opposing_score=4, adjusted_score=1.5 => loss"
+2026_05_21,427339d860a9d7bf7b2075fa02850c56,run_line,home,1.5,3,1,4,Loss,"run_line home 1.5: selected_score=1, opposing_score=3, adjusted_score=2.5 => loss"
+2026_05_21,427339d860a9d7bf7b2075fa02850c56,total,over,7.0,3,1,4,Loss,total over 7: final_total=4 vs line=7 => loss
+2026_05_21,6297516eb97ef4842f3fc5b36d64adb2,moneyline,away,,6,2,8,Win,"moneyline away: away_score=6, home_score=2 => win"
 2026_05_21,ad313997692fb82ede49e0b3e0c17525,run_line,home,1.5,3,2,5,Win,"run_line home 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
 2026_05_21,fa85c6e14d2b480b97a6f0004286ec0b,run_line,home,1.5,9,3,12,Loss,"run_line home 1.5: selected_score=3, opposing_score=9, adjusted_score=4.5 => loss"
-2026_05_22,2e525c53c28c114fe0aeaafcbe01e2be,run_line,home,1.5,9,4,13,Loss,"run_line home 1.5: selected_score=4, opposing_score=9, adjusted_score=5.5 => loss"
-2026_05_22,79b579806db1b97214fad9783eef88cd,run_line,home,1.5,2,0,2,Loss,"run_line home 1.5: selected_score=0, opposing_score=2, adjusted_score=1.5 => loss"
-2026_05_22,de08b74f7a56e9ca21d1a814f3bb9580,run_line,home,1.5,8,1,9,Loss,"run_line home 1.5: selected_score=1, opposing_score=8, adjusted_score=2.5 => loss"
+2026_05_21,fa85c6e14d2b480b97a6f0004286ec0b,total,over,7.5,9,3,12,Win,total over 7.5: final_total=12 vs line=7.5 => win
+2026_05_22,35a7408a1687fdea6b7052d86f74cdb5,total,over,7.5,6,9,15,Win,total over 7.5: final_total=15 vs line=7.5 => win
+2026_05_22,7298c47d240347dac3ccc27327e2dd9c,run_line,away,1.5,4,2,6,Win,"run_line away 1.5: selected_score=4, opposing_score=2, adjusted_score=5.5 => win"
+2026_05_22,de08b74f7a56e9ca21d1a814f3bb9580,total,over,9.5,8,1,9,Loss,total over 9.5: final_total=9 vs line=9.5 => loss
+2026_05_22,ed5e4f7c7c0c51b06ffd0fdf93ce8f17,total,over,7.5,8,6,14,Win,total over 7.5: final_total=14 vs line=7.5 => win
 2026_05_23,188966d9ba86d03383806bac10bc777c,run_line,home,1.5,6,7,13,Win,"run_line home 1.5: selected_score=7, opposing_score=6, adjusted_score=8.5 => win"
-2026_05_23,1b110a61227c86ab2f069fb32d6720af,run_line,home,1.5,0,2,2,Win,"run_line home 1.5: selected_score=2, opposing_score=0, adjusted_score=3.5 => win"
 2026_05_23,1d419a4245a0f02f79282579190123f2,moneyline,away,,2,5,7,Loss,"moneyline away: away_score=2, home_score=5 => loss"
+2026_05_23,203ad61a573433f885122e8811cd8350,total,under,8.5,0,5,5,Win,total under 8.5: final_total=5 vs line=8.5 => win
+2026_05_23,5e73a3b37ba9f2d7f8672112ad0b5d3a,total,over,7.5,3,0,3,Loss,total over 7.5: final_total=3 vs line=7.5 => loss
 2026_05_23,613fbf2d89b0e9cffb2d70ebdbe1f178,run_line,home,1.5,4,2,6,Loss,"run_line home 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
-2026_05_23,71e440d0877946408af692d321e7972b,run_line,home,1.5,4,1,5,Loss,"run_line home 1.5: selected_score=1, opposing_score=4, adjusted_score=2.5 => loss"
+2026_05_23,613fbf2d89b0e9cffb2d70ebdbe1f178,total,under,8.5,4,2,6,Win,total under 8.5: final_total=6 vs line=8.5 => win
+2026_05_23,bb14f988c4cc921c1b5286bf757183f6,total,over,7.5,0,3,3,Loss,total over 7.5: final_total=3 vs line=7.5 => loss
 2026_05_23,cdafb9b5d32150ff1e65098271c992b2,run_line,home,1.5,2,5,7,Win,"run_line home 1.5: selected_score=5, opposing_score=2, adjusted_score=6.5 => win"
+2026_05_23,cdafb9b5d32150ff1e65098271c992b2,total,under,8.0,2,5,7,Win,total under 8: final_total=7 vs line=8 => win
+2026_05_23,d414dc60c44b7705cece8354be2575d1,run_line,away,1.5,3,10,13,Loss,"run_line away 1.5: selected_score=3, opposing_score=10, adjusted_score=4.5 => loss"
 2026_05_23,e8edd4604077b2fc638f1b2e3db08545,run_line,home,1.5,11,3,14,Loss,"run_line home 1.5: selected_score=3, opposing_score=11, adjusted_score=4.5 => loss"
+2026_05_24,0c7eacfb6fcc01d117cceb47c958a392,total,under,8.5,6,8,14,Loss,total under 8.5: final_total=14 vs line=8.5 => loss
 2026_05_24,24764298bc8225d9b8c29e943649671f,run_line,home,1.5,0,4,4,Win,"run_line home 1.5: selected_score=4, opposing_score=0, adjusted_score=5.5 => win"
 2026_05_24,35fc54e79ed63979cd762e9846ada0c2,run_line,home,1.5,2,1,3,Win,"run_line home 1.5: selected_score=1, opposing_score=2, adjusted_score=2.5 => win"
+2026_05_24,491a9de98e8b6561bbf422febc6f39af,run_line,away,1.5,3,5,8,Loss,"run_line away 1.5: selected_score=3, opposing_score=5, adjusted_score=4.5 => loss"
+2026_05_24,491a9de98e8b6561bbf422febc6f39af,total,under,8.0,3,5,8,Push,total under 8: final_total=8 vs line=8 => push
 2026_05_24,6810bebc827ff6339e19bf57045954c2,run_line,home,1.5,3,1,4,Loss,"run_line home 1.5: selected_score=1, opposing_score=3, adjusted_score=2.5 => loss"
+2026_05_24,8f29a5e5e5da656a595405cea1f3dbae,run_line,away,1.5,0,2,2,Loss,"run_line away 1.5: selected_score=0, opposing_score=2, adjusted_score=1.5 => loss"
 2026_05_24,a3077ecb7ee3e8827e0af9e701b5e0b7,run_line,home,1.5,4,1,5,Loss,"run_line home 1.5: selected_score=1, opposing_score=4, adjusted_score=2.5 => loss"
 2026_05_24,bcb23e6708172d9bcdc2a18e01b320ce,run_line,home,1.5,5,8,13,Win,"run_line home 1.5: selected_score=8, opposing_score=5, adjusted_score=9.5 => win"
-2026_05_25,07cd090c6a690c5a8478fc3834d0421b,moneyline,away,,7,9,16,Loss,"moneyline away: away_score=7, home_score=9 => loss"
-2026_05_25,56f5691dc9526c1284405c8be014cd55,run_line,home,1.5,1,3,4,Win,"run_line home 1.5: selected_score=3, opposing_score=1, adjusted_score=4.5 => win"
-2026_05_25,7123a44993110990cac606ecf9dd4292,run_line,home,1.5,3,0,3,Loss,"run_line home 1.5: selected_score=0, opposing_score=3, adjusted_score=1.5 => loss"
-2026_05_25,8c78facf9134823f8b8caaecab733fe5,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
-2026_05_25,e03d047a725cd7870eb6b6eaf8b23942,moneyline,away,,9,2,11,Win,"moneyline away: away_score=9, home_score=2 => win"
-2026_05_25,e94284827b5744a1519040f323631cda,moneyline,away,,4,3,7,Win,"moneyline away: away_score=4, home_score=3 => win"
-2026_05_26,178bf0e15a0e6812cdf47d0523e51ac7,run_line,home,1.5,7,5,12,Loss,"run_line home 1.5: selected_score=5, opposing_score=7, adjusted_score=6.5 => loss"
-2026_05_26,42ec808f3f2b51bde3830094a2d31f59,moneyline,away,,7,2,9,Win,"moneyline away: away_score=7, home_score=2 => win"
+2026_05_25,07cd090c6a690c5a8478fc3834d0421b,total,over,7.5,7,9,16,Win,total over 7.5: final_total=16 vs line=7.5 => win
+2026_05_25,74ffd45f125fe46746cf345bf6c2758b,total,under,8.0,10,2,12,Loss,total under 8: final_total=12 vs line=8 => loss
+2026_05_25,8c78facf9134823f8b8caaecab733fe5,total,under,8.0,1,2,3,Win,total under 8: final_total=3 vs line=8 => win
+2026_05_26,2a617b3c38b4cfff06d9866d761bb481,total,under,8.0,1,12,13,Loss,total under 8: final_total=13 vs line=8 => loss
+2026_05_26,3612f76561632387afb3c6779ef370b1,total,under,8.5,1,6,7,Win,total under 8.5: final_total=7 vs line=8.5 => win
 2026_05_26,57c63aa916ea5b39518da155c32b24ee,run_line,home,1.5,5,3,8,Loss,"run_line home 1.5: selected_score=3, opposing_score=5, adjusted_score=4.5 => loss"
-2026_05_26,82e37a8a126f9724f8872ec1669446da,run_line,home,1.5,4,3,7,Win,"run_line home 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
-2026_05_26,82e37a8a126f9724f8872ec1669446da,total,under,8.0,4,3,7,Win,total under 8: final_total=7 vs line=8 => win
+2026_05_26,6c64b931bb7cda75b570159a5a4ed328,run_line,away,1.5,10,6,16,Win,"run_line away 1.5: selected_score=10, opposing_score=6, adjusted_score=11.5 => win"
 2026_05_26,990789f1b2f666667f7dad0fe7d8b8b8,run_line,home,1.5,7,6,13,Win,"run_line home 1.5: selected_score=6, opposing_score=7, adjusted_score=7.5 => win"
+2026_05_26,b50993453829a9cf93015ffb4cce5262,run_line,away,1.5,1,8,9,Loss,"run_line away 1.5: selected_score=1, opposing_score=8, adjusted_score=2.5 => loss"
+2026_05_26,d8d4e1b2c44eb56c7b6ab81de4f6b385,run_line,away,1.5,7,10,17,Loss,"run_line away 1.5: selected_score=7, opposing_score=10, adjusted_score=8.5 => loss"
+2026_05_26,e3e38b1f0ba0517d7e95030e6f0b6a8d,run_line,away,1.5,6,3,9,Win,"run_line away 1.5: selected_score=6, opposing_score=3, adjusted_score=7.5 => win"
 2026_05_27,0bf247d0cff39f586755507c71b2d50c,run_line,home,1.5,3,2,5,Win,"run_line home 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
 2026_05_27,163227043e0edc8544e84f24250fe6b3,run_line,home,1.5,2,11,13,Win,"run_line home 1.5: selected_score=11, opposing_score=2, adjusted_score=12.5 => win"
-2026_05_27,2b326f001d0f02dd0d2032f5291d9966,run_line,home,1.5,10,4,14,Loss,"run_line home 1.5: selected_score=4, opposing_score=10, adjusted_score=5.5 => loss"
+2026_05_27,228dd3c2e156b75b9ed49b10de2e6765,run_line,away,1.5,4,3,7,Win,"run_line away 1.5: selected_score=4, opposing_score=3, adjusted_score=5.5 => win"
+2026_05_27,228dd3c2e156b75b9ed49b10de2e6765,total,over,7.5,4,3,7,Loss,total over 7.5: final_total=7 vs line=7.5 => loss
 2026_05_27,37259b2bbe7415ecdf587502c33a932d,run_line,home,1.5,3,0,3,Loss,"run_line home 1.5: selected_score=0, opposing_score=3, adjusted_score=1.5 => loss"
-2026_05_27,adfc9cd4529fc7b4ed6fb31e0e3d714c,run_line,home,1.5,9,1,10,Loss,"run_line home 1.5: selected_score=1, opposing_score=9, adjusted_score=2.5 => loss"
+2026_05_27,adfc9cd4529fc7b4ed6fb31e0e3d714c,moneyline,away,,9,1,10,Win,"moneyline away: away_score=9, home_score=1 => win"
 2026_05_27,ded9b9a083989d5a8249364b1eb5a293,run_line,home,1.5,2,4,6,Win,"run_line home 1.5: selected_score=4, opposing_score=2, adjusted_score=5.5 => win"
+2026_05_27,ded9b9a083989d5a8249364b1eb5a293,total,under,8.0,2,4,6,Win,total under 8: final_total=6 vs line=8 => win
+2026_05_28,28a4545a50aea1be3bff69f0dea3afcc,run_line,away,1.5,7,1,8,Win,"run_line away 1.5: selected_score=7, opposing_score=1, adjusted_score=8.5 => win"
 2026_05_29,18e8a4acb1d40019544cfef0a5f07ef1,run_line,home,1.5,2,4,6,Win,"run_line home 1.5: selected_score=4, opposing_score=2, adjusted_score=5.5 => win"
-2026_05_29,26c7991c125b7365c82472e2468e59a6,total,under,9.5,8,2,10,Loss,total under 9.5: final_total=10 vs line=9.5 => loss
-2026_05_29,26c7991c125b7365c82472e2468e59a6,moneyline,away,,8,2,10,Win,"moneyline away: away_score=8, home_score=2 => win"
 2026_05_29,274a30921628d47bff96d4b5f37f6a19,run_line,home,1.5,5,4,9,Win,"run_line home 1.5: selected_score=4, opposing_score=5, adjusted_score=5.5 => win"
-2026_05_29,4018fbc29a76d2079208cbe8913a9de1,run_line,home,1.5,5,6,11,Win,"run_line home 1.5: selected_score=6, opposing_score=5, adjusted_score=7.5 => win"
-2026_05_29,765d27e397e587aa1885002dd751e9da,run_line,away,1.5,5,6,11,Win,"run_line away 1.5: selected_score=5, opposing_score=6, adjusted_score=6.5 => win"
+2026_05_29,57848c1e5cf12fb46c9c6e5c89c1022e,total,over,7.5,1,9,10,Win,total over 7.5: final_total=10 vs line=7.5 => win
+2026_05_29,6493e9132fdd464eebd5031d8ad02c41,run_line,home,1.5,7,9,16,Win,"run_line home 1.5: selected_score=9, opposing_score=7, adjusted_score=10.5 => win"
 2026_05_29,8c92a04b11da0a1f6f84d1dfd48fbf9d,run_line,home,1.5,7,5,12,Loss,"run_line home 1.5: selected_score=5, opposing_score=7, adjusted_score=6.5 => loss"
+2026_05_29,bc8152dee5f6a9c85e452cc78f0747e4,run_line,away,1.5,6,7,13,Win,"run_line away 1.5: selected_score=6, opposing_score=7, adjusted_score=7.5 => win"
 2026_05_30,63299501,run_line,home,1.5,6,7,13,Win,"run_line home 1.5: selected_score=7, opposing_score=6, adjusted_score=8.5 => win"
-2026_05_30,63299521,run_line,home,1.5,1,7,8,Win,"run_line home 1.5: selected_score=7, opposing_score=1, adjusted_score=8.5 => win"
 2026_05_30,63299639,run_line,home,1.5,4,9,13,Win,"run_line home 1.5: selected_score=9, opposing_score=4, adjusted_score=10.5 => win"
-2026_05_30,63299639,total,over,7.5,4,9,13,Win,total over 7.5: final_total=13 vs line=7.5 => win
 2026_05_30,63299695,run_line,home,1.5,2,9,11,Win,"run_line home 1.5: selected_score=9, opposing_score=2, adjusted_score=10.5 => win"
 2026_05_30,63299705,run_line,home,1.5,5,6,11,Win,"run_line home 1.5: selected_score=6, opposing_score=5, adjusted_score=7.5 => win"
-2026_05_30,63300315,total,under,8.5,4,3,7,Win,total under 8.5: final_total=7 vs line=8.5 => win
-2026_05_31,63299785,moneyline,away,,2,0,2,Win,"moneyline away: away_score=2, home_score=0 => win"
-2026_05_31,63300621,run_line,home,1.5,1,5,6,Win,"run_line home 1.5: selected_score=5, opposing_score=1, adjusted_score=6.5 => win"
-2026_05_31,63300635,run_line,away,1.5,1,2,3,Win,"run_line away 1.5: selected_score=1, opposing_score=2, adjusted_score=2.5 => win"
-2026_06_01,63301179,run_line,home,1.5,1,4,5,Win,"run_line home 1.5: selected_score=4, opposing_score=1, adjusted_score=5.5 => win"
-2026_06_02,63300829,run_line,home,1.5,6,5,11,Win,"run_line home 1.5: selected_score=5, opposing_score=6, adjusted_score=6.5 => win"
-2026_06_02,63301197,run_line,home,1.5,4,6,10,Win,"run_line home 1.5: selected_score=6, opposing_score=4, adjusted_score=7.5 => win"
-2026_06_02,63301777,run_line,home,1.5,7,3,10,Loss,"run_line home 1.5: selected_score=3, opposing_score=7, adjusted_score=4.5 => loss"
+2026_05_30,63300023,moneyline,away,,6,1,7,Win,"moneyline away: away_score=6, home_score=1 => win"
+2026_05_30,63300779,total,over,7.0,1,6,7,Push,total over 7: final_total=7 vs line=7 => push
+2026_05_31,63299609,run_line,away,1.5,2,3,5,Win,"run_line away 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
+2026_05_31,63300063,moneyline,away,,13,8,21,Win,"moneyline away: away_score=13, home_score=8 => win"
+2026_05_31,63300095,total,over,7.5,9,4,13,Win,total over 7.5: final_total=13 vs line=7.5 => win
+2026_05_31,63300183,total,under,8.5,5,9,14,Loss,total under 8.5: final_total=14 vs line=8.5 => loss
+2026_05_31,63300371,run_line,away,1.5,3,9,12,Loss,"run_line away 1.5: selected_score=3, opposing_score=9, adjusted_score=4.5 => loss"
+2026_05_31,63300393,run_line,away,1.5,1,9,10,Loss,"run_line away 1.5: selected_score=1, opposing_score=9, adjusted_score=2.5 => loss"
+2026_06_01,63299391,total,over,7.5,2,16,18,Win,total over 7.5: final_total=18 vs line=7.5 => win
+2026_06_01,63301179,total,under,8.5,1,4,5,Win,total under 8.5: final_total=5 vs line=8.5 => win
+2026_06_01,63301821,run_line,away,1.5,10,9,19,Win,"run_line away 1.5: selected_score=10, opposing_score=9, adjusted_score=11.5 => win"
+2026_06_01,63302977,run_line,away,1.5,6,9,15,Loss,"run_line away 1.5: selected_score=6, opposing_score=9, adjusted_score=7.5 => loss"
+2026_06_01,63303797,total,over,9.5,9,2,11,Win,total over 9.5: final_total=11 vs line=9.5 => win
+2026_06_02,63301079,run_line,away,1.5,2,3,5,Win,"run_line away 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
+2026_06_02,63301257,total,over,7.0,3,8,11,Win,total over 7: final_total=11 vs line=7 => win
+2026_06_02,63302443,total,over,7.5,2,1,3,Loss,total over 7.5: final_total=3 vs line=7.5 => loss
 2026_06_02,63302527,run_line,home,1.5,3,4,7,Win,"run_line home 1.5: selected_score=4, opposing_score=3, adjusted_score=5.5 => win"
 2026_06_02,63302527,total,over,7.5,3,4,7,Loss,total over 7.5: final_total=7 vs line=7.5 => loss
 2026_06_03,63299145,run_line,home,1.5,9,11,20,Win,"run_line home 1.5: selected_score=11, opposing_score=9, adjusted_score=12.5 => win"
+2026_06_03,63301849,total,under,8.5,8,0,8,Win,total under 8.5: final_total=8 vs line=8.5 => win
+2026_06_03,63302343,total,under,8.0,3,5,8,Push,total under 8: final_total=8 vs line=8 => push
+2026_06_03,63302363,run_line,away,1.5,1,8,9,Loss,"run_line away 1.5: selected_score=1, opposing_score=8, adjusted_score=2.5 => loss"
 2026_06_03,63302469,run_line,home,1.5,4,1,5,Loss,"run_line home 1.5: selected_score=1, opposing_score=4, adjusted_score=2.5 => loss"
-2026_06_04,63301717,run_line,home,1.5,8,2,10,Loss,"run_line home 1.5: selected_score=2, opposing_score=8, adjusted_score=3.5 => loss"
+2026_06_03,63302849,run_line,away,1.5,7,2,9,Win,"run_line away 1.5: selected_score=7, opposing_score=2, adjusted_score=8.5 => win"
+2026_06_03,63303801,run_line,away,1.5,5,4,9,Win,"run_line away 1.5: selected_score=5, opposing_score=4, adjusted_score=6.5 => win"
+2026_06_04,63299451,run_line,away,1.5,7,2,9,Win,"run_line away 1.5: selected_score=7, opposing_score=2, adjusted_score=8.5 => win"
+2026_06_04,63303117,moneyline,home,,4,6,10,Win,"moneyline home: away_score=4, home_score=6 => win"
 2026_06_04,63303517,run_line,home,1.5,8,6,14,Loss,"run_line home 1.5: selected_score=6, opposing_score=8, adjusted_score=7.5 => loss"
 2026_06_04,63303705,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_06_05,63299195,total,over,7.5,2,3,5,Loss,total over 7.5: final_total=5 vs line=7.5 => loss
-2026_06_05,63300949,moneyline,away,,9,7,16,Win,"moneyline away: away_score=9, home_score=7 => win"
+2026_06_05,63299195,moneyline,away,,2,3,5,Loss,"moneyline away: away_score=2, home_score=3 => loss"
+2026_06_05,63301407,run_line,away,1.5,5,3,8,Win,"run_line away 1.5: selected_score=5, opposing_score=3, adjusted_score=6.5 => win"
+2026_06_05,63302623,run_line,away,1.5,3,10,13,Loss,"run_line away 1.5: selected_score=3, opposing_score=10, adjusted_score=4.5 => loss"
 2026_06_05,63303571,run_line,home,1.5,1,5,6,Win,"run_line home 1.5: selected_score=5, opposing_score=1, adjusted_score=6.5 => win"
 2026_06_06,63301677,run_line,home,1.5,2,13,15,Win,"run_line home 1.5: selected_score=13, opposing_score=2, adjusted_score=14.5 => win"
 2026_06_06,63301727,moneyline,away,,4,0,4,Win,"moneyline away: away_score=4, home_score=0 => win"
-2026_06_06,63301995,run_line,home,1.5,3,6,9,Win,"run_line home 1.5: selected_score=6, opposing_score=3, adjusted_score=7.5 => win"
-2026_06_06,63301995,total,under,8.5,3,6,9,Loss,total under 8.5: final_total=9 vs line=8.5 => loss
 2026_06_06,63302493,run_line,home,1.5,3,4,7,Win,"run_line home 1.5: selected_score=4, opposing_score=3, adjusted_score=5.5 => win"
-2026_06_06,63303365,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_06_06,63303473,run_line,home,1.5,4,6,10,Win,"run_line home 1.5: selected_score=6, opposing_score=4, adjusted_score=7.5 => win"
-2026_06_07,63301451,run_line,home,1.5,1,4,5,Win,"run_line home 1.5: selected_score=4, opposing_score=1, adjusted_score=5.5 => win"
-2026_06_07,63301789,run_line,home,1.5,5,0,5,Loss,"run_line home 1.5: selected_score=0, opposing_score=5, adjusted_score=1.5 => loss"
-2026_06_07,63302133,run_line,home,1.5,6,5,11,Win,"run_line home 1.5: selected_score=5, opposing_score=6, adjusted_score=6.5 => win"
-2026_06_08,63302359,run_line,home,1.5,6,3,9,Loss,"run_line home 1.5: selected_score=3, opposing_score=6, adjusted_score=4.5 => loss"
+2026_06_06,63302719,run_line,away,1.5,6,1,7,Win,"run_line away 1.5: selected_score=6, opposing_score=1, adjusted_score=7.5 => win"
+2026_06_06,63302831,run_line,away,1.5,6,3,9,Win,"run_line away 1.5: selected_score=6, opposing_score=3, adjusted_score=7.5 => win"
+2026_06_06,63302917,run_line,away,1.5,2,3,5,Win,"run_line away 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
+2026_06_06,63303365,total,over,7.5,2,3,5,Loss,total over 7.5: final_total=5 vs line=7.5 => loss
+2026_06_06,63303689,moneyline,away,,7,1,8,Win,"moneyline away: away_score=7, home_score=1 => win"
+2026_06_07,63301753,moneyline,away,,12,4,16,Win,"moneyline away: away_score=12, home_score=4 => win"
+2026_06_08,63299157,moneyline,away,,15,14,29,Win,"moneyline away: away_score=15, home_score=14 => win"
 2026_06_08,63302787,run_line,home,1.5,5,2,7,Loss,"run_line home 1.5: selected_score=2, opposing_score=5, adjusted_score=3.5 => loss"
-2026_06_08,63302787,total,over,7.5,5,2,7,Loss,total over 7.5: final_total=7 vs line=7.5 => loss
-2026_06_08,63302861,moneyline,away,,5,4,9,Win,"moneyline away: away_score=5, home_score=4 => win"
-2026_06_08,63302909,run_line,home,1.5,1,3,4,Win,"run_line home 1.5: selected_score=3, opposing_score=1, adjusted_score=4.5 => win"
-2026_06_08,63303263,run_line,home,1.5,7,5,12,Loss,"run_line home 1.5: selected_score=5, opposing_score=7, adjusted_score=6.5 => loss"
-2026_06_09,63301141,moneyline,away,,5,7,12,Loss,"moneyline away: away_score=5, home_score=7 => loss"
-2026_06_09,63302797,run_line,home,1.5,12,3,15,Loss,"run_line home 1.5: selected_score=3, opposing_score=12, adjusted_score=4.5 => loss"
-2026_06_09,63302839,moneyline,away,,5,6,11,Loss,"moneyline away: away_score=5, home_score=6 => loss"
-2026_06_09,63303449,run_line,home,1.5,1,10,11,Win,"run_line home 1.5: selected_score=10, opposing_score=1, adjusted_score=11.5 => win"
-2026_06_10,63301019,run_line,home,1.5,0,8,8,Win,"run_line home 1.5: selected_score=8, opposing_score=0, adjusted_score=9.5 => win"
-2026_06_10,63301321,total,under,8.5,8,9,17,Loss,total under 8.5: final_total=17 vs line=8.5 => loss
-2026_06_10,63303445,moneyline,away,,1,2,3,Loss,"moneyline away: away_score=1, home_score=2 => loss"
-2026_06_11,63301497,run_line,home,1.5,2,0,2,Loss,"run_line home 1.5: selected_score=0, opposing_score=2, adjusted_score=1.5 => loss"
+2026_06_08,63303369,run_line,away,1.5,2,6,8,Loss,"run_line away 1.5: selected_score=2, opposing_score=6, adjusted_score=3.5 => loss"
+2026_06_09,63301687,run_line,home,1.5,6,5,11,Win,"run_line home 1.5: selected_score=5, opposing_score=6, adjusted_score=6.5 => win"
+2026_06_09,63302059,total,under,8.5,3,2,5,Win,total under 8.5: final_total=5 vs line=8.5 => win
+2026_06_09,63302479,moneyline,away,,3,7,10,Loss,"moneyline away: away_score=3, home_score=7 => loss"
+2026_06_10,63303445,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
 2026_06_11,63302121,run_line,home,1.5,5,7,12,Win,"run_line home 1.5: selected_score=7, opposing_score=5, adjusted_score=8.5 => win"
+2026_06_11,63303573,run_line,home,1.5,8,6,14,Loss,"run_line home 1.5: selected_score=6, opposing_score=8, adjusted_score=7.5 => loss"
+2026_06_11,63303803,total,under,8.5,0,2,2,Win,total under 8.5: final_total=2 vs line=8.5 => win
 2026_06_12,63299233,run_line,home,1.5,5,7,12,Win,"run_line home 1.5: selected_score=7, opposing_score=5, adjusted_score=8.5 => win"
-2026_06_12,63302273,moneyline,away,,2,8,10,Loss,"moneyline away: away_score=2, home_score=8 => loss"
-2026_06_12,63302575,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_06_12,63302871,run_line,home,1.5,5,8,13,Win,"run_line home 1.5: selected_score=8, opposing_score=5, adjusted_score=9.5 => win"
-2026_06_13,63299171,run_line,home,1.5,1,3,4,Win,"run_line home 1.5: selected_score=3, opposing_score=1, adjusted_score=4.5 => win"
-2026_06_13,63299171,total,over,7.5,1,3,4,Loss,total over 7.5: final_total=4 vs line=7.5 => loss
-2026_06_13,63299299,moneyline,away,,3,1,4,Win,"moneyline away: away_score=3, home_score=1 => win"
-2026_06_13,63301585,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_06_13,63301585,moneyline,home,,2,3,5,Win,"moneyline home: away_score=2, home_score=3 => win"
-2026_06_13,63302453,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
+2026_06_12,63302575,total,under,8.5,2,3,5,Win,total under 8.5: final_total=5 vs line=8.5 => win
+2026_06_13,63299171,moneyline,away,,1,3,4,Loss,"moneyline away: away_score=1, home_score=3 => loss"
+2026_06_13,63301217,run_line,away,1.5,5,7,12,Loss,"run_line away 1.5: selected_score=5, opposing_score=7, adjusted_score=6.5 => loss"
 2026_06_13,63302587,run_line,home,1.5,3,1,4,Loss,"run_line home 1.5: selected_score=1, opposing_score=3, adjusted_score=2.5 => loss"
+2026_06_13,63302699,total,under,8.0,7,1,8,Push,total under 8: final_total=8 vs line=8 => push
 2026_06_13,63302699,moneyline,away,,7,1,8,Win,"moneyline away: away_score=7, home_score=1 => win"
 2026_06_14,63299225,run_line,home,1.5,1,8,9,Win,"run_line home 1.5: selected_score=8, opposing_score=1, adjusted_score=9.5 => win"
-2026_06_14,63302635,run_line,home,1.5,5,3,8,Loss,"run_line home 1.5: selected_score=3, opposing_score=5, adjusted_score=4.5 => loss"
-2026_06_14,63303149,run_line,home,1.5,6,7,13,Win,"run_line home 1.5: selected_score=7, opposing_score=6, adjusted_score=8.5 => win"
+2026_06_14,63301783,total,over,7.0,4,2,6,Loss,total over 7: final_total=6 vs line=7 => loss
 2026_06_14,63303833,run_line,home,1.5,8,3,11,Loss,"run_line home 1.5: selected_score=3, opposing_score=8, adjusted_score=4.5 => loss"
+2026_06_15,63300953,run_line,away,1.5,4,5,9,Win,"run_line away 1.5: selected_score=4, opposing_score=5, adjusted_score=5.5 => win"
+2026_06_15,63300953,total,over,9.5,4,5,9,Loss,total over 9.5: final_total=9 vs line=9.5 => loss
+2026_06_15,63300977,run_line,away,1.5,3,4,7,Win,"run_line away 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
+2026_06_15,63301751,run_line,away,1.5,0,3,3,Loss,"run_line away 1.5: selected_score=0, opposing_score=3, adjusted_score=1.5 => loss"
+2026_06_16,63301365,run_line,away,1.5,2,4,6,Loss,"run_line away 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
 2026_06_16,63301883,run_line,home,1.5,3,5,8,Win,"run_line home 1.5: selected_score=5, opposing_score=3, adjusted_score=6.5 => win"
 2026_06_16,63301927,run_line,home,1.5,6,1,7,Loss,"run_line home 1.5: selected_score=1, opposing_score=6, adjusted_score=2.5 => loss"
 2026_06_16,63302605,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_06_17,63299187,run_line,home,1.5,2,4,6,Win,"run_line home 1.5: selected_score=4, opposing_score=2, adjusted_score=5.5 => win"
-2026_06_17,63301015,run_line,home,1.5,6,1,7,Loss,"run_line home 1.5: selected_score=1, opposing_score=6, adjusted_score=2.5 => loss"
+2026_06_17,63299121,total,over,7.5,4,5,9,Win,total over 7.5: final_total=9 vs line=7.5 => win
+2026_06_17,63299125,run_line,away,1.5,3,0,3,Win,"run_line away 1.5: selected_score=3, opposing_score=0, adjusted_score=4.5 => win"
 2026_06_17,63301609,run_line,home,1.5,9,1,10,Loss,"run_line home 1.5: selected_score=1, opposing_score=9, adjusted_score=2.5 => loss"
 2026_06_17,63302151,run_line,home,1.5,12,4,16,Loss,"run_line home 1.5: selected_score=4, opposing_score=12, adjusted_score=5.5 => loss"
+2026_06_17,63303305,moneyline,home,,5,10,15,Win,"moneyline home: away_score=5, home_score=10 => win"
 2026_06_18,63301219,total,over,7.5,4,2,6,Loss,total over 7.5: final_total=6 vs line=7.5 => loss
+2026_06_18,63302879,run_line,away,1.5,6,4,10,Win,"run_line away 1.5: selected_score=6, opposing_score=4, adjusted_score=7.5 => win"
 2026_06_18,63302927,total,over,7.5,9,3,12,Win,total over 7.5: final_total=12 vs line=7.5 => win
+2026_06_18,63302927,moneyline,away,,9,3,12,Win,"moneyline away: away_score=9, home_score=3 => win"
+2026_06_18,63303507,run_line,away,1.5,7,3,10,Win,"run_line away 1.5: selected_score=7, opposing_score=3, adjusted_score=8.5 => win"
+2026_06_19,63300891,run_line,away,1.5,6,2,8,Win,"run_line away 1.5: selected_score=6, opposing_score=2, adjusted_score=7.5 => win"
+2026_06_19,63300891,total,over,7.0,6,2,8,Win,total over 7: final_total=8 vs line=7 => win
+2026_06_19,63301437,total,over,7.0,7,9,16,Win,total over 7: final_total=16 vs line=7 => win
 2026_06_19,63301885,run_line,home,1.5,2,16,18,Win,"run_line home 1.5: selected_score=16, opposing_score=2, adjusted_score=17.5 => win"
+2026_06_19,63301885,total,over,7.0,2,16,18,Win,total over 7: final_total=18 vs line=7 => win
+2026_06_19,63302347,run_line,away,1.5,3,9,12,Loss,"run_line away 1.5: selected_score=3, opposing_score=9, adjusted_score=4.5 => loss"
+2026_06_19,63302793,total,over,7.5,2,3,5,Loss,total over 7.5: final_total=5 vs line=7.5 => loss
+2026_06_19,63302851,moneyline,away,,3,4,7,Loss,"moneyline away: away_score=3, home_score=4 => loss"
+2026_06_19,63303341,total,under,8.5,0,5,5,Win,total under 8.5: final_total=5 vs line=8.5 => win
+2026_06_19,63303633,run_line,away,1.5,3,4,7,Win,"run_line away 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
+2026_06_20,63299285,moneyline,away,,1,2,3,Loss,"moneyline away: away_score=1, home_score=2 => loss"
+2026_06_20,63300883,total,under,8.5,1,4,5,Win,total under 8.5: final_total=5 vs line=8.5 => win
+2026_06_20,63301531,total,over,7.5,3,15,18,Win,total over 7.5: final_total=18 vs line=7.5 => win
+2026_06_20,63303135,total,over,7.0,3,4,7,Push,total over 7: final_total=7 vs line=7 => push
+2026_06_20,63303789,run_line,away,1.5,16,8,24,Win,"run_line away 1.5: selected_score=16, opposing_score=8, adjusted_score=17.5 => win"
+2026_06_21,63299235,run_line,away,1.5,3,4,7,Win,"run_line away 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
 2026_06_21,63301291,run_line,home,1.5,4,5,9,Win,"run_line home 1.5: selected_score=5, opposing_score=4, adjusted_score=6.5 => win"
-2026_06_21,63302965,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
-2026_06_21,63303099,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_06_22,63299249,total,over,7.5,2,4,6,Loss,total over 7.5: final_total=6 vs line=7.5 => loss
-2026_06_22,63299463,total,under,9.5,2,1,3,Win,total under 9.5: final_total=3 vs line=9.5 => win
-2026_06_22,63300877,run_line,home,1.5,3,5,8,Win,"run_line home 1.5: selected_score=5, opposing_score=3, adjusted_score=6.5 => win"
-2026_06_22,63301433,run_line,home,1.5,5,6,11,Win,"run_line home 1.5: selected_score=6, opposing_score=5, adjusted_score=7.5 => win"
-2026_06_22,63301433,total,over,7.5,5,6,11,Win,total over 7.5: final_total=11 vs line=7.5 => win
-2026_06_22,63302233,moneyline,away,,6,1,7,Win,"moneyline away: away_score=6, home_score=1 => win"
+2026_06_21,63301993,moneyline,home,,2,6,8,Win,"moneyline home: away_score=2, home_score=6 => win"
+2026_06_21,63302349,run_line,away,1.5,9,4,13,Win,"run_line away 1.5: selected_score=9, opposing_score=4, adjusted_score=10.5 => win"
 2026_06_22,63303145,run_line,home,1.5,1,4,5,Win,"run_line home 1.5: selected_score=4, opposing_score=1, adjusted_score=5.5 => win"
-2026_06_22,63303489,run_line,home,1.5,10,3,13,Loss,"run_line home 1.5: selected_score=3, opposing_score=10, adjusted_score=4.5 => loss"
-2026_06_23,63299153,run_line,home,1.5,14,9,23,Loss,"run_line home 1.5: selected_score=9, opposing_score=14, adjusted_score=10.5 => loss"
-2026_06_23,63299393,moneyline,away,,2,0,2,Win,"moneyline away: away_score=2, home_score=0 => win"
-2026_06_23,63301555,run_line,home,1.5,9,6,15,Loss,"run_line home 1.5: selected_score=6, opposing_score=9, adjusted_score=7.5 => loss"
-2026_06_23,63301811,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
-2026_06_23,63302393,run_line,home,1.5,4,3,7,Win,"run_line home 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
+2026_06_23,63299153,total,under,8.5,14,9,23,Loss,total under 8.5: final_total=23 vs line=8.5 => loss
+2026_06_23,63301767,moneyline,away,,5,2,7,Win,"moneyline away: away_score=5, home_score=2 => win"
+2026_06_23,63301811,total,over,7.0,1,2,3,Loss,total over 7: final_total=3 vs line=7 => loss
 2026_06_23,63303755,run_line,home,1.5,4,3,7,Win,"run_line home 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
-2026_06_24,63300921,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
+2026_06_23,63303785,moneyline,away,,3,2,5,Win,"moneyline away: away_score=3, home_score=2 => win"
 2026_06_24,63301239,run_line,home,1.5,5,4,9,Win,"run_line home 1.5: selected_score=4, opposing_score=5, adjusted_score=5.5 => win"
 2026_06_24,63301513,run_line,home,1.5,4,3,7,Win,"run_line home 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
-2026_06_24,63302013,run_line,home,1.5,9,4,13,Loss,"run_line home 1.5: selected_score=4, opposing_score=9, adjusted_score=5.5 => loss"
-2026_06_24,63302109,moneyline,away,,4,3,7,Win,"moneyline away: away_score=4, home_score=3 => win"
+2026_06_24,63301625,run_line,away,1.5,4,2,6,Win,"run_line away 1.5: selected_score=4, opposing_score=2, adjusted_score=5.5 => win"
+2026_06_24,63301921,total,over,7.5,3,5,8,Win,total over 7.5: final_total=8 vs line=7.5 => win
 2026_06_24,63302371,run_line,home,1.5,2,4,6,Win,"run_line home 1.5: selected_score=4, opposing_score=2, adjusted_score=5.5 => win"
 2026_06_24,63302973,moneyline,away,,6,5,11,Win,"moneyline away: away_score=6, home_score=5 => win"
-2026_06_24,63303367,run_line,home,1.5,2,5,7,Win,"run_line home 1.5: selected_score=5, opposing_score=2, adjusted_score=6.5 => win"
+2026_06_24,63303367,total,over,7.5,2,5,7,Loss,total over 7.5: final_total=7 vs line=7.5 => loss
+2026_06_24,63303367,moneyline,away,,2,5,7,Loss,"moneyline away: away_score=2, home_score=5 => loss"
 2026_06_25,63299215,run_line,home,1.5,4,3,7,Win,"run_line home 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
-2026_06_25,63302135,run_line,home,1.5,2,1,3,Win,"run_line home 1.5: selected_score=1, opposing_score=2, adjusted_score=2.5 => win"
-2026_06_25,63302327,run_line,home,1.5,3,6,9,Win,"run_line home 1.5: selected_score=6, opposing_score=3, adjusted_score=7.5 => win"
-2026_06_25,63302591,run_line,home,1.5,1,5,6,Win,"run_line home 1.5: selected_score=5, opposing_score=1, adjusted_score=6.5 => win"
-2026_06_26,63301269,run_line,home,1.5,9,3,12,Loss,"run_line home 1.5: selected_score=3, opposing_score=9, adjusted_score=4.5 => loss"
-2026_06_26,63302207,total,over,7.5,6,4,10,Win,total over 7.5: final_total=10 vs line=7.5 => win
+2026_06_25,63299385,run_line,away,1.5,10,6,16,Win,"run_line away 1.5: selected_score=10, opposing_score=6, adjusted_score=11.5 => win"
+2026_06_26,63302207,run_line,away,1.5,6,4,10,Win,"run_line away 1.5: selected_score=6, opposing_score=4, adjusted_score=7.5 => win"
 2026_06_26,63302613,run_line,home,1.5,1,6,7,Win,"run_line home 1.5: selected_score=6, opposing_score=1, adjusted_score=7.5 => win"
 2026_06_26,63302633,run_line,home,1.5,3,1,4,Loss,"run_line home 1.5: selected_score=1, opposing_score=3, adjusted_score=2.5 => loss"
-2026_06_26,63302633,total,over,7.5,3,1,4,Loss,total over 7.5: final_total=4 vs line=7.5 => loss
-2026_06_26,63303403,run_line,home,1.5,4,0,4,Loss,"run_line home 1.5: selected_score=0, opposing_score=4, adjusted_score=1.5 => loss"
-2026_06_27,63301341,moneyline,away,,3,4,7,Loss,"moneyline away: away_score=3, home_score=4 => loss"
+2026_06_26,63302747,run_line,home,1.5,5,4,9,Win,"run_line home 1.5: selected_score=4, opposing_score=5, adjusted_score=5.5 => win"
+2026_06_26,63303441,total,over,7.5,2,6,8,Win,total over 7.5: final_total=8 vs line=7.5 => win
+2026_06_27,63299347,run_line,away,1.5,8,5,13,Win,"run_line away 1.5: selected_score=8, opposing_score=5, adjusted_score=9.5 => win"
+2026_06_27,63299347,total,over,9.5,8,5,13,Win,total over 9.5: final_total=13 vs line=9.5 => win
+2026_06_27,63301791,run_line,away,1.5,2,4,6,Loss,"run_line away 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
 2026_06_27,63302933,run_line,home,1.5,9,7,16,Loss,"run_line home 1.5: selected_score=7, opposing_score=9, adjusted_score=8.5 => loss"
+2026_06_27,63303397,run_line,away,1.5,5,1,6,Win,"run_line away 1.5: selected_score=5, opposing_score=1, adjusted_score=6.5 => win"
+2026_06_28,63301323,run_line,away,1.5,1,2,3,Win,"run_line away 1.5: selected_score=1, opposing_score=2, adjusted_score=2.5 => win"
 2026_06_28,63301837,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_06_28,63302197,run_line,home,1.5,7,5,12,Loss,"run_line home 1.5: selected_score=5, opposing_score=7, adjusted_score=6.5 => loss"
-2026_06_28,63302223,run_line,home,1.5,5,6,11,Win,"run_line home 1.5: selected_score=6, opposing_score=5, adjusted_score=7.5 => win"
-2026_06_28,63303027,run_line,away,1.5,5,4,9,Win,"run_line away 1.5: selected_score=5, opposing_score=4, adjusted_score=6.5 => win"
+2026_06_28,63302167,total,over,7.5,1,5,6,Loss,total over 7.5: final_total=6 vs line=7.5 => loss
+2026_06_28,63302637,run_line,away,1.5,4,9,13,Loss,"run_line away 1.5: selected_score=4, opposing_score=9, adjusted_score=5.5 => loss"
 2026_06_28,63303097,run_line,home,1.5,5,4,9,Win,"run_line home 1.5: selected_score=4, opposing_score=5, adjusted_score=5.5 => win"
-2026_06_28,63303771,moneyline,away,,4,2,6,Win,"moneyline away: away_score=4, home_score=2 => win"
-2026_06_29,63301133,run_line,away,1.5,4,5,9,Win,"run_line away 1.5: selected_score=4, opposing_score=5, adjusted_score=5.5 => win"
-2026_06_29,63303427,moneyline,away,,10,7,17,Win,"moneyline away: away_score=10, home_score=7 => win"
-2026_06_30,63301785,run_line,home,1.5,2,8,10,Win,"run_line home 1.5: selected_score=8, opposing_score=2, adjusted_score=9.5 => win"
-2026_06_30,63303193,total,over,7.5,3,8,11,Win,total over 7.5: final_total=11 vs line=7.5 => win
-2026_06_30,63303723,moneyline,away,,10,4,14,Win,"moneyline away: away_score=10, home_score=4 => win"
+2026_06_28,63303233,run_line,away,1.5,3,2,5,Win,"run_line away 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
+2026_06_29,63301861,run_line,away,1.5,5,4,9,Win,"run_line away 1.5: selected_score=5, opposing_score=4, adjusted_score=6.5 => win"
+2026_06_29,63302987,run_line,away,1.5,8,2,10,Win,"run_line away 1.5: selected_score=8, opposing_score=2, adjusted_score=9.5 => win"
+2026_06_30,63299271,run_line,away,1.5,0,8,8,Loss,"run_line away 1.5: selected_score=0, opposing_score=8, adjusted_score=1.5 => loss"
+2026_06_30,63300871,run_line,away,1.5,8,1,9,Win,"run_line away 1.5: selected_score=8, opposing_score=1, adjusted_score=9.5 => win"
+2026_06_30,63300979,moneyline,away,,9,3,12,Win,"moneyline away: away_score=9, home_score=3 => win"
+2026_07_01,63299203,run_line,home,1.5,4,9,13,Win,"run_line home 1.5: selected_score=9, opposing_score=4, adjusted_score=10.5 => win"
 2026_07_01,63301501,run_line,home,1.5,6,4,10,Loss,"run_line home 1.5: selected_score=4, opposing_score=6, adjusted_score=5.5 => loss"
-2026_07_01,63301501,total,under,9.5,6,4,10,Loss,total under 9.5: final_total=10 vs line=9.5 => loss
+2026_07_01,63301701,moneyline,away,,3,6,9,Loss,"moneyline away: away_score=3, home_score=6 => loss"
 2026_07_01,63301755,run_line,home,1.5,1,7,8,Win,"run_line home 1.5: selected_score=7, opposing_score=1, adjusted_score=8.5 => win"
 2026_07_01,63302333,run_line,home,1.5,3,23,26,Win,"run_line home 1.5: selected_score=23, opposing_score=3, adjusted_score=24.5 => win"
 2026_07_01,63302401,run_line,home,1.5,3,9,12,Win,"run_line home 1.5: selected_score=9, opposing_score=3, adjusted_score=10.5 => win"
-2026_07_01,63303415,run_line,away,1.5,8,3,11,Win,"run_line away 1.5: selected_score=8, opposing_score=3, adjusted_score=9.5 => win"
-2026_07_02,63301307,run_line,home,1.5,5,6,11,Win,"run_line home 1.5: selected_score=6, opposing_score=5, adjusted_score=7.5 => win"
+2026_07_01,63302481,run_line,away,1.5,10,2,12,Win,"run_line away 1.5: selected_score=10, opposing_score=2, adjusted_score=11.5 => win"
 2026_07_02,63301675,moneyline,away,,4,14,18,Loss,"moneyline away: away_score=4, home_score=14 => loss"
+2026_07_02,63301691,run_line,away,1.5,6,1,7,Win,"run_line away 1.5: selected_score=6, opposing_score=1, adjusted_score=7.5 => win"
 2026_07_02,63302729,run_line,home,1.5,11,5,16,Loss,"run_line home 1.5: selected_score=5, opposing_score=11, adjusted_score=6.5 => loss"
-2026_07_03,63301825,run_line,home,1.5,5,2,7,Loss,"run_line home 1.5: selected_score=2, opposing_score=5, adjusted_score=3.5 => loss"
-2026_07_03,63301981,run_line,home,1.5,3,15,18,Win,"run_line home 1.5: selected_score=15, opposing_score=3, adjusted_score=16.5 => win"
-2026_07_03,63302669,moneyline,away,,3,0,3,Win,"moneyline away: away_score=3, home_score=0 => win"
 2026_07_03,63302711,run_line,home,1.5,3,5,8,Win,"run_line home 1.5: selected_score=5, opposing_score=3, adjusted_score=6.5 => win"
 2026_07_03,63302951,run_line,home,1.5,7,4,11,Loss,"run_line home 1.5: selected_score=4, opposing_score=7, adjusted_score=5.5 => loss"
-2026_07_03,63303077,run_line,home,1.5,2,0,2,Loss,"run_line home 1.5: selected_score=0, opposing_score=2, adjusted_score=1.5 => loss"
 2026_07_03,63303313,run_line,home,1.5,3,1,4,Loss,"run_line home 1.5: selected_score=1, opposing_score=3, adjusted_score=2.5 => loss"
+2026_07_03,63303515,run_line,away,1.5,12,5,17,Win,"run_line away 1.5: selected_score=12, opposing_score=5, adjusted_score=13.5 => win"
+2026_07_03,63303631,total,over,9.5,5,9,14,Win,total over 9.5: final_total=14 vs line=9.5 => win
 2026_07_04,63299199,run_line,home,1.5,8,1,9,Loss,"run_line home 1.5: selected_score=1, opposing_score=8, adjusted_score=2.5 => loss"
-2026_07_04,63299431,total,under,10.0,11,4,15,Loss,total under 10: final_total=15 vs line=10 => loss
+2026_07_04,63299269,total,over,10.0,7,1,8,Loss,total over 10: final_total=8 vs line=10 => loss
+2026_07_04,63299269,moneyline,away,,7,1,8,Win,"moneyline away: away_score=7, home_score=1 => win"
 2026_07_04,63300843,run_line,home,1.5,3,0,3,Loss,"run_line home 1.5: selected_score=0, opposing_score=3, adjusted_score=1.5 => loss"
-2026_07_04,63301525,run_line,home,1.5,8,10,18,Win,"run_line home 1.5: selected_score=10, opposing_score=8, adjusted_score=11.5 => win"
-2026_07_04,63302899,moneyline,away,,6,1,7,Win,"moneyline away: away_score=6, home_score=1 => win"
-2026_07_04,63303815,run_line,home,1.5,3,4,7,Win,"run_line home 1.5: selected_score=4, opposing_score=3, adjusted_score=5.5 => win"
-2026_07_05,63301165,moneyline,away,,6,7,13,Loss,"moneyline away: away_score=6, home_score=7 => loss"
+2026_07_04,63300919,total,over,7.5,3,1,4,Loss,total over 7.5: final_total=4 vs line=7.5 => loss
+2026_07_04,63301399,total,under,8.5,0,3,3,Win,total under 8.5: final_total=3 vs line=8.5 => win
+2026_07_04,63301745,moneyline,away,,7,2,9,Win,"moneyline away: away_score=7, home_score=2 => win"
+2026_07_04,63301951,run_line,away,1.5,3,0,3,Win,"run_line away 1.5: selected_score=3, opposing_score=0, adjusted_score=4.5 => win"
 2026_07_05,63301519,run_line,home,1.5,6,3,9,Loss,"run_line home 1.5: selected_score=3, opposing_score=6, adjusted_score=4.5 => loss"
-2026_07_05,63303083,run_line,home,1.5,9,8,17,Win,"run_line home 1.5: selected_score=8, opposing_score=9, adjusted_score=9.5 => win"
-2026_07_06,63299185,run_line,home,1.5,1,10,11,Win,"run_line home 1.5: selected_score=10, opposing_score=1, adjusted_score=11.5 => win"
-2026_07_06,63299217,run_line,home,1.5,8,0,8,Loss,"run_line home 1.5: selected_score=0, opposing_score=8, adjusted_score=1.5 => loss"
+2026_07_05,63302315,run_line,away,1.5,11,5,16,Win,"run_line away 1.5: selected_score=11, opposing_score=5, adjusted_score=12.5 => win"
+2026_07_05,63302315,total,over,9.5,11,5,16,Win,total over 9.5: final_total=16 vs line=9.5 => win
+2026_07_05,63303255,moneyline,away,,3,2,5,Win,"moneyline away: away_score=3, home_score=2 => win"
+2026_07_06,63299185,total,over,7.5,1,10,11,Win,total over 7.5: final_total=11 vs line=7.5 => win
+2026_07_06,63302119,run_line,away,1.5,11,12,23,Win,"run_line away 1.5: selected_score=11, opposing_score=12, adjusted_score=12.5 => win"
 2026_07_06,63302335,run_line,home,1.5,4,3,7,Win,"run_line home 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
+2026_07_06,63302475,run_line,away,1.5,7,8,15,Win,"run_line away 1.5: selected_score=7, opposing_score=8, adjusted_score=8.5 => win"
 2026_07_07,63299207,run_line,home,1.5,8,1,9,Loss,"run_line home 1.5: selected_score=1, opposing_score=8, adjusted_score=2.5 => loss"
 2026_07_07,63299245,run_line,home,1.5,5,2,7,Loss,"run_line home 1.5: selected_score=2, opposing_score=5, adjusted_score=3.5 => loss"
-2026_07_07,63301573,run_line,home,1.5,4,6,10,Win,"run_line home 1.5: selected_score=6, opposing_score=4, adjusted_score=7.5 => win"
+2026_07_07,63301917,moneyline,home,,3,8,11,Win,"moneyline home: away_score=3, home_score=8 => win"
 2026_07_07,63302303,run_line,home,1.5,5,6,11,Win,"run_line home 1.5: selected_score=6, opposing_score=5, adjusted_score=7.5 => win"
 2026_07_07,63302819,run_line,home,1.5,1,3,4,Win,"run_line home 1.5: selected_score=3, opposing_score=1, adjusted_score=4.5 => win"
 2026_07_07,63303167,run_line,home,1.5,4,1,5,Loss,"run_line home 1.5: selected_score=1, opposing_score=4, adjusted_score=2.5 => loss"
 2026_07_07,63303455,run_line,home,1.5,9,3,12,Loss,"run_line home 1.5: selected_score=3, opposing_score=9, adjusted_score=4.5 => loss"
-2026_07_07,71325506,moneyline,away,,4,3,7,Win,"moneyline away: away_score=4, home_score=3 => win"
-2026_07_08,63303567,run_line,home,1.5,5,0,5,Loss,"run_line home 1.5: selected_score=0, opposing_score=5, adjusted_score=1.5 => loss"
-2026_07_08,63303643,run_line,home,1.5,0,2,2,Win,"run_line home 1.5: selected_score=2, opposing_score=0, adjusted_score=3.5 => win"
+2026_07_08,63301695,total,over,7.5,0,3,3,Loss,total over 7.5: final_total=3 vs line=7.5 => loss
+2026_07_08,63302009,run_line,away,1.5,3,4,7,Win,"run_line away 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
+2026_07_08,63302185,run_line,away,1.5,2,6,8,Loss,"run_line away 1.5: selected_score=2, opposing_score=6, adjusted_score=3.5 => loss"
+2026_07_08,63302673,run_line,home,1.5,10,0,10,Loss,"run_line home 1.5: selected_score=0, opposing_score=10, adjusted_score=1.5 => loss"
+2026_07_08,63302673,total,over,7.0,10,0,10,Win,total over 7: final_total=10 vs line=7 => win
+2026_07_08,63303437,run_line,away,1.5,13,1,14,Win,"run_line away 1.5: selected_score=13, opposing_score=1, adjusted_score=14.5 => win"
 2026_07_09,63299395,run_line,home,1.5,4,8,12,Win,"run_line home 1.5: selected_score=8, opposing_score=4, adjusted_score=9.5 => win"
-2026_07_09,63301427,moneyline,away,,1,0,1,Win,"moneyline away: away_score=1, home_score=0 => win"
+2026_07_09,63301473,run_line,away,1.5,1,4,5,Loss,"run_line away 1.5: selected_score=1, opposing_score=4, adjusted_score=2.5 => loss"
 2026_07_09,63301775,run_line,home,1.5,2,1,3,Win,"run_line home 1.5: selected_score=1, opposing_score=2, adjusted_score=2.5 => win"
 2026_07_09,63302767,run_line,home,1.5,5,2,7,Loss,"run_line home 1.5: selected_score=2, opposing_score=5, adjusted_score=3.5 => loss"
+2026_07_09,63302769,total,over,7.5,12,4,16,Win,total over 7.5: final_total=16 vs line=7.5 => win
 2026_07_09,63303291,run_line,home,1.5,8,4,12,Loss,"run_line home 1.5: selected_score=4, opposing_score=8, adjusted_score=5.5 => loss"
 2026_07_10,63301657,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
 2026_07_10,63301909,run_line,home,1.5,3,2,5,Win,"run_line home 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
-2026_07_10,63303465,moneyline,away,,3,7,10,Loss,"moneyline away: away_score=3, home_score=7 => loss"
+2026_07_10,63301909,total,over,7.5,3,2,5,Loss,total over 7.5: final_total=5 vs line=7.5 => loss
+2026_07_10,63303769,run_line,away,1.5,9,3,12,Win,"run_line away 1.5: selected_score=9, opposing_score=3, adjusted_score=10.5 => win"
 2026_07_11,63299227,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_07_11,63299343,run_line,home,1.5,5,3,8,Loss,"run_line home 1.5: selected_score=3, opposing_score=5, adjusted_score=4.5 => loss"
+2026_07_11,63299227,total,under,8.5,2,3,5,Win,total under 8.5: final_total=5 vs line=8.5 => win
 2026_07_11,63301211,run_line,home,1.5,0,1,1,Win,"run_line home 1.5: selected_score=1, opposing_score=0, adjusted_score=2.5 => win"
-2026_07_11,63302127,run_line,home,1.5,4,2,6,Loss,"run_line home 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
-2026_07_12,63301035,run_line,home,1.5,1,9,10,Win,"run_line home 1.5: selected_score=9, opposing_score=1, adjusted_score=10.5 => win"
-2026_07_12,63302057,run_line,home,1.5,8,4,12,Loss,"run_line home 1.5: selected_score=4, opposing_score=8, adjusted_score=5.5 => loss"
-2026_07_12,63302295,run_line,home,1.5,4,3,7,Win,"run_line home 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
-2026_07_12,63303189,run_line,home,1.5,5,0,5,Loss,"run_line home 1.5: selected_score=0, opposing_score=5, adjusted_score=1.5 => loss"
+2026_07_17,63299289,run_line,away,1.5,1,2,3,Win,"run_line away 1.5: selected_score=1, opposing_score=2, adjusted_score=2.5 => win"
 2026_07_17,63300967,run_line,home,1.5,6,7,13,Win,"run_line home 1.5: selected_score=7, opposing_score=6, adjusted_score=8.5 => win"
-2026_07_17,63301597,total,over,7.5,7,1,8,Win,total over 7.5: final_total=8 vs line=7.5 => win
 2026_07_17,63303013,run_line,home,1.5,5,4,9,Win,"run_line home 1.5: selected_score=4, opposing_score=5, adjusted_score=5.5 => win"
 2026_07_17,63303587,run_line,home,1.5,3,2,5,Win,"run_line home 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
 2026_07_18,63301029,run_line,home,1.5,6,7,13,Win,"run_line home 1.5: selected_score=7, opposing_score=6, adjusted_score=8.5 => win"
-2026_07_18,63301591,run_line,home,1.5,7,6,13,Win,"run_line home 1.5: selected_score=6, opposing_score=7, adjusted_score=7.5 => win"
+2026_07_18,63301135,total,under,8.0,7,0,7,Win,total under 8: final_total=7 vs line=8 => win
 2026_07_18,63302305,run_line,home,1.5,0,1,1,Win,"run_line home 1.5: selected_score=1, opposing_score=0, adjusted_score=2.5 => win"
+2026_07_18,63302305,total,under,8.5,0,1,1,Win,total under 8.5: final_total=1 vs line=8.5 => win
+2026_07_18,63302351,run_line,away,1.5,6,8,14,Loss,"run_line away 1.5: selected_score=6, opposing_score=8, adjusted_score=7.5 => loss"
+2026_07_18,72946026,run_line,away,1.5,7,1,8,Win,"run_line away 1.5: selected_score=7, opposing_score=1, adjusted_score=8.5 => win"
+2026_07_18,72946026,total,over,7.5,7,1,8,Win,total over 7.5: final_total=8 vs line=7.5 => win
 2026_07_19,63301319,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_07_19,63302663,run_line,home,1.5,3,0,3,Loss,"run_line home 1.5: selected_score=0, opposing_score=3, adjusted_score=1.5 => loss"
-2026_07_19,63302801,run_line,home,1.5,9,6,15,Loss,"run_line home 1.5: selected_score=6, opposing_score=9, adjusted_score=7.5 => loss"
+2026_07_19,63301979,run_line,away,1.5,1,3,4,Loss,"run_line away 1.5: selected_score=1, opposing_score=3, adjusted_score=2.5 => loss"
+2026_07_19,63302001,run_line,away,1.5,1,10,11,Loss,"run_line away 1.5: selected_score=1, opposing_score=10, adjusted_score=2.5 => loss"
+2026_07_19,63302001,total,over,7.5,1,10,11,Win,total over 7.5: final_total=11 vs line=7.5 => win
 2026_07_19,63303267,run_line,home,1.5,5,8,13,Win,"run_line home 1.5: selected_score=8, opposing_score=5, adjusted_score=9.5 => win"
-2026_07_20,63301085,run_line,home,1.5,8,6,14,Loss,"run_line home 1.5: selected_score=6, opposing_score=8, adjusted_score=7.5 => loss"
+2026_07_19,63303685,total,over,7.5,1,2,3,Loss,total over 7.5: final_total=3 vs line=7.5 => loss
+2026_07_20,63299261,run_line,away,1.5,5,8,13,Loss,"run_line away 1.5: selected_score=5, opposing_score=8, adjusted_score=6.5 => loss"
+2026_07_20,63300923,run_line,away,1.5,2,3,5,Win,"run_line away 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
 2026_07_20,63301121,run_line,home,1.5,4,13,17,Win,"run_line home 1.5: selected_score=13, opposing_score=4, adjusted_score=14.5 => win"
 2026_07_20,63301693,run_line,home,1.5,7,3,10,Loss,"run_line home 1.5: selected_score=3, opposing_score=7, adjusted_score=4.5 => loss"
-2026_07_21,63301797,run_line,home,1.5,1,5,6,Win,"run_line home 1.5: selected_score=5, opposing_score=1, adjusted_score=6.5 => win"
-2026_07_22,63302691,run_line,home,1.5,9,5,14,Loss,"run_line home 1.5: selected_score=5, opposing_score=9, adjusted_score=6.5 => loss"
+2026_07_20,63302901,total,over,7.5,3,8,11,Win,total over 7.5: final_total=11 vs line=7.5 => win
+2026_07_20,63302901,moneyline,home,,3,8,11,Win,"moneyline home: away_score=3, home_score=8 => win"
+2026_07_20,63303061,run_line,away,1.5,5,8,13,Loss,"run_line away 1.5: selected_score=5, opposing_score=8, adjusted_score=6.5 => loss"
+2026_07_21,63303143,run_line,away,1.5,3,6,9,Loss,"run_line away 1.5: selected_score=3, opposing_score=6, adjusted_score=4.5 => loss"
+2026_07_21,63303679,total,over,7.5,12,2,14,Win,total over 7.5: final_total=14 vs line=7.5 => win
 2026_07_22,63302795,run_line,home,1.5,1,0,1,Win,"run_line home 1.5: selected_score=0, opposing_score=1, adjusted_score=1.5 => win"
+2026_07_24,63301349,run_line,away,1.5,4,2,6,Win,"run_line away 1.5: selected_score=4, opposing_score=2, adjusted_score=5.5 => win"
 2026_07_24,63302299,moneyline,away,,4,2,6,Win,"moneyline away: away_score=4, home_score=2 => win"
 2026_07_24,63302321,run_line,home,1.5,3,2,5,Win,"run_line home 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
 2026_07_24,63302857,total,over,7.5,3,11,14,Win,total over 7.5: final_total=14 vs line=7.5 => win
+2026_07_24,63302867,total,under,8.5,9,5,14,Loss,total under 8.5: final_total=14 vs line=8.5 => loss
+2026_07_24,63303249,run_line,away,1.5,5,2,7,Win,"run_line away 1.5: selected_score=5, opposing_score=2, adjusted_score=6.5 => win"
+2026_07_24,63303547,run_line,away,1.5,2,0,2,Win,"run_line away 1.5: selected_score=2, opposing_score=0, adjusted_score=3.5 => win"
 2026_07_25,63299181,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
 2026_07_25,63301055,run_line,home,1.5,3,1,4,Loss,"run_line home 1.5: selected_score=1, opposing_score=3, adjusted_score=2.5 => loss"
-2026_07_25,63301235,run_line,home,1.5,1,7,8,Win,"run_line home 1.5: selected_score=7, opposing_score=1, adjusted_score=8.5 => win"
-2026_07_25,63303759,run_line,home,1.5,6,0,6,Loss,"run_line home 1.5: selected_score=0, opposing_score=6, adjusted_score=1.5 => loss"
+2026_07_25,63301055,total,under,8.5,3,1,4,Win,total under 8.5: final_total=4 vs line=8.5 => win
+2026_07_25,63301581,moneyline,away,,4,3,7,Win,"moneyline away: away_score=4, home_score=3 => win"
+2026_07_25,63301865,run_line,away,1.5,11,0,11,Win,"run_line away 1.5: selected_score=11, opposing_score=0, adjusted_score=12.5 => win"
+2026_07_25,63302847,run_line,away,1.5,5,8,13,Loss,"run_line away 1.5: selected_score=5, opposing_score=8, adjusted_score=6.5 => loss"
+2026_07_25,63303725,run_line,away,1.5,7,2,9,Win,"run_line away 1.5: selected_score=7, opposing_score=2, adjusted_score=8.5 => win"
 2026_07_25,63303847,run_line,home,1.5,0,7,7,Win,"run_line home 1.5: selected_score=7, opposing_score=0, adjusted_score=8.5 => win"
 2026_07_26,63299147,run_line,home,1.5,3,2,5,Win,"run_line home 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
 2026_07_26,63300845,run_line,home,1.5,3,12,15,Win,"run_line home 1.5: selected_score=12, opposing_score=3, adjusted_score=13.5 => win"
+2026_07_26,63301835,total,over,7.5,2,11,13,Win,total over 7.5: final_total=13 vs line=7.5 => win
+2026_07_26,63302021,run_line,away,1.5,7,8,15,Win,"run_line away 1.5: selected_score=7, opposing_score=8, adjusted_score=8.5 => win"
+2026_07_26,63302157,total,under,8.0,4,11,15,Loss,total under 8: final_total=15 vs line=8 => loss
 2026_07_26,63302221,run_line,home,1.5,6,4,10,Loss,"run_line home 1.5: selected_score=4, opposing_score=6, adjusted_score=5.5 => loss"
-2026_07_26,63302947,run_line,home,1.5,3,8,11,Win,"run_line home 1.5: selected_score=8, opposing_score=3, adjusted_score=9.5 => win"
-2026_07_26,63303577,moneyline,away,,7,10,17,Loss,"moneyline away: away_score=7, home_score=10 => loss"
+2026_07_26,63302221,total,over,7.0,6,4,10,Win,total over 7: final_total=10 vs line=7 => win
+2026_07_26,63303103,run_line,away,1.5,5,3,8,Win,"run_line away 1.5: selected_score=5, opposing_score=3, adjusted_score=6.5 => win"
+2026_07_27,63301395,run_line,away,1.5,2,3,5,Win,"run_line away 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
+2026_07_27,63301447,run_line,home,1.5,9,5,14,Loss,"run_line home 1.5: selected_score=5, opposing_score=9, adjusted_score=6.5 => loss"
 2026_07_27,63301499,run_line,home,1.5,3,14,17,Win,"run_line home 1.5: selected_score=14, opposing_score=3, adjusted_score=15.5 => win"
-2026_07_27,63301757,moneyline,away,,7,3,10,Win,"moneyline away: away_score=7, home_score=3 => win"
+2026_07_27,63301875,moneyline,home,,6,5,11,Loss,"moneyline home: away_score=6, home_score=5 => loss"
 2026_07_27,63302077,run_line,home,1.5,3,7,10,Win,"run_line home 1.5: selected_score=7, opposing_score=3, adjusted_score=8.5 => win"
+2026_07_27,63302195,run_line,home,1.5,7,8,15,Win,"run_line home 1.5: selected_score=8, opposing_score=7, adjusted_score=9.5 => win"
 2026_07_27,63302629,run_line,home,1.5,6,4,10,Loss,"run_line home 1.5: selected_score=4, opposing_score=6, adjusted_score=5.5 => loss"
-2026_07_27,63303525,total,under,9.5,4,2,6,Win,total under 9.5: final_total=6 vs line=9.5 => win
+2026_07_27,63303221,run_line,away,1.5,3,2,5,Win,"run_line away 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
+2026_07_28,63299213,run_line,away,1.5,6,8,14,Loss,"run_line away 1.5: selected_score=6, opposing_score=8, adjusted_score=7.5 => loss"
+2026_07_28,63299315,run_line,away,1.5,0,14,14,Loss,"run_line away 1.5: selected_score=0, opposing_score=14, adjusted_score=1.5 => loss"
 2026_07_28,63301067,run_line,home,1.5,1,0,1,Win,"run_line home 1.5: selected_score=0, opposing_score=1, adjusted_score=1.5 => win"
-2026_07_28,63301113,run_line,home,1.5,10,2,12,Loss,"run_line home 1.5: selected_score=2, opposing_score=10, adjusted_score=3.5 => loss"
-2026_07_28,63301639,run_line,home,1.5,0,1,1,Win,"run_line home 1.5: selected_score=1, opposing_score=0, adjusted_score=2.5 => win"
-2026_07_28,63302645,moneyline,away,,3,2,5,Win,"moneyline away: away_score=3, home_score=2 => win"
-2026_07_28,63303463,run_line,home,1.5,8,7,15,Win,"run_line home 1.5: selected_score=7, opposing_score=8, adjusted_score=8.5 => win"
-2026_07_29,63299311,run_line,home,1.5,5,6,11,Win,"run_line home 1.5: selected_score=6, opposing_score=5, adjusted_score=7.5 => win"
-2026_07_29,63299457,run_line,away,1.5,3,0,3,Win,"run_line away 1.5: selected_score=3, opposing_score=0, adjusted_score=4.5 => win"
+2026_07_28,63303491,moneyline,away,,8,2,10,Win,"moneyline away: away_score=8, home_score=2 => win"
 2026_07_29,63300927,run_line,home,1.5,6,1,7,Loss,"run_line home 1.5: selected_score=1, opposing_score=6, adjusted_score=2.5 => loss"
-2026_07_29,63301049,moneyline,away,,4,2,6,Win,"moneyline away: away_score=4, home_score=2 => win"
+2026_07_29,63301415,run_line,away,1.5,2,4,6,Loss,"run_line away 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
 2026_07_29,63301649,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
+2026_07_29,63301721,total,over,7.5,3,16,19,Win,total over 7.5: final_total=19 vs line=7.5 => win
 2026_07_29,63301721,moneyline,away,,3,16,19,Loss,"moneyline away: away_score=3, home_score=16 => loss"
 2026_07_29,63302353,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_07_29,63302509,run_line,home,1.5,5,2,7,Loss,"run_line home 1.5: selected_score=2, opposing_score=5, adjusted_score=3.5 => loss"
 2026_07_29,63303073,run_line,home,1.5,6,8,14,Win,"run_line home 1.5: selected_score=8, opposing_score=6, adjusted_score=9.5 => win"
 2026_07_29,63303621,run_line,home,1.5,7,4,11,Loss,"run_line home 1.5: selected_score=4, opposing_score=7, adjusted_score=5.5 => loss"
 2026_07_29,63303849,run_line,away,1.5,0,3,3,Loss,"run_line away 1.5: selected_score=0, opposing_score=3, adjusted_score=1.5 => loss"
-2026_07_30,63299173,moneyline,away,,2,3,5,Loss,"moneyline away: away_score=2, home_score=3 => loss"
-2026_07_30,63303269,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
-2026_07_30,63303665,run_line,home,1.5,4,2,6,Loss,"run_line home 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
-2026_07_30,63303665,moneyline,home,,4,2,6,Loss,"moneyline home: away_score=4, home_score=2 => loss"
+2026_07_30,63299403,run_line,away,1.5,2,6,8,Loss,"run_line away 1.5: selected_score=2, opposing_score=6, adjusted_score=3.5 => loss"
+2026_07_30,63299403,total,under,8.5,2,6,8,Win,total under 8.5: final_total=8 vs line=8.5 => win
+2026_07_30,63300963,run_line,away,1.5,2,4,6,Loss,"run_line away 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
+2026_07_30,63302301,run_line,away,1.5,2,3,5,Win,"run_line away 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
+2026_07_31,63299237,moneyline,away,,7,8,15,Loss,"moneyline away: away_score=7, home_score=8 => loss"
 2026_07_31,63300867,run_line,home,1.5,9,4,13,Loss,"run_line home 1.5: selected_score=4, opposing_score=9, adjusted_score=5.5 => loss"
 2026_07_31,63302915,moneyline,away,,13,1,14,Win,"moneyline away: away_score=13, home_score=1 => win"
-2026_08_01,63301167,run_line,home,1.5,4,1,5,Loss,"run_line home 1.5: selected_score=1, opposing_score=4, adjusted_score=2.5 => loss"
-2026_08_01,63301233,run_line,home,1.5,2,5,7,Win,"run_line home 1.5: selected_score=5, opposing_score=2, adjusted_score=6.5 => win"
-2026_08_01,63301661,run_line,home,1.5,6,12,18,Win,"run_line home 1.5: selected_score=12, opposing_score=6, adjusted_score=13.5 => win"
 2026_08_01,63302015,moneyline,away,,8,6,14,Win,"moneyline away: away_score=8, home_score=6 => win"
+2026_08_01,63302117,total,over,9.5,3,8,11,Win,total over 9.5: final_total=11 vs line=9.5 => win
+2026_08_01,63302391,run_line,away,1.5,5,6,11,Win,"run_line away 1.5: selected_score=5, opposing_score=6, adjusted_score=6.5 => win"
+2026_08_01,63302417,run_line,home,1.5,5,0,5,Loss,"run_line home 1.5: selected_score=0, opposing_score=5, adjusted_score=1.5 => loss"
+2026_08_01,63303317,run_line,away,1.5,3,4,7,Win,"run_line away 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
+2026_08_01,63303317,total,over,7.5,3,4,7,Loss,total over 7.5: final_total=7 vs line=7.5 => loss
+2026_08_02,63301149,run_line,away,1.5,0,5,5,Loss,"run_line away 1.5: selected_score=0, opposing_score=5, adjusted_score=1.5 => loss"
 2026_08_02,63301671,moneyline,away,,5,0,5,Win,"moneyline away: away_score=5, home_score=0 => win"
 2026_08_02,63301795,run_line,home,1.5,1,8,9,Win,"run_line home 1.5: selected_score=8, opposing_score=1, adjusted_score=9.5 => win"
-2026_08_02,63301809,run_line,away,1.5,6,7,13,Win,"run_line away 1.5: selected_score=6, opposing_score=7, adjusted_score=7.5 => win"
-2026_08_04,63299399,moneyline,away,,2,8,10,Loss,"moneyline away: away_score=2, home_score=8 => loss"
+2026_08_02,63302733,run_line,away,1.5,4,5,9,Win,"run_line away 1.5: selected_score=4, opposing_score=5, adjusted_score=5.5 => win"
+2026_08_02,63302823,total,over,7.5,9,1,10,Win,total over 7.5: final_total=10 vs line=7.5 => win
+2026_08_02,63303603,total,under,8.5,2,0,2,Win,total under 8.5: final_total=2 vs line=8.5 => win
+2026_08_02,63303603,moneyline,away,,2,0,2,Win,"moneyline away: away_score=2, home_score=0 => win"
+2026_08_04,63299443,run_line,away,1.5,0,5,5,Loss,"run_line away 1.5: selected_score=0, opposing_score=5, adjusted_score=1.5 => loss"
+2026_08_04,63302573,run_line,away,1.5,2,4,6,Loss,"run_line away 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
+2026_08_04,63303113,run_line,away,1.5,9,4,13,Win,"run_line away 1.5: selected_score=9, opposing_score=4, adjusted_score=10.5 => win"
+2026_08_04,63303169,run_line,away,1.5,1,3,4,Loss,"run_line away 1.5: selected_score=1, opposing_score=3, adjusted_score=2.5 => loss"
+2026_08_04,63303209,total,over,7.5,6,2,8,Win,total over 7.5: final_total=8 vs line=7.5 => win
+2026_08_05,63300955,run_line,home,1.5,4,10,14,Win,"run_line home 1.5: selected_score=10, opposing_score=4, adjusted_score=11.5 => win"
 2026_08_05,63301505,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
-2026_08_05,63303659,run_line,home,1.5,6,5,11,Win,"run_line home 1.5: selected_score=5, opposing_score=6, adjusted_score=6.5 => win"
-2026_08_07,63299197,run_line,home,1.5,2,5,7,Win,"run_line home 1.5: selected_score=5, opposing_score=2, adjusted_score=6.5 => win"
-2026_08_07,63302281,moneyline,away,,3,4,7,Loss,"moneyline away: away_score=3, home_score=4 => loss"
+2026_08_05,63301735,run_line,away,1.5,2,4,6,Loss,"run_line away 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
+2026_08_05,63302129,run_line,away,1.5,2,3,5,Win,"run_line away 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
+2026_08_05,63302307,moneyline,home,,10,4,14,Loss,"moneyline home: away_score=10, home_score=4 => loss"
+2026_08_05,63303153,run_line,away,1.5,3,1,4,Win,"run_line away 1.5: selected_score=3, opposing_score=1, adjusted_score=4.5 => win"
+2026_08_09,63302019,run_line,away,1.5,2,7,9,Loss,"run_line away 1.5: selected_score=2, opposing_score=7, adjusted_score=3.5 => loss"
+2026_08_10,63301787,total,over,10.0,10,6,16,Win,total over 10: final_total=16 vs line=10 => win
 2026_08_10,63302511,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_08_11,63300869,moneyline,away,,2,3,5,Loss,"moneyline away: away_score=2, home_score=3 => loss"
-2026_08_11,63301259,moneyline,away,,2,11,13,Loss,"moneyline away: away_score=2, home_score=11 => loss"
-2026_08_11,63302765,moneyline,away,,12,4,16,Win,"moneyline away: away_score=12, home_score=4 => win"
-2026_08_12,63299167,moneyline,away,,2,5,7,Loss,"moneyline away: away_score=2, home_score=5 => loss"
+2026_08_10,63302689,total,over,7.5,5,6,11,Win,total over 7.5: final_total=11 vs line=7.5 => win
+2026_08_11,63299331,total,under,8.0,0,2,2,Win,total under 8: final_total=2 vs line=8 => win
+2026_08_11,63301047,moneyline,away,,1,4,5,Loss,"moneyline away: away_score=1, home_score=4 => loss"
+2026_08_11,63301963,run_line,away,1.5,3,5,8,Loss,"run_line away 1.5: selected_score=3, opposing_score=5, adjusted_score=4.5 => loss"
+2026_08_11,63302181,run_line,away,1.5,5,4,9,Win,"run_line away 1.5: selected_score=5, opposing_score=4, adjusted_score=6.5 => win"
 2026_08_13,63301163,run_line,home,1.5,0,7,7,Win,"run_line home 1.5: selected_score=7, opposing_score=0, adjusted_score=8.5 => win"
 2026_08_14,63302243,run_line,home,1.5,7,6,13,Win,"run_line home 1.5: selected_score=6, opposing_score=7, adjusted_score=7.5 => win"
-2026_08_15,63300993,run_line,home,1.5,5,3,8,Loss,"run_line home 1.5: selected_score=3, opposing_score=5, adjusted_score=4.5 => loss"
-2026_08_15,63300993,total,under,9.5,5,3,8,Win,total under 9.5: final_total=8 vs line=9.5 => win
-2026_08_17,63301899,run_line,home,1.5,8,5,13,Loss,"run_line home 1.5: selected_score=5, opposing_score=8, adjusted_score=6.5 => loss"
+2026_08_14,63302969,total,over,9.5,3,8,11,Win,total over 9.5: final_total=11 vs line=9.5 => win
+2026_08_15,63300993,moneyline,away,,5,3,8,Win,"moneyline away: away_score=5, home_score=3 => win"
+2026_08_15,63301263,run_line,away,1.5,0,1,1,Win,"run_line away 1.5: selected_score=0, opposing_score=1, adjusted_score=1.5 => win"
+2026_08_17,63302235,run_line,away,1.5,1,11,12,Loss,"run_line away 1.5: selected_score=1, opposing_score=11, adjusted_score=2.5 => loss"
+2026_08_17,63302473,run_line,away,1.5,5,9,14,Loss,"run_line away 1.5: selected_score=5, opposing_score=9, adjusted_score=6.5 => loss"
 2026_08_18,63301115,run_line,home,1.5,3,0,3,Loss,"run_line home 1.5: selected_score=0, opposing_score=3, adjusted_score=1.5 => loss"
-2026_08_18,63301807,run_line,home,1.5,5,2,7,Loss,"run_line home 1.5: selected_score=2, opposing_score=5, adjusted_score=3.5 => loss"
-2026_08_18,63303353,run_line,home,1.5,3,1,4,Loss,"run_line home 1.5: selected_score=1, opposing_score=3, adjusted_score=2.5 => loss"
+2026_08_18,63302835,total,over,7.5,0,22,22,Win,total over 7.5: final_total=22 vs line=7.5 => win
+2026_08_18,63303355,total,under,8.5,3,4,7,Win,total under 8.5: final_total=7 vs line=8.5 => win
+2026_08_19,63299381,run_line,home,1.5,4,6,10,Win,"run_line home 1.5: selected_score=6, opposing_score=4, adjusted_score=7.5 => win"
 2026_08_19,63301215,moneyline,away,,2,4,6,Loss,"moneyline away: away_score=2, home_score=4 => loss"
+2026_08_19,63301245,run_line,away,1.5,3,0,3,Win,"run_line away 1.5: selected_score=3, opposing_score=0, adjusted_score=4.5 => win"
 2026_08_19,63301957,run_line,home,1.5,5,3,8,Loss,"run_line home 1.5: selected_score=3, opposing_score=5, adjusted_score=4.5 => loss"
-2026_08_20,63303811,run_line,home,1.5,6,1,7,Loss,"run_line home 1.5: selected_score=1, opposing_score=6, adjusted_score=2.5 => loss"
-2026_08_24,63301535,run_line,home,1.5,4,2,6,Loss,"run_line home 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
-2026_08_24,63302115,moneyline,away,,4,2,6,Win,"moneyline away: away_score=4, home_score=2 => win"
+2026_08_19,63302593,total,over,7.5,6,0,6,Loss,total over 7.5: final_total=6 vs line=7.5 => loss
+2026_08_19,63302703,run_line,away,1.5,7,6,13,Win,"run_line away 1.5: selected_score=7, opposing_score=6, adjusted_score=8.5 => win"
+2026_08_19,63302843,total,over,7.0,1,0,1,Loss,total over 7: final_total=1 vs line=7 => loss
+2026_08_19,63303379,run_line,away,1.5,2,3,5,Win,"run_line away 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
+2026_08_20,63301223,total,over,7.5,2,5,7,Loss,total over 7.5: final_total=7 vs line=7.5 => loss
+2026_08_20,63302693,total,over,7.5,5,1,6,Loss,total over 7.5: final_total=6 vs line=7.5 => loss
+2026_08_24,63301347,moneyline,away,,7,0,7,Win,"moneyline away: away_score=7, home_score=0 => win"
+2026_08_24,63302779,total,over,11.0,9,6,15,Win,total over 11: final_total=15 vs line=11 => win
 2026_08_25,63301267,run_line,home,1.5,4,5,9,Win,"run_line home 1.5: selected_score=5, opposing_score=4, adjusted_score=6.5 => win"
+2026_08_25,63301275,run_line,away,1.5,5,3,8,Win,"run_line away 1.5: selected_score=5, opposing_score=3, adjusted_score=6.5 => win"
 2026_08_25,63301843,moneyline,away,,1,4,5,Loss,"moneyline away: away_score=1, home_score=4 => loss"
 2026_08_25,63302415,run_line,home,1.5,1,3,4,Win,"run_line home 1.5: selected_score=3, opposing_score=1, adjusted_score=4.5 => win"
-2026_08_25,63302667,run_line,home,1.5,1,0,1,Win,"run_line home 1.5: selected_score=0, opposing_score=1, adjusted_score=1.5 => win"
+2026_08_25,63302885,run_line,away,1.5,9,7,16,Win,"run_line away 1.5: selected_score=9, opposing_score=7, adjusted_score=10.5 => win"
 2026_08_25,63303161,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_08_25,63303383,run_line,home,1.5,3,4,7,Win,"run_line home 1.5: selected_score=4, opposing_score=3, adjusted_score=5.5 => win"
 2026_08_25,63303431,run_line,home,1.5,8,6,14,Loss,"run_line home 1.5: selected_score=6, opposing_score=8, adjusted_score=7.5 => loss"
+2026_08_25,63303865,moneyline,away,,2,4,6,Loss,"moneyline away: away_score=2, home_score=4 => loss"
+2026_08_26,63299301,run_line,away,1.5,0,3,3,Loss,"run_line away 1.5: selected_score=0, opposing_score=3, adjusted_score=1.5 => loss"
 2026_08_26,63301813,run_line,home,1.5,4,3,7,Win,"run_line home 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
 2026_08_26,63301827,moneyline,away,,0,4,4,Loss,"moneyline away: away_score=0, home_score=4 => loss"
+2026_08_26,63301929,moneyline,away,,4,7,11,Loss,"moneyline away: away_score=4, home_score=7 => loss"
 2026_08_26,63302741,run_line,home,1.5,6,0,6,Loss,"run_line home 1.5: selected_score=0, opposing_score=6, adjusted_score=1.5 => loss"
-2026_08_27,63302267,run_line,home,1.5,13,2,15,Loss,"run_line home 1.5: selected_score=2, opposing_score=13, adjusted_score=3.5 => loss"
+2026_08_26,63303761,moneyline,away,,8,1,9,Win,"moneyline away: away_score=8, home_score=1 => win"
 2026_08_27,63303091,run_line,home,1.5,5,7,12,Win,"run_line home 1.5: selected_score=7, opposing_score=5, adjusted_score=8.5 => win"
-2026_08_28,63301159,moneyline,away,,1,4,5,Loss,"moneyline away: away_score=1, home_score=4 => loss"
-2026_08_28,63301373,total,under,9.0,7,4,11,Loss,total under 9: final_total=11 vs line=9 => loss
-2026_08_28,63301711,run_line,home,1.5,10,6,16,Loss,"run_line home 1.5: selected_score=6, opposing_score=10, adjusted_score=7.5 => loss"
+2026_08_28,63300999,run_line,away,1.5,10,8,18,Win,"run_line away 1.5: selected_score=10, opposing_score=8, adjusted_score=11.5 => win"
+2026_08_28,63301159,total,over,7.5,1,4,5,Loss,total over 7.5: final_total=5 vs line=7.5 => loss
 2026_08_28,63302531,run_line,home,1.5,5,3,8,Loss,"run_line home 1.5: selected_score=3, opposing_score=5, adjusted_score=4.5 => loss"
-2026_08_28,63303069,run_line,home,1.5,4,3,7,Win,"run_line home 1.5: selected_score=3, opposing_score=4, adjusted_score=4.5 => win"
-2026_08_29,63302489,run_line,home,1.5,2,7,9,Win,"run_line home 1.5: selected_score=7, opposing_score=2, adjusted_score=8.5 => win"
+2026_08_28,63302537,run_line,away,1.5,4,6,10,Loss,"run_line away 1.5: selected_score=4, opposing_score=6, adjusted_score=5.5 => loss"
+2026_08_28,63303069,total,over,9.5,4,3,7,Loss,total over 9.5: final_total=7 vs line=9.5 => loss
+2026_08_28,63303297,total,over,7.0,1,8,9,Win,total over 7: final_total=9 vs line=7 => win
+2026_08_28,63303371,moneyline,home,,1,6,7,Win,"moneyline home: away_score=1, home_score=6 => win"
 2026_08_29,63302489,total,over,7.5,2,7,9,Win,total over 7.5: final_total=9 vs line=7.5 => win
+2026_08_29,63303351,moneyline,away,,5,3,8,Win,"moneyline away: away_score=5, home_score=3 => win"
 2026_08_30,401816732,run_line,home,1.5,1,16,17,Win,"run_line home 1.5: selected_score=16, opposing_score=1, adjusted_score=17.5 => win"
+2026_08_30,401816735,total,over,7.5,1,11,12,Win,total over 7.5: final_total=12 vs line=7.5 => win
+2026_08_30,401816735,moneyline,home,,1,11,12,Win,"moneyline home: away_score=1, home_score=11 => win"
+2026_08_30,401816739,moneyline,away,,0,7,7,Loss,"moneyline away: away_score=0, home_score=7 => loss"
+2026_08_30,401816740,total,under,8.5,1,5,6,Win,total under 8.5: final_total=6 vs line=8.5 => win
+2026_08_30,401816741,run_line,away,1.5,7,5,12,Win,"run_line away 1.5: selected_score=7, opposing_score=5, adjusted_score=8.5 => win"
+2026_08_30,401816745,total,over,10.0,8,5,13,Win,total over 10: final_total=13 vs line=10 => win
+2026_08_30,401816745,moneyline,away,,8,5,13,Win,"moneyline away: away_score=8, home_score=5 => win"
 2026_08_31,401816756,run_line,home,1.5,1,10,11,Win,"run_line home 1.5: selected_score=10, opposing_score=1, adjusted_score=11.5 => win"
-2026_08_31,401816757,run_line,home,1.5,2,1,3,Win,"run_line home 1.5: selected_score=1, opposing_score=2, adjusted_score=2.5 => win"
-2026_09_01,401816769,moneyline,away,,2,4,6,Loss,"moneyline away: away_score=2, home_score=4 => loss"
-2026_09_04,401816810,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
-2026_09_08,401816866,moneyline,away,,4,2,6,Win,"moneyline away: away_score=4, home_score=2 => win"
+2026_09_01,401816771,total,over,7.5,7,1,8,Win,total over 7.5: final_total=8 vs line=7.5 => win
+2026_09_04,401816808,moneyline,away,,7,6,13,Win,"moneyline away: away_score=7, home_score=6 => win"
+2026_09_08,401816863,moneyline,home,,2,3,5,Win,"moneyline home: away_score=2, home_score=3 => win"
+2026_09_09,401816878,total,under,8.5,1,14,15,Loss,total under 8.5: final_total=15 vs line=8.5 => loss
 2026_09_10,401816886,run_line,home,1.5,2,0,2,Loss,"run_line home 1.5: selected_score=0, opposing_score=2, adjusted_score=1.5 => loss"
 2026_09_11,401816900,run_line,home,1.5,7,5,12,Loss,"run_line home 1.5: selected_score=5, opposing_score=7, adjusted_score=6.5 => loss"
-2026_09_14,401816942,run_line,home,1.5,4,6,10,Win,"run_line home 1.5: selected_score=6, opposing_score=4, adjusted_score=7.5 => win"
-2026_09_16,401816972,run_line,home,1.5,7,2,9,Loss,"run_line home 1.5: selected_score=2, opposing_score=7, adjusted_score=3.5 => loss"
+2026_09_11,401816901,total,over,10.0,5,6,11,Win,total over 10: final_total=11 vs line=10 => win
+2026_09_11,401816901,moneyline,away,,5,6,11,Loss,"moneyline away: away_score=5, home_score=6 => loss"
+2026_09_12,401816916,moneyline,away,,19,1,20,Win,"moneyline away: away_score=19, home_score=1 => win"
+2026_09_13,401816930,moneyline,away,,6,4,10,Win,"moneyline away: away_score=6, home_score=4 => win"
+2026_09_14,401816940,run_line,home,1.5,8,7,15,Win,"run_line home 1.5: selected_score=7, opposing_score=8, adjusted_score=8.5 => win"
 2026_09_17,401816981,run_line,home,1.5,4,5,9,Win,"run_line home 1.5: selected_score=5, opposing_score=4, adjusted_score=6.5 => win"
-2026_09_18,401816995,run_line,home,1.5,9,2,11,Loss,"run_line home 1.5: selected_score=2, opposing_score=9, adjusted_score=3.5 => loss"
-2026_09_19,401817009,run_line,home,1.5,5,6,11,Win,"run_line home 1.5: selected_score=6, opposing_score=5, adjusted_score=7.5 => win"
-2026_09_21,401817029,run_line,home,1.5,2,5,7,Win,"run_line home 1.5: selected_score=5, opposing_score=2, adjusted_score=6.5 => win"
+2026_09_18,401816993,total,over,7.5,2,8,10,Win,total over 7.5: final_total=10 vs line=7.5 => win
+2026_09_18,401816994,moneyline,away,,3,0,3,Win,"moneyline away: away_score=3, home_score=0 => win"
+2026_09_18,401816995,moneyline,away,,9,2,11,Win,"moneyline away: away_score=9, home_score=2 => win"
+2026_09_19,401817011,moneyline,home,,4,10,14,Win,"moneyline home: away_score=4, home_score=10 => win"
+2026_09_20,401817016,run_line,home,1.5,3,0,3,Loss,"run_line home 1.5: selected_score=0, opposing_score=3, adjusted_score=1.5 => loss"
 2026_09_22,401817041,run_line,home,1.5,7,9,16,Win,"run_line home 1.5: selected_score=9, opposing_score=7, adjusted_score=10.5 => win"
-2026_09_22,401817041,total,under,9.5,7,9,16,Loss,total under 9.5: final_total=16 vs line=9.5 => loss
+2026_09_22,401817042,total,over,7.5,7,0,7,Loss,total over 7.5: final_total=7 vs line=7.5 => loss
 2026_09_22,401817043,run_line,home,1.5,3,2,5,Win,"run_line home 1.5: selected_score=2, opposing_score=3, adjusted_score=3.5 => win"
 2026_09_22,401817044,run_line,home,1.5,0,7,7,Win,"run_line home 1.5: selected_score=7, opposing_score=0, adjusted_score=8.5 => win"
-2026_09_23,401817055,run_line,home,1.5,5,3,8,Loss,"run_line home 1.5: selected_score=3, opposing_score=5, adjusted_score=4.5 => loss"
+2026_09_23,401817059,moneyline,home,,5,1,6,Loss,"moneyline home: away_score=5, home_score=1 => loss"
+2026_09_24,401817069,moneyline,home,,6,4,10,Loss,"moneyline home: away_score=6, home_score=4 => loss"
+2026_09_24,401817071,moneyline,home,,4,2,6,Loss,"moneyline home: away_score=4, home_score=2 => loss"
+2026_09_25,401817086,total,over,7.5,2,0,2,Loss,total over 7.5: final_total=2 vs line=7.5 => loss
 2026_09_26,401817087,run_line,home,1.5,8,3,11,Loss,"run_line home 1.5: selected_score=3, opposing_score=8, adjusted_score=4.5 => loss"
-2026_09_26,401817091,run_line,home,1.5,7,1,8,Loss,"run_line home 1.5: selected_score=1, opposing_score=7, adjusted_score=2.5 => loss"
-2026_09_26,401817093,run_line,home,1.5,12,1,13,Loss,"run_line home 1.5: selected_score=1, opposing_score=12, adjusted_score=2.5 => loss"
-2026_09_26,401817094,run_line,home,1.5,11,5,16,Loss,"run_line home 1.5: selected_score=5, opposing_score=11, adjusted_score=6.5 => loss"
-2026_09_26,401817096,total,over,7.5,2,3,5,Loss,total over 7.5: final_total=5 vs line=7.5 => loss
-2026_09_27,401817089,run_line,home,1.5,6,2,8,Loss,"run_line home 1.5: selected_score=2, opposing_score=6, adjusted_score=3.5 => loss"
+2026_09_26,401817097,moneyline,away,,6,2,8,Win,"moneyline away: away_score=6, home_score=2 => win"
+2026_09_26,401817098,total,over,7.5,4,8,12,Win,total over 7.5: final_total=12 vs line=7.5 => win
+2026_09_27,401817105,total,under,8.5,1,5,6,Win,total under 8.5: final_total=6 vs line=8.5 => win
 2026_09_27,401817107,run_line,home,1.5,4,2,6,Loss,"run_line home 1.5: selected_score=2, opposing_score=4, adjusted_score=3.5 => loss"
-2026_09_27,401817109,moneyline,away,,2,3,5,Loss,"moneyline away: away_score=2, home_score=3 => loss"
-2026_09_27,401817112,run_line,home,1.5,4,6,10,Win,"run_line home 1.5: selected_score=6, opposing_score=4, adjusted_score=7.5 => win"
+2026_09_27,401817109,run_line,home,1.5,2,3,5,Win,"run_line home 1.5: selected_score=3, opposing_score=2, adjusted_score=4.5 => win"
+2026_09_27,401817111,moneyline,home,,4,6,10,Win,"moneyline home: away_score=4, home_score=6 => win"
+2026_09_27,401817113,total,over,7.0,3,7,10,Win,total over 7: final_total=10 vs line=7 => win
 2026_09_27,401817114,run_line,home,1.5,4,9,13,Win,"run_line home 1.5: selected_score=9, opposing_score=4, adjusted_score=10.5 => win"
+2026_09_29,401907974,total,over,7.0,0,8,8,Win,total over 7: final_total=8 vs line=7 => win
+2026_09_30,401907975,total,over,7.0,1,4,5,Loss,total over 7: final_total=5 vs line=7 => loss
+2026_10_01,401907973,run_line,home,1.5,2,6,8,Win,"run_line home 1.5: selected_score=6, opposing_score=2, adjusted_score=7.5 => win"
+2026_10_03,401908002,moneyline,home,,2,3,5,Win,"moneyline home: away_score=2, home_score=3 => win"
+2026_10_07,401907992,run_line,home,1.5,9,3,12,Loss,"run_line home 1.5: selected_score=3, opposing_score=9, adjusted_score=4.5 => loss"
+2026_10_07,401908005,run_line,home,1.5,3,1,4,Loss,"run_line home 1.5: selected_score=1, opposing_score=3, adjusted_score=2.5 => loss"
+2026_10_10,401907994,total,over,7.0,0,2,2,Loss,total over 7: final_total=2 vs line=7 => loss
+2026_10_11,401908030,run_line,home,1.5,1,2,3,Win,"run_line home 1.5: selected_score=2, opposing_score=1, adjusted_score=3.5 => win"
