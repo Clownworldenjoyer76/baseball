@@ -894,33 +894,77 @@ def fit_walk_forward_models(
         f"walk_forward_away_{target_date.date()}",
     )
 
-    home_model = _fit_full_prior_model(
-        prior,
-        feature_columns,
-        "target_home_runs",
-        home_params,
-        trainer.RANDOM_STATE,
+    # Keep the last earlier-date partition OUT of hyperparameter tuning.
+    # The learned model must beat the raw DRatings run projection on this
+    # untouched, pre-target-date holdout before being used for that side.
+    gate_training = pd.concat(
+        [splits["train"], splits["validation"]],
+        ignore_index=True,
+        sort=False,
     )
+    gate_test = splits["test"]
+    selection = {}
+    models = {}
 
-    away_model = _fit_full_prior_model(
-        prior,
-        feature_columns,
-        "target_away_runs",
-        away_params,
-        trainer.RANDOM_STATE,
-    )
+    for side, params in (("home", home_params), ("away", away_params)):
+        target_col = f"target_{side}_runs"
+        baseline_col = f"dratings_{side}_projected_runs"
+        if baseline_col not in gate_test.columns:
+            fail(f"Walk-forward comparison missing {baseline_col}")
 
-    assert_model_feature_order(
-        home_model,
-        feature_columns,
-        f"walk_forward_home_{target_date.date()}",
-    )
+        baseline = pd.to_numeric(
+            gate_test[baseline_col], errors="coerce"
+        ).to_numpy(dtype=float)
+        if not np.all(np.isfinite(baseline) & (baseline > 0)):
+            fail(
+                "Walk-forward DRatings baseline must be finite and positive "
+                f"on holdout: side={side} target={target_date.date()}"
+            )
 
-    assert_model_feature_order(
-        away_model,
-        feature_columns,
-        f"walk_forward_away_{target_date.date()}",
-    )
+        gate_model = _fit_full_prior_model(
+            gate_training,
+            feature_columns,
+            target_col,
+            params,
+            trainer.RANDOM_STATE,
+        )
+        actual = gate_test[target_col].to_numpy(dtype=float)
+        candidate_score = trainer.safe_mean_poisson_deviance(
+            actual,
+            gate_model.predict(gate_test.loc[:, feature_columns]),
+        )
+        baseline_score = trainer.safe_mean_poisson_deviance(actual, baseline)
+        if not np.isfinite(candidate_score) or not np.isfinite(baseline_score):
+            fail(f"Non-finite walk-forward gate metric for {side}")
+
+        source = (
+            "learned" if candidate_score <= baseline_score else "dratings"
+        )
+        selection[side] = {
+            "source": source,
+            "candidate_holdout_deviance": float(candidate_score),
+            "baseline_holdout_deviance": float(baseline_score),
+            "holdout_rows": len(gate_test),
+            "holdout_first_date": str(gate_test["_game_date_dt"].min().date()),
+            "holdout_last_date": str(gate_test["_game_date_dt"].max().date()),
+        }
+        if source == "learned":
+            models[side] = _fit_full_prior_model(
+                prior,
+                feature_columns,
+                target_col,
+                params,
+                trainer.RANDOM_STATE,
+            )
+            assert_model_feature_order(
+                models[side],
+                feature_columns,
+                f"walk_forward_{side}_{target_date.date()}",
+            )
+        else:
+            # The caller reads the existing DRatings column for this side;
+            # no fitted learned model is needed.
+            models[side] = None
 
     train_end = (
         prior["_game_date_dt"]
@@ -946,6 +990,8 @@ def fit_walk_forward_models(
             sort_keys=True,
             separators=(",", ":"),
         )
+        + f";home_source={selection['home']['source']}"
+        + f";away_source={selection['away']['source']}"
     )
 
     audit = {
@@ -959,12 +1005,14 @@ def fit_walk_forward_models(
         "away_validation_score": float(
             away_validation_score
         ),
+        "home_selection": selection["home"],
+        "away_selection": selection["away"],
         "version": version,
     }
 
     return (
-        home_model,
-        away_model,
+        models["home"],
+        models["away"],
         audit,
     )
 
@@ -1275,16 +1323,29 @@ def process_date(
                 audit,
             ) = fitted
 
+            home_predictions = (
+                home_model.predict(x_features)
+                if audit["home_selection"]["source"] == "learned"
+                else pd.to_numeric(
+                    joined["dratings_home_projected_runs"], errors="coerce"
+                ).to_numpy(dtype=float)
+            )
+            away_predictions = (
+                away_model.predict(x_features)
+                if audit["away_selection"]["source"] == "learned"
+                else pd.to_numeric(
+                    joined["dratings_away_projected_runs"], errors="coerce"
+                ).to_numpy(dtype=float)
+            )
             home_runs = validate_predictions(
-                home_model.predict(x_features),
-                "walk_forward_home_runs_model",
+                home_predictions,
+                "walk_forward_home_runs",
                 date_str,
                 joined,
             )
-
             away_runs = validate_predictions(
-                away_model.predict(x_features),
-                "walk_forward_away_runs_model",
+                away_predictions,
+                "walk_forward_away_runs",
                 date_str,
                 joined,
             )
@@ -1297,6 +1358,10 @@ def process_date(
                 f"{audit['training_end_date']}"
                 ";training_rows="
                 f"{audit['training_rows']}"
+                ";home_source="
+                f"{audit['home_selection']['source']}"
+                ";away_source="
+                f"{audit['away_selection']['source']}"
             )
 
             _log(
@@ -1311,7 +1376,9 @@ def process_date(
                 "home_validation_score="
                 f"{float(audit['home_validation_score']):.12f} "
                 "away_validation_score="
-                f"{float(audit['away_validation_score']):.12f}"
+                f"{float(audit['away_validation_score']):.12f} "
+                f"home_holdout={audit['home_selection']} "
+                f"away_holdout={audit['away_selection']}"
             )
 
         except Exception as exc:

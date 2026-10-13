@@ -711,6 +711,7 @@ def build_run_metrics(scored: pd.DataFrame) -> pd.DataFrame:
 
 def build_promotion_decision(
     run_metrics: pd.DataFrame,
+    log_loss: pd.DataFrame,
     *,
     test_start: str,
     test_end: str,
@@ -759,6 +760,49 @@ def build_promotion_decision(
             "difference_candidate_minus_baseline": candidate - baseline,
         }
 
+    # Market probabilities are the quantities consumed by edge/EV/Kelly.
+    # Promotion must not improve runs at the expense of any evaluated market.
+    market_lookup = {
+        (str(row.system), str(row.market), str(row.evaluation_side)): row
+        for row in log_loss.itertuples(index=False)
+    }
+    market_comparison = {}
+    for market_name, side in (
+        ("moneyline", "home"),
+        ("run_line", "home"),
+        ("total", "over_resolved"),
+    ):
+        baseline_key = ("dratings", market_name, side)
+        candidate_key = ("new_model", market_name, side)
+        if baseline_key not in market_lookup or candidate_key not in market_lookup:
+            fail(f"Promotion gate missing market log-loss rows: {market_name}")
+        baseline_row = market_lookup[baseline_key]
+        candidate_row = market_lookup[candidate_key]
+        baseline_rows = int(baseline_row.rows)
+        candidate_rows = int(candidate_row.rows)
+        if baseline_rows <= 0 or candidate_rows != baseline_rows:
+            fail(
+                f"Promotion gate requires identical nonempty market samples "
+                f"for {market_name}: baseline={baseline_rows} "
+                f"candidate={candidate_rows}"
+            )
+        baseline = float(baseline_row.log_loss)
+        candidate = float(candidate_row.log_loss)
+        if not np.isfinite(baseline) or not np.isfinite(candidate):
+            fail(f"Non-finite market log loss in promotion gate: {market_name}")
+        passed = bool(candidate <= baseline)
+        all_passed = all_passed and passed
+        market_comparison[market_name] = {
+            "baseline_system": "dratings",
+            "metric": "log_loss",
+            "evaluation_side": side,
+            "rows": baseline_rows,
+            "baseline_value": baseline,
+            "candidate_value": candidate,
+            "candidate_lte_baseline": passed,
+            "difference_candidate_minus_baseline": candidate - baseline,
+        }
+
     return {
         "status": (
             "candidate_promoted"
@@ -767,12 +811,14 @@ def build_promotion_decision(
         ),
         "gate_passed": bool(all_passed),
         "gate_rule": (
-            "candidate mean_poisson_deviance <= DRatings baseline "
-            "for BOTH home and away models"
+            "candidate mean_poisson_deviance <= DRatings for BOTH sides "
+            "AND candidate log_loss <= DRatings for ALL evaluated markets "
+            "(moneyline, run_line, totals)"
         ),
         "test_start_date": str(test_start),
         "test_end_date": str(test_end),
         "comparison": comparison,
+        "market_comparison": market_comparison,
     }
 
 
@@ -815,9 +861,9 @@ def apply_promotion_decision(
 
     if not decision["gate_passed"]:
         result["notes"] = (
-            "At least one candidate side exceeded the DRatings baseline "
-            "Poisson deviance. Existing production model and metadata "
-            "artifacts were left unchanged."
+            "Candidate failed at least one run-deviance or market-log-loss "
+            "gate. Existing production model and metadata artifacts "
+            "were left unchanged."
         )
         _write_json(report_path, result)
         _log(
@@ -1712,23 +1758,32 @@ def build_probability_log_loss(
         ),
     ]
 
-    for system in ["dratings", "new_model"]:
-        for (
-            market_name,
-            evaluation_side,
-            observed_col,
-            probability_suffix,
-        ) in definitions:
-            observed = pd.to_numeric(
-                market[observed_col],
-                errors="coerce",
-            )
-            probability = pd.to_numeric(
-                market[f"{system}_{probability_suffix}"],
-                errors="coerce",
-            )
-            valid = observed.notna() & probability.notna()
-
+    for (
+        market_name,
+        evaluation_side,
+        observed_col,
+        probability_suffix,
+    ) in definitions:
+        observed = pd.to_numeric(
+            market[observed_col], errors="coerce"
+        )
+        baseline = pd.to_numeric(
+            market[f"dratings_{probability_suffix}"], errors="coerce"
+        )
+        candidate = pd.to_numeric(
+            market[f"new_model_{probability_suffix}"], errors="coerce"
+        )
+        # Compare both systems on the EXACT same resolved games, not
+        # merely samples with equal row counts.
+        valid = (
+            np.isfinite(observed)
+            & np.isfinite(baseline)
+            & np.isfinite(candidate)
+        )
+        for system, probabilities in (
+            ("dratings", baseline),
+            ("new_model", candidate),
+        ):
             rows.append(
                 {
                     "system": system,
@@ -1737,7 +1792,7 @@ def build_probability_log_loss(
                     "rows": int(valid.sum()),
                     "log_loss": binary_log_loss(
                         observed[valid],
-                        probability[valid],
+                        probabilities[valid],
                     ),
                 }
             )
@@ -2568,8 +2623,9 @@ def write_summary(
         "## Production promotion gate",
         "",
         (
-            "Candidate promotion requires mean Poisson deviance <= the "
-            "DRatings baseline for BOTH home and away models."
+            "Candidate promotion requires mean Poisson deviance <= DRatings "
+            "for BOTH run sides, plus log loss <= DRatings for moneyline, "
+            "run line, and totals on comparable held-out games."
         ),
         "",
         markdown_table(
@@ -2598,6 +2654,22 @@ def write_summary(
         (
             "- Production artifacts changed: "
             f"**{_yes_no(promotion['production_artifacts_changed'])}**."
+        ),
+        "",
+        "## Market probability promotion gate",
+        "",
+        markdown_table(
+            ["Market", "Rows", "DRatings log loss", "Candidate log loss", "Pass"],
+            [
+                [
+                    market_name,
+                    str(promotion["market_comparison"][market_name]["rows"]),
+                    _fmt_float(promotion["market_comparison"][market_name]["baseline_value"]),
+                    _fmt_float(promotion["market_comparison"][market_name]["candidate_value"]),
+                    _yes_no(promotion["market_comparison"][market_name]["candidate_lte_baseline"]),
+                ]
+                for market_name in ("moneyline", "run_line", "total")
+            ],
         ),
         "",
         "## Run prediction metrics",
@@ -2869,12 +2941,6 @@ def main() -> None:
             scored
         )
 
-        promotion_decision = build_promotion_decision(
-            run_metrics,
-            test_start=test_start,
-            test_end=test_end,
-        )
-
         sportsbook = load_sportsbook_test_period(
             scored,
             args.sportsbook_dir,
@@ -2900,6 +2966,13 @@ def main() -> None:
 
         log_loss = build_probability_log_loss(
             market
+        )
+
+        promotion_decision = build_promotion_decision(
+            run_metrics,
+            log_loss,
+            test_start=test_start,
+            test_end=test_end,
         )
 
         values = build_value_records(
