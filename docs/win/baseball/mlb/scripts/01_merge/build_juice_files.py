@@ -22,6 +22,32 @@ LOG_FILE = ERROR_DIR / "build_juice_files.txt"
 
 PROB_TOLERANCE = 1e-6
 
+# Fixed, price-independent probability contraction. Retrospective game-level
+# and selected-moneyline/run-line comparisons favored contraction; this is a
+# conservative, reversible adjustment, not a certified live calibration fit.
+# Leave totals and their modeled push probabilities unchanged.
+BINARY_PROBABILITY_CALIBRATION_SLOPE = 0.50
+
+
+def calibrate_binary_probabilities(home_probability, away_probability):
+    """Contract complementary binary probabilities toward 0.5.
+
+    Preserve the higher-probability side, strict complementarity, and all
+    downstream probability/EV/Kelly identities. Do not change raw run means.
+    """
+    home = float(home_probability)
+    away = float(away_probability)
+    if (
+        not np.isfinite(home)
+        or not np.isfinite(away)
+        or not 0.0 <= home <= 1.0
+        or not 0.0 <= away <= 1.0
+        or abs(home + away - 1.0) > PROB_TOLERANCE
+    ):
+        raise ValueError("invalid pre-calibration binary probabilities")
+    adjusted_home = 0.5 + BINARY_PROBABILITY_CALIBRATION_SLOPE * (home - 0.5)
+    return adjusted_home, 1.0 - adjusted_home
+
 LEGACY_OFFICIAL_PROBABILITY_COLUMNS = [
     "home_normalized_prob_moneyline",
     "away_normalized_prob_moneyline",
@@ -727,16 +753,19 @@ def process_moneyline(
     valid_indices = []
     home_probs = []
     away_probs = []
+    raw_home_probs = []
+    raw_away_probs = []
     ties = []
 
     for i, r in df.iterrows():
         try:
-            hp, ap, tp = (
+            hp_raw, ap_raw, tp = (
                 moneyline_probabilities(
                     r["model_home_runs"],
                     r["model_away_runs"],
                 )
             )
+            hp, ap = calibrate_binary_probabilities(hp_raw, ap_raw)
 
         except Exception as e:
             _log_row_skip(
@@ -752,6 +781,8 @@ def process_moneyline(
         valid_indices.append(i)
         home_probs.append(hp)
         away_probs.append(ap)
+        raw_home_probs.append(hp_raw)
+        raw_away_probs.append(ap_raw)
         ties.append(tp)
 
     if not valid_indices:
@@ -780,6 +811,9 @@ def process_moneyline(
     ].apply(
         american_to_decimal
     )
+
+    ml["home_model_prob_moneyline_raw"] = raw_home_probs
+    ml["away_model_prob_moneyline_raw"] = raw_away_probs
 
     ml[
         "home_model_prob_moneyline"
@@ -876,10 +910,12 @@ def process_run_line(
     valid_indices = []
     home_probs = []
     away_probs = []
+    raw_home_probs = []
+    raw_away_probs = []
 
     for i, r in df.iterrows():
         try:
-            hp, ap = (
+            hp_raw, ap_raw = (
                 run_line_probabilities(
                     r["model_home_runs"],
                     r["model_away_runs"],
@@ -887,6 +923,7 @@ def process_run_line(
                     r["away_run_line"],
                 )
             )
+            hp, ap = calibrate_binary_probabilities(hp_raw, ap_raw)
 
         except Exception as e:
             _log_row_skip(
@@ -902,6 +939,8 @@ def process_run_line(
         valid_indices.append(i)
         home_probs.append(hp)
         away_probs.append(ap)
+        raw_home_probs.append(hp_raw)
+        raw_away_probs.append(ap_raw)
 
     if not valid_indices:
         log(
@@ -929,6 +968,9 @@ def process_run_line(
     ].apply(
         american_to_decimal
     )
+
+    rl["home_model_prob_run_line_raw"] = raw_home_probs
+    rl["away_model_prob_run_line_raw"] = raw_away_probs
 
     rl[
         "home_model_prob_run_line"
@@ -1190,8 +1232,8 @@ def main():
         "sportsbook odds are not probability inputs"
     )
     log(
-        "RUN-LINE PROBABILITIES USE RAW SKELLAM OUTPUT: "
-        "no post-hoc calibration is applied"
+        "MONEYLINE AND RUN-LINE PROBABILITIES USE FIXED 0.50 "
+        "CONTRACTION TOWARD EVEN; TOTALS ARE UNCHANGED"
     )
 
     for f in OUTPUT_DIR.glob(
