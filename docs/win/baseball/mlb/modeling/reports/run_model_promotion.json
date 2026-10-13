@@ -17,9 +17,9 @@
       "baseline_system": "dratings",
       "metric": "mean_poisson_deviance",
       "baseline_value": 2.1520664359163724,
-      "candidate_value": 2.119097624929025,
+      "candidate_value": 2.1190267095516444,
       "candidate_lte_baseline": true,
-      "difference_candidate_minus_baseline": -0.032968810987347386
+      "difference_candidate_minus_baseline": -0.03303972636472796
     }
   },
   "market_comparison": {
@@ -29,19 +29,19 @@
       "evaluation_side": "home",
       "rows": 79,
       "baseline_value": 0.6319572254820185,
-      "candidate_value": 0.6752471063735309,
+      "candidate_value": 0.6752304363963869,
       "candidate_lte_baseline": false,
-      "difference_candidate_minus_baseline": 0.04328988089151242
+      "difference_candidate_minus_baseline": 0.04327321091436842
     },
     "run_line": {
       "baseline_system": "dratings",
       "metric": "log_loss",
       "evaluation_side": "home",
       "rows": 78,
-      "baseline_value": 0.6943826497100064,
-      "candidate_value": 0.7435257381627574,
+      "baseline_value": 0.6943826497100065,
+      "candidate_value": 0.7435017234189969,
       "candidate_lte_baseline": false,
-      "difference_candidate_minus_baseline": 0.04914308845275095
+      "difference_candidate_minus_baseline": 0.04911907370899038
     },
     "total": {
       "baseline_system": "dratings",
@@ -49,12 +49,12 @@
       "evaluation_side": "over_resolved",
       "rows": 76,
       "baseline_value": 0.7039589897390469,
-      "candidate_value": 0.7072533732493923,
+      "candidate_value": 0.7072371318283107,
       "candidate_lte_baseline": false,
-      "difference_candidate_minus_baseline": 0.003294383510345389
+      "difference_candidate_minus_baseline": 0.0032781420892638025
     }
   },
-  "evaluated_at": "2026-10-13T12:18:52.308107+00:00",
+  "evaluated_at": "2026-10-13T13:14:06.376874+00:00",
   "candidate_dir": "docs/win/baseball/mlb/models/run_projection/candidates",
   "production_model_dir": "docs/win/baseball/mlb/models/run_projection",
   "production_artifacts_changed": false,
