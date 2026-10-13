@@ -1,30 +1,62 @@
 {
   "status": "candidate_rejected",
   "gate_passed": false,
-  "gate_rule": "candidate mean_poisson_deviance <= DRatings baseline for BOTH home and away models",
-  "test_start_date": "2026-09-10",
-  "test_end_date": "2026-10-11",
+  "gate_rule": "candidate mean_poisson_deviance <= DRatings for BOTH sides AND candidate log_loss <= DRatings for ALL evaluated markets (moneyline, run_line, totals)",
+  "test_start_date": "2026-09-11",
+  "test_end_date": "2026-10-12",
   "comparison": {
     "home": {
       "baseline_system": "dratings",
       "metric": "mean_poisson_deviance",
-      "baseline_value": 1.9623681186912922,
-      "candidate_value": 2.1164126732686377,
+      "baseline_value": 1.8809196818724687,
+      "candidate_value": 1.9863455499462215,
       "candidate_lte_baseline": false,
-      "difference_candidate_minus_baseline": 0.15404455457734545
+      "difference_candidate_minus_baseline": 0.10542586807375276
     },
     "away": {
       "baseline_system": "dratings",
       "metric": "mean_poisson_deviance",
-      "baseline_value": 2.1347349990892672,
-      "candidate_value": 2.1307133891271866,
+      "baseline_value": 2.1520664359163724,
+      "candidate_value": 2.119097624929025,
       "candidate_lte_baseline": true,
-      "difference_candidate_minus_baseline": -0.0040216099620806744
+      "difference_candidate_minus_baseline": -0.032968810987347386
     }
   },
-  "evaluated_at": "2026-10-12T07:44:36.108479+00:00",
+  "market_comparison": {
+    "moneyline": {
+      "baseline_system": "dratings",
+      "metric": "log_loss",
+      "evaluation_side": "home",
+      "rows": 79,
+      "baseline_value": 0.6319572254820185,
+      "candidate_value": 0.6752471063735309,
+      "candidate_lte_baseline": false,
+      "difference_candidate_minus_baseline": 0.04328988089151242
+    },
+    "run_line": {
+      "baseline_system": "dratings",
+      "metric": "log_loss",
+      "evaluation_side": "home",
+      "rows": 78,
+      "baseline_value": 0.6943826497100064,
+      "candidate_value": 0.7435257381627574,
+      "candidate_lte_baseline": false,
+      "difference_candidate_minus_baseline": 0.04914308845275095
+    },
+    "total": {
+      "baseline_system": "dratings",
+      "metric": "log_loss",
+      "evaluation_side": "over_resolved",
+      "rows": 76,
+      "baseline_value": 0.7039589897390469,
+      "candidate_value": 0.7072533732493923,
+      "candidate_lte_baseline": false,
+      "difference_candidate_minus_baseline": 0.003294383510345389
+    }
+  },
+  "evaluated_at": "2026-10-13T12:18:52.308107+00:00",
   "candidate_dir": "docs/win/baseball/mlb/models/run_projection/candidates",
   "production_model_dir": "docs/win/baseball/mlb/models/run_projection",
   "production_artifacts_changed": false,
-  "notes": "At least one candidate side exceeded the DRatings baseline Poisson deviance. Existing production model and metadata artifacts were left unchanged."
+  "notes": "Candidate failed at least one run-deviance or market-log-loss gate. Existing production model and metadata artifacts were left unchanged."
 }

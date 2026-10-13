@@ -91,24 +91,24 @@
   "promotion_comparison": {
     "away": {
       "baseline_system": "dratings",
-      "baseline_value": 2.1347349990892672,
+      "baseline_value": 2.1520664359163724,
       "candidate_lte_baseline": true,
-      "candidate_value": 2.1307133891271866,
-      "difference_candidate_minus_baseline": -0.0040216099620806744,
+      "candidate_value": 2.119097624929025,
+      "difference_candidate_minus_baseline": -0.032968810987347386,
       "metric": "mean_poisson_deviance"
     },
     "home": {
       "baseline_system": "dratings",
-      "baseline_value": 1.9623681186912922,
+      "baseline_value": 1.8809196818724687,
       "candidate_lte_baseline": false,
-      "candidate_value": 2.1164126732686377,
-      "difference_candidate_minus_baseline": 0.15404455457734545,
+      "candidate_value": 1.9863455499462215,
+      "difference_candidate_minus_baseline": 0.10542586807375276,
       "metric": "mean_poisson_deviance"
     }
   },
   "promotion_status": "candidate_rejected",
   "status": "passed",
-  "training_rows": 1901,
+  "training_rows": 1903,
   "training_set": "docs/win/baseball/mlb/modeling/data/mlb_run_training_set.csv",
-  "validated_at": "2026-10-12T07:44:36.798105+00:00"
+  "validated_at": "2026-10-13T12:18:53.054227+00:00"
 }
