@@ -2,24 +2,24 @@
   "status": "candidate_rejected",
   "gate_passed": false,
   "gate_rule": "candidate mean_poisson_deviance <= DRatings for BOTH sides AND candidate log_loss <= DRatings for ALL evaluated markets (moneyline, run_line, totals)",
-  "test_start_date": "2026-09-11",
-  "test_end_date": "2026-10-12",
+  "test_start_date": "2026-09-12",
+  "test_end_date": "2026-10-13",
   "comparison": {
     "home": {
       "baseline_system": "dratings",
       "metric": "mean_poisson_deviance",
-      "baseline_value": 1.8809196818724687,
-      "candidate_value": 1.9863455499462215,
+      "baseline_value": 1.891869418059875,
+      "candidate_value": 1.9453628573950337,
       "candidate_lte_baseline": false,
-      "difference_candidate_minus_baseline": 0.10542586807375276
+      "difference_candidate_minus_baseline": 0.05349343933515871
     },
     "away": {
       "baseline_system": "dratings",
       "metric": "mean_poisson_deviance",
-      "baseline_value": 2.1520664359163724,
-      "candidate_value": 2.1190267095516444,
+      "baseline_value": 2.1687300416696984,
+      "candidate_value": 2.1597618362216338,
       "candidate_lte_baseline": true,
-      "difference_candidate_minus_baseline": -0.03303972636472796
+      "difference_candidate_minus_baseline": -0.008968205448064648
     }
   },
   "market_comparison": {
@@ -27,34 +27,34 @@
       "baseline_system": "dratings",
       "metric": "log_loss",
       "evaluation_side": "home",
-      "rows": 79,
-      "baseline_value": 0.6319572254820185,
-      "candidate_value": 0.6752304363963869,
+      "rows": 77,
+      "baseline_value": 0.6312121643336372,
+      "candidate_value": 0.6697249367222802,
       "candidate_lte_baseline": false,
-      "difference_candidate_minus_baseline": 0.04327321091436842
+      "difference_candidate_minus_baseline": 0.038512772388642924
     },
     "run_line": {
       "baseline_system": "dratings",
       "metric": "log_loss",
       "evaluation_side": "home",
-      "rows": 78,
-      "baseline_value": 0.6943826497100065,
-      "candidate_value": 0.7435017234189969,
+      "rows": 76,
+      "baseline_value": 0.6973567601843299,
+      "candidate_value": 0.7354601068506333,
       "candidate_lte_baseline": false,
-      "difference_candidate_minus_baseline": 0.04911907370899038
+      "difference_candidate_minus_baseline": 0.03810334666630344
     },
     "total": {
       "baseline_system": "dratings",
       "metric": "log_loss",
       "evaluation_side": "over_resolved",
-      "rows": 76,
-      "baseline_value": 0.7039589897390469,
-      "candidate_value": 0.7072371318283107,
+      "rows": 74,
+      "baseline_value": 0.7053982704982714,
+      "candidate_value": 0.7198430528523417,
       "candidate_lte_baseline": false,
-      "difference_candidate_minus_baseline": 0.0032781420892638025
+      "difference_candidate_minus_baseline": 0.014444782354070318
     }
   },
-  "evaluated_at": "2026-10-13T13:14:06.376874+00:00",
+  "evaluated_at": "2026-10-14T15:51:04.175638+00:00",
   "candidate_dir": "docs/win/baseball/mlb/models/run_projection/candidates",
   "production_model_dir": "docs/win/baseball/mlb/models/run_projection",
   "production_artifacts_changed": false,
