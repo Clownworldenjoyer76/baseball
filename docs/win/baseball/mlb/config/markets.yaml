@@ -120,7 +120,8 @@ markets:
       over:
         enabled: true
         line_bands:
-          - [0.0, 20.0]
+          - [0.0, 8.0]
+          - [9.0, 20.0]
         odds_bands:
           - [-999, 999]
         ev_bands:
@@ -128,13 +129,14 @@ markets:
         kelly_bands:
           - [0.00, 99.99]
         prob_bands:
-          - [0.50, 1.00]
+          - [0.50, 0.80]
        
 
       under:
         enabled: true
         line_bands:
-          - [0.0, 20.0]
+          - [7.0, 8.5]
+          - [12.0, 20.0]
         odds_bands:
           - [-999, 999]
         ev_bands:
