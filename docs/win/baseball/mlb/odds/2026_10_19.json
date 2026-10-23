@@ -1,0 +1,65 @@
+[
+  {
+    "id": "401908028",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-10-20T00:00Z",
+    "home_team": "Tampa Bay Rays",
+    "away_team": "Cleveland Guardians",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-10-19T07:47:55.243805Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-10-19T07:47:55.243805Z",
+            "outcomes": [
+              {
+                "name": "Tampa Bay Rays",
+                "price": 1.66
+              },
+              {
+                "name": "Cleveland Guardians",
+                "price": 2.24
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-10-19T07:47:55.243805Z",
+            "outcomes": [
+              {
+                "name": "Tampa Bay Rays",
+                "price": 2.55,
+                "point": -1.5
+              },
+              {
+                "name": "Cleveland Guardians",
+                "price": 1.53,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-10-19T07:47:55.243805Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.89,
+                "point": 6.5
+              },
+              {
+                "name": "Under",
+                "price": 1.92,
+                "point": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

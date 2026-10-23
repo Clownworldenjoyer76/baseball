@@ -2331,6 +2331,13 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_10_11,401908030,849809,1,Los Angeles Dodgers,Milwaukee Brewers,1,2,final,existing_final_score_file,True,valid existing final preserved before DRatings rebuild
 2026_10_12,401908031,849812,1,Los Angeles Dodgers,Milwaukee Brewers,4,7,final,existing_final_score_file,True,valid existing final preserved before DRatings rebuild
 2026_10_12,401908023,849820,1,Cleveland Guardians,Tampa Bay Rays,7,3,final,existing_final_score_file,True,valid existing final preserved before DRatings rebuild
+2026_10_13,401908024,849813,1,Cleveland Guardians,Tampa Bay Rays,1,3,final,existing_final_score_file,True,valid existing final preserved before DRatings rebuild
+2026_10_14,401908032,849811,1,Milwaukee Brewers,Los Angeles Dodgers,6,2,final,existing_final_score_file,True,valid existing final preserved before DRatings rebuild
+2026_10_15,401908033,849810,1,Milwaukee Brewers,Los Angeles Dodgers,6,4,final,existing_final_score_file,True,valid existing final preserved before DRatings rebuild
+2026_10_15,401908025,849818,1,Tampa Bay Rays,Cleveland Guardians,2,3,final,existing_final_score_file,True,valid existing final preserved before DRatings rebuild
+2026_10_16,401908026,849817,1,Tampa Bay Rays,Cleveland Guardians,3,1,final,existing_final_score_file,True,valid existing final preserved before DRatings rebuild
+2026_10_18,401930515,849817,1,Tampa Bay Rays,Cleveland Guardians,3,1,final,existing_final_score_file,True,valid existing final preserved before DRatings rebuild
+2026_10_19,401908028,849815,1,Cleveland Guardians,Tampa Bay Rays,3,7,final,existing_final_score_file,True,valid existing final preserved before DRatings rebuild
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -7680,4 +7687,140 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_10_04,401908014,849823,1,Atlanta Braves,Los Angeles Dodgers,3,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_10_04,401908003,849825,1,San Diego Padres,Milwaukee Brewers,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_10_03,401908002,849830,1,San Diego Padres,Milwaukee Brewers,2,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_10_13,401908024,849813,1,Cleveland Guardians,Tampa Bay Rays,1,3,final,MLB StatsAPI gamePk fallback,True,DRatings/existing finals did not contain this game; official MLB final score added using gamePk=849813
+,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
+2026_10_13,401908024,849813,1,Cleveland Guardians,Tampa Bay Rays,1,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_12,401908023,849820,1,Cleveland Guardians,Tampa Bay Rays,7,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_12,401908031,849812,1,Los Angeles Dodgers,Milwaukee Brewers,4,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_11,401908030,849809,1,Los Angeles Dodgers,Milwaukee Brewers,1,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_10,401907994,849831,1,Chicago White Sox,Cleveland Guardians,0,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_08,401907993,849832,1,Cleveland Guardians,Chicago White Sox,9,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_07,401908005,849827,1,Milwaukee Brewers,San Diego Padres,3,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_07,401907987,849838,1,Tampa Bay Rays,New York Yankees,4,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_07,401908016,849822,1,Los Angeles Dodgers,Atlanta Braves,4,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_07,401907992,849833,1,Cleveland Guardians,Chicago White Sox,9,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_06,401908004,849826,1,Milwaukee Brewers,San Diego Padres,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_06,401908015,849819,1,Los Angeles Dodgers,Atlanta Braves,3,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_05,401907986,849839,1,New York Yankees,Tampa Bay Rays,2,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_05,401907991,849834,1,Chicago White Sox,Cleveland Guardians,4,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_04,401908014,849823,1,Atlanta Braves,Los Angeles Dodgers,3,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_04,401908003,849825,1,San Diego Padres,Milwaukee Brewers,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
+,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
+2026_10_14,,,,Milwaukee Brewers,Los Angeles Dodgers,6,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_13,,,,Cleveland Guardians,Tampa Bay Rays,1,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_12,401908023,,,Cleveland Guardians,Tampa Bay Rays,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_12,401908031,,,Los Angeles Dodgers,Milwaukee Brewers,4,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_11,401908030,,,Los Angeles Dodgers,Milwaukee Brewers,1,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_10,401907994,,,Chicago White Sox,Cleveland Guardians,0,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_08,,,,Cleveland Guardians,Chicago White Sox,9,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Milwaukee Brewers,San Diego Padres,3,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Tampa Bay Rays,New York Yankees,4,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Los Angeles Dodgers,Atlanta Braves,4,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Cleveland Guardians,Chicago White Sox,9,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_06,,,,Milwaukee Brewers,San Diego Padres,3,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_06,,,,Los Angeles Dodgers,Atlanta Braves,3,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_05,,,,New York Yankees,Tampa Bay Rays,2,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_05,,,,Chicago White Sox,Cleveland Guardians,4,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_04,,,,Atlanta Braves,Los Angeles Dodgers,3,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
+2026_10_15,401908033,849810,1,Milwaukee Brewers,Los Angeles Dodgers,6,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_15,401908025,849818,1,Tampa Bay Rays,Cleveland Guardians,2,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_14,401908032,849811,1,Milwaukee Brewers,Los Angeles Dodgers,6,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_13,401908024,849813,1,Cleveland Guardians,Tampa Bay Rays,1,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_12,401908023,849820,1,Cleveland Guardians,Tampa Bay Rays,7,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_12,401908031,849812,1,Los Angeles Dodgers,Milwaukee Brewers,4,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_11,401908030,849809,1,Los Angeles Dodgers,Milwaukee Brewers,1,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_10,401907994,849831,1,Chicago White Sox,Cleveland Guardians,0,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_08,401907993,849832,1,Cleveland Guardians,Chicago White Sox,9,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_07,401908005,849827,1,Milwaukee Brewers,San Diego Padres,3,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_07,401907987,849838,1,Tampa Bay Rays,New York Yankees,4,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_07,401908016,849822,1,Los Angeles Dodgers,Atlanta Braves,4,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_07,401907992,849833,1,Cleveland Guardians,Chicago White Sox,9,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_06,401908004,849826,1,Milwaukee Brewers,San Diego Padres,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_06,401908015,849819,1,Los Angeles Dodgers,Atlanta Braves,3,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_10_05,401907986,849839,1,New York Yankees,Tampa Bay Rays,2,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
+2026_10_17,,,,Tampa Bay Rays,Cleveland Guardians,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_17,,,,Tampa Bay Rays,Cleveland Guardians,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_15,401908033,,,Milwaukee Brewers,Los Angeles Dodgers,6,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_15,401908025,,,Tampa Bay Rays,Cleveland Guardians,2,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_14,,,,Milwaukee Brewers,Los Angeles Dodgers,6,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_13,,,,Cleveland Guardians,Tampa Bay Rays,1,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_12,401908023,,,Cleveland Guardians,Tampa Bay Rays,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_12,401908031,,,Los Angeles Dodgers,Milwaukee Brewers,4,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_11,401908030,,,Los Angeles Dodgers,Milwaukee Brewers,1,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_10,401907994,,,Chicago White Sox,Cleveland Guardians,0,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_08,,,,Cleveland Guardians,Chicago White Sox,9,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Milwaukee Brewers,San Diego Padres,3,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Tampa Bay Rays,New York Yankees,4,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Los Angeles Dodgers,Atlanta Braves,4,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Cleveland Guardians,Chicago White Sox,9,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_06,,,,Milwaukee Brewers,San Diego Padres,3,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
+2026_10_18,401930515,,,Tampa Bay Rays,Cleveland Guardians,3,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_17,,,,Tampa Bay Rays,Cleveland Guardians,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_17,,,,Tampa Bay Rays,Cleveland Guardians,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_15,401908033,,,Milwaukee Brewers,Los Angeles Dodgers,6,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_15,401908025,,,Tampa Bay Rays,Cleveland Guardians,2,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_14,,,,Milwaukee Brewers,Los Angeles Dodgers,6,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_13,,,,Cleveland Guardians,Tampa Bay Rays,1,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_12,401908023,,,Cleveland Guardians,Tampa Bay Rays,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_12,401908031,,,Los Angeles Dodgers,Milwaukee Brewers,4,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_11,401908030,,,Los Angeles Dodgers,Milwaukee Brewers,1,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_10,401907994,,,Chicago White Sox,Cleveland Guardians,0,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_08,,,,Cleveland Guardians,Chicago White Sox,9,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Milwaukee Brewers,San Diego Padres,3,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Tampa Bay Rays,New York Yankees,4,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Los Angeles Dodgers,Atlanta Braves,4,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Cleveland Guardians,Chicago White Sox,9,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
+2026_10_19,401908028,,,Cleveland Guardians,Tampa Bay Rays,3,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_18,401930515,,,Tampa Bay Rays,Cleveland Guardians,3,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_17,,,,Tampa Bay Rays,Cleveland Guardians,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_17,,,,Tampa Bay Rays,Cleveland Guardians,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_15,401908033,,,Milwaukee Brewers,Los Angeles Dodgers,6,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_15,401908025,,,Tampa Bay Rays,Cleveland Guardians,2,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_14,,,,Milwaukee Brewers,Los Angeles Dodgers,6,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_13,,,,Cleveland Guardians,Tampa Bay Rays,1,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_12,401908023,,,Cleveland Guardians,Tampa Bay Rays,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_12,401908031,,,Los Angeles Dodgers,Milwaukee Brewers,4,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_11,401908030,,,Los Angeles Dodgers,Milwaukee Brewers,1,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_10,401907994,,,Chicago White Sox,Cleveland Guardians,0,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_08,,,,Cleveland Guardians,Chicago White Sox,9,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Milwaukee Brewers,San Diego Padres,3,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Tampa Bay Rays,New York Yankees,4,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Los Angeles Dodgers,Atlanta Braves,4,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
+2026_10_19,401908028,,,Cleveland Guardians,Tampa Bay Rays,3,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_18,401930515,,,Tampa Bay Rays,Cleveland Guardians,3,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_17,,,,Tampa Bay Rays,Cleveland Guardians,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_17,,,,Tampa Bay Rays,Cleveland Guardians,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_15,401908033,,,Milwaukee Brewers,Los Angeles Dodgers,6,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_15,401908025,,,Tampa Bay Rays,Cleveland Guardians,2,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_14,,,,Milwaukee Brewers,Los Angeles Dodgers,6,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_13,,,,Cleveland Guardians,Tampa Bay Rays,1,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_12,401908023,,,Cleveland Guardians,Tampa Bay Rays,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_12,401908031,,,Los Angeles Dodgers,Milwaukee Brewers,4,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_11,401908030,,,Los Angeles Dodgers,Milwaukee Brewers,1,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_10,401907994,,,Chicago White Sox,Cleveland Guardians,0,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_08,,,,Cleveland Guardians,Chicago White Sox,9,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Milwaukee Brewers,San Diego Padres,3,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Tampa Bay Rays,New York Yankees,4,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Los Angeles Dodgers,Atlanta Braves,4,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
+2026_10_19,401908028,,,Cleveland Guardians,Tampa Bay Rays,3,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_18,401930515,,,Tampa Bay Rays,Cleveland Guardians,3,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_17,,,,Tampa Bay Rays,Cleveland Guardians,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_17,,,,Tampa Bay Rays,Cleveland Guardians,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_15,401908033,,,Milwaukee Brewers,Los Angeles Dodgers,6,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_15,401908025,,,Tampa Bay Rays,Cleveland Guardians,2,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_14,,,,Milwaukee Brewers,Los Angeles Dodgers,6,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_13,,,,Cleveland Guardians,Tampa Bay Rays,1,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_12,401908023,,,Cleveland Guardians,Tampa Bay Rays,7,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_12,401908031,,,Los Angeles Dodgers,Milwaukee Brewers,4,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_11,401908030,,,Los Angeles Dodgers,Milwaukee Brewers,1,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_10,401907994,,,Chicago White Sox,Cleveland Guardians,0,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_08,,,,Cleveland Guardians,Chicago White Sox,9,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Milwaukee Brewers,San Diego Padres,3,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Tampa Bay Rays,New York Yankees,4,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_07,,,,Los Angeles Dodgers,Atlanta Braves,4,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv

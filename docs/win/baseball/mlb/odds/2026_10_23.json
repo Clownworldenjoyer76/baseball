@@ -1,0 +1,65 @@
+[
+  {
+    "id": "401908042",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-10-24T00:00Z",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Tampa Bay Rays",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-10-23T07:48:29.372323Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-10-23T07:48:29.372323Z",
+            "outcomes": [
+              {
+                "name": "Milwaukee Brewers",
+                "price": 1.5
+              },
+              {
+                "name": "Tampa Bay Rays",
+                "price": 2.63
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-10-23T07:48:29.372323Z",
+            "outcomes": [
+              {
+                "name": "Milwaukee Brewers",
+                "price": 2.22,
+                "point": -1.5
+              },
+              {
+                "name": "Tampa Bay Rays",
+                "price": 1.68,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-10-23T07:48:29.372323Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.89,
+                "point": 6.5
+              },
+              {
+                "name": "Under",
+                "price": 1.92,
+                "point": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
