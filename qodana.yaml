@@ -1,5 +1,6 @@
+
 version: '1.0'
-linter: qodana-python
+linter: qodana-python-community
 profile:
   name: qodana.recommended
 onlyDirectory: docs/win/baseball/mlb
@@ -16,8 +17,6 @@ bootstrap: 'python -m pip install --upgrade pip
   python -c "from sportsdataverse.mlb import mlb_statcast_search; assert callable(mlb_statcast_search)"
 
   '
-include:
-- name: CheckDependencyLicenses
 exclude:
 - name: All
   paths:
