@@ -1,14 +1,16 @@
-=== build_run_projection RUN 2026-10-23T07:48:55.378073+00:00 ===
-2026-10-23T07:48:55.378197+00:00 | INFO  | Dates to rebuild: 3 first=2026_10_18 last=2026_10_23
-2026-10-23T07:48:55.378246+00:00 | INFO  | Loading production model metadata
-2026-10-23T07:48:55.378476+00:00 | INFO  | Loading committed production models
-2026-10-23T07:48:55.405802+00:00 | INFO  | Production model loading complete; features=53
-2026-10-23T07:48:55.419485+00:00 | INFO  | Building leakage-safe walk-forward training history in memory; dates=198 first=2026_03_26 last=2026_10_19
-2026-10-23T07:49:06.548693+00:00 | INFO  | Walk-forward training history ready; rows=1910 first=2026-03-26 last=2026-10-19
-2026-10-23T07:49:46.552089+00:00 | INFO  | WALK_FORWARD date=2026_10_18 training_rows=1908 training_unique_dates=196 training_end=2026-10-16 home_validation_score=2.274554035786 away_validation_score=2.489022879480 home_holdout={'source': 'dratings', 'candidate_holdout_deviance': 1.9317876883924285, 'baseline_holdout_deviance': 1.8503238427906112, 'holdout_rows': 79, 'holdout_first_date': '2026-09-14', 'holdout_last_date': '2026-10-16'} away_holdout={'source': 'learned', 'candidate_holdout_deviance': 1.8902771310620945, 'baseline_holdout_deviance': 1.907978451097933, 'holdout_rows': 79, 'holdout_first_date': '2026-09-14', 'holdout_last_date': '2026-10-16'}
-2026-10-23T07:49:46.556894+00:00 | INFO  | WROTE docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_10_18_MLB.csv rows=1 features=53
-2026-10-23T07:50:26.534742+00:00 | INFO  | WALK_FORWARD date=2026_10_19 training_rows=1909 training_unique_dates=197 training_end=2026-10-18 home_validation_score=2.256089197360 away_validation_score=2.461246579756 home_holdout={'source': 'dratings', 'candidate_holdout_deviance': 1.9346943936109802, 'baseline_holdout_deviance': 1.872869923697724, 'holdout_rows': 77, 'holdout_first_date': '2026-09-15', 'holdout_last_date': '2026-10-18'} away_holdout={'source': 'learned', 'candidate_holdout_deviance': 1.9179180758215684, 'baseline_holdout_deviance': 1.9195487530828765, 'holdout_rows': 77, 'holdout_first_date': '2026-09-15', 'holdout_last_date': '2026-10-18'}
-2026-10-23T07:50:26.539113+00:00 | INFO  | WROTE docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_10_19_MLB.csv rows=1 features=53
-2026-10-23T07:50:26.633934+00:00 | INFO  | PRODUCTION_MODEL date=2026_10_23 historical_training_max=2026-10-19
-2026-10-23T07:50:26.639231+00:00 | INFO  | WROTE docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_10_23_MLB.csv rows=1 features=53
-2026-10-23T07:50:26.639408+00:00 | INFO  | SUCCESS dates_processed=3
+=== build_run_projection RUN 2026-10-24T07:47:34.160325+00:00 ===
+2026-10-24T07:47:34.160401+00:00 | INFO  | Dates to rebuild: 4 first=2026_10_18 last=2026_10_24
+2026-10-24T07:47:34.160429+00:00 | INFO  | Loading production model metadata
+2026-10-24T07:47:34.160689+00:00 | INFO  | Loading committed production models
+2026-10-24T07:47:34.171656+00:00 | INFO  | Production model loading complete; features=53
+2026-10-24T07:47:34.180173+00:00 | INFO  | Building leakage-safe walk-forward training history in memory; dates=199 first=2026_03_26 last=2026_10_23
+2026-10-24T07:47:39.646771+00:00 | INFO  | Walk-forward training history ready; rows=1911 first=2026-03-26 last=2026-10-23
+2026-10-24T07:48:02.120268+00:00 | INFO  | WALK_FORWARD date=2026_10_18 training_rows=1908 training_unique_dates=196 training_end=2026-10-16 home_validation_score=2.274554035786 away_validation_score=2.489022879480 home_holdout={'source': 'dratings', 'candidate_holdout_deviance': 1.9317876883924276, 'baseline_holdout_deviance': 1.8503238427906112, 'holdout_rows': 79, 'holdout_first_date': '2026-09-14', 'holdout_last_date': '2026-10-16'} away_holdout={'source': 'learned', 'candidate_holdout_deviance': 1.8902771310620934, 'baseline_holdout_deviance': 1.907978451097933, 'holdout_rows': 79, 'holdout_first_date': '2026-09-14', 'holdout_last_date': '2026-10-16'}
+2026-10-24T07:48:02.123552+00:00 | INFO  | WROTE docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_10_18_MLB.csv rows=1 features=53
+2026-10-24T07:48:24.537486+00:00 | INFO  | WALK_FORWARD date=2026_10_19 training_rows=1909 training_unique_dates=197 training_end=2026-10-18 home_validation_score=2.256089197360 away_validation_score=2.461246579756 home_holdout={'source': 'dratings', 'candidate_holdout_deviance': 1.9346943936109797, 'baseline_holdout_deviance': 1.872869923697724, 'holdout_rows': 77, 'holdout_first_date': '2026-09-15', 'holdout_last_date': '2026-10-18'} away_holdout={'source': 'learned', 'candidate_holdout_deviance': 1.9179180758215688, 'baseline_holdout_deviance': 1.9195487530828765, 'holdout_rows': 77, 'holdout_first_date': '2026-09-15', 'holdout_last_date': '2026-10-18'}
+2026-10-24T07:48:24.556218+00:00 | INFO  | WROTE docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_10_19_MLB.csv rows=1 features=53
+2026-10-24T07:48:47.349216+00:00 | INFO  | WALK_FORWARD date=2026_10_23 training_rows=1910 training_unique_dates=198 training_end=2026-10-19 home_validation_score=2.257134015546 away_validation_score=2.435533235864 home_holdout={'source': 'dratings', 'candidate_holdout_deviance': 1.9651498242490162, 'baseline_holdout_deviance': 1.885081811929816, 'holdout_rows': 76, 'holdout_first_date': '2026-09-16', 'holdout_last_date': '2026-10-19'} away_holdout={'source': 'learned', 'candidate_holdout_deviance': 1.8830216594873062, 'baseline_holdout_deviance': 1.88976205203692, 'holdout_rows': 76, 'holdout_first_date': '2026-09-16', 'holdout_last_date': '2026-10-19'}
+2026-10-24T07:48:47.352171+00:00 | INFO  | WROTE docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_10_23_MLB.csv rows=1 features=53
+2026-10-24T07:48:47.398073+00:00 | INFO  | PRODUCTION_MODEL date=2026_10_24 historical_training_max=2026-10-23
+2026-10-24T07:48:47.401264+00:00 | INFO  | WROTE docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_10_24_MLB.csv rows=1 features=53
+2026-10-24T07:48:47.401472+00:00 | INFO  | SUCCESS dates_processed=4
