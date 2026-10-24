@@ -1,3 +1,4 @@
+
 name: Qodana
 
 on:
@@ -51,7 +52,7 @@ jobs:
         uses: JetBrains/qodana-action@v2026.2
         with:
           args: |
-            --linter qodana-python
+            --linter qodana-python-community
             --within-docker false
           pr-mode: false
           push-fixes: none
