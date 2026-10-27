@@ -1,5 +1,4 @@
-
-name: Export MLB Frontend JSON
+name: Export MLB Frontend CSV
 
 on:
   workflow_dispatch:
@@ -9,7 +8,7 @@ permissions:
 
 jobs:
   export:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v6
@@ -20,13 +19,13 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Create frontend JSON
+      - name: Create frontend CSV files
         run: python docs/win/baseball/mlb/scripts/frontend.py
 
-      - name: Commit and push frontend JSON
+      - name: Commit and push frontend CSV files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add frontend/data/mlb/
-          git diff --cached --quiet || git commit -m "Update MLB frontend JSON"
+          git add frontend/data/mlb/*.csv
+          git diff --cached --quiet || git commit -m "Update MLB frontend CSV"
           git push origin HEAD:main
