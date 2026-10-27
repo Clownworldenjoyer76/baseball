@@ -1,73 +1,88 @@
 #!/usr/bin/env python3
-"""Export MLB frontend JSON for every historical date with a games CSV.
+"""Export dated MLB frontend CSV files for every available games date.
 
-Run:
+Run from any working directory:
     python docs/win/baseball/mlb/scripts/frontend.py
 
-Writes frontend/data/mlb/YYYY_MM_DD_mlb_frontend.json for every date.
-Each game has zero or more selected_bets. Pipeline inputs are unchanged.
+Per date, writes:
+    frontend/data/mlb/YYYY_MM_DD_mlb_games.csv  (one row per scheduled game)
+    frontend/data/mlb/YYYY_MM_DD_mlb_picks.csv  (unchanged selection rows)
+
+Only docs/win/baseball/mlb/04_select/YYYY_MM_DD_MLB.csv supplies picks.
+No JSON is produced, and source files are never modified.
 """
 
 from __future__ import annotations
 
 import csv
-import json
 import math
 import re
 from pathlib import Path
-
 
 ROOT = Path(__file__).resolve().parents[5]
 MLB = ROOT / "docs/win/baseball/mlb"
 OUT = ROOT / "frontend/data/mlb"
 MARKETS = ("moneyline", "run_line", "total")
+
 WEATHER_FIELDS = (
     "weather_applicable", "weather_time", "temp_f", "wind_mph",
     "wind_dir", "precip_in", "humidity", "will_it_rain",
     "wind_blowing_out", "air_pressure_at_sea_level", "dew_point_f",
-    "symbol_code", "gust_mph", "chance_of_rain",
+    "symbol_code",
+)
+
+# Only used when a particular date has no 04_select/YYYY_MM_DD_MLB.csv.
+PICK_HEADERS = (
+    "game_id", "sport", "game_date", "game_time", "league", "away_team",
+    "home_team", "home_batters_found", "away_batters_found", "home_sp_found",
+    "away_sp_found", "market_type", "bet_side", "market", "side", "line",
+    "take_bet", "dk_odds_american", "dk_odds_decimal", "model_prob",
+    "prob_used_for_selection", "prob_for_ev", "prob_for_kelly",
+    "ev_probability_source", "kelly_probability_source", "ev", "kelly",
+    "selection_reason", "low_confidence",
+)
+
+GAME_FIRST_COLUMNS = (
+    "gamePk", "game_id", "schedule_game_id", "market_game_id",
+    "game_date", "game_time", "schedule_game_time", "sport", "league",
+    "home_team", "away_team", "home_pitcher", "away_pitcher",
 )
 
 
-def clean(value: str | None) -> str | None:
+def clean(value: str | None) -> str:
     if value is None:
-        return None
-    value = value.strip()
-    return None if not value or value.lower() in {"nan", "none", "null"} else value
+        return ""
+    result = value.strip()
+    return "" if result.lower() in {"nan", "none", "null"} else result
 
 
-def read_csv(path: Path, *, required: bool = False) -> list[dict[str, str | None]]:
+def read_csv(path: Path, *, required: bool = False) -> tuple[list[str], list[dict[str, str]]]:
     if not path.is_file():
         if required:
             raise FileNotFoundError(f"Required input missing: {path}")
-        return []
+        return [], []
 
-    with path.open(newline="", encoding="utf-8-sig") as handle:
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
-        columns = reader.fieldnames or []
-        if not columns or len(columns) != len(set(columns)) or any(not c for c in columns):
-            raise ValueError(f"Invalid CSV headers: {path}")
+        headers = reader.fieldnames or []
+        if not headers or any(not h for h in headers) or len(headers) != len(set(headers)):
+            raise ValueError(f"Invalid or duplicate CSV headers in {path}")
         rows = []
-        for number, row in enumerate(reader, start=2):
+        for line_number, row in enumerate(reader, start=2):
             if None in row:
-                raise ValueError(f"Extra CSV fields at {path}:{number}")
+                raise ValueError(f"Malformed CSV row in {path} at line {line_number}")
             rows.append({k: clean(v) for k, v in row.items()})
-        return rows
+    return headers, rows
 
 
-def required_key(row: dict, key: str, path: Path) -> str:
-    value = row.get(key)
-    if not value:
-        raise ValueError(f"Missing {key} in {path}: {row}")
-    return value
-
-
-def index_unique(rows: list[dict], key: str, path: Path) -> dict[str, dict]:
+def unique_index(rows: list[dict[str, str]], key: str, source: Path) -> dict[str, dict[str, str]]:
     result = {}
     for row in rows:
-        value = required_key(row, key, path)
+        value = row.get(key, "")
+        if not value:
+            raise ValueError(f"Blank {key} in {source}")
         if value in result:
-            raise ValueError(f"Duplicate {key}={value} in {path}")
+            raise ValueError(f"Duplicate {key}={value} in {source}")
         result[value] = row
     return result
 
@@ -76,222 +91,231 @@ def equivalent(a: str, b: str) -> bool:
     if a == b:
         return True
     try:
-        x, y = float(a), float(b)
-        return math.isfinite(x) and math.isfinite(y) and math.isclose(
-            x, y, rel_tol=1e-10, abs_tol=1e-8
+        a_number, b_number = float(a), float(b)
+        return (
+            math.isfinite(a_number)
+            and math.isfinite(b_number)
+            and math.isclose(a_number, b_number, rel_tol=1e-10, abs_tol=1e-8)
         )
     except ValueError:
         return False
 
 
-def merge_fields(game: dict, row: dict, source: Path, *, strict: bool) -> None:
-    for key, value in row.items():
-        if key in {"game_id", "gamePk", "game_date"} or value is None:
+def add_fields(target: dict[str, str], source_row: dict[str, str], *,
+               source: Path, strict: bool = False) -> None:
+    for field, value in source_row.items():
+        if field in {"gamePk", "game_id", "game_date"} or not value:
             continue
-        existing = game.get(key)
-        if existing is None:
-            game[key] = value
-        elif strict and not equivalent(str(existing), str(value)):
+        existing = target.get(field, "")
+        if not existing:
+            target[field] = value
+        elif strict and not equivalent(existing, value):
             raise ValueError(
-                f"Conflicting {key} for game_id={game['game_id']}: "
-                f"{existing!r} vs {value!r} ({source})"
+                f"Conflicting {field} for gamePk={target['gamePk']}: "
+                f"{existing!r} / {value!r} in {source}"
             )
 
 
-def build(date: str) -> Path:
-    schedule_path = MLB / f"00_intake/games/{date}_games.csv"
-    schedule = read_csv(schedule_path, required=True)
-    games: dict[str, dict] = {}
-    by_id: dict[str, dict] = {}
-    schedules: dict[str, dict] = {}
+def warn_unmatched(key: str, value: str, source: Path) -> None:
+    print(f"WARNING: Skipping unmatched {key}={value} in {source.relative_to(ROOT)}")
 
-    for row in schedule:
-        game_pk = required_key(row, "gamePk", schedule_path)
-        schedule_id = required_key(row, "game_id", schedule_path)
-        if game_pk in games or schedule_id in by_id:
-            raise ValueError(f"Duplicate schedule gamePk/game_id: {game_pk}/{schedule_id}")
+
+def write_csv(path: Path, headers: list[str], rows: list[dict[str, str]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    try:
+        with temporary.open("w", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=headers, extrasaction="raise")
+            writer.writeheader()
+            writer.writerows(rows)
+        temporary.replace(path)
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
+def build(date: str, *, pitchers: dict, teams: dict, venues: dict) -> None:
+    schedule_path = MLB / f"00_intake/games/{date}_games.csv"
+    schedule_headers, schedule_rows = read_csv(schedule_path, required=True)
+    column_order = list(GAME_FIRST_COLUMNS)
+
+    def include_columns(fields: list[str]) -> None:
+        for field in fields:
+            if field not in column_order:
+                column_order.append(field)
+
+    include_columns(schedule_headers)
+    schedule_by_pk = unique_index(schedule_rows, "gamePk", schedule_path)
+    if not schedule_rows:
+        raise ValueError(f"Empty schedule in {schedule_path}")
+
+    games_by_pk: dict[str, dict[str, str]] = {}
+    games_by_id: dict[str, dict[str, str]] = {}
+
+    for game_pk, schedule in schedule_by_pk.items():
+        schedule_id = schedule.get("game_id", "")
+        if not schedule_id or schedule_id in games_by_id:
+            raise ValueError(f"Missing or duplicate schedule game_id in {schedule_path}: {schedule_id!r}")
         game = {
             "gamePk": game_pk,
             "game_id": schedule_id,
             "schedule_game_id": schedule_id,
+            "market_game_id": "",
             "game_date": date,
-            "schedule_game_time": row.get("game_time"),
-            "selected_bets": [],
+            "schedule_game_time": schedule.get("game_time", ""),
         }
-        games[game_pk] = game
-        schedules[game_pk] = row
-        by_id[schedule_id] = game
+        games_by_pk[game_pk] = game
+        games_by_id[schedule_id] = game
 
-    # A market file is required for a completed pregame pipeline run.
+    # Each market provides distinct odds; shared fields must agree.
     for market in MARKETS:
         source = MLB / f"01_merge/{date}_mlb_{market}.csv"
-        rows = read_csv(source, required=True)
-        index_unique(rows, "game_id", source)
-        for row in rows:
-            market_id = required_key(row, "game_id", source)
-            game_pk = row.get("gamePk")
-            if game_pk:
-                game = games.get(game_pk)
-                if game is None:
-                    raise ValueError(f"Unknown gamePk={game_pk} in {source}")
-            else:
-                game = by_id.get(market_id)
-                if game is None:
-                    raise ValueError(f"Cannot match game_id={market_id} in {source}")
-            other = by_id.get(market_id)
-            if other is not None and other is not game:
-                raise ValueError(f"game_id={market_id} maps to different games in {source}")
-            if game.get("market_game_id") not in (None, market_id):
-                raise ValueError(f"Multiple market game_id values for gamePk={game['gamePk']}")
+        fields, rows = read_csv(source, required=True)
+        include_columns(fields)
+        for market_id, row in unique_index(rows, "game_id", source).items():
+            game_pk = row.get("gamePk", "")
+            game = games_by_pk.get(game_pk) if game_pk else games_by_id.get(market_id)
+            if game is None:
+                warn_unmatched("gamePk" if game_pk else "game_id", game_pk or market_id, source)
+                continue
+            previous_match = games_by_id.get(market_id)
+            if previous_match is not None and previous_match is not game:
+                raise ValueError(f"Market game_id={market_id} maps to two games in {source}")
+            if game["market_game_id"] and game["market_game_id"] != market_id:
+                raise ValueError(f"Conflicting market game_id for gamePk={game['gamePk']} in {source}")
             game["market_game_id"] = market_id
             game["game_id"] = market_id
-            by_id[market_id] = game
-            merge_fields(game, row, source, strict=True)
+            games_by_id[market_id] = game
+            add_fields(game, row, source=source, strict=True)
 
-    # Backfill schedule data without overwriting complete pipeline values.
-    # The schedule and prediction feeds can use different time conventions.
-    for game_pk, row in schedules.items():
-        merge_fields(games[game_pk], row, schedule_path, strict=False)
+    # The schedule provides any fields absent from the merged market records.
+    # Its original game time is retained separately as schedule_game_time.
+    for game_pk, schedule in schedule_by_pk.items():
+        add_fields(games_by_pk[game_pk], schedule, source=schedule_path)
 
-    # Supplementary inputs only fill absent fields: completed market outputs
-    # take precedence over earlier raw predictions, context and sportsbook.
-    context_path = MLB / f"00_intake/mlb_raw/{date}_game_context.csv"
-    context = read_csv(context_path)
-    for game_pk, row in index_unique(context, "gamePk", context_path).items():
-        if game_pk not in games:
-            print(
-                f"WARNING: Skipping unmatched supplemental gamePk={game_pk} "
-                f"in {context_path.relative_to(ROOT)}"
-            )
+    # Supplemental data fills missing fields only; unmatched rows cannot
+    # create fictitious scheduled games.
+    context_source = MLB / f"00_intake/mlb_raw/{date}_game_context.csv"
+    context_fields, context_rows = read_csv(context_source)
+    include_columns(context_fields)
+    for game_pk, row in unique_index(context_rows, "gamePk", context_source).items():
+        game = games_by_pk.get(game_pk)
+        if game is None:
+            warn_unmatched("gamePk", game_pk, context_source)
             continue
-        merge_fields(games[game_pk], row, context_path, strict=False)
+        add_fields(game, row, source=context_source)
 
-    pred_path = MLB / f"00_intake/predictions/pred_with_game_id/{date}_MLB.csv"
-    book_path = MLB / f"00_intake/sportsbook/{date}_MLB.csv"
-    for source in (pred_path, book_path):
-        for game_id, row in index_unique(read_csv(source), "game_id", source).items():
-            game = by_id.get(game_id)
+    for source in (
+        MLB / f"00_intake/predictions/pred_with_game_id/{date}_MLB.csv",
+        MLB / f"00_intake/sportsbook/{date}_MLB.csv",
+    ):
+        fields, rows = read_csv(source)
+        include_columns(fields)
+        for game_id, row in unique_index(rows, "game_id", source).items():
+            game = games_by_id.get(game_id)
             if game is None:
-                print(
-                    f"WARNING: Skipping unmatched supplemental game_id={game_id} "
-                    f"in {source.relative_to(ROOT)}"
-                )
+                warn_unmatched("game_id", game_id, source)
                 continue
-            merge_fields(game, row, source, strict=False)
+            add_fields(game, row, source=source)
 
-    # Preserve calculated moneyline model probabilities and EV/Kelly fields.
-    ev_path = MLB / f"03_edges/ev_kelly/{date}_mlb_moneyline.csv"
-    # Older dates predate the moneyline EV export. Include all dates anyway.
-    ev_rows = read_csv(ev_path)
-    for game_id, row in index_unique(ev_rows, "game_id", ev_path).items():
-        game = by_id.get(game_id)
+    ev_source = MLB / f"03_edges/ev_kelly/{date}_mlb_moneyline.csv"
+    ev_fields, ev_rows = read_csv(ev_source)
+    include_columns(ev_fields)
+    for game_id, row in unique_index(ev_rows, "game_id", ev_source).items():
+        game = games_by_id.get(game_id)
         if game is None:
-            raise ValueError(f"Unknown moneyline EV game_id={game_id} in {ev_path}")
-        merge_fields(game, row, ev_path, strict=False)
-
-    # The standalone weather source is authoritative for weather fields.
-    weather_path = MLB / f"data/weather/{date}_weather.csv"
-    weather = read_csv(weather_path)
-    for game_pk, row in index_unique(weather, "gamePk", weather_path).items():
-        if game_pk not in games:
-            print(
-                f"WARNING: Skipping unmatched supplemental gamePk={game_pk} "
-                f"in {weather_path.relative_to(ROOT)}"
-            )
+            warn_unmatched("game_id", game_id, ev_source)
             continue
-        game = games[game_pk]
-        for key in WEATHER_FIELDS:
-            if row.get(key) is not None:
-                game[key] = row[key]
+        add_fields(game, row, source=ev_source)
 
-    # Use the repository maps to provide display names where absent.
-    pitcher_path = MLB / "maps/mlb_pitcher_ids.csv"
-    team_path = MLB / "maps/mlb_team_ids.csv"
-    venue_path = MLB / "maps/mlb_venue_ids.csv"
-    pitchers = index_unique(read_csv(pitcher_path, required=True), "pitcher_id", pitcher_path)
-    teams = index_unique(read_csv(team_path, required=True), "team_id", team_path)
-    venues = index_unique(read_csv(venue_path, required=True), "venue_id", venue_path)
-    for game in games.values():
-        venue = venues.get(game.get("venue_id"), {})
-        if not game.get("venue_name"):
-            game["venue_name"] = venue.get("venue_name")
-        for side in ("home", "away"):
-            if not game.get(f"{side}_team"):
-                game[f"{side}_team"] = teams.get(game.get(f"{side}_team_id"), {}).get("name")
-            if not game.get(f"{side}_pitcher"):
-                game[f"{side}_pitcher"] = pitchers.get(game.get(f"{side}_pitcher_id"), {}).get("full_name")
-            if (game.get(f"{side}_pitcher") or "").upper() == "UNDECIDED UNDECIDED":
-                game[f"{side}_pitcher"] = "Undecided"
-
-        # Never present DRatings as the model's calibrated probabilities.
-        game["home_prob"] = game.get("home_model_prob_moneyline")
-        game["away_prob"] = game.get("away_model_prob_moneyline")
-        game["home_projected_runs"] = game.get("model_home_runs")
-        game["away_projected_runs"] = game.get("model_away_runs")
-        game["total_projected_runs"] = game.get("model_total_runs")
-
-    # The selected CSV is intentionally absent on dates with no picks.
-    picks_path = MLB / f"04_select/{date}_MLB.csv"
-    seen_picks = set()
-    pick_count = 0
-    for pick in read_csv(picks_path):
-        game_id = required_key(pick, "game_id", picks_path)
-        game = by_id.get(game_id)
+    weather_source = MLB / f"data/weather/{date}_weather.csv"
+    weather_fields, weather_rows = read_csv(weather_source)
+    include_columns(weather_fields)
+    for game_pk, row in unique_index(weather_rows, "gamePk", weather_source).items():
+        game = games_by_pk.get(game_pk)
         if game is None:
-            raise ValueError(f"Unknown selected game_id={game_id} in {picks_path}")
-        identity = (
-            game["gamePk"], pick.get("market_type"),
-            pick.get("bet_side"), pick.get("line"),
-        )
-        if identity in seen_picks:
-            raise ValueError(f"Duplicate selected bet {identity} in {picks_path}")
-        seen_picks.add(identity)
-        game["selected_bets"].append(pick)
-        pick_count += 1
+            warn_unmatched("gamePk", game_pk, weather_source)
+            continue
+        for field in WEATHER_FIELDS:
+            if row.get(field, ""):
+                game[field] = row[field]
 
-    results = sorted(
-        games.values(),
-        key=lambda g: (g.get("game_time") or "", g["gamePk"]),
+    for game in games_by_pk.values():
+        venue = venues.get(game.get("venue_id", ""), {})
+        if not game.get("venue_name"):
+            game["venue_name"] = venue.get("venue_name", "")
+        for side in ("home", "away"):
+            team = f"{side}_team"
+            pitcher = f"{side}_pitcher"
+            if not game.get(team):
+                game[team] = teams.get(game.get(f"{side}_team_id", ""), {}).get("name", "")
+            if not game.get(pitcher):
+                game[pitcher] = pitchers.get(game.get(f"{side}_pitcher_id", ""), {}).get("full_name", "")
+            if game.get(pitcher, "").upper() == "UNDECIDED UNDECIDED":
+                game[pitcher] = "Undecided"
+
+        # Aliases match the original exporter and never use DRatings
+        # probabilities as a replacement for calibrated model probabilities.
+        game["home_prob"] = game.get("home_model_prob_moneyline", "")
+        game["away_prob"] = game.get("away_model_prob_moneyline", "")
+        game["home_projected_runs"] = game.get("model_home_runs", "")
+        game["away_projected_runs"] = game.get("model_away_runs", "")
+        game["total_projected_runs"] = game.get("model_total_runs", "")
+
+    games = sorted(
+        games_by_pk.values(),
+        key=lambda g: (g.get("game_time", ""), g["gamePk"]),
     )
-    payload = {
-        "schema_version": 1,
-        "game_date": date,
-        "game_count": len(results),
-        "selected_bet_count": pick_count,
-        "games": results,
-    }
+    headers = column_order
+    for game in games:
+        for field in game:
+            if field not in headers:
+                headers.append(field)
 
-    OUT.mkdir(parents=True, exist_ok=True)
-    destination = OUT / f"{date}_mlb_frontend.json"
-    temporary = destination.with_suffix(".json.tmp")
-    try:
-        temporary.write_text(
-            json.dumps(payload, indent=2, ensure_ascii=False, allow_nan=False) + "\n",
-            encoding="utf-8",
-        )
-        temporary.replace(destination)
-    finally:
-        temporary.unlink(missing_ok=True)
-    print(f"WROTE {destination.relative_to(ROOT)}: {len(results)} games, {pick_count} selected bets")
-    return destination
+    picks_source = MLB / f"04_select/{date}_MLB.csv"
+    pick_headers, picks = read_csv(picks_source)
+    if not pick_headers:
+        pick_headers = list(PICK_HEADERS)
+    elif "game_id" not in pick_headers:
+        raise ValueError(f"Selected bets CSV missing game_id column: {picks_source}")
+    # Preserve every source pick exactly; a missing file means header-only CSV.
+    for pick in picks:
+        if pick.get("game_id", "") not in games_by_id:
+            print(
+                f"WARNING: Selected bet references unmatched game_id="
+                f"{pick.get('game_id', '')} in {picks_source.relative_to(ROOT)}"
+            )
+
+    game_dest = OUT / f"{date}_mlb_games.csv"
+    picks_dest = OUT / f"{date}_mlb_picks.csv"
+    write_csv(game_dest, headers, games)
+    write_csv(picks_dest, pick_headers, picks)
+    print(f"WROTE {game_dest.relative_to(ROOT)}: {len(games)} games")
+    print(f"WROTE {picks_dest.relative_to(ROOT)}: {len(picks)} selected bets")
 
 
 def main() -> None:
     games_dir = MLB / "00_intake/games"
     if not games_dir.is_dir():
-        raise FileNotFoundError(f"Missing games directory: {games_dir}")
-
+        raise FileNotFoundError(f"Missing schedule directory: {games_dir}")
     dates = sorted({
         match.group(1)
         for path in games_dir.glob("*_games.csv")
         if (match := re.fullmatch(r"(\d{4}_\d{2}_\d{2})_games\.csv", path.name))
     })
     if not dates:
-        raise FileNotFoundError(f"No dated games CSVs found in {games_dir}")
+        raise FileNotFoundError(f"No dated MLB games CSVs in {games_dir}")
 
+    def load_map(filename: str, key: str) -> dict:
+        path = MLB / "maps" / filename
+        _, rows = read_csv(path, required=True)
+        return unique_index(rows, key, path)
+
+    pitchers = load_map("mlb_pitcher_ids.csv", "pitcher_id")
+    teams = load_map("mlb_team_ids.csv", "team_id")
+    venues = load_map("mlb_venue_ids.csv", "venue_id")
     for date in dates:
-        build(date)
-    print(f"Export complete: {len(dates)} dated MLB frontend JSON files")
+        build(date, pitchers=pitchers, teams=teams, venues=venues)
+    print(f"Export complete: {len(dates)} dates, {len(dates) * 2} CSV files")
 
 
 if __name__ == "__main__":
