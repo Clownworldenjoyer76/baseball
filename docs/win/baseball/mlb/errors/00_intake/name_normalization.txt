@@ -1,414 +1,414 @@
-=== name_normalization RUN 2026-10-27T15:14:35.627249+00:00 ===
-2026-10-27T15:14:35.627708+00:00 | INFO  | Team map loaded: 62 alias entries from docs/win/baseball/mlb/maps/team_map_mlb.csv | duplicate identical rows skipped: 0
-2026-10-27T15:14:35.629047+00:00 | INFO  | Files to process: 401
-2026-10-27T15:14:35.629138+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_26_MLB.csv row=7 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.629555+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_03_26_MLB.csv
-2026-10-27T15:14:35.629628+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_27_MLB.csv row=3 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.629897+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_03_27_MLB.csv
-2026-10-27T15:14:35.629954+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_28_MLB.csv row=2 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.629977+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_28_MLB.csv row=4 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.630272+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_03_28_MLB.csv
-2026-10-27T15:14:35.630330+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_29_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.630360+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_29_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.630589+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_03_29_MLB.csv
-2026-10-27T15:14:35.630656+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_30_MLB.csv row=8 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.630677+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_30_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.630906+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_03_30_MLB.csv
-2026-10-27T15:14:35.630967+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_31_MLB.csv row=7 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.630989+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_31_MLB.csv row=10 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.631224+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_03_31_MLB.csv
-2026-10-27T15:14:35.631270+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_01_MLB.csv row=2 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.631300+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_01_MLB.csv row=8 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.631559+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_01_MLB.csv
-2026-10-27T15:14:35.631641+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_04_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.631671+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_04_MLB.csv row=6 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.631937+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_04_MLB.csv
-2026-10-27T15:14:35.632053+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_06_MLB.csv row=6 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.632285+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_06_MLB.csv
-2026-10-27T15:14:35.632344+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_07_MLB.csv row=8 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.632368+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_07_MLB.csv row=10 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.632602+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_07_MLB.csv
-2026-10-27T15:14:35.632668+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_08_MLB.csv row=10 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.632693+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_08_MLB.csv row=15 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.632907+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_08_MLB.csv
-2026-10-27T15:14:35.632952+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_09_MLB.csv row=3 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.633151+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_09_MLB.csv
-2026-10-27T15:14:35.633209+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_10_MLB.csv row=8 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.633234+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_10_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.633499+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_10_MLB.csv
-2026-10-27T15:14:35.633549+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_11_MLB.csv row=4 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.633575+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_11_MLB.csv row=9 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.633820+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_11_MLB.csv
-2026-10-27T15:14:35.633876+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_12_MLB.csv row=7 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.633898+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_12_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.634117+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_12_MLB.csv
-2026-10-27T15:14:35.634176+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_13_MLB.csv row=9 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.634195+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_13_MLB.csv row=10 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.634395+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_13_MLB.csv
-2026-10-27T15:14:35.634473+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_14_MLB.csv row=12 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.634497+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_14_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.634716+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_14_MLB.csv
-2026-10-27T15:14:35.634760+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_15_MLB.csv row=3 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.634806+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_15_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.635012+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_15_MLB.csv
-2026-10-27T15:14:35.635068+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_16_MLB.csv row=8 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.635275+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_16_MLB.csv
-2026-10-27T15:14:35.635337+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_17_MLB.csv row=10 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.635360+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_17_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.635584+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_17_MLB.csv
-2026-10-27T15:14:35.635638+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_18_MLB.csv row=6 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.635663+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_18_MLB.csv row=11 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.635898+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_18_MLB.csv
-2026-10-27T15:14:35.635953+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_19_MLB.csv row=7 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.635975+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_19_MLB.csv row=11 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.636334+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_19_MLB.csv
-2026-10-27T15:14:35.636382+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_20_MLB.csv row=4 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.636413+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_20_MLB.csv row=11 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.636624+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_20_MLB.csv
-2026-10-27T15:14:35.636669+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_21_MLB.csv row=3 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.636709+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_21_MLB.csv row=14 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.637024+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_21_MLB.csv
-2026-10-27T15:14:35.637115+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_22_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.637158+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_22_MLB.csv row=7 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.637444+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_22_MLB.csv
-2026-10-27T15:14:35.637596+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_24_MLB.csv row=11 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.637615+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_24_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.637840+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_24_MLB.csv
-2026-10-27T15:14:35.637894+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_25_MLB.csv row=3 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.637930+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_25_MLB.csv row=10 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.638176+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_25_MLB.csv
-2026-10-27T15:14:35.638286+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_27_MLB.csv row=3 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.638536+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_27_MLB.csv
-2026-10-27T15:14:35.638592+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_28_MLB.csv row=5 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.638630+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_28_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.638880+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_28_MLB.csv
-2026-10-27T15:14:35.638951+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_29_MLB.csv row=11 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.638980+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_29_MLB.csv row=16 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.639203+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_29_MLB.csv
-2026-10-27T15:14:35.639251+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_30_MLB.csv row=3 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.639277+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_30_MLB.csv row=8 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.639492+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_30_MLB.csv
-2026-10-27T15:14:35.639559+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_01_MLB.csv row=10 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.639579+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_01_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.639832+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_01_MLB.csv
-2026-10-27T15:14:35.639891+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_02_MLB.csv row=7 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.639914+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_02_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.640143+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_02_MLB.csv
-2026-10-27T15:14:35.640205+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_03_MLB.csv row=9 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.640226+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_03_MLB.csv row=12 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.640460+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_03_MLB.csv
-2026-10-27T15:14:35.640525+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_04_MLB.csv row=9 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.640749+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_04_MLB.csv
-2026-10-27T15:14:35.640801+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_05_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.640827+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_05_MLB.csv row=10 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.641074+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_05_MLB.csv
-2026-10-27T15:14:35.641121+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_06_MLB.csv row=3 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.641151+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_06_MLB.csv row=10 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.641451+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_06_MLB.csv
-2026-10-27T15:14:35.641523+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_07_MLB.csv row=9 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.641541+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_07_MLB.csv row=11 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.641742+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_07_MLB.csv
-2026-10-27T15:14:35.641848+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_09_MLB.csv row=3 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.641888+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_09_MLB.csv row=14 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.642101+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_09_MLB.csv
-2026-10-27T15:14:35.642154+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_10_MLB.csv row=4 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.642191+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_10_MLB.csv row=14 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.642419+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_10_MLB.csv
-2026-10-27T15:14:35.642546+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_12_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.642560+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_12_MLB.csv row=15 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.642782+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_12_MLB.csv
-2026-10-27T15:14:35.642898+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_14_MLB.csv row=8 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.642916+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_14_MLB.csv row=8 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.643137+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_14_MLB.csv
-2026-10-27T15:14:35.643240+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_16_MLB.csv row=3 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.643285+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_16_MLB.csv row=16 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.643514+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_16_MLB.csv
-2026-10-27T15:14:35.643581+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_17_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.643598+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_17_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.643836+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_17_MLB.csv
-2026-10-27T15:14:35.643906+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_18_MLB.csv row=12 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.644118+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_18_MLB.csv
-2026-10-27T15:14:35.644185+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_19_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.644202+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_19_MLB.csv row=13 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.644419+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_19_MLB.csv
-2026-10-27T15:14:35.644502+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_20_MLB.csv row=14 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.644526+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_20_MLB.csv row=16 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.644746+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_20_MLB.csv
-2026-10-27T15:14:35.644793+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_21_MLB.csv row=3 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.644815+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_21_MLB.csv row=7 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.645094+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_21_MLB.csv
-2026-10-27T15:14:35.645140+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_22_MLB.csv row=3 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.645187+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_22_MLB.csv row=15 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.645424+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_22_MLB.csv
-2026-10-27T15:14:35.645480+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_23_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.645523+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_23_MLB.csv row=14 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.645537+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_23_MLB.csv row=15 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.645785+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_23_MLB.csv
-2026-10-27T15:14:35.645843+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_24_MLB.csv row=7 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.645875+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_24_MLB.csv row=15 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.646108+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_24_MLB.csv
-2026-10-27T15:14:35.646156+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_25_MLB.csv row=4 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.646194+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_25_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.646411+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_25_MLB.csv
-2026-10-27T15:14:35.646480+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_26_MLB.csv row=9 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.646505+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_26_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.646730+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_26_MLB.csv
-2026-10-27T15:14:35.646779+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_27_MLB.csv row=4 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.646793+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_27_MLB.csv row=5 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.647038+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_27_MLB.csv
-2026-10-27T15:14:35.647132+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_29_MLB.csv row=9 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.647156+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_29_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.647387+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_29_MLB.csv
-2026-10-27T15:14:35.647462+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_30_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.647487+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_30_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.647817+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_30_MLB.csv
-2026-10-27T15:14:35.647886+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_31_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.647906+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_31_MLB.csv row=16 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.648133+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_31_MLB.csv
-2026-10-27T15:14:35.648188+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_01_MLB.csv row=7 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.648398+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_01_MLB.csv
-2026-10-27T15:14:35.648477+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_02_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.648492+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_02_MLB.csv row=12 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.648721+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_02_MLB.csv
-2026-10-27T15:14:35.648789+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_03_MLB.csv row=12 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.648804+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_03_MLB.csv row=13 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.649044+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_03_MLB.csv
-2026-10-27T15:14:35.649103+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_04_MLB.csv row=8 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.649301+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_04_MLB.csv
-2026-10-27T15:14:35.649359+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_05_MLB.csv row=8 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.649374+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_05_MLB.csv row=9 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.649595+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_05_MLB.csv
-2026-10-27T15:14:35.649645+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_06_MLB.csv row=4 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.649673+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_06_MLB.csv row=10 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.649903+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_06_MLB.csv
-2026-10-27T15:14:35.649962+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_07_MLB.csv row=8 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.649979+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_07_MLB.csv row=10 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.650200+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_07_MLB.csv
-2026-10-27T15:14:35.650260+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_08_MLB.csv row=9 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.650462+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_08_MLB.csv
-2026-10-27T15:14:35.650527+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_09_MLB.csv row=9 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.650556+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_09_MLB.csv row=16 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.650755+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_09_MLB.csv
-2026-10-27T15:14:35.650823+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_10_MLB.csv row=11 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.650845+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_10_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.651061+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_10_MLB.csv
-2026-10-27T15:14:35.651105+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_11_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.651313+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_11_MLB.csv
-2026-10-27T15:14:35.651383+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_12_MLB.csv row=13 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.651403+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_12_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.651625+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_12_MLB.csv
-2026-10-27T15:14:35.651670+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_13_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.651714+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_13_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.651933+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_13_MLB.csv
-2026-10-27T15:14:35.652001+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_14_MLB.csv row=12 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.652016+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_14_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.652356+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_14_MLB.csv
-2026-10-27T15:14:35.652406+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_15_MLB.csv row=5 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.652431+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_15_MLB.csv row=10 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.652633+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_15_MLB.csv
-2026-10-27T15:14:35.652694+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_16_MLB.csv row=9 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.652719+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_16_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.653005+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_16_MLB.csv
-2026-10-27T15:14:35.653060+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_17_MLB.csv row=6 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.653095+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_17_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.653316+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_17_MLB.csv
-2026-10-27T15:14:35.653419+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_19_MLB.csv row=10 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.653436+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_19_MLB.csv row=12 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.653672+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_19_MLB.csv
-2026-10-27T15:14:35.653746+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_20_MLB.csv row=12 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.653973+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_20_MLB.csv
-2026-10-27T15:14:35.654030+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_21_MLB.csv row=8 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.654054+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_21_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.654280+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_21_MLB.csv
-2026-10-27T15:14:35.654343+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_22_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.654558+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_22_MLB.csv
-2026-10-27T15:14:35.654627+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_23_MLB.csv row=12 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.654652+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_23_MLB.csv row=16 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.654865+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_23_MLB.csv
-2026-10-27T15:14:35.654938+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_24_MLB.csv row=15 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.654956+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_24_MLB.csv row=17 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.655161+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_24_MLB.csv
-2026-10-27T15:14:35.655230+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_26_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.655245+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_26_MLB.csv row=14 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.655470+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_26_MLB.csv
-2026-10-27T15:14:35.655539+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_27_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.655559+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_27_MLB.csv row=16 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.655775+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_27_MLB.csv
-2026-10-27T15:14:35.655841+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_28_MLB.csv row=12 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.655857+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_28_MLB.csv row=13 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.656080+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_28_MLB.csv
-2026-10-27T15:14:35.656152+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_29_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.656363+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_29_MLB.csv
-2026-10-27T15:14:35.656419+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_30_MLB.csv row=8 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.656450+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_30_MLB.csv row=16 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.656675+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_30_MLB.csv
-2026-10-27T15:14:35.656734+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_01_MLB.csv row=9 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.656760+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_01_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.656956+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_01_MLB.csv
-2026-10-27T15:14:35.657006+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_02_MLB.csv row=6 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.657204+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_02_MLB.csv
-2026-10-27T15:14:35.657246+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_03_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.657279+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_03_MLB.csv row=11 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.657511+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_03_MLB.csv
-2026-10-27T15:14:35.657573+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_04_MLB.csv row=10 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.657604+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_04_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.657810+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_04_MLB.csv
-2026-10-27T15:14:35.657864+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_05_MLB.csv row=7 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.657891+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_05_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.658105+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_05_MLB.csv
-2026-10-27T15:14:35.658155+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_06_MLB.csv row=6 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.658347+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_06_MLB.csv
-2026-10-27T15:14:35.658389+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_07_MLB.csv row=2 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.658409+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_07_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.658440+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_07_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.658671+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_07_MLB.csv
-2026-10-27T15:14:35.658722+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_08_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.658753+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_08_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.658949+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_08_MLB.csv
-2026-10-27T15:14:35.659004+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_09_MLB.csv row=8 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.659024+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_09_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.659231+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_09_MLB.csv
-2026-10-27T15:14:35.659292+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_10_MLB.csv row=10 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.659311+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_10_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.659521+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_10_MLB.csv
-2026-10-27T15:14:35.659567+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_11_MLB.csv row=3 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.659606+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_11_MLB.csv row=14 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.659819+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_11_MLB.csv
-2026-10-27T15:14:35.659883+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_12_MLB.csv row=11 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.659898+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_12_MLB.csv row=12 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.660101+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_12_MLB.csv
-2026-10-27T15:14:35.660171+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_17_MLB.csv row=14 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.660188+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_17_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.660386+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_17_MLB.csv
-2026-10-27T15:14:35.660437+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_18_MLB.csv row=6 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.660480+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_18_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.660675+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_18_MLB.csv
-2026-10-27T15:14:35.660741+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_19_MLB.csv row=12 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.660758+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_19_MLB.csv row=14 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.660969+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_19_MLB.csv
-2026-10-27T15:14:35.661041+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_20_MLB.csv row=15 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.661055+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_20_MLB.csv row=16 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.661263+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_20_MLB.csv
-2026-10-27T15:14:35.661334+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_21_MLB.csv row=14 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.661348+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_21_MLB.csv row=15 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.661554+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_21_MLB.csv
-2026-10-27T15:14:35.661608+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_22_MLB.csv row=6 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.661625+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_22_MLB.csv row=8 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.666549+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_22_MLB.csv
-2026-10-27T15:14:35.666607+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_23_MLB.csv row=5 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.671726+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_23_MLB.csv
-2026-10-27T15:14:35.671809+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_24_MLB.csv row=14 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.671824+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_24_MLB.csv row=15 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.672055+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_24_MLB.csv
-2026-10-27T15:14:35.672122+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_25_MLB.csv row=12 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.672142+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_25_MLB.csv row=15 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.672361+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_25_MLB.csv
-2026-10-27T15:14:35.672428+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_26_MLB.csv row=12 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.672442+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_26_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.672659+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_26_MLB.csv
-2026-10-27T15:14:35.672724+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_27_MLB.csv row=10 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.672742+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_27_MLB.csv row=12 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.672946+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_27_MLB.csv
-2026-10-27T15:14:35.673010+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_28_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.673030+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_28_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.673243+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_28_MLB.csv
-2026-10-27T15:14:35.673311+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_29_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.673328+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_29_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.673545+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_29_MLB.csv
-2026-10-27T15:14:35.673598+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_30_MLB.csv row=5 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.673626+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_30_MLB.csv row=10 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.673828+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_30_MLB.csv
-2026-10-27T15:14:35.673878+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_31_MLB.csv row=5 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.673914+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_31_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.674128+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_31_MLB.csv
-2026-10-27T15:14:35.674172+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_01_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.674222+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_01_MLB.csv row=16 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.674428+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_01_MLB.csv
-2026-10-27T15:14:35.674489+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_02_MLB.csv row=4 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.674527+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_02_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.674736+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_02_MLB.csv
-2026-10-27T15:14:35.674823+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_04_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.674839+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_04_MLB.csv row=6 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.675067+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_04_MLB.csv
-2026-10-27T15:14:35.675118+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_05_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.675133+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_05_MLB.csv row=6 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.675346+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_05_MLB.csv
-2026-10-27T15:14:35.675492+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_10_MLB.csv row=5 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.675684+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_10_MLB.csv
-2026-10-27T15:14:35.675738+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_11_MLB.csv row=6 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.675761+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_11_MLB.csv row=10 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.675963+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_11_MLB.csv
-2026-10-27T15:14:35.676056+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_14_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.676235+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_14_MLB.csv
-2026-10-27T15:14:35.676277+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_15_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.676447+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_15_MLB.csv
-2026-10-27T15:14:35.676520+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_17_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.676543+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_17_MLB.csv row=4 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.676569+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_17_MLB.csv row=9 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.676770+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_17_MLB.csv
-2026-10-27T15:14:35.676817+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_18_MLB.csv row=3 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.676847+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_18_MLB.csv row=10 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.677074+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_18_MLB.csv
-2026-10-27T15:14:35.677136+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_19_MLB.csv row=9 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.677156+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_19_MLB.csv row=12 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.677365+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_19_MLB.csv
-2026-10-27T15:14:35.677408+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_20_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.677429+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_20_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.677651+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_20_MLB.csv
-2026-10-27T15:14:35.677717+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_24_MLB.csv row=9 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.677918+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_24_MLB.csv
-2026-10-27T15:14:35.677983+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_25_MLB.csv row=10 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.678006+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_25_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.678219+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_25_MLB.csv
-2026-10-27T15:14:35.678288+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_26_MLB.csv row=12 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.678304+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_26_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.678514+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_26_MLB.csv
-2026-10-27T15:14:35.678561+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_27_MLB.csv row=3 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.678766+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_27_MLB.csv
-2026-10-27T15:14:35.678838+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_28_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.678856+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_28_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.679058+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_28_MLB.csv
-2026-10-27T15:14:35.679103+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_29_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.679283+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_29_MLB.csv
-2026-10-27T15:14:35.679347+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_30_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.679364+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_30_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.679573+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_30_MLB.csv
-2026-10-27T15:14:35.679648+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_01_MLB.csv row=5 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.679833+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_01_MLB.csv
-2026-10-27T15:14:35.679877+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_02_MLB.csv row=3 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.680046+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_02_MLB.csv
-2026-10-27T15:14:35.680086+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_03_MLB.csv row=2 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.680102+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_03_MLB.csv row=3 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.680278+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_03_MLB.csv
-2026-10-27T15:14:35.680320+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_04_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.680340+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_04_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.680521+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_04_MLB.csv
-2026-10-27T15:14:35.680565+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_05_MLB.csv row=3 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.680750+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_05_MLB.csv
-2026-10-27T15:14:35.680812+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_07_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.681004+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_07_MLB.csv
-2026-10-27T15:14:35.681050+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_08_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.681068+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_08_MLB.csv row=5 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.681251+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_08_MLB.csv
-2026-10-27T15:14:35.681335+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_11_MLB.csv row=2 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.681536+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_11_MLB.csv
-2026-10-27T15:14:35.681581+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_12_MLB.csv row=2 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.681749+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_12_MLB.csv
-2026-10-27T15:14:35.681989+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_22_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.682206+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_22_MLB.csv
-2026-10-27T15:14:35.682251+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_23_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.682468+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_23_MLB.csv
-2026-10-27T15:14:35.682509+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_24_MLB.csv row=2 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.682691+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_24_MLB.csv
-2026-10-27T15:14:35.682734+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_25_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.682916+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_25_MLB.csv
-2026-10-27T15:14:35.682968+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_26_MLB.csv row=6 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-27T15:14:35.682995+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_26_MLB.csv row=12 home_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-27T15:14:35.683189+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_26_MLB.csv
-2026-10-27T15:14:35.694616+00:00 | INFO  | --- SUMMARY ---
-2026-10-27T15:14:35.694644+00:00 | INFO  | Files processed: 401
-2026-10-27T15:14:35.694658+00:00 | INFO  | Rows processed: 4319
-2026-10-27T15:14:35.694670+00:00 | INFO  | Names normalized: 259
-2026-10-27T15:14:35.694682+00:00 | INFO  | Unmapped teams: 0
-2026-10-27T15:14:35.694695+00:00 | INFO  | Errors: 0
-2026-10-27T15:14:35.694707+00:00 | INFO  | STATUS: SUCCESS
+=== name_normalization RUN 2026-10-27T16:43:29.809526+00:00 ===
+2026-10-27T16:43:29.810193+00:00 | INFO  | Team map loaded: 62 alias entries from docs/win/baseball/mlb/maps/team_map_mlb.csv | duplicate identical rows skipped: 0
+2026-10-27T16:43:29.812372+00:00 | INFO  | Files to process: 401
+2026-10-27T16:43:29.812506+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_26_MLB.csv row=7 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.812818+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_03_26_MLB.csv
+2026-10-27T16:43:29.812945+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_27_MLB.csv row=3 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.813281+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_03_27_MLB.csv
+2026-10-27T16:43:29.813395+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_28_MLB.csv row=2 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.813461+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_28_MLB.csv row=4 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.813810+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_03_28_MLB.csv
+2026-10-27T16:43:29.813947+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_29_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.814008+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_29_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.814304+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_03_29_MLB.csv
+2026-10-27T16:43:29.814433+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_30_MLB.csv row=8 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.814489+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_30_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.814815+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_03_30_MLB.csv
+2026-10-27T16:43:29.814958+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_31_MLB.csv row=7 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.815004+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_03_31_MLB.csv row=10 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.815325+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_03_31_MLB.csv
+2026-10-27T16:43:29.815449+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_01_MLB.csv row=2 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.815518+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_01_MLB.csv row=8 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.815919+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_01_MLB.csv
+2026-10-27T16:43:29.816125+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_04_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.816211+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_04_MLB.csv row=6 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.816576+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_04_MLB.csv
+2026-10-27T16:43:29.816829+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_06_MLB.csv row=6 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.817189+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_06_MLB.csv
+2026-10-27T16:43:29.817351+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_07_MLB.csv row=8 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.817397+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_07_MLB.csv row=10 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.817703+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_07_MLB.csv
+2026-10-27T16:43:29.817857+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_08_MLB.csv row=10 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.817912+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_08_MLB.csv row=15 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.818212+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_08_MLB.csv
+2026-10-27T16:43:29.818340+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_09_MLB.csv row=3 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.818611+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_09_MLB.csv
+2026-10-27T16:43:29.818772+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_10_MLB.csv row=8 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.818829+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_10_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.819161+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_10_MLB.csv
+2026-10-27T16:43:29.819291+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_11_MLB.csv row=4 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.819349+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_11_MLB.csv row=9 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.819601+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_11_MLB.csv
+2026-10-27T16:43:29.819743+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_12_MLB.csv row=7 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.819794+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_12_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.820102+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_12_MLB.csv
+2026-10-27T16:43:29.820257+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_13_MLB.csv row=9 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.820294+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_13_MLB.csv row=10 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.820554+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_13_MLB.csv
+2026-10-27T16:43:29.820719+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_14_MLB.csv row=12 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.820762+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_14_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.821040+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_14_MLB.csv
+2026-10-27T16:43:29.821205+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_15_MLB.csv row=3 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.821287+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_15_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.821572+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_15_MLB.csv
+2026-10-27T16:43:29.821720+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_16_MLB.csv row=8 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.821990+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_16_MLB.csv
+2026-10-27T16:43:29.822171+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_17_MLB.csv row=10 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.822223+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_17_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.822504+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_17_MLB.csv
+2026-10-27T16:43:29.822623+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_18_MLB.csv row=6 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.822703+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_18_MLB.csv row=11 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.822985+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_18_MLB.csv
+2026-10-27T16:43:29.823159+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_19_MLB.csv row=7 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.823210+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_19_MLB.csv row=11 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.823489+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_19_MLB.csv
+2026-10-27T16:43:29.823616+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_20_MLB.csv row=4 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.823680+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_20_MLB.csv row=11 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.823914+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_20_MLB.csv
+2026-10-27T16:43:29.824037+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_21_MLB.csv row=3 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.824159+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_21_MLB.csv row=14 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.824433+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_21_MLB.csv
+2026-10-27T16:43:29.824554+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_22_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.824613+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_22_MLB.csv row=7 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.824909+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_22_MLB.csv
+2026-10-27T16:43:29.825204+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_24_MLB.csv row=11 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.825245+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_24_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.825528+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_24_MLB.csv
+2026-10-27T16:43:29.825663+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_25_MLB.csv row=3 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.825730+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_25_MLB.csv row=10 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.826023+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_25_MLB.csv
+2026-10-27T16:43:29.826323+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_27_MLB.csv row=3 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.826620+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_27_MLB.csv
+2026-10-27T16:43:29.826766+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_28_MLB.csv row=5 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.826841+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_28_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.827134+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_28_MLB.csv
+2026-10-27T16:43:29.827297+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_29_MLB.csv row=11 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.827358+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_29_MLB.csv row=16 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.827614+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_29_MLB.csv
+2026-10-27T16:43:29.827734+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_30_MLB.csv row=3 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.827791+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_04_30_MLB.csv row=8 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.828030+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_04_30_MLB.csv
+2026-10-27T16:43:29.828217+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_01_MLB.csv row=10 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.828262+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_01_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.828523+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_01_MLB.csv
+2026-10-27T16:43:29.828663+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_02_MLB.csv row=7 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.828714+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_02_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.828987+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_02_MLB.csv
+2026-10-27T16:43:29.829160+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_03_MLB.csv row=9 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.829209+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_03_MLB.csv row=12 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.829481+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_03_MLB.csv
+2026-10-27T16:43:29.829630+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_04_MLB.csv row=9 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.829892+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_04_MLB.csv
+2026-10-27T16:43:29.830021+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_05_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.830124+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_05_MLB.csv row=10 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.830423+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_05_MLB.csv
+2026-10-27T16:43:29.830550+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_06_MLB.csv row=3 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.830615+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_06_MLB.csv row=10 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.830893+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_06_MLB.csv
+2026-10-27T16:43:29.831036+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_07_MLB.csv row=9 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.831120+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_07_MLB.csv row=11 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.831354+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_07_MLB.csv
+2026-10-27T16:43:29.831592+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_09_MLB.csv row=3 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.831676+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_09_MLB.csv row=14 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.831958+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_09_MLB.csv
+2026-10-27T16:43:29.832140+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_10_MLB.csv row=4 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.832227+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_10_MLB.csv row=14 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.832503+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_10_MLB.csv
+2026-10-27T16:43:29.832753+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_12_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.832783+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_12_MLB.csv row=15 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.833039+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_12_MLB.csv
+2026-10-27T16:43:29.833320+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_14_MLB.csv row=8 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.833349+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_14_MLB.csv row=8 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.833609+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_14_MLB.csv
+2026-10-27T16:43:29.833833+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_16_MLB.csv row=3 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.833925+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_16_MLB.csv row=16 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.834208+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_16_MLB.csv
+2026-10-27T16:43:29.834364+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_17_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.834405+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_17_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.834662+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_17_MLB.csv
+2026-10-27T16:43:29.834820+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_18_MLB.csv row=12 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.835128+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_18_MLB.csv
+2026-10-27T16:43:29.835287+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_19_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.835328+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_19_MLB.csv row=13 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.835595+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_19_MLB.csv
+2026-10-27T16:43:29.835761+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_20_MLB.csv row=14 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.835802+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_20_MLB.csv row=16 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.836045+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_20_MLB.csv
+2026-10-27T16:43:29.836186+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_21_MLB.csv row=3 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.836236+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_21_MLB.csv row=7 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.836460+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_21_MLB.csv
+2026-10-27T16:43:29.836577+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_22_MLB.csv row=3 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.836663+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_22_MLB.csv row=15 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.836935+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_22_MLB.csv
+2026-10-27T16:43:29.837076+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_23_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.837177+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_23_MLB.csv row=14 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.837209+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_23_MLB.csv row=15 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.837481+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_23_MLB.csv
+2026-10-27T16:43:29.837627+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_24_MLB.csv row=7 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.837697+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_24_MLB.csv row=15 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.837960+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_24_MLB.csv
+2026-10-27T16:43:29.838121+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_25_MLB.csv row=4 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.838200+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_25_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.838447+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_25_MLB.csv
+2026-10-27T16:43:29.838603+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_26_MLB.csv row=9 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.838667+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_26_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.838937+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_26_MLB.csv
+2026-10-27T16:43:29.839110+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_27_MLB.csv row=4 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.839148+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_27_MLB.csv row=5 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.839452+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_27_MLB.csv
+2026-10-27T16:43:29.839675+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_29_MLB.csv row=9 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.839729+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_29_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.839989+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_29_MLB.csv
+2026-10-27T16:43:29.840169+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_30_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.840214+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_30_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.840475+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_30_MLB.csv
+2026-10-27T16:43:29.840646+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_31_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.840690+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_05_31_MLB.csv row=16 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.840936+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_05_31_MLB.csv
+2026-10-27T16:43:29.841104+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_01_MLB.csv row=7 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.841353+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_01_MLB.csv
+2026-10-27T16:43:29.841514+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_02_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.841550+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_02_MLB.csv row=12 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.841821+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_02_MLB.csv
+2026-10-27T16:43:29.841976+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_03_MLB.csv row=12 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.842012+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_03_MLB.csv row=13 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.842317+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_03_MLB.csv
+2026-10-27T16:43:29.842466+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_04_MLB.csv row=8 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.842730+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_04_MLB.csv
+2026-10-27T16:43:29.842875+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_05_MLB.csv row=8 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.842913+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_05_MLB.csv row=9 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.843225+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_05_MLB.csv
+2026-10-27T16:43:29.843357+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_06_MLB.csv row=4 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.843417+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_06_MLB.csv row=10 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.843704+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_06_MLB.csv
+2026-10-27T16:43:29.843855+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_07_MLB.csv row=8 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.843894+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_07_MLB.csv row=10 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.844214+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_07_MLB.csv
+2026-10-27T16:43:29.844366+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_08_MLB.csv row=9 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.844601+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_08_MLB.csv
+2026-10-27T16:43:29.844746+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_09_MLB.csv row=9 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.844809+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_09_MLB.csv row=16 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.845094+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_09_MLB.csv
+2026-10-27T16:43:29.845247+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_10_MLB.csv row=11 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.845295+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_10_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.845554+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_10_MLB.csv
+2026-10-27T16:43:29.845663+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_11_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.845924+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_11_MLB.csv
+2026-10-27T16:43:29.846131+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_12_MLB.csv row=13 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.846180+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_12_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.846436+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_12_MLB.csv
+2026-10-27T16:43:29.846559+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_13_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.846651+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_13_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.846908+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_13_MLB.csv
+2026-10-27T16:43:29.847110+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_14_MLB.csv row=12 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.847151+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_14_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.847476+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_14_MLB.csv
+2026-10-27T16:43:29.847616+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_15_MLB.csv row=5 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.847673+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_15_MLB.csv row=10 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.847922+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_15_MLB.csv
+2026-10-27T16:43:29.848101+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_16_MLB.csv row=9 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.848160+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_16_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.848434+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_16_MLB.csv
+2026-10-27T16:43:29.848580+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_17_MLB.csv row=6 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.848653+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_17_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.848903+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_17_MLB.csv
+2026-10-27T16:43:29.849178+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_19_MLB.csv row=10 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.849220+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_19_MLB.csv row=12 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.849480+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_19_MLB.csv
+2026-10-27T16:43:29.849644+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_20_MLB.csv row=12 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.849915+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_20_MLB.csv
+2026-10-27T16:43:29.850088+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_21_MLB.csv row=8 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.850148+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_21_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.850411+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_21_MLB.csv
+2026-10-27T16:43:29.850567+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_22_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.850824+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_22_MLB.csv
+2026-10-27T16:43:29.850977+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_23_MLB.csv row=12 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.851033+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_23_MLB.csv row=16 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.851318+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_23_MLB.csv
+2026-10-27T16:43:29.851491+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_24_MLB.csv row=15 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.851534+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_24_MLB.csv row=17 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.851780+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_24_MLB.csv
+2026-10-27T16:43:29.851936+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_26_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.851971+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_26_MLB.csv row=14 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.852239+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_26_MLB.csv
+2026-10-27T16:43:29.852402+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_27_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.852447+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_27_MLB.csv row=16 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.852691+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_27_MLB.csv
+2026-10-27T16:43:29.852846+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_28_MLB.csv row=12 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.852882+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_28_MLB.csv row=13 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.853186+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_28_MLB.csv
+2026-10-27T16:43:29.853358+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_29_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.853611+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_29_MLB.csv
+2026-10-27T16:43:29.853750+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_30_MLB.csv row=8 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.853818+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_06_30_MLB.csv row=16 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.854124+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_06_30_MLB.csv
+2026-10-27T16:43:29.854264+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_01_MLB.csv row=9 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.854320+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_01_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.854589+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_01_MLB.csv
+2026-10-27T16:43:29.854722+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_02_MLB.csv row=6 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.854973+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_02_MLB.csv
+2026-10-27T16:43:29.855116+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_03_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.855190+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_03_MLB.csv row=11 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.855443+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_03_MLB.csv
+2026-10-27T16:43:29.855600+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_04_MLB.csv row=10 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.855662+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_04_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.855918+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_04_MLB.csv
+2026-10-27T16:43:29.856090+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_05_MLB.csv row=7 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.856158+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_05_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.856424+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_05_MLB.csv
+2026-10-27T16:43:29.856559+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_06_MLB.csv row=6 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.856802+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_06_MLB.csv
+2026-10-27T16:43:29.856908+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_07_MLB.csv row=2 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.856955+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_07_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.857015+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_07_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.857317+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_07_MLB.csv
+2026-10-27T16:43:29.857446+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_08_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.857515+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_08_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.857776+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_08_MLB.csv
+2026-10-27T16:43:29.857918+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_09_MLB.csv row=8 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.857963+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_09_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.858237+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_09_MLB.csv
+2026-10-27T16:43:29.858394+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_10_MLB.csv row=10 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.858441+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_10_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.858705+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_10_MLB.csv
+2026-10-27T16:43:29.858821+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_11_MLB.csv row=3 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.858901+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_11_MLB.csv row=14 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.859208+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_11_MLB.csv
+2026-10-27T16:43:29.859367+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_12_MLB.csv row=11 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.859403+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_12_MLB.csv row=12 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.859673+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_12_MLB.csv
+2026-10-27T16:43:29.859838+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_17_MLB.csv row=14 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.859879+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_17_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.860167+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_17_MLB.csv
+2026-10-27T16:43:29.860302+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_18_MLB.csv row=6 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.860373+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_18_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.860629+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_18_MLB.csv
+2026-10-27T16:43:29.860781+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_19_MLB.csv row=12 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.860822+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_19_MLB.csv row=14 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.861116+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_19_MLB.csv
+2026-10-27T16:43:29.861291+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_20_MLB.csv row=15 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.861326+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_20_MLB.csv row=16 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.861575+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_20_MLB.csv
+2026-10-27T16:43:29.861735+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_21_MLB.csv row=14 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.861771+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_21_MLB.csv row=15 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.862021+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_21_MLB.csv
+2026-10-27T16:43:29.862180+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_22_MLB.csv row=6 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.862222+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_22_MLB.csv row=8 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.862510+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_22_MLB.csv
+2026-10-27T16:43:29.862638+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_23_MLB.csv row=5 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.862861+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_23_MLB.csv
+2026-10-27T16:43:29.863004+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_24_MLB.csv row=14 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.863036+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_24_MLB.csv row=15 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.863362+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_24_MLB.csv
+2026-10-27T16:43:29.863535+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_25_MLB.csv row=12 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.863582+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_25_MLB.csv row=15 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.863836+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_25_MLB.csv
+2026-10-27T16:43:29.863993+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_26_MLB.csv row=12 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.864029+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_26_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.864334+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_26_MLB.csv
+2026-10-27T16:43:29.864489+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_27_MLB.csv row=10 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.864530+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_27_MLB.csv row=12 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.864788+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_27_MLB.csv
+2026-10-27T16:43:29.864944+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_28_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.864988+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_28_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.865302+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_28_MLB.csv
+2026-10-27T16:43:29.865474+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_29_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.865516+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_29_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.865772+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_29_MLB.csv
+2026-10-27T16:43:29.865898+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_30_MLB.csv row=5 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.865953+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_30_MLB.csv row=10 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.866222+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_30_MLB.csv
+2026-10-27T16:43:29.866351+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_31_MLB.csv row=5 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.866418+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_07_31_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.866680+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_07_31_MLB.csv
+2026-10-27T16:43:29.866789+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_01_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.866882+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_01_MLB.csv row=16 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.867166+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_01_MLB.csv
+2026-10-27T16:43:29.867296+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_02_MLB.csv row=4 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.867366+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_02_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.867642+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_02_MLB.csv
+2026-10-27T16:43:29.867848+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_04_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.867884+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_04_MLB.csv row=6 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.868216+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_04_MLB.csv
+2026-10-27T16:43:29.868349+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_05_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.868384+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_05_MLB.csv row=6 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.868655+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_05_MLB.csv
+2026-10-27T16:43:29.868968+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_10_MLB.csv row=5 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.869229+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_10_MLB.csv
+2026-10-27T16:43:29.869366+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_11_MLB.csv row=6 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.869416+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_11_MLB.csv row=10 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.869692+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_11_MLB.csv
+2026-10-27T16:43:29.869910+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_14_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.870173+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_14_MLB.csv
+2026-10-27T16:43:29.870293+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_15_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.870502+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_15_MLB.csv
+2026-10-27T16:43:29.870657+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_17_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.870698+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_17_MLB.csv row=4 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.870747+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_17_MLB.csv row=9 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.870999+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_17_MLB.csv
+2026-10-27T16:43:29.871193+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_18_MLB.csv row=3 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.871270+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_18_MLB.csv row=10 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.871589+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_18_MLB.csv
+2026-10-27T16:43:29.871755+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_19_MLB.csv row=9 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.871804+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_19_MLB.csv row=12 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.872118+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_19_MLB.csv
+2026-10-27T16:43:29.872230+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_20_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.872302+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_20_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.872590+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_20_MLB.csv
+2026-10-27T16:43:29.872748+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_24_MLB.csv row=9 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.873033+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_24_MLB.csv
+2026-10-27T16:43:29.873222+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_25_MLB.csv row=10 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.873274+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_25_MLB.csv row=14 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.873559+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_25_MLB.csv
+2026-10-27T16:43:29.873724+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_26_MLB.csv row=12 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.873760+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_26_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.874020+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_26_MLB.csv
+2026-10-27T16:43:29.874167+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_27_MLB.csv row=3 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.874433+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_27_MLB.csv
+2026-10-27T16:43:29.874601+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_28_MLB.csv row=13 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.874643+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_28_MLB.csv row=15 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.874912+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_28_MLB.csv
+2026-10-27T16:43:29.875032+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_29_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.875307+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_29_MLB.csv
+2026-10-27T16:43:29.875466+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_30_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.875508+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_30_MLB.csv row=13 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.875777+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_30_MLB.csv
+2026-10-27T16:43:29.875942+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_01_MLB.csv row=5 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.876204+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_01_MLB.csv
+2026-10-27T16:43:29.876324+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_02_MLB.csv row=3 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.876545+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_02_MLB.csv
+2026-10-27T16:43:29.876663+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_03_MLB.csv row=2 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.876702+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_03_MLB.csv row=3 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.876945+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_03_MLB.csv
+2026-10-27T16:43:29.877038+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_04_MLB.csv row=2 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.877143+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_04_MLB.csv row=5 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.877382+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_04_MLB.csv
+2026-10-27T16:43:29.877504+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_05_MLB.csv row=3 away_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.877742+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_05_MLB.csv
+2026-10-27T16:43:29.877917+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_07_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.878168+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_07_MLB.csv
+2026-10-27T16:43:29.878290+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_08_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.878335+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_08_MLB.csv row=5 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.878571+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_08_MLB.csv
+2026-10-27T16:43:29.878748+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_11_MLB.csv row=2 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.880879+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_11_MLB.csv
+2026-10-27T16:43:29.880972+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_12_MLB.csv row=2 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.881215+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_12_MLB.csv
+2026-10-27T16:43:29.881743+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_22_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.882002+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_22_MLB.csv
+2026-10-27T16:43:29.882154+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_23_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.882393+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_23_MLB.csv
+2026-10-27T16:43:29.882485+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_24_MLB.csv row=2 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.882745+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_24_MLB.csv
+2026-10-27T16:43:29.882844+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_25_MLB.csv row=3 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.883125+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_25_MLB.csv
+2026-10-27T16:43:29.883265+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_26_MLB.csv row=6 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
+2026-10-27T16:43:29.883327+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_26_MLB.csv row=12 home_team: 'Oakland Athletics' -> 'Athletics'
+2026-10-27T16:43:29.883581+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_26_MLB.csv
+2026-10-27T16:43:29.905690+00:00 | INFO  | --- SUMMARY ---
+2026-10-27T16:43:29.905723+00:00 | INFO  | Files processed: 401
+2026-10-27T16:43:29.905745+00:00 | INFO  | Rows processed: 4319
+2026-10-27T16:43:29.905765+00:00 | INFO  | Names normalized: 259
+2026-10-27T16:43:29.905784+00:00 | INFO  | Unmapped teams: 0
+2026-10-27T16:43:29.905802+00:00 | INFO  | Errors: 0
+2026-10-27T16:43:29.905820+00:00 | INFO  | STATUS: SUCCESS

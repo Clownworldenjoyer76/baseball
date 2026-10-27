@@ -7440,8 +7440,8 @@ date,game_id,market,side,fail_reason,fail_detail,prob_used_for_selection,prob_us
 2026_10_24,401908043,moneyline,away,kelly_fail,kelly<=0,0.4274759772995187,0.4274759772995187,0.4274759772995187,-0.1193994867629915,0.0,106.0,,away_model_prob_moneyline,away_model_prob_moneyline
 2026_10_26,401908044,run_line,home,ev_fail,ev<=0,0.5954811669817108,0.5954811669817108,0.5954811669817108,-0.1236314901023877,0.0,-212.0,1.5,home_model_prob_run_line,home_model_prob_run_line
 2026_10_26,401908044,run_line,away,ev_fail,outside_ev_bands,0.4045188330182891,0.4045188330182891,0.4045188330182891,0.1002912258097463,0.0583088522149688,172.0,-1.5,away_model_prob_run_line,away_model_prob_run_line
-2026_10_26,401908044,total,over,prob_fail,outside_prob_bands,0.489701625356808,0.489701625356808,0.489701625356808,0.068506924777615,0.0905880432401871,-113.0,7.0,over_model_prob_total_win,over_model_prob_total_win
-2026_10_26,401908044,total,under,kelly_fail,kelly<=0,0.3648573454496484,0.3648573454496484,0.3648573454496484,-0.1487134520393795,0.0,-107.0,7.0,under_model_prob_total_win,under_model_prob_total_win
+2026_10_26,401908044,total,over,prob_fail,outside_prob_bands,0.4897016253568076,0.4897016253568076,0.4897016253568076,0.0685069247776143,0.0905880432401862,-113.0,7.0,over_model_prob_total_win,over_model_prob_total_win
+2026_10_26,401908044,total,under,kelly_fail,kelly<=0,0.3648573454496487,0.3648573454496487,0.3648573454496487,-0.1487134520393788,0.0,-107.0,7.0,under_model_prob_total_win,under_model_prob_total_win
 2026_10_26,401908044,moneyline,home,kelly_fail,kelly<=0,0.4868077880483645,0.4868077880483645,0.4868077880483645,-0.1075190552446651,0.0,-120.0,,home_model_prob_moneyline,home_model_prob_moneyline
 2026_10_26,401908044,moneyline,away,prob_fail,outside_prob_bands,0.5131922119516354,0.5131922119516354,0.5131922119516354,0.0213033128938486,0.0215163460227872,-101.0,,away_model_prob_moneyline,away_model_prob_moneyline
 2026_10_27,401908045,all,all,context_data_excluded,home_batters_found=0;required_min=5|away_batters_found=0;required_min=5|away_sp_found=0;required=1,,,,,,,,,

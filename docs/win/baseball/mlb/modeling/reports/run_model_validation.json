@@ -14,7 +14,7 @@
       "mean_poisson_deviance": 2.473104467667501,
       "mean_predicted_runs": 4.253318379897634
     },
-    "smoke_prediction": 3.888601081387058
+    "smoke_prediction": 3.8886010813870575
   },
   "feature_columns": [
     "dratings_home_prob",
@@ -93,8 +93,8 @@
       "baseline_system": "dratings",
       "baseline_value": 1.9751421702718135,
       "candidate_lte_baseline": true,
-      "candidate_value": 1.9653449023919396,
-      "difference_candidate_minus_baseline": -0.009797267879873894,
+      "candidate_value": 1.9653449023919394,
+      "difference_candidate_minus_baseline": -0.009797267879874116,
       "metric": "mean_poisson_deviance"
     },
     "home": {
@@ -110,5 +110,5 @@
   "status": "passed",
   "training_rows": 1913,
   "training_set": "docs/win/baseball/mlb/modeling/data/mlb_run_training_set.csv",
-  "validated_at": "2026-10-27T15:14:07.052696+00:00"
+  "validated_at": "2026-10-27T16:43:01.159021+00:00"
 }
