@@ -147,6 +147,7 @@ jobs:
         run: |
           python - <<'PY'
           import importlib.util
+          import sys
           from pathlib import Path
 
           paths = [
@@ -155,6 +156,15 @@ jobs:
               Path("docs/win/baseball/mlb/scripts/modeling/build_run_training_set.py"),
               Path("docs/win/baseball/mlb/scripts/modeling/test_probability_ev_kelly.py"),
           ]
+
+          # Allow modeling scripts to import sibling modules,
+          # including module_loader.py.
+          modeling_dir = Path(
+              "docs/win/baseball/mlb/scripts/modeling"
+          ).resolve()
+
+          if str(modeling_dir) not in sys.path:
+              sys.path.insert(0, str(modeling_dir))
 
           for index, path in enumerate(paths):
               if not path.exists():
