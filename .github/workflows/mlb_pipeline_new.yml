@@ -1,0 +1,699 @@
+name: NEW MLB Pipeline
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mlb-02-pregame-pipeline
+  cancel-in-progress: false
+
+jobs:
+  MLB_Afternoon_Update:
+    runs-on: ubuntu-24.04
+
+    env:
+      TZ: America/New_York
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Create isolated MLB Python environment
+        run: |
+          python -m venv .venv-mlb
+          echo "$GITHUB_WORKSPACE/.venv-mlb/bin" >> "$GITHUB_PATH"
+
+      - name: Install MLB dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r docs/win/baseball/mlb/requirements.txt
+          python -m pip install playwright
+
+      - name: Install vendored SportsDataverse
+        run: python -m pip install -e docs/win/baseball/mlb/vendor/sportsdataverse -c docs/win/baseball/mlb/requirements.txt
+
+      - name: Verify MLB Python dependency consistency
+        run: python -m pip check
+
+      - name: Determine MLB workflow weekday
+        id: workflow_day
+        shell: bash
+        run: |
+          DAY_OF_WEEK="$(date +'%u')"
+          echo "day_of_week=${DAY_OF_WEEK}" >> "$GITHUB_OUTPUT"
+
+          if [ "${DAY_OF_WEEK}" = "1" ]; then
+            echo "is_monday=true" >> "$GITHUB_OUTPUT"
+            echo "Monday detected in America/New_York."
+          else
+            echo "is_monday=false" >> "$GITHUB_OUTPUT"
+            echo "Not Monday in America/New_York."
+          fi
+
+      # ============================================================
+      # MODEL TRAINING AND PREPARATION
+      # ============================================================
+
+      - name: Restore MLB SDV backfill cache
+        uses: actions/cache/restore@v6
+        with:
+          path: docs/win/baseball/mlb/00_intake/sportsdataverse
+          key: mlb-sdv-${{ runner.os }}-${{ github.ref_name }}-${{ github.run_id }}
+          restore-keys: |
+            mlb-sdv-${{ runner.os }}-${{ github.ref_name }}-
+
+      - name: MLB Determine SDV Backfill Range
+        id: sdv_range
+        shell: bash
+        run: |
+          GAMES_DIR="docs/win/baseball/mlb/00_intake/games"
+
+          mapfile -t GAME_FILES < <(
+            find "${GAMES_DIR}" \
+              -maxdepth 1 \
+              -type f \
+              -name '????_??_??_games.csv' \
+              -printf '%f\n' \
+              | sort
+          )
+
+          if [ "${#GAME_FILES[@]}" -eq 0 ]; then
+            echo "ERROR: No game files found in ${GAMES_DIR}"
+            exit 1
+          fi
+
+          LAST_INDEX=$((${#GAME_FILES[@]} - 1))
+
+          FIRST_FILE="${GAME_FILES[0]}"
+          LAST_FILE="${GAME_FILES[$LAST_INDEX]}"
+
+          FROM_DATE="${FIRST_FILE%_games.csv}"
+          TO_DATE="${LAST_FILE%_games.csv}"
+
+          FROM_DATE="${FROM_DATE//_/-}"
+          TO_DATE="${TO_DATE//_/-}"
+
+          echo "SDV backfill range derived from repository game files:"
+          echo "  first game file: ${FIRST_FILE}"
+          echo "  last game file : ${LAST_FILE}"
+          echo "  from_date      : ${FROM_DATE}"
+          echo "  to_date        : ${TO_DATE}"
+
+          echo "from_date=${FROM_DATE}" >> "${GITHUB_OUTPUT}"
+          echo "to_date=${TO_DATE}" >> "${GITHUB_OUTPUT}"
+
+      - name: MLB Backfill Leakage-Safe SportsDataverse Features
+        run: |
+          python docs/win/baseball/mlb/scripts/00_intake/sportsdataverse_mlb.py \
+            --from-date "${{ steps.sdv_range.outputs.from_date }}" \
+            --to-date "${{ steps.sdv_range.outputs.to_date }}"
+
+      - name: Save MLB SDV backfill cache
+        uses: actions/cache/save@v6
+        with:
+          path: docs/win/baseball/mlb/00_intake/sportsdataverse
+          key: mlb-sdv-${{ runner.os }}-${{ github.ref_name }}-${{ github.run_id }}
+
+      - name: MLB Build Final Scores
+        run: python docs/win/baseball/mlb/scripts/05_final_scores/build_mlb_final_scores.py
+
+      - name: MLB Normalize Final Score Names
+        run: python docs/win/baseball/mlb/scripts/05_final_scores/normalize_final_score_mlb_names.py
+
+      - name: Verify yesterday final-score CSV exists before training
+        shell: bash
+        run: |
+          YESTERDAY="$(date -d 'yesterday' +'%Y_%m_%d')"
+          GAME_FILE="docs/win/baseball/mlb/00_intake/games/${YESTERDAY}_games.csv"
+          FINAL_FILE="docs/win/baseball/mlb/05_final_scores/results/final_scores/${YESTERDAY}_final_scores_MLB.csv"
+
+          echo "Checking yesterday game file: ${GAME_FILE}"
+
+          if [ ! -f "${GAME_FILE}" ]; then
+            echo "No yesterday game file exists for ${YESTERDAY}. No final-score file is required."
+            exit 0
+          fi
+
+          GAME_ROWS="$(awk 'END { print (NR > 1 ? NR - 1 : 0) }' "${GAME_FILE}")"
+
+          if [ "${GAME_ROWS}" -eq 0 ]; then
+            echo "Yesterday game file contains no game rows for ${YESTERDAY}. No final-score file is required."
+            exit 0
+          fi
+
+          echo "Yesterday contains ${GAME_ROWS} game row(s)."
+          echo "Verifying yesterday final-score file before run-model training: ${FINAL_FILE}"
+
+          if [ ! -s "${FINAL_FILE}" ]; then
+            echo "ERROR: Yesterday had games, but its final-score CSV is missing or empty before build_run_training_set.py: ${FINAL_FILE}"
+            exit 1
+          fi
+
+          echo "Verified: ${FINAL_FILE}"
+
+      - name: MLB Build Run Training Set
+        run: python docs/win/baseball/mlb/scripts/modeling/build_run_training_set.py
+
+      - name: Verify yesterday was not skipped for late final scores
+        shell: bash
+        run: |
+          YESTERDAY="$(date -d 'yesterday' +'%Y_%m_%d')"
+          GAME_FILE="docs/win/baseball/mlb/00_intake/games/${YESTERDAY}_games.csv"
+          TRAIN_LOG="docs/win/baseball/mlb/errors/modeling/build_run_training_set.txt"
+
+          if [ ! -f "${GAME_FILE}" ]; then
+            echo "No yesterday game file exists for ${YESTERDAY}. Late-final-score verification is not applicable."
+            exit 0
+          fi
+
+          GAME_ROWS="$(awk 'END { print (NR > 1 ? NR - 1 : 0) }' "${GAME_FILE}")"
+
+          if [ "${GAME_ROWS}" -eq 0 ]; then
+            echo "Yesterday game file contains no game rows for ${YESTERDAY}. Late-final-score verification is not applicable."
+            exit 0
+          fi
+
+          if [ ! -f "${TRAIN_LOG}" ]; then
+            echo "ERROR: Training log not found: ${TRAIN_LOG}"
+            exit 1
+          fi
+
+          if grep -F "Skipping prediction dates with no matching final-score file:" "${TRAIN_LOG}" \
+            | grep -Fq "${YESTERDAY}"; then
+            echo "ERROR: ${YESTERDAY} was still skipped because its final-score file was unavailable at training time."
+            exit 1
+          fi
+
+          echo "Verified: ${YESTERDAY} was not skipped for a late/missing final-score file."
+
+      - name: MLB Train Run Model Candidates
+        run: python docs/win/baseball/mlb/scripts/modeling/train_run_model.py
+
+      - name: MLB Probability EV Kelly Tests
+        run: |
+          python -m pytest \
+            docs/win/baseball/mlb/scripts/modeling/test_probability_ev_kelly.py \
+            -q
+
+      - name: MLB Evaluate Run Model Candidates + Promotion Gate
+        run: python docs/win/baseball/mlb/scripts/modeling/evaluate_run_model.py
+
+      - name: MLB Validate Production Run Models
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          import joblib
+          import numpy as np
+          import pandas as pd
+
+          base = Path("docs/win/baseball/mlb")
+          model_dir = base / "models/run_projection"
+          training_path = base / "modeling/data/mlb_run_training_set.csv"
+          report_dir = base / "modeling/reports"
+          report_path = report_dir / "run_model_validation.json"
+          promotion_path = report_dir / "run_model_promotion.json"
+
+          home_model_path = model_dir / "home_runs_model.joblib"
+          away_model_path = model_dir / "away_runs_model.joblib"
+          home_meta_path = model_dir / "home_runs_model_metadata.json"
+          away_meta_path = model_dir / "away_runs_model_metadata.json"
+
+          required_paths = [
+              home_model_path,
+              away_model_path,
+              home_meta_path,
+              away_meta_path,
+              training_path,
+              promotion_path,
+          ]
+
+          missing_paths = [
+              str(path)
+              for path in required_paths
+              if not path.exists()
+          ]
+
+          if missing_paths:
+              raise RuntimeError(
+                  f"Missing required model-training artifacts: {missing_paths}"
+              )
+
+          required_metadata = [
+              "training_start_date",
+              "training_end_date",
+              "validation_start_date",
+              "validation_end_date",
+              "test_start_date",
+              "test_end_date",
+              "feature_columns",
+              "selected_hyperparameters",
+              "training_row_count",
+              "validation_row_count",
+              "test_row_count",
+              "baseline_metrics",
+              "model_metrics",
+              "created_at",
+          ]
+
+          home_meta = json.loads(
+              home_meta_path.read_text(encoding="utf-8")
+          )
+          away_meta = json.loads(
+              away_meta_path.read_text(encoding="utf-8")
+          )
+          promotion = json.loads(
+              promotion_path.read_text(encoding="utf-8")
+          )
+
+          promotion_status = promotion.get("status")
+          if promotion_status not in {
+              "candidate_rejected",
+              "candidate_promoted",
+          }:
+              raise RuntimeError(
+                  "Invalid run-model promotion status: "
+                  f"{promotion_status!r}"
+              )
+
+          for label, meta in [
+              ("home", home_meta),
+              ("away", away_meta),
+          ]:
+              missing = [
+                  key
+                  for key in required_metadata
+                  if key not in meta
+              ]
+
+              if missing:
+                  raise RuntimeError(
+                      f"{label} metadata missing required keys: {missing}"
+                  )
+
+              features = meta["feature_columns"]
+
+              if not isinstance(features, list) or not features:
+                  raise RuntimeError(
+                      f"{label} metadata feature_columns is empty or invalid"
+                  )
+
+              if len(features) != len(set(features)):
+                  raise RuntimeError(
+                      f"{label} metadata feature_columns contains duplicates"
+                  )
+
+          if promotion_status == "candidate_promoted":
+              for label, meta in [
+                  ("home", home_meta),
+                  ("away", away_meta),
+              ]:
+                  if meta.get("promotion_status") != "candidate_promoted":
+                      raise RuntimeError(
+                          f"{label} production metadata does not record candidate_promoted"
+                      )
+
+                  comparison = meta.get("promotion_baseline_comparison")
+                  if not isinstance(comparison, dict):
+                      raise RuntimeError(
+                          f"{label} production metadata missing promotion_baseline_comparison"
+                      )
+
+                  if comparison.get("comparison") != promotion.get("comparison"):
+                      raise RuntimeError(
+                          f"{label} production metadata promotion comparison differs from evaluation output"
+                      )
+
+          home_features = list(
+              home_meta["feature_columns"]
+          )
+          away_features = list(
+              away_meta["feature_columns"]
+          )
+
+          if home_features != away_features:
+              raise RuntimeError(
+                  "Home and away model metadata feature order differs: "
+                  f"home={home_features} away={away_features}"
+              )
+
+          home_model = joblib.load(
+              home_model_path
+          )
+          away_model = joblib.load(
+              away_model_path
+          )
+
+          for label, model, features in [
+              ("home", home_model, home_features),
+              ("away", away_model, away_features),
+          ]:
+              model_features = getattr(
+                  model,
+                  "feature_names_in_",
+                  None,
+              )
+
+              if model_features is None:
+                  raise RuntimeError(
+                      f"{label} model does not expose feature_names_in_; "
+                      "cannot validate production feature order"
+                  )
+
+              model_features = [
+                  str(value)
+                  for value in model_features.tolist()
+              ]
+
+              if model_features != features:
+                  raise RuntimeError(
+                      f"{label} model feature order differs from metadata: "
+                      f"model={model_features} metadata={features}"
+                  )
+
+          training = pd.read_csv(
+              training_path
+          )
+
+          missing_training_features = [
+              col
+              for col in home_features
+              if col not in training.columns
+          ]
+
+          if missing_training_features:
+              raise RuntimeError(
+                  "Training set missing metadata features: "
+                  f"{missing_training_features}"
+              )
+
+          if training.empty:
+              raise RuntimeError(
+                  "Training set is empty"
+              )
+
+          sample = training.loc[
+              :,
+              home_features,
+          ].head(1).copy()
+
+          for col in home_features:
+              sample[col] = pd.to_numeric(
+                  sample[col],
+                  errors="coerce",
+              )
+
+          home_pred = np.asarray(
+              home_model.predict(sample),
+              dtype=float,
+          )
+
+          away_pred = np.asarray(
+              away_model.predict(sample),
+              dtype=float,
+          )
+
+          for label, pred in [
+              ("home", home_pred),
+              ("away", away_pred),
+          ]:
+              if pred.size != 1:
+                  raise RuntimeError(
+                      f"{label} model smoke test returned unexpected shape: "
+                      f"{pred.shape}"
+                  )
+
+              if not np.isfinite(pred).all():
+                  raise RuntimeError(
+                      f"{label} model smoke test produced non-finite prediction: "
+                      f"{pred.tolist()}"
+                  )
+
+              if (pred < 0).any():
+                  raise RuntimeError(
+                      f"{label} model smoke test produced negative prediction: "
+                      f"{pred.tolist()}"
+                  )
+
+          report_dir.mkdir(
+              parents=True,
+              exist_ok=True,
+          )
+
+          report = {
+              "validated_at": datetime.now(
+                  timezone.utc
+              ).isoformat(),
+              "status": "passed",
+              "promotion_status": promotion_status,
+              "promotion_comparison": promotion.get("comparison"),
+              "training_set": str(
+                  training_path
+              ),
+              "training_rows": int(
+                  len(training)
+              ),
+              "feature_columns": home_features,
+              "home_model": {
+                  "artifact": str(
+                      home_model_path
+                  ),
+                  "metadata": str(
+                      home_meta_path
+                  ),
+                  "smoke_prediction": float(
+                      home_pred[0]
+                  ),
+                  "baseline_metrics": home_meta[
+                      "baseline_metrics"
+                  ],
+                  "model_metrics": home_meta[
+                      "model_metrics"
+                  ],
+              },
+              "away_model": {
+                  "artifact": str(
+                      away_model_path
+                  ),
+                  "metadata": str(
+                      away_meta_path
+                  ),
+                  "smoke_prediction": float(
+                      away_pred[0]
+                  ),
+                  "baseline_metrics": away_meta[
+                      "baseline_metrics"
+                  ],
+                  "model_metrics": away_meta[
+                      "model_metrics"
+                  ],
+              },
+          }
+
+          report_path.write_text(
+              json.dumps(
+                  report,
+                  indent=2,
+                  sort_keys=True,
+              )
+              + "\n",
+              encoding="utf-8",
+          )
+
+          print(
+              "Production model validation passed: "
+              f"{report_path} | promotion_status={promotion_status}"
+          )
+          PY
+
+      - name: Upload model training data, candidates, and reports
+        uses: actions/upload-artifact@v7
+        with:
+          name: mlb-run-model-training-${{ github.run_id }}
+          path: |
+            docs/win/baseball/mlb/modeling/data/mlb_run_training_set.csv
+            docs/win/baseball/mlb/modeling/reports/
+            docs/win/baseball/mlb/models/run_projection/candidates/
+          if-no-files-found: error
+          retention-days: 30
+
+      # ============================================================
+      # PREGAME PIPELINE
+      # ============================================================
+
+      - name: Install Playwright Chromium
+        run: python -m playwright install --with-deps chromium
+
+      - name: MLB Updated Odds Pull
+        run: python docs/win/baseball/mlb/scripts/00_parsing/odds_mlb_update.py
+
+      - name: MLB Odds Parse
+        run: |
+          TARGET_DATE="$(TZ='America/New_York' date +'%Y_%m_%d')"
+          ODDS_FILE="docs/win/baseball/mlb/odds/latest/${TARGET_DATE}.json"
+          test -f "${ODDS_FILE}"
+          python docs/win/baseball/mlb/scripts/00_intake/odds_parse.py "${ODDS_FILE}"
+
+      - name: MLB Name Normalization Pre
+        run: python docs/win/baseball/mlb/scripts/00_intake/name_normalization.py
+
+      - name: MLB DRAT Scraper
+        run: python docs/win/baseball/mlb/scripts/00_intake/baseball_drat_scraper.py
+
+      - name: MLB Transform Baseball
+        run: python docs/win/baseball/mlb/scripts/00_intake/transform_baseball.py
+
+      - name: MLB Name Normalization Post
+        run: python docs/win/baseball/mlb/scripts/00_intake/name_normalization.py
+
+      - name: MLB Scrape Raw
+        run: python docs/win/baseball/mlb/scripts/00_intake/scrape_mlb_raw.py
+
+      - name: MLB Build Games List
+        run: python docs/win/baseball/mlb/scripts/00_intake/build_games_list.py
+
+      - name: MLB SportsDataverse Features
+        run: python docs/win/baseball/mlb/scripts/00_intake/sportsdataverse_mlb.py
+
+      - name: MLB Fetch Park Weather
+        run: python docs/win/baseball/mlb/scripts/00_intake/fetch_park_weather.py
+
+      - name: MLB Build Game Weather
+        run: python docs/win/baseball/mlb/scripts/00_intake/build_game_weather.py
+
+      - name: MLB Enrich Game Context
+        run: python docs/win/baseball/mlb/scripts/00_intake/enrich_game_context.py
+
+      - name: MLB Game ID Predictions
+        run: python docs/win/baseball/mlb/scripts/00_intake/game_id_pred.py
+
+      - name: MLB Build Run Projection
+        run: python docs/win/baseball/mlb/scripts/00_intake/brp_pregame.py
+
+      - name: MLB Full Historical Run Projection Rebuild
+        if: steps.workflow_day.outputs.is_monday == 'true'
+        run: python docs/win/baseball/mlb/scripts/00_intake/build_run_projection.py
+
+      - name: MLB Merge Intake
+        run: python docs/win/baseball/mlb/scripts/01_merge/merge_intake.py
+
+      - name: MLB Build Juice Files
+        run: python docs/win/baseball/mlb/scripts/01_merge/build_juice_files.py
+
+      - name: MLB Compute Edges
+        run: python docs/win/baseball/mlb/scripts/03_edges/compute_edges.py
+
+      - name: MLB Compute EV Kelly
+        run: python docs/win/baseball/mlb/scripts/03_edges/compute_ev_kelly.py
+
+      - name: MLB Select Bets
+        run: python docs/win/baseball/mlb/scripts/04_select/baseball_select_bets.py
+
+      # ============================================================
+      # RESULTS AND GRADING
+      # ============================================================
+
+      - name: Check for selected bet files
+        id: selected_bets
+        shell: bash
+        run: |
+          if find docs/win/baseball/mlb/04_select \
+            -maxdepth 1 \
+            -type f \
+            ! -name ".gitkeep" \
+            | grep -q .; then
+            echo "found=true" >> "$GITHUB_OUTPUT"
+            echo "Selected-bet files found."
+          else
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            echo "No selected-bet files found. Skipping grading, reports, and dashboard generation."
+          fi
+
+      - name: MLB Normalize Results
+        if: steps.selected_bets.outputs.found == 'true'
+        run: python docs/win/baseball/mlb/scripts/05_final_scores/normalize_mlb_results.py
+
+      - name: MLB Grade Results
+        id: grade_results
+        if: steps.selected_bets.outputs.found == 'true'
+        continue-on-error: true
+        run: python docs/win/baseball/mlb/scripts/05_final_scores/01_mlb_results_grade.py
+
+      - name: MLB Analyze Results
+        if: steps.selected_bets.outputs.found == 'true' && steps.grade_results.outcome == 'success'
+        run: python docs/win/baseball/mlb/scripts/05_final_scores/02_mlb_results_analyze.py
+
+      - name: MLB Build Results Reports
+        if: steps.selected_bets.outputs.found == 'true' && steps.grade_results.outcome == 'success'
+        run: python docs/win/baseball/mlb/scripts/05_final_scores/03_mlb_results_reports.py
+
+      - name: MLB Build Results Dashboard
+        if: steps.selected_bets.outputs.found == 'true' && steps.grade_results.outcome == 'success'
+        run: python docs/win/baseball/mlb/scripts/05_final_scores/04_mlb_results_dashboard.py
+
+      - name: MLB Pipeline Health
+        if: always()
+        env:
+          MLB_PIPELINE_WORKFLOW: pregame
+          MLB_PIPELINE_JOB_STATUS: ${{ job.status }}
+        run: python docs/win/baseball/mlb/scripts/pipeline_health.py
+
+      # ============================================================
+      # COMMIT AND PUBLISH OUTPUTS
+      # ============================================================
+
+      - name: Commit MLB outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add docs/win/baseball/mlb/
+          git add frontend/data/dashboards/baseball.json
+
+          # Exclude generated audit and candidate-model artifacts.
+          git restore --staged -- \
+            docs/win/baseball/mlb/audit/leakage_audit.csv \
+            2>/dev/null || true
+
+          git restore --staged -- \
+            docs/win/baseball/mlb/models/run_projection/candidates/ \
+            2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "No MLB output changes to commit."
+          else
+            git commit -m "chore: update MLB pregame pipeline outputs"
+            git pull --rebase --autostash origin main
+            git push origin main
+          fi
+
+      - name: Commit MLB pipeline health frontend
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add docs/win/baseball/mlb/pipeline_health.json
+          git add frontend/data/pipeline_health/mlb.json
+
+          if git diff --cached --quiet; then
+            echo "No MLB pipeline health changes to commit."
+          else
+            git commit -m "chore: update MLB pipeline health"
+            git pull --rebase --autostash origin main
+            git push origin main
+          fi
