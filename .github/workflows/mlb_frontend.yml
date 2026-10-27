@@ -3,11 +3,6 @@ name: Export MLB Frontend JSON
 
 on:
   workflow_dispatch:
-    inputs:
-      date:
-        description: "YYYY_MM_DD (blank = today in Eastern time)"
-        required: false
-        type: string
 
 permissions:
   contents: write
@@ -15,6 +10,7 @@ permissions:
 jobs:
   export:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v6
         with:
@@ -25,7 +21,7 @@ jobs:
           python-version: "3.11"
 
       - name: Create frontend JSON
-        run: python docs/win/baseball/mlb/scripts/frontend.py --date "${{ inputs.date }}"
+        run: python docs/win/baseball/mlb/scripts/frontend.py
 
       - name: Commit and push frontend JSON
         run: |
