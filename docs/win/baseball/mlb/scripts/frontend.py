@@ -6,7 +6,7 @@ Run from any working directory:
 
 Per date, writes:
     frontend/data/mlb/YYYY_MM_DD_mlb_games.csv  (one row per scheduled game)
-    frontend/data/mlb/YYYY_MM_DD_mlb_picks.csv  (unchanged selection rows)
+    frontend/data/mlb/YYYY_MM_DD_mlb_picks.csv  (only with selected bets)
 
 Only docs/win/baseball/mlb/04_select/YYYY_MM_DD_MLB.csv supplies picks.
 No JSON is produced, and source files are never modified.
@@ -29,17 +29,6 @@ WEATHER_FIELDS = (
     "wind_dir", "precip_in", "humidity", "will_it_rain",
     "wind_blowing_out", "air_pressure_at_sea_level", "dew_point_f",
     "symbol_code",
-)
-
-# Only used when a particular date has no 04_select/YYYY_MM_DD_MLB.csv.
-PICK_HEADERS = (
-    "game_id", "sport", "game_date", "game_time", "league", "away_team",
-    "home_team", "home_batters_found", "away_batters_found", "home_sp_found",
-    "away_sp_found", "market_type", "bet_side", "market", "side", "line",
-    "take_bet", "dk_odds_american", "dk_odds_decimal", "model_prob",
-    "prob_used_for_selection", "prob_for_ev", "prob_for_kelly",
-    "ev_probability_source", "kelly_probability_source", "ev", "kelly",
-    "selection_reason", "low_confidence",
 )
 
 GAME_FIRST_COLUMNS = (
@@ -133,7 +122,7 @@ def write_csv(path: Path, headers: list[str], rows: list[dict[str, str]]) -> Non
         temporary.unlink(missing_ok=True)
 
 
-def build(date: str, *, pitchers: dict, teams: dict, venues: dict) -> None:
+def build(date: str, *, pitchers: dict, teams: dict, venues: dict) -> bool:
     schedule_path = MLB / f"00_intake/games/{date}_games.csv"
     schedule_headers, schedule_rows = read_csv(schedule_path, required=True)
     column_order = list(GAME_FIRST_COLUMNS)
@@ -273,11 +262,9 @@ def build(date: str, *, pitchers: dict, teams: dict, venues: dict) -> None:
 
     picks_source = MLB / f"04_select/{date}_MLB.csv"
     pick_headers, picks = read_csv(picks_source)
-    if not pick_headers:
-        pick_headers = list(PICK_HEADERS)
-    elif "game_id" not in pick_headers:
+    if picks and "game_id" not in pick_headers:
         raise ValueError(f"Selected bets CSV missing game_id column: {picks_source}")
-    # Preserve every source pick exactly; a missing file means header-only CSV.
+    # Preserve every selection row from 04_select; a missing or empty file means no picks CSV.
     for pick in picks:
         if pick.get("game_id", "") not in games_by_id:
             print(
@@ -288,9 +275,18 @@ def build(date: str, *, pitchers: dict, teams: dict, venues: dict) -> None:
     game_dest = OUT / f"{date}_mlb_games.csv"
     picks_dest = OUT / f"{date}_mlb_picks.csv"
     write_csv(game_dest, headers, games)
-    write_csv(picks_dest, pick_headers, picks)
     print(f"WROTE {game_dest.relative_to(ROOT)}: {len(games)} games")
-    print(f"WROTE {picks_dest.relative_to(ROOT)}: {len(picks)} selected bets")
+    if picks:
+        write_csv(picks_dest, pick_headers, picks)
+        print(f"WROTE {picks_dest.relative_to(ROOT)}: {len(picks)} selected bets")
+    else:
+        # Clear obsolete header-only output from previous exporter runs.
+        if picks_dest.is_file():
+            picks_dest.unlink()
+            print(f"REMOVED {picks_dest.relative_to(ROOT)}: no selected bets")
+        else:
+            print(f"SKIPPED {picks_dest.relative_to(ROOT)}: no selected bets")
+    return bool(picks)
 
 
 def main() -> None:
@@ -313,9 +309,15 @@ def main() -> None:
     pitchers = load_map("mlb_pitcher_ids.csv", "pitcher_id")
     teams = load_map("mlb_team_ids.csv", "team_id")
     venues = load_map("mlb_venue_ids.csv", "venue_id")
-    for date in dates:
+    picks_dates = sum(
         build(date, pitchers=pitchers, teams=teams, venues=venues)
-    print(f"Export complete: {len(dates)} dates, {len(dates) * 2} CSV files")
+        for date in dates
+    )
+    print(
+        f"Export complete: {len(dates)} dates, "
+        f"{len(dates) + picks_dates} CSV files "
+        f"({len(dates)} games, {picks_dates} picks)"
+    )
 
 
 if __name__ == "__main__":
