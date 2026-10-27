@@ -251,11 +251,8 @@ def main():
     venue_map = optional_map(MAPS_DIR / "mlb_venue_ids.csv", "venue_id")
     team_map = optional_map(MAPS_DIR / "mlb_team_ids.csv", "team_id")
     dates = [args.date] if args.date else sorted({
-        match.group(1)
-        for path in INPUT_DIR.iterdir()
-        if path.is_file()
-        for match in (FILENAME.fullmatch(path.name),)
-        if match is not None
+        m.group(1) for path in INPUT_DIR.iterdir()
+        if path.is_file() and (m := FILENAME.fullmatch(path.name))
     })
     if not dates:
         raise FileNotFoundError(f"No dated MLB input CSVs in {INPUT_DIR}")

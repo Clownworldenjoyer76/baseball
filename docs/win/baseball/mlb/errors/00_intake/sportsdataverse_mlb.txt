@@ -1,16 +1,17 @@
-=== sportsdataverse_mlb RUN 2026-10-24T07:47:21.225880+00:00 ===
-2026-10-24T07:47:21.226653+00:00 | INFO  | dates=['2026_10_24'] lookback_days=30 cache_dir=docs/win/baseball/mlb/00_intake/sportsdataverse/cache
-2026-10-24T07:47:21.241024+00:00 | INFO  | Bullpen Statcast fetch start=2026-09-28 end=2026-10-01
-2026-10-24T07:47:21.419774+00:00 | INFO  | Bullpen Statcast fetch start=2026-10-02 end=2026-10-05
-2026-10-24T07:47:21.447722+00:00 | INFO  | Bullpen Statcast fetch start=2026-10-06 end=2026-10-09
-2026-10-24T07:47:21.475228+00:00 | INFO  | Bullpen Statcast fetch start=2026-10-10 end=2026-10-13
-2026-10-24T07:47:21.503565+00:00 | INFO  | Bullpen Statcast fetch start=2026-10-14 end=2026-10-17
-2026-10-24T07:47:21.530970+00:00 | INFO  | Bullpen Statcast fetch start=2026-10-18 end=2026-10-21
-2026-10-24T07:47:21.556668+00:00 | INFO  | Bullpen Statcast fetch start=2026-10-22 end=2026-10-23
-2026-10-24T07:47:22.360637+00:00 | INFO  | BULLPEN CACHE HIT docs/win/baseball/mlb/00_intake/sportsdataverse/cache/2026_team_statcast.parquet rows=716792
-2026-10-24T07:47:22.362393+00:00 | INFO  | 2026_10_24 | games=1 pitchers=2 as_of=2026-10-23
-2026-10-24T07:47:22.531961+00:00 | INFO  | Statcast fetch season=2026 start=2026-09-23 end=2026-10-23 pitchers=2
-2026-10-24T07:47:28.078411+00:00 | INFO  | CACHE WROTE docs/win/baseball/mlb/00_intake/sportsdataverse/cache/2026_pitcher_statcast.parquet rows=454183 fetched_rows=87
-2026-10-24T07:47:28.086595+00:00 | INFO  | 2026_10_24 | pregame Statcast pitches=4165
-2026-10-24T07:47:28.166357+00:00 | INFO  | 2026_10_24 | WROTE docs/win/baseball/mlb/00_intake/sportsdataverse/2026_10_24_sportsdataverse.csv rows=1 home_sp_found=1/1 away_sp_found=1/1
-2026-10-24T07:47:28.166752+00:00 | INFO  | SUMMARY files_written=1 rows_written=1 pregame_statcast_pitches=4165 statcast_pitches_fetched=87 cache_writes=1 team_statcast_pitches_fetched=0 team_cache_writes=0 errors=0 status=SUCCESS
+=== sportsdataverse_mlb RUN 2026-10-27T07:49:15.399143+00:00 ===
+2026-10-27T07:49:15.400373+00:00 | INFO  | dates=['2026_10_27'] lookback_days=30 cache_dir=docs/win/baseball/mlb/00_intake/sportsdataverse/cache
+2026-10-27T07:49:15.423140+00:00 | INFO  | Bullpen Statcast fetch start=2026-09-28 end=2026-10-01
+2026-10-27T07:49:15.508464+00:00 | INFO  | Bullpen Statcast fetch start=2026-10-02 end=2026-10-05
+2026-10-27T07:49:15.528534+00:00 | INFO  | Bullpen Statcast fetch start=2026-10-06 end=2026-10-09
+2026-10-27T07:49:15.549392+00:00 | INFO  | Bullpen Statcast fetch start=2026-10-10 end=2026-10-13
+2026-10-27T07:49:15.567283+00:00 | INFO  | Bullpen Statcast fetch start=2026-10-14 end=2026-10-17
+2026-10-27T07:49:15.585138+00:00 | INFO  | Bullpen Statcast fetch start=2026-10-18 end=2026-10-21
+2026-10-27T07:49:15.605175+00:00 | INFO  | Bullpen Statcast fetch start=2026-10-22 end=2026-10-25
+2026-10-27T07:49:15.623375+00:00 | INFO  | Bullpen Statcast fetch start=2026-10-26 end=2026-10-26
+2026-10-27T07:49:16.198349+00:00 | INFO  | BULLPEN CACHE HIT docs/win/baseball/mlb/00_intake/sportsdataverse/cache/2026_team_statcast.parquet rows=716792
+2026-10-27T07:49:16.200871+00:00 | INFO  | 2026_10_27 | games=1 pitchers=1 as_of=2026-10-26
+2026-10-27T07:49:16.439871+00:00 | INFO  | Statcast fetch season=2026 start=2026-09-27 end=2026-10-26 pitchers=1
+2026-10-27T07:49:20.202555+00:00 | INFO  | CACHE HIT docs/win/baseball/mlb/00_intake/sportsdataverse/cache/2026_pitcher_statcast.parquet rows=454183
+2026-10-27T07:49:20.210843+00:00 | INFO  | 2026_10_27 | pregame Statcast pitches=1732
+2026-10-27T07:49:20.301768+00:00 | INFO  | 2026_10_27 | WROTE docs/win/baseball/mlb/00_intake/sportsdataverse/2026_10_27_sportsdataverse.csv rows=1 home_sp_found=1/1 away_sp_found=0/1
+2026-10-27T07:49:20.302543+00:00 | INFO  | SUMMARY files_written=1 rows_written=1 pregame_statcast_pitches=1732 statcast_pitches_fetched=0 cache_writes=0 team_statcast_pitches_fetched=0 team_cache_writes=0 errors=0 status=SUCCESS

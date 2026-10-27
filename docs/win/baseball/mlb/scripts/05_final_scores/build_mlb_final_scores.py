@@ -1914,6 +1914,8 @@ def _add_record_without_game_id(
         f"existing_source_file={existing_source_file}"
     )
 
+    return "failed"
+
 
 def add_final_record(
     *,
