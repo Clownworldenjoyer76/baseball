@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """Export MLB frontend JSON for every historical date with a games CSV.
 
@@ -169,7 +168,11 @@ def build(date: str) -> Path:
         for game_id, row in index_unique(read_csv(source), "game_id", source).items():
             game = by_id.get(game_id)
             if game is None:
-                raise ValueError(f"Unknown game_id={game_id} in {source}")
+                print(
+                    f"WARNING: Skipping unmatched supplemental game_id={game_id} "
+                    f"in {source.relative_to(ROOT)}"
+                )
+                continue
             merge_fields(game, row, source, strict=False)
 
     # Preserve calculated moneyline model probabilities and EV/Kelly fields.
