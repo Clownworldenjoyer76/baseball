@@ -159,7 +159,11 @@ def build(date: str) -> Path:
     context = read_csv(context_path)
     for game_pk, row in index_unique(context, "gamePk", context_path).items():
         if game_pk not in games:
-            raise ValueError(f"Unknown context gamePk={game_pk} in {context_path}")
+            print(
+                f"WARNING: Skipping unmatched supplemental gamePk={game_pk} "
+                f"in {context_path.relative_to(ROOT)}"
+            )
+            continue
         merge_fields(games[game_pk], row, context_path, strict=False)
 
     pred_path = MLB / f"00_intake/predictions/pred_with_game_id/{date}_MLB.csv"
@@ -190,7 +194,11 @@ def build(date: str) -> Path:
     weather = read_csv(weather_path)
     for game_pk, row in index_unique(weather, "gamePk", weather_path).items():
         if game_pk not in games:
-            raise ValueError(f"Unknown weather gamePk={game_pk} in {weather_path}")
+            print(
+                f"WARNING: Skipping unmatched supplemental gamePk={game_pk} "
+                f"in {weather_path.relative_to(ROOT)}"
+            )
+            continue
         game = games[game_pk]
         for key in WEATHER_FIELDS:
             if row.get(key) is not None:
