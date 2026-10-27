@@ -1,25 +1,21 @@
 
 #!/usr/bin/env python3
-"""Export a single dated MLB frontend JSON from committed pipeline CSVs.
+"""Export MLB frontend JSON for every historical date with a games CSV.
 
-Run from anywhere:
+Run:
     python docs/win/baseball/mlb/scripts/frontend.py
-    python docs/win/baseball/mlb/scripts/frontend.py --date 2026_10_27
 
-The export has one game object per schedule game, with zero or more
-selected_bets. It does not alter any pipeline inputs or grading files.
+Writes frontend/data/mlb/YYYY_MM_DD_mlb_frontend.json for every date.
+Each game has zero or more selected_bets. Pipeline inputs are unchanged.
 """
 
 from __future__ import annotations
 
-import argparse
 import csv
 import json
 import math
 import re
-from datetime import datetime
 from pathlib import Path
-from zoneinfo import ZoneInfo
 
 
 ROOT = Path(__file__).resolve().parents[5]
@@ -178,7 +174,8 @@ def build(date: str) -> Path:
 
     # Preserve calculated moneyline model probabilities and EV/Kelly fields.
     ev_path = MLB / f"03_edges/ev_kelly/{date}_mlb_moneyline.csv"
-    ev_rows = read_csv(ev_path, required=True)
+    # Older dates predate the moneyline EV export. Include all dates anyway.
+    ev_rows = read_csv(ev_path)
     for game_id, row in index_unique(ev_rows, "game_id", ev_path).items():
         game = by_id.get(game_id)
         if game is None:
@@ -269,17 +266,21 @@ def build(date: str) -> Path:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--date", default="", help="YYYY_MM_DD; defaults to today in America/New_York")
-    args = parser.parse_args()
-    date = args.date.strip() or datetime.now(ZoneInfo("America/New_York")).strftime("%Y_%m_%d")
-    if not re.fullmatch(r"\d{4}_\d{2}_\d{2}", date):
-        parser.error("--date must be YYYY_MM_DD")
-    try:
-        datetime.strptime(date, "%Y_%m_%d")
-    except ValueError:
-        parser.error("--date is not a valid calendar date")
-    build(date)
+    games_dir = MLB / "00_intake/games"
+    if not games_dir.is_dir():
+        raise FileNotFoundError(f"Missing games directory: {games_dir}")
+
+    dates = sorted({
+        match.group(1)
+        for path in games_dir.glob("*_games.csv")
+        if (match := re.fullmatch(r"(\d{4}_\d{2}_\d{2})_games\.csv", path.name))
+    })
+    if not dates:
+        raise FileNotFoundError(f"No dated games CSVs found in {games_dir}")
+
+    for date in dates:
+        build(date)
+    print(f"Export complete: {len(dates)} dated MLB frontend JSON files")
 
 
 if __name__ == "__main__":
