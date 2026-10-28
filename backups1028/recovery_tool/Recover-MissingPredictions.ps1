@@ -366,7 +366,7 @@ foreach ($date in @($Plans.Keys | Sort-Object)) {
             $stream.Flush($true)
         } finally { $stream.Dispose() }
         if ($exists) {
-            [IO.File]::Replace($temp, $path, $null)
+            [IO.File]::Replace($temp, $path, (Join-Path $RunDir ("replace_backup_" + [IO.Path]::GetFileName($path))))
         } else {
             [IO.File]::Move($temp, $path)
         }
