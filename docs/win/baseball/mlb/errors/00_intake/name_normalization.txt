@@ -1,21 +1,10 @@
-=== name_normalization RUN 2026-10-28T07:16:48.423368+00:00 ===
-2026-10-28T07:16:48.423837+00:00 | INFO  | Team map loaded: 62 alias entries from docs/win/baseball/mlb/maps/team_map_mlb.csv | duplicate identical rows skipped: 0
-2026-10-28T07:16:48.425356+00:00 | INFO  | Files to process: 403
-2026-10-28T07:16:48.431511+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_03_MLB.csv row=9 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-28T07:16:48.431782+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_03_MLB.csv
-2026-10-28T07:16:48.432041+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_10_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-28T07:16:48.432244+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_10_MLB.csv
-2026-10-28T07:16:48.432616+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_20_MLB.csv row=11 away_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-28T07:16:48.432640+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_08_20_MLB.csv row=14 away_team: 'Oakland Athletics' -> 'Athletics'
-2026-10-28T07:16:48.433203+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_08_20_MLB.csv
-2026-10-28T07:16:48.433822+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_11_MLB.csv row=16 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-28T07:16:48.434060+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_11_MLB.csv
-2026-10-28T07:16:48.434168+00:00 | INFO  | docs/win/baseball/mlb/00_intake/predictions/2026_09_14_MLB.csv row=11 home_team: 'St. Louis Cardinals' -> 'St Louis Cardinals'
-2026-10-28T07:16:48.434371+00:00 | INFO  | UPDATED: docs/win/baseball/mlb/00_intake/predictions/2026_09_14_MLB.csv
-2026-10-28T07:16:48.445714+00:00 | INFO  | --- SUMMARY ---
-2026-10-28T07:16:48.445731+00:00 | INFO  | Files processed: 403
-2026-10-28T07:16:48.445744+00:00 | INFO  | Rows processed: 4366
-2026-10-28T07:16:48.445757+00:00 | INFO  | Names normalized: 6
-2026-10-28T07:16:48.445770+00:00 | INFO  | Unmapped teams: 0
-2026-10-28T07:16:48.445787+00:00 | INFO  | Errors: 0
-2026-10-28T07:16:48.445800+00:00 | INFO  | STATUS: SUCCESS
+=== name_normalization RUN 2026-10-28T11:47:15.046406+00:00 ===
+2026-10-28T11:47:15.046882+00:00 | INFO  | Team map loaded: 62 alias entries from docs/win/baseball/mlb/maps/team_map_mlb.csv | duplicate identical rows skipped: 0
+2026-10-28T11:47:15.048570+00:00 | INFO  | Files to process: 403
+2026-10-28T11:47:15.076711+00:00 | INFO  | --- SUMMARY ---
+2026-10-28T11:47:15.076742+00:00 | INFO  | Files processed: 403
+2026-10-28T11:47:15.076760+00:00 | INFO  | Rows processed: 4701
+2026-10-28T11:47:15.076777+00:00 | INFO  | Names normalized: 0
+2026-10-28T11:47:15.076795+00:00 | INFO  | Unmapped teams: 0
+2026-10-28T11:47:15.076812+00:00 | INFO  | Errors: 0
+2026-10-28T11:47:15.076828+00:00 | INFO  | STATUS: SUCCESS

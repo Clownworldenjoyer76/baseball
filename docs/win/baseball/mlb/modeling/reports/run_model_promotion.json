@@ -8,18 +8,18 @@
     "home": {
       "baseline_system": "dratings",
       "metric": "mean_poisson_deviance",
-      "baseline_value": 1.8064947958438442,
-      "candidate_value": 1.9532797842759178,
+      "baseline_value": 1.8191173379158363,
+      "candidate_value": 1.955579072789156,
       "candidate_lte_baseline": false,
-      "difference_candidate_minus_baseline": 0.14678498843207355
+      "difference_candidate_minus_baseline": 0.1364617348733197
     },
     "away": {
       "baseline_system": "dratings",
       "metric": "mean_poisson_deviance",
-      "baseline_value": 1.9740170775995065,
-      "candidate_value": 1.9745300474742047,
+      "baseline_value": 1.8657821274614217,
+      "candidate_value": 1.867822666310446,
       "candidate_lte_baseline": false,
-      "difference_candidate_minus_baseline": 0.000512969874698177
+      "difference_candidate_minus_baseline": 0.0020405388490243315
     }
   },
   "market_comparison": {
@@ -27,34 +27,34 @@
       "baseline_system": "dratings",
       "metric": "log_loss",
       "evaluation_side": "home",
-      "rows": 72,
-      "baseline_value": 0.6425614146207561,
-      "candidate_value": 0.6849015422716078,
+      "rows": 78,
+      "baseline_value": 0.6429125532858426,
+      "candidate_value": 0.6924803689286815,
       "candidate_lte_baseline": false,
-      "difference_candidate_minus_baseline": 0.04234012765085171
+      "difference_candidate_minus_baseline": 0.04956781564283885
     },
     "run_line": {
       "baseline_system": "dratings",
       "metric": "log_loss",
       "evaluation_side": "home",
-      "rows": 71,
-      "baseline_value": 0.7051299500230894,
-      "candidate_value": 0.7413457156967834,
+      "rows": 77,
+      "baseline_value": 0.6973957707184762,
+      "candidate_value": 0.7370545428839181,
       "candidate_lte_baseline": false,
-      "difference_candidate_minus_baseline": 0.036215765673694
+      "difference_candidate_minus_baseline": 0.03965877216544189
     },
     "total": {
       "baseline_system": "dratings",
       "metric": "log_loss",
       "evaluation_side": "over_resolved",
-      "rows": 68,
-      "baseline_value": 0.6962322312301282,
-      "candidate_value": 0.7449316221293496,
+      "rows": 74,
+      "baseline_value": 0.6921717425196471,
+      "candidate_value": 0.7322206246111557,
       "candidate_lte_baseline": false,
-      "difference_candidate_minus_baseline": 0.04869939089922137
+      "difference_candidate_minus_baseline": 0.040048882091508586
     }
   },
-  "evaluated_at": "2026-10-28T07:16:13.223025+00:00",
+  "evaluated_at": "2026-10-28T11:46:43.794651+00:00",
   "candidate_dir": "docs/win/baseball/mlb/models/run_projection/candidates",
   "production_model_dir": "docs/win/baseball/mlb/models/run_projection",
   "production_artifacts_changed": false,
