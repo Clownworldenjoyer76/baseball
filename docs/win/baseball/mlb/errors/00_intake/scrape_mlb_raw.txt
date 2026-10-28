@@ -1,11 +1,11 @@
-=== scrape_mlb_raw RUN 2026-10-27T22:15:50.359280+00:00 ===
-2026-10-27T22:15:50.359375+00:00 | INFO  | Target date: 2026-10-27
-2026-10-27T22:15:50.359404+00:00 | INFO  | Output file: docs/win/baseball/mlb/00_intake/mlb_raw/2026_10_27_mlb_raw.csv
-2026-10-27T22:15:50.640262+00:00 | WARN  | Lineup unavailable for gamePk=849803: HTTP error for https://statsapi.mlb.com/api/v1/game/849803/lineups: 404 Not Found
-2026-10-27T22:15:50.641542+00:00 | INFO  | --- SUMMARY ---
-2026-10-27T22:15:50.641568+00:00 | INFO  | Schedule games found: 1
-2026-10-27T22:15:50.641586+00:00 | INFO  | Scheduled or pre-game games: 1
-2026-10-27T22:15:50.641604+00:00 | INFO  | Rows fetched this run: 1
-2026-10-27T22:15:50.641623+00:00 | INFO  | Final output rows: 1
-2026-10-27T22:15:50.641640+00:00 | INFO  | Output file: docs/win/baseball/mlb/00_intake/mlb_raw/2026_10_27_mlb_raw.csv
-2026-10-27T22:15:50.641668+00:00 | INFO  | STATUS: SUCCESS
+=== scrape_mlb_raw RUN 2026-10-28T07:16:48.498976+00:00 ===
+2026-10-28T07:16:48.499070+00:00 | INFO  | Target date: 2026-10-28
+2026-10-28T07:16:48.499092+00:00 | INFO  | Output file: docs/win/baseball/mlb/00_intake/mlb_raw/2026_10_28_mlb_raw.csv
+2026-10-28T07:16:48.940821+00:00 | WARN  | Lineup unavailable for gamePk=849799: HTTP error for https://statsapi.mlb.com/api/v1/game/849799/lineups: 404 Not Found
+2026-10-28T07:16:48.941816+00:00 | INFO  | --- SUMMARY ---
+2026-10-28T07:16:48.941835+00:00 | INFO  | Schedule games found: 1
+2026-10-28T07:16:48.941850+00:00 | INFO  | Scheduled or pre-game games: 1
+2026-10-28T07:16:48.941864+00:00 | INFO  | Rows fetched this run: 1
+2026-10-28T07:16:48.941880+00:00 | INFO  | Final output rows: 1
+2026-10-28T07:16:48.941894+00:00 | INFO  | Output file: docs/win/baseball/mlb/00_intake/mlb_raw/2026_10_28_mlb_raw.csv
+2026-10-28T07:16:48.941908+00:00 | INFO  | STATUS: SUCCESS

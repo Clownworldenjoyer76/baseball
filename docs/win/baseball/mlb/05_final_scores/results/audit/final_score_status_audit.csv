@@ -7912,3 +7912,4 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_10_11,401908030,,,Los Angeles Dodgers,Milwaukee Brewers,1,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
 2026_10_10,401907994,,,Chicago White Sox,Cleveland Guardians,0,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
 2026_10_08,,,,Cleveland Guardians,Chicago White Sox,9,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_10_27,401908045,849803,1,Milwaukee Brewers,Tampa Bay Rays,3,4,final,MLB StatsAPI gamePk fallback,True,DRatings/existing finals did not contain this game; official MLB final score added using gamePk=849803
