@@ -6062,3 +6062,40 @@ STATUS: SUCCESS
 2026-10-29T16:59:46.666161+00:00 | INFO  | WROTE: G:\baseball\docs\win\baseball\mlb\00_intake\predictions\pred_with_game_id\2026_06_17_MLB.csv | rows=14
 2026-10-29T16:59:46.666161+00:00 | INFO  | REMOVED STALE REJECTION FILE: docs\win\baseball\mlb\00_intake\predictions\pred_with_game_id\rejections\2026_06_17_unmatched_predictions.csv
 2026-10-29T16:59:46.666161+00:00 | INFO  | 2026_06_17 | WROTE: docs\win\baseball\mlb\00_intake\predictions\pred_with_game_id\2026_06_17_MLB.csv | rows=14 matched=14 preserved_rows=0 input_predictions=14 sportsbook_rows=14 eligible_predictions=14 nonfatal_rejections=0 fatal_rejections=0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK ORDER MATCH duplicate matchup: Milwaukee Brewers @ St Louis Cardinals pred_count=2 book_count=2
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH order: Milwaukee Brewers @ St Louis Cardinals pred_time=02:15 PM book_time=14:15:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH order: Milwaukee Brewers @ St Louis Cardinals pred_time=07:45 PM book_time=19:45:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH one-to-one: Chicago Cubs @ Baltimore Orioles pred_time=06:35 PM book_time=18:35:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH one-to-one: Atlanta Braves @ Pittsburgh Pirates pred_time=06:40 PM book_time=18:40:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH one-to-one: Athletics @ Detroit Tigers pred_time=06:40 PM book_time=18:40:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH one-to-one: New York Yankees @ Tampa Bay Rays pred_time=06:40 PM book_time=18:40:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH one-to-one: Seattle Mariners @ Miami Marlins pred_time=06:40 PM book_time=18:40:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH one-to-one: Houston Astros @ Washington Nationals pred_time=06:45 PM book_time=18:45:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH one-to-one: Philadelphia Phillies @ Cincinnati Reds pred_time=07:10 PM book_time=19:10:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH one-to-one: Kansas City Royals @ New York Mets pred_time=07:10 PM book_time=19:10:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH one-to-one: Boston Red Sox @ Chicago White Sox pred_time=07:40 PM book_time=19:40:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH one-to-one: Cleveland Guardians @ Minnesota Twins pred_time=07:40 PM book_time=19:40:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH one-to-one: Los Angeles Angels @ Texas Rangers pred_time=08:05 PM book_time=20:05:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH one-to-one: Arizona Diamondbacks @ San Diego Padres pred_time=09:40 PM book_time=21:40:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH one-to-one: Toronto Blue Jays @ San Francisco Giants pred_time=09:45 PM book_time=21:45:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | SPORTSBOOK MATCH one-to-one: Colorado Rockies @ Los Angeles Dodgers pred_time=10:10 PM book_time=22:10:00 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | ORDER MATCH duplicate matchup: Milwaukee Brewers @ St Louis Cardinals eligible_pred_count=2 games_count=2
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED order: Milwaukee Brewers @ St Louis Cardinals pred_time=02:15 PM games_time=14:15:00 gameNumber=1 game_id=71325506 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED order: Milwaukee Brewers @ St Louis Cardinals pred_time=07:45 PM games_time=19:45:00 gameNumber=2 game_id=823035 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED one-to-one: Chicago Cubs @ Baltimore Orioles pred_time=06:35 PM games_time=18:35:00 game_id=63299245 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED one-to-one: Atlanta Braves @ Pittsburgh Pirates pred_time=06:40 PM games_time=18:40:00 game_id=63301171 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED one-to-one: Athletics @ Detroit Tigers pred_time=06:40 PM games_time=18:40:00 game_id=63302483 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED one-to-one: New York Yankees @ Tampa Bay Rays pred_time=06:40 PM games_time=18:40:00 game_id=63301573 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED one-to-one: Seattle Mariners @ Miami Marlins pred_time=06:40 PM games_time=18:40:00 game_id=63302303 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED one-to-one: Houston Astros @ Washington Nationals pred_time=06:45 PM games_time=18:45:00 game_id=63303535 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED one-to-one: Philadelphia Phillies @ Cincinnati Reds pred_time=07:10 PM games_time=19:10:00 game_id=63303167 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED one-to-one: Kansas City Royals @ New York Mets pred_time=07:10 PM games_time=19:10:00 game_id=63299407 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED one-to-one: Boston Red Sox @ Chicago White Sox pred_time=07:40 PM games_time=19:40:00 game_id=63299207 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED one-to-one: Cleveland Guardians @ Minnesota Twins pred_time=07:40 PM games_time=19:40:00 game_id=63302819 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED one-to-one: Los Angeles Angels @ Texas Rangers pred_time=08:05 PM games_time=20:05:00 game_id=63301917 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED one-to-one: Arizona Diamondbacks @ San Diego Padres pred_time=09:40 PM games_time=21:40:00 game_id=63300887 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED one-to-one: Toronto Blue Jays @ San Francisco Giants pred_time=09:45 PM games_time=21:45:00 game_id=63303455 diff_minutes=0.0
+2026-10-29T18:40:41.757468+00:00 | INFO  | 2026_07_07 | MATCHED one-to-one: Colorado Rockies @ Los Angeles Dodgers pred_time=10:10 PM games_time=22:10:00 game_id=63303417 diff_minutes=0.0
+2026-10-29T18:40:41.765826+00:00 | INFO  | WROTE: G:\baseball\docs\win\baseball\mlb\00_intake\predictions\pred_with_game_id\2026_07_07_MLB.csv | rows=16
+2026-10-29T18:40:41.765826+00:00 | INFO  | REMOVED STALE REJECTION FILE: docs\win\baseball\mlb\00_intake\predictions\pred_with_game_id\rejections\2026_07_07_unmatched_predictions.csv
+2026-10-29T18:40:41.765826+00:00 | INFO  | 2026_07_07 | WROTE: docs\win\baseball\mlb\00_intake\predictions\pred_with_game_id\2026_07_07_MLB.csv | rows=16 matched=16 preserved_rows=0 input_predictions=16 sportsbook_rows=16 eligible_predictions=16 nonfatal_rejections=0 fatal_rejections=0
