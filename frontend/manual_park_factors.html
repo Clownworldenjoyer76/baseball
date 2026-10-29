@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>MLB Manual Park Factors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #000000;
+      --foreground: #f2f2f2;
+      --text-muted: #7c8796;
+      --green: #00ff84;
+      --green-dim: rgba(0, 255, 132, 0.08);
+      --yellow: #facc15;
+      --red: #ff2d2d;
+      --blue: #00bfff;
+      --border: rgba(255, 255, 255, 0.09);
+      --card: #0c1118;
+      --card-hover: #111822;
+    }
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; margin: 0; background: #000000; }
+    body {
+      color: var(--foreground);
+      font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    }
+    .manual-header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding: 20px 24px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .manual-title {
+      margin: 0;
+      color: var(--green);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(27px, 4vw, 34px);
+      font-weight: 800;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+    .manual-title-slash { color: rgba(0, 255, 132, 0.28); margin: 0 4px; }
+    #status {
+      margin-left: auto;
+      color: var(--text-muted);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    #status.loading { color: var(--green); animation: pulse-text 1.2s ease infinite; }
+    @keyframes pulse-text { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+    .manual-controls {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 20px;
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .control-wrap { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+    .control-label {
+      color: var(--text-muted);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .manual-controls select, .manual-controls input, .manual-body textarea, .target-field {
+      width: 100%;
+      min-width: 0;
+      padding: 10px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 3px;
+      outline: none;
+      background: var(--card);
+      color: var(--foreground);
+      font: 12px 'IBM Plex Mono', monospace;
+      transition: border-color .15s, box-shadow .15s;
+    }
+    .manual-controls select { cursor: pointer; }
+    .manual-controls select:focus, .manual-controls input:focus, .manual-body textarea:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px var(--green-dim);
+    }
+    .manual-controls input[readonly], .target-field[readonly] {
+      color: #acb8c8;
+      cursor: default;
+    }
+    .manual-body { padding: 24px; }
+    .manual-card {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-left: 3px solid transparent;
+      border-radius: 3px;
+      background: var(--card);
+      transition: border-color .18s, background .18s;
+    }
+    .manual-card:hover { border-left-color: var(--green); background: var(--card-hover); }
+    .raw-label-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+    .raw-label, .target-label {
+      color: var(--text-muted);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .raw-hint {
+      color: var(--blue);
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-align: right;
+    }
+    .manual-body textarea {
+      display: block;
+      min-height: 280px;
+      resize: vertical;
+      line-height: 1.5;
+      background: #080c11;
+    }
+    .target-wrap { margin-top: 18px; }
+    .target-field { display: block; margin-top: 8px; overflow: hidden; text-overflow: ellipsis; }
+    .manual-card button {
+      width: 100%;
+      margin-top: 18px;
+      padding: 13px;
+      border: 1px solid rgba(0, 255, 132, 0.3);
+      border-radius: 3px;
+      background: transparent;
+      color: var(--green);
+      font: 700 11px 'IBM Plex Mono', monospace;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background .15s, border-color .15s;
+    }
+    .manual-card button:hover:not(:disabled) { background: var(--green-dim); border-color: var(--green); }
+    .manual-card button:disabled { color: var(--yellow); border-color: rgba(250, 204, 21, .45); cursor: wait; }
+    #out {
+      margin-top: 16px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 1.6;
+      text-align: center;
+      overflow-wrap: anywhere;
+    }
+    .success { color: var(--green); }
+    .failure { color: var(--red); }
+    .note { margin: 12px 0 0; font-size: 10px; line-height: 1.6; color: var(--text-muted); text-align: center; }
+    @media (max-width: 880px) { .manual-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 560px) {
+      .manual-header { padding: 20px 16px 16px; }
+      .manual-controls { grid-template-columns: 1fr; gap: 14px; padding: 16px; }
+      .manual-body { padding: 16px; }
+      .manual-card { padding: 16px; }
+      .raw-label-row { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="manual-header">
+    <h1 class="manual-title">MANUAL<span class="manual-title-slash">/</span>PARK FACTORS</h1>
+    <div id="status" role="status" aria-live="polite"></div>
+  </header>
+
+  <main>
+    <div class="manual-controls">
+      <div class="control-wrap">
+        <label class="control-label" for="league">League</label>
+        <input id="league" type="text" value="MLB" readonly aria-label="League: MLB">
+      </div>
+      <div class="control-wrap">
+        <label class="control-label" for="variable_1">Batter Side</label>
+        <select id="variable_1" required>
+          <option value="">-- select --</option>
+          <option value="B">Both (B)</option>
+          <option value="L">Left (L)</option>
+          <option value="R">Right (R)</option>
+        </select>
+      </div>
+      <div class="control-wrap">
+        <label class="control-label" for="variable_2">Condition</label>
+        <select id="variable_2" required>
+          <option value="">-- select --</option>
+          <option value="day">Day</option>
+          <option value="night">Night</option>
+          <option value="open_air">Open Air</option>
+          <option value="roof_closed">Roof Closed</option>
+        </select>
+      </div>
+      <div class="control-wrap">
+        <label class="control-label" for="token">Magic</label>
+        <input id="token" type="password" placeholder="••••••••" autocomplete="off" spellcheck="false" required>
+      </div>
+    </div>
+
+    <div class="manual-body">
+      <div class="manual-card">
+        <div class="raw-label-row">
+          <label for="raw" class="raw-label">Raw Text</label>
+          <span class="raw-hint">Paste Savant park-factor table (include header)</span>
+        </div>
+        <textarea id="raw" spellcheck="false" required></textarea>
+
+        <div class="target-wrap">
+          <label for="target_path" class="target-label">Target CSV Path (automatic)</label>
+          <input id="target_path" class="target-field" type="text" readonly placeholder="Select batter side and condition">
+        </div>
+
+        <button id="btn" type="button">Create File</button>
+        <div id="out" role="status" aria-live="polite"></div>
+        <p class="note">A successful submission triggers the GitHub workflow. File generation is completed separately by GitHub Actions.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    'use strict';
+
+    const OWNER = 'Clownworldenjoyer76';
+    const REPO = 'baseball';
+    const WORKFLOW_FILE = 'manual_park_factors.yml';
+    const REF = 'main';
+    const LEAGUE = 'baseball';
+    const ROOT_DIR = 'docs/win/baseball/mlb/data/park_factors';
+
+    const sideField = document.getElementById('variable_1');
+    const conditionField = document.getElementById('variable_2');
+    const targetField = document.getElementById('target_path');
+    const tokenField = document.getElementById('token');
+    const rawField = document.getElementById('raw');
+    const button = document.getElementById('btn');
+    const output = document.getElementById('out');
+    const status = document.getElementById('status');
+
+    function updateTargetPath() {
+      const side = sideField.value;
+      const condition = conditionField.value;
+      targetField.value = side && condition
+        ? `${ROOT_DIR}/park_${side}_${condition}.csv`
+        : '';
+    }
+
+    function setResult(message, ok) {
+      output.className = ok ? 'success' : 'failure';
+      output.textContent = message;
+      status.className = '';
+      status.textContent = ok ? 'Submitted' : 'Failed';
+    }
+
+    async function dispatch() {
+      const variable_1 = sideField.value;
+      const variable_2 = conditionField.value;
+      const target_path = targetField.value;
+      const raw_text = rawField.value;
+      const token = tokenField.value.trim();
+
+      if (!variable_1 || !variable_2 || !target_path || !token || !raw_text.trim()) {
+        setResult('Missing input: select a batter side and condition, enter Magic, and paste raw text.', false);
+        status.textContent = 'Missing Input';
+        return;
+      }
+
+      button.disabled = true;
+      button.textContent = 'Processing...';
+      output.className = '';
+      output.textContent = `Submitting to ${WORKFLOW_FILE}...`;
+      status.className = 'loading';
+      status.textContent = 'Submitting';
+
+      try {
+        const url = `https://api.github.com/repos/${OWNER}/${REPO}/actions/workflows/${WORKFLOW_FILE}/dispatches`;
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/vnd.github+json',
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json',
+            'X-GitHub-Api-Version': '2022-11-28'
+          },
+          body: JSON.stringify({
+            ref: REF,
+            inputs: {
+              league: LEAGUE,
+              variable_1,
+              variable_2,
+              raw_text,
+              target_path
+            }
+          })
+        });
+
+        if (response.status !== 204) {
+          throw new Error(`GitHub API returned HTTP ${response.status}`);
+        }
+
+        setResult(`Workflow triggered: ${WORKFLOW_FILE} | ${target_path}`, true);
+      } catch (error) {
+        setResult(`Submission failed: ${error instanceof Error ? error.message : String(error)}`, false);
+      } finally {
+        button.disabled = false;
+        button.textContent = 'Create File';
+      }
+    }
+
+    sideField.addEventListener('change', updateTargetPath);
+    conditionField.addEventListener('change', updateTargetPath);
+    button.addEventListener('click', dispatch);
+    updateTargetPath();
+  </script>
+</body>
+</html>
