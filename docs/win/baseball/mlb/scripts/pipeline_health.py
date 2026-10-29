@@ -31,7 +31,7 @@ NY = ZoneInfo("America/New_York")
 
 WORKFLOW_LABELS = {
     "morning": "MLB 01 Morning",
-    "pregame": "MLB 02 Pregame",
+    "pregame": "MLB Pipeline",
 }
 
 WORKFLOW_STAGE_LOGS = {
