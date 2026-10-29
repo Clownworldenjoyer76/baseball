@@ -1,620 +1,621 @@
-=== build_run_training_set RUN 2026-10-28T07:15:42.749576+00:00 ===
-2026-10-28T07:15:42.751055+00:00 | INFO  | dates_to_process=202
-2026-10-28T07:15:42.751085+00:00 | INFO  | processing date=2026_03_26
-2026-10-28T07:15:42.777050+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_26_weather.csv
-2026-10-28T07:15:42.780981+00:00 | INFO  | processing date=2026_03_27
-2026-10-28T07:15:42.801922+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_27_weather.csv
-2026-10-28T07:15:42.805749+00:00 | INFO  | processing date=2026_03_28
-2026-10-28T07:15:42.826472+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_28_weather.csv
-2026-10-28T07:15:42.830244+00:00 | INFO  | processing date=2026_03_29
-2026-10-28T07:15:42.850885+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_29_weather.csv
-2026-10-28T07:15:42.854647+00:00 | INFO  | processing date=2026_03_30
-2026-10-28T07:15:42.875045+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_30_weather.csv
-2026-10-28T07:15:42.878787+00:00 | INFO  | processing date=2026_03_31
-2026-10-28T07:15:42.899228+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_31_weather.csv
-2026-10-28T07:15:42.902977+00:00 | INFO  | processing date=2026_04_01
-2026-10-28T07:15:42.923572+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_01_weather.csv
-2026-10-28T07:15:42.927438+00:00 | INFO  | processing date=2026_04_02
-2026-10-28T07:15:42.947518+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_02_weather.csv
-2026-10-28T07:15:42.951190+00:00 | INFO  | processing date=2026_04_03
-2026-10-28T07:15:42.971624+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_03_weather.csv
-2026-10-28T07:15:42.975404+00:00 | INFO  | processing date=2026_04_04
-2026-10-28T07:15:42.996010+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_04_weather.csv
-2026-10-28T07:15:42.999810+00:00 | INFO  | processing date=2026_04_05
-2026-10-28T07:15:43.020520+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_05_weather.csv
-2026-10-28T07:15:43.024361+00:00 | INFO  | processing date=2026_04_06
-2026-10-28T07:15:43.045224+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_06_weather.csv
-2026-10-28T07:15:43.049087+00:00 | INFO  | processing date=2026_04_07
-2026-10-28T07:15:43.069938+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_07_weather.csv
-2026-10-28T07:15:43.073751+00:00 | INFO  | processing date=2026_04_08
-2026-10-28T07:15:43.094448+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_08_weather.csv
-2026-10-28T07:15:43.098266+00:00 | INFO  | processing date=2026_04_09
-2026-10-28T07:15:43.118483+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_09_weather.csv
-2026-10-28T07:15:43.122239+00:00 | INFO  | processing date=2026_04_10
-2026-10-28T07:15:43.143018+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_10_weather.csv
-2026-10-28T07:15:43.146827+00:00 | INFO  | processing date=2026_04_11
-2026-10-28T07:15:43.167550+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_11_weather.csv
-2026-10-28T07:15:43.171356+00:00 | INFO  | processing date=2026_04_12
-2026-10-28T07:15:43.192224+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_12_weather.csv
-2026-10-28T07:15:43.196040+00:00 | INFO  | processing date=2026_04_13
-2026-10-28T07:15:43.216463+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_13_weather.csv
-2026-10-28T07:15:43.220273+00:00 | INFO  | processing date=2026_04_14
-2026-10-28T07:15:43.241373+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_14_weather.csv
-2026-10-28T07:15:43.245213+00:00 | INFO  | processing date=2026_04_15
-2026-10-28T07:15:43.266541+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_15_weather.csv
-2026-10-28T07:15:43.270436+00:00 | INFO  | processing date=2026_04_16
-2026-10-28T07:15:43.291483+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_16_weather.csv
-2026-10-28T07:15:43.295413+00:00 | INFO  | processing date=2026_04_17
-2026-10-28T07:15:43.316941+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_17_weather.csv
-2026-10-28T07:15:43.320853+00:00 | INFO  | processing date=2026_04_18
-2026-10-28T07:15:43.342221+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_18_weather.csv
-2026-10-28T07:15:43.346153+00:00 | INFO  | processing date=2026_04_19
-2026-10-28T07:15:43.367378+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_19_weather.csv
-2026-10-28T07:15:43.371270+00:00 | INFO  | processing date=2026_04_20
-2026-10-28T07:15:43.392063+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_20_weather.csv
-2026-10-28T07:15:43.395953+00:00 | INFO  | processing date=2026_04_21
-2026-10-28T07:15:43.417218+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_21_weather.csv
-2026-10-28T07:15:43.421125+00:00 | INFO  | processing date=2026_04_22
-2026-10-28T07:15:43.442525+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_22_weather.csv
-2026-10-28T07:15:43.446378+00:00 | INFO  | processing date=2026_04_23
-2026-10-28T07:15:43.467039+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_23_weather.csv
-2026-10-28T07:15:43.470870+00:00 | INFO  | processing date=2026_04_24
-2026-10-28T07:15:43.492168+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_24_weather.csv
-2026-10-28T07:15:43.496017+00:00 | INFO  | processing date=2026_04_25
-2026-10-28T07:15:43.517460+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_25_weather.csv
-2026-10-28T07:15:43.521362+00:00 | INFO  | processing date=2026_04_26
-2026-10-28T07:15:43.542791+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_26_weather.csv
-2026-10-28T07:15:43.546755+00:00 | INFO  | processing date=2026_04_27
-2026-10-28T07:15:43.567818+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_27_weather.csv
-2026-10-28T07:15:43.571641+00:00 | INFO  | processing date=2026_04_28
-2026-10-28T07:15:43.593060+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_28_weather.csv
-2026-10-28T07:15:43.596963+00:00 | INFO  | processing date=2026_04_29
-2026-10-28T07:15:43.618148+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_29_weather.csv
-2026-10-28T07:15:43.622048+00:00 | INFO  | processing date=2026_04_30
-2026-10-28T07:15:43.661889+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_30_weather.csv
-2026-10-28T07:15:43.665828+00:00 | INFO  | processing date=2026_05_01
-2026-10-28T07:15:43.687527+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_01_weather.csv
-2026-10-28T07:15:43.691403+00:00 | INFO  | processing date=2026_05_02
-2026-10-28T07:15:43.712733+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_02_weather.csv
-2026-10-28T07:15:43.716646+00:00 | INFO  | processing date=2026_05_03
-2026-10-28T07:15:43.738082+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_03_weather.csv
-2026-10-28T07:15:43.741915+00:00 | INFO  | processing date=2026_05_04
-2026-10-28T07:15:43.762832+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_04_weather.csv
-2026-10-28T07:15:43.766657+00:00 | INFO  | processing date=2026_05_05
-2026-10-28T07:15:43.787842+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_05_weather.csv
-2026-10-28T07:15:43.791677+00:00 | INFO  | processing date=2026_05_06
-2026-10-28T07:15:43.812733+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_06_weather.csv
-2026-10-28T07:15:43.816595+00:00 | INFO  | processing date=2026_05_07
-2026-10-28T07:15:43.839630+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_07_weather.csv
-2026-10-28T07:15:43.843487+00:00 | INFO  | processing date=2026_05_08
-2026-10-28T07:15:43.864653+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_08_weather.csv
-2026-10-28T07:15:43.868528+00:00 | INFO  | processing date=2026_05_09
-2026-10-28T07:15:43.889575+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_09_weather.csv
-2026-10-28T07:15:43.893991+00:00 | INFO  | processing date=2026_05_10
-2026-10-28T07:15:43.915084+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_10_weather.csv
-2026-10-28T07:15:43.918944+00:00 | INFO  | processing date=2026_05_11
-2026-10-28T07:15:43.939677+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_11_weather.csv
-2026-10-28T07:15:43.943506+00:00 | INFO  | processing date=2026_05_12
-2026-10-28T07:15:43.964578+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_12_weather.csv
-2026-10-28T07:15:43.968457+00:00 | INFO  | processing date=2026_05_13
-2026-10-28T07:15:43.990137+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_13_weather.csv
-2026-10-28T07:15:43.994123+00:00 | INFO  | processing date=2026_05_14
-2026-10-28T07:15:44.015990+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_14_weather.csv
-2026-10-28T07:15:44.020004+00:00 | INFO  | processing date=2026_05_15
-2026-10-28T07:15:44.041838+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_15_weather.csv
-2026-10-28T07:15:44.045786+00:00 | INFO  | processing date=2026_05_16
-2026-10-28T07:15:44.067265+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_16_weather.csv
-2026-10-28T07:15:44.071218+00:00 | INFO  | processing date=2026_05_17
-2026-10-28T07:15:44.092537+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_17_weather.csv
-2026-10-28T07:15:44.096453+00:00 | INFO  | processing date=2026_05_18
-2026-10-28T07:15:44.117820+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_18_weather.csv
-2026-10-28T07:15:44.121751+00:00 | INFO  | processing date=2026_05_19
-2026-10-28T07:15:44.142981+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_19_weather.csv
-2026-10-28T07:15:44.146909+00:00 | INFO  | processing date=2026_05_20
-2026-10-28T07:15:44.168252+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_20_weather.csv
-2026-10-28T07:15:44.172132+00:00 | INFO  | processing date=2026_05_21
-2026-10-28T07:15:44.193061+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_21_weather.csv
-2026-10-28T07:15:44.196886+00:00 | INFO  | processing date=2026_05_22
-2026-10-28T07:15:44.218102+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_22_weather.csv
-2026-10-28T07:15:44.222011+00:00 | INFO  | processing date=2026_05_23
-2026-10-28T07:15:44.243780+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_23_weather.csv
-2026-10-28T07:15:44.247623+00:00 | INFO  | processing date=2026_05_24
-2026-10-28T07:15:44.269117+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_24_weather.csv
-2026-10-28T07:15:44.272974+00:00 | INFO  | processing date=2026_05_25
-2026-10-28T07:15:44.293815+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_25_weather.csv
-2026-10-28T07:15:44.297601+00:00 | INFO  | processing date=2026_05_26
-2026-10-28T07:15:44.318564+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_26_weather.csv
-2026-10-28T07:15:44.322356+00:00 | INFO  | processing date=2026_05_27
-2026-10-28T07:15:44.343997+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_27_weather.csv
-2026-10-28T07:15:44.347786+00:00 | INFO  | processing date=2026_05_28
-2026-10-28T07:15:44.368085+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_28_weather.csv
-2026-10-28T07:15:44.371849+00:00 | INFO  | processing date=2026_05_29
-2026-10-28T07:15:44.393214+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_29_weather.csv
-2026-10-28T07:15:44.397132+00:00 | INFO  | processing date=2026_05_30
-2026-10-28T07:15:44.419322+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_30_weather.csv
-2026-10-28T07:15:44.423476+00:00 | INFO  | processing date=2026_05_31
-2026-10-28T07:15:44.446138+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_31_weather.csv
-2026-10-28T07:15:44.450125+00:00 | INFO  | processing date=2026_06_01
-2026-10-28T07:15:44.471455+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_01_weather.csv
-2026-10-28T07:15:44.475343+00:00 | INFO  | processing date=2026_06_02
-2026-10-28T07:15:44.496858+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_02_weather.csv
-2026-10-28T07:15:44.500811+00:00 | INFO  | processing date=2026_06_03
-2026-10-28T07:15:44.522063+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_03_weather.csv
-2026-10-28T07:15:44.525943+00:00 | INFO  | processing date=2026_06_04
-2026-10-28T07:15:44.546827+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_04_weather.csv
-2026-10-28T07:15:44.550663+00:00 | INFO  | processing date=2026_06_05
-2026-10-28T07:15:44.572015+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_05_weather.csv
-2026-10-28T07:15:44.575892+00:00 | INFO  | processing date=2026_06_06
-2026-10-28T07:15:44.597454+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_06_weather.csv
-2026-10-28T07:15:44.601331+00:00 | INFO  | processing date=2026_06_07
-2026-10-28T07:15:44.622515+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_07_weather.csv
-2026-10-28T07:15:44.626467+00:00 | INFO  | processing date=2026_06_08
-2026-10-28T07:15:44.647993+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_08_weather.csv
-2026-10-28T07:15:44.651949+00:00 | INFO  | processing date=2026_06_09
-2026-10-28T07:15:44.673121+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_09_weather.csv
-2026-10-28T07:15:44.676956+00:00 | INFO  | processing date=2026_06_10
-2026-10-28T07:15:44.697966+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_10_weather.csv
-2026-10-28T07:15:44.701807+00:00 | INFO  | processing date=2026_06_11
-2026-10-28T07:15:44.722508+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_11_weather.csv
-2026-10-28T07:15:44.726315+00:00 | INFO  | processing date=2026_06_12
-2026-10-28T07:15:44.747635+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_12_weather.csv
-2026-10-28T07:15:44.751520+00:00 | INFO  | processing date=2026_06_13
-2026-10-28T07:15:44.793249+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_13_weather.csv
-2026-10-28T07:15:44.797316+00:00 | INFO  | processing date=2026_06_14
-2026-10-28T07:15:44.818747+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_14_weather.csv
-2026-10-28T07:15:44.822690+00:00 | INFO  | processing date=2026_06_15
-2026-10-28T07:15:44.843480+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_15_weather.csv
-2026-10-28T07:15:44.847309+00:00 | INFO  | processing date=2026_06_16
-2026-10-28T07:15:44.868595+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_16_weather.csv
-2026-10-28T07:15:44.872515+00:00 | INFO  | processing date=2026_06_17
-2026-10-28T07:15:44.894193+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_17_weather.csv
-2026-10-28T07:15:44.898117+00:00 | INFO  | processing date=2026_06_18
-2026-10-28T07:15:44.919242+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_18_weather.csv
-2026-10-28T07:15:44.923107+00:00 | INFO  | processing date=2026_06_19
-2026-10-28T07:15:44.944435+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_19_weather.csv
-2026-10-28T07:15:44.948300+00:00 | INFO  | processing date=2026_06_20
-2026-10-28T07:15:44.969390+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_20_weather.csv
-2026-10-28T07:15:44.973248+00:00 | INFO  | processing date=2026_06_21
-2026-10-28T07:15:44.994576+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_21_weather.csv
-2026-10-28T07:15:44.998455+00:00 | INFO  | processing date=2026_06_22
-2026-10-28T07:15:45.019637+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_22_weather.csv
-2026-10-28T07:15:45.023463+00:00 | INFO  | processing date=2026_06_23
-2026-10-28T07:15:45.044683+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_23_weather.csv
-2026-10-28T07:15:45.048563+00:00 | INFO  | processing date=2026_06_24
-2026-10-28T07:15:45.069764+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_24_weather.csv
-2026-10-28T07:15:45.073652+00:00 | INFO  | processing date=2026_06_25
-2026-10-28T07:15:45.095983+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_25_weather.csv
-2026-10-28T07:15:45.100076+00:00 | INFO  | processing date=2026_06_26
-2026-10-28T07:15:45.122368+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_26_weather.csv
-2026-10-28T07:15:45.126273+00:00 | INFO  | processing date=2026_06_27
-2026-10-28T07:15:45.147564+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_27_weather.csv
-2026-10-28T07:15:45.151432+00:00 | INFO  | processing date=2026_06_28
-2026-10-28T07:15:45.177173+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_28_weather.csv
-2026-10-28T07:15:45.186463+00:00 | INFO  | processing date=2026_06_29
-2026-10-28T07:15:45.208621+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_29_weather.csv
-2026-10-28T07:15:45.212474+00:00 | INFO  | processing date=2026_06_30
-2026-10-28T07:15:45.233609+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_30_weather.csv
-2026-10-28T07:15:45.237510+00:00 | INFO  | processing date=2026_07_01
-2026-10-28T07:15:45.258438+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_01_weather.csv
-2026-10-28T07:15:45.262267+00:00 | INFO  | processing date=2026_07_02
-2026-10-28T07:15:45.282721+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_02_weather.csv
-2026-10-28T07:15:45.286522+00:00 | INFO  | processing date=2026_07_03
-2026-10-28T07:15:45.307623+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_03_weather.csv
-2026-10-28T07:15:45.311527+00:00 | INFO  | processing date=2026_07_04
-2026-10-28T07:15:45.333154+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_04_weather.csv
-2026-10-28T07:15:45.337014+00:00 | INFO  | processing date=2026_07_05
-2026-10-28T07:15:45.358069+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_05_weather.csv
-2026-10-28T07:15:45.361925+00:00 | INFO  | processing date=2026_07_06
-2026-10-28T07:15:45.382651+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_06_weather.csv
-2026-10-28T07:15:45.386836+00:00 | INFO  | processing date=2026_07_07
-2026-10-28T07:15:45.409125+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_07_weather.csv
-2026-10-28T07:15:45.413028+00:00 | INFO  | processing date=2026_07_08
-2026-10-28T07:15:45.434615+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_08_weather.csv
-2026-10-28T07:15:45.438581+00:00 | INFO  | processing date=2026_07_09
-2026-10-28T07:15:45.459942+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_09_weather.csv
-2026-10-28T07:15:45.463920+00:00 | INFO  | processing date=2026_07_10
-2026-10-28T07:15:45.485352+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_10_weather.csv
-2026-10-28T07:15:45.489332+00:00 | INFO  | processing date=2026_07_11
-2026-10-28T07:15:45.510498+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_11_weather.csv
-2026-10-28T07:15:45.514343+00:00 | INFO  | processing date=2026_07_12
-2026-10-28T07:15:45.535767+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_12_weather.csv
-2026-10-28T07:15:45.539631+00:00 | INFO  | processing date=2026_07_16
-2026-10-28T07:15:45.560125+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_16_weather.csv
-2026-10-28T07:15:45.563955+00:00 | INFO  | processing date=2026_07_17
-2026-10-28T07:15:45.585395+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_17_weather.csv
-2026-10-28T07:15:45.589249+00:00 | INFO  | processing date=2026_07_18
-2026-10-28T07:15:45.610093+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_18_weather.csv
-2026-10-28T07:15:45.613854+00:00 | INFO  | processing date=2026_07_19
-2026-10-28T07:15:45.635024+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_19_weather.csv
-2026-10-28T07:15:45.638919+00:00 | INFO  | processing date=2026_07_20
-2026-10-28T07:15:45.660108+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_20_weather.csv
-2026-10-28T07:15:45.663949+00:00 | INFO  | processing date=2026_07_21
-2026-10-28T07:15:45.684756+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_21_weather.csv
-2026-10-28T07:15:45.688571+00:00 | INFO  | processing date=2026_07_22
-2026-10-28T07:15:45.709261+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_22_weather.csv
-2026-10-28T07:15:45.713054+00:00 | INFO  | processing date=2026_07_23
-2026-10-28T07:15:45.733652+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_23_weather.csv
-2026-10-28T07:15:45.737424+00:00 | INFO  | processing date=2026_07_24
-2026-10-28T07:15:45.758791+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_24_weather.csv
-2026-10-28T07:15:45.762710+00:00 | INFO  | processing date=2026_07_25
-2026-10-28T07:15:45.784098+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_25_weather.csv
-2026-10-28T07:15:45.788028+00:00 | INFO  | processing date=2026_07_26
-2026-10-28T07:15:45.809430+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_26_weather.csv
-2026-10-28T07:15:45.813328+00:00 | INFO  | processing date=2026_07_27
-2026-10-28T07:15:45.834531+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_27_weather.csv
-2026-10-28T07:15:45.838405+00:00 | INFO  | processing date=2026_07_28
-2026-10-28T07:15:45.859725+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_28_weather.csv
-2026-10-28T07:15:45.863645+00:00 | INFO  | processing date=2026_07_29
-2026-10-28T07:15:45.885105+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_29_weather.csv
-2026-10-28T07:15:45.889001+00:00 | INFO  | processing date=2026_07_30
-2026-10-28T07:15:45.910640+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_30_weather.csv
-2026-10-28T07:15:45.914560+00:00 | INFO  | processing date=2026_07_31
-2026-10-28T07:15:45.959770+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_31_weather.csv
-2026-10-28T07:15:45.963746+00:00 | INFO  | processing date=2026_08_01
-2026-10-28T07:15:45.985398+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_01_weather.csv
-2026-10-28T07:15:45.989369+00:00 | INFO  | processing date=2026_08_02
-2026-10-28T07:15:46.011128+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_02_weather.csv
-2026-10-28T07:15:46.015080+00:00 | INFO  | processing date=2026_08_03
-2026-10-28T07:15:46.036579+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_03_weather.csv
-2026-10-28T07:15:46.040501+00:00 | INFO  | processing date=2026_08_04
-2026-10-28T07:15:46.062215+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_04_weather.csv
-2026-10-28T07:15:46.066176+00:00 | INFO  | processing date=2026_08_05
-2026-10-28T07:15:46.087647+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_05_weather.csv
-2026-10-28T07:15:46.091550+00:00 | INFO  | processing date=2026_08_06
-2026-10-28T07:15:46.112532+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_06_weather.csv
-2026-10-28T07:15:46.116357+00:00 | INFO  | processing date=2026_08_07
-2026-10-28T07:15:46.137744+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_07_weather.csv
-2026-10-28T07:15:46.141541+00:00 | INFO  | processing date=2026_08_08
-2026-10-28T07:15:46.162936+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_08_weather.csv
-2026-10-28T07:15:46.166686+00:00 | INFO  | processing date=2026_08_09
-2026-10-28T07:15:46.187792+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_09_weather.csv
-2026-10-28T07:15:46.191859+00:00 | INFO  | processing date=2026_08_10
-2026-10-28T07:15:46.212681+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_10_weather.csv
-2026-10-28T07:15:46.220480+00:00 | INFO  | processing date=2026_08_11
-2026-10-28T07:15:46.242206+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_11_weather.csv
-2026-10-28T07:15:46.246052+00:00 | INFO  | processing date=2026_08_12
-2026-10-28T07:15:46.267151+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_12_weather.csv
-2026-10-28T07:15:46.270921+00:00 | INFO  | processing date=2026_08_13
-2026-10-28T07:15:46.291737+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_13_weather.csv
-2026-10-28T07:15:46.295495+00:00 | INFO  | processing date=2026_08_14
-2026-10-28T07:15:46.316529+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_14_weather.csv
-2026-10-28T07:15:46.320336+00:00 | INFO  | processing date=2026_08_15
-2026-10-28T07:15:46.341485+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_15_weather.csv
-2026-10-28T07:15:46.345337+00:00 | INFO  | processing date=2026_08_16
-2026-10-28T07:15:46.367182+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_16_weather.csv
-2026-10-28T07:15:46.371064+00:00 | INFO  | processing date=2026_08_17
-2026-10-28T07:15:46.392097+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_17_weather.csv
-2026-10-28T07:15:46.395993+00:00 | INFO  | processing date=2026_08_18
-2026-10-28T07:15:46.417415+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_18_weather.csv
-2026-10-28T07:15:46.421353+00:00 | INFO  | processing date=2026_08_19
-2026-10-28T07:15:46.443055+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_19_weather.csv
-2026-10-28T07:15:46.446971+00:00 | INFO  | processing date=2026_08_20
-2026-10-28T07:15:46.468575+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_20_weather.csv
-2026-10-28T07:15:46.472594+00:00 | INFO  | processing date=2026_08_24
-2026-10-28T07:15:46.494265+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_24_weather.csv
-2026-10-28T07:15:46.498189+00:00 | INFO  | processing date=2026_08_25
-2026-10-28T07:15:46.519942+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_25_weather.csv
-2026-10-28T07:15:46.523858+00:00 | INFO  | processing date=2026_08_26
-2026-10-28T07:15:46.545188+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_26_weather.csv
-2026-10-28T07:15:46.549106+00:00 | INFO  | processing date=2026_08_27
-2026-10-28T07:15:46.569914+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_27_weather.csv
-2026-10-28T07:15:46.573711+00:00 | INFO  | processing date=2026_08_28
-2026-10-28T07:15:46.595337+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_28_weather.csv
-2026-10-28T07:15:46.599296+00:00 | INFO  | processing date=2026_08_29
-2026-10-28T07:15:46.621355+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_29_weather.csv
-2026-10-28T07:15:46.625201+00:00 | INFO  | processing date=2026_08_30
-2026-10-28T07:15:46.646966+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_30_weather.csv
-2026-10-28T07:15:46.650908+00:00 | INFO  | processing date=2026_08_31
-2026-10-28T07:15:46.672159+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_31_weather.csv
-2026-10-28T07:15:46.675962+00:00 | INFO  | processing date=2026_09_01
-2026-10-28T07:15:46.697263+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_01_weather.csv
-2026-10-28T07:15:46.701137+00:00 | INFO  | processing date=2026_09_02
-2026-10-28T07:15:46.722578+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_02_weather.csv
-2026-10-28T07:15:46.726386+00:00 | INFO  | processing date=2026_09_03
-2026-10-28T07:15:46.747622+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_03_weather.csv
-2026-10-28T07:15:46.751509+00:00 | INFO  | processing date=2026_09_04
-2026-10-28T07:15:46.773555+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_04_weather.csv
-2026-10-28T07:15:46.777462+00:00 | INFO  | processing date=2026_09_05
-2026-10-28T07:15:46.799709+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_05_weather.csv
-2026-10-28T07:15:46.803522+00:00 | INFO  | processing date=2026_09_06
-2026-10-28T07:15:46.825142+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_06_weather.csv
-2026-10-28T07:15:46.828962+00:00 | INFO  | processing date=2026_09_07
-2026-10-28T07:15:46.850180+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_07_weather.csv
-2026-10-28T07:15:46.854047+00:00 | INFO  | processing date=2026_09_08
-2026-10-28T07:15:46.875583+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_08_weather.csv
-2026-10-28T07:15:46.879408+00:00 | INFO  | processing date=2026_09_09
-2026-10-28T07:15:46.901805+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_09_weather.csv
-2026-10-28T07:15:46.906131+00:00 | INFO  | processing date=2026_09_10
-2026-10-28T07:15:46.929685+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_10_weather.csv
-2026-10-28T07:15:46.933804+00:00 | INFO  | processing date=2026_09_11
-2026-10-28T07:15:46.957227+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_11_weather.csv
-2026-10-28T07:15:46.962394+00:00 | INFO  | processing date=2026_09_12
-2026-10-28T07:15:46.986168+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_12_weather.csv
-2026-10-28T07:15:46.990109+00:00 | INFO  | processing date=2026_09_13
-2026-10-28T07:15:47.011973+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_13_weather.csv
-2026-10-28T07:15:47.015848+00:00 | INFO  | processing date=2026_09_14
-2026-10-28T07:15:47.037121+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_14_weather.csv
-2026-10-28T07:15:47.041002+00:00 | INFO  | processing date=2026_09_15
-2026-10-28T07:15:47.062405+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_15_weather.csv
-2026-10-28T07:15:47.066156+00:00 | INFO  | processing date=2026_09_16
-2026-10-28T07:15:47.087197+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_16_weather.csv
-2026-10-28T07:15:47.090985+00:00 | INFO  | processing date=2026_09_17
-2026-10-28T07:15:47.111835+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_17_weather.csv
-2026-10-28T07:15:47.115610+00:00 | INFO  | processing date=2026_09_18
-2026-10-28T07:15:47.136898+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_18_weather.csv
-2026-10-28T07:15:47.140724+00:00 | INFO  | processing date=2026_09_19
-2026-10-28T07:15:47.162051+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_19_weather.csv
-2026-10-28T07:15:47.165856+00:00 | INFO  | processing date=2026_09_20
-2026-10-28T07:15:47.215793+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_20_weather.csv
-2026-10-28T07:15:47.219767+00:00 | INFO  | processing date=2026_09_21
-2026-10-28T07:15:47.241281+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_21_weather.csv
-2026-10-28T07:15:47.245098+00:00 | INFO  | processing date=2026_09_22
-2026-10-28T07:15:47.266616+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_22_weather.csv
-2026-10-28T07:15:47.270427+00:00 | INFO  | processing date=2026_09_23
-2026-10-28T07:15:47.292479+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_23_weather.csv
-2026-10-28T07:15:47.296557+00:00 | INFO  | processing date=2026_09_24
-2026-10-28T07:15:47.318612+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_24_weather.csv
-2026-10-28T07:15:47.322430+00:00 | INFO  | processing date=2026_09_25
-2026-10-28T07:15:47.343848+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_25_weather.csv
-2026-10-28T07:15:47.347678+00:00 | INFO  | processing date=2026_09_26
-2026-10-28T07:15:47.369045+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_26_weather.csv
-2026-10-28T07:15:47.372925+00:00 | INFO  | processing date=2026_09_27
-2026-10-28T07:15:47.394445+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_27_weather.csv
-2026-10-28T07:15:47.398337+00:00 | INFO  | processing date=2026_09_29
-2026-10-28T07:15:47.419099+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_29_weather.csv
-2026-10-28T07:15:47.422908+00:00 | INFO  | processing date=2026_09_30
-2026-10-28T07:15:47.445737+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_30_weather.csv
-2026-10-28T07:15:47.449630+00:00 | INFO  | processing date=2026_10_01
-2026-10-28T07:15:47.470321+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_01_weather.csv
-2026-10-28T07:15:47.474158+00:00 | INFO  | processing date=2026_10_03
-2026-10-28T07:15:47.495109+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_03_weather.csv
-2026-10-28T07:15:47.498985+00:00 | INFO  | processing date=2026_10_04
-2026-10-28T07:15:47.519802+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_04_weather.csv
-2026-10-28T07:15:47.523608+00:00 | INFO  | processing date=2026_10_05
-2026-10-28T07:15:47.544216+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_05_weather.csv
-2026-10-28T07:15:47.548055+00:00 | INFO  | processing date=2026_10_06
-2026-10-28T07:15:47.568475+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_06_weather.csv
-2026-10-28T07:15:47.572256+00:00 | INFO  | processing date=2026_10_07
-2026-10-28T07:15:47.592958+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_07_weather.csv
-2026-10-28T07:15:47.596722+00:00 | INFO  | processing date=2026_10_08
-2026-10-28T07:15:47.616684+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_08_weather.csv
-2026-10-28T07:15:47.620370+00:00 | INFO  | processing date=2026_10_10
-2026-10-28T07:15:47.640427+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_10_weather.csv
-2026-10-28T07:15:47.644158+00:00 | INFO  | processing date=2026_10_11
-2026-10-28T07:15:47.664101+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_11_weather.csv
-2026-10-28T07:15:47.667824+00:00 | INFO  | processing date=2026_10_12
-2026-10-28T07:15:47.688009+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_12_weather.csv
-2026-10-28T07:15:47.691731+00:00 | INFO  | processing date=2026_10_13
-2026-10-28T07:15:47.711696+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_13_weather.csv
-2026-10-28T07:15:47.715427+00:00 | INFO  | processing date=2026_10_14
-2026-10-28T07:15:47.735607+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_14_weather.csv
-2026-10-28T07:15:47.739427+00:00 | INFO  | processing date=2026_10_15
-2026-10-28T07:15:47.760148+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_15_weather.csv
-2026-10-28T07:15:47.763927+00:00 | INFO  | processing date=2026_10_16
-2026-10-28T07:15:47.784745+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_16_weather.csv
-2026-10-28T07:15:47.788543+00:00 | INFO  | processing date=2026_10_18
-2026-10-28T07:15:47.808813+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_18_weather.csv
-2026-10-28T07:15:47.812590+00:00 | INFO  | processing date=2026_10_19
-2026-10-28T07:15:47.833331+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_19_weather.csv
-2026-10-28T07:15:47.837179+00:00 | INFO  | processing date=2026_10_23
-2026-10-28T07:15:47.857443+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_23_weather.csv
-2026-10-28T07:15:47.861174+00:00 | INFO  | processing date=2026_10_24
-2026-10-28T07:15:47.881493+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_24_weather.csv
-2026-10-28T07:15:47.885294+00:00 | INFO  | processing date=2026_10_26
-2026-10-28T07:15:47.905594+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_26_weather.csv
-2026-10-28T07:15:47.909336+00:00 | INFO  | processing date=2026_10_27
-2026-10-28T07:15:47.929730+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_27_weather.csv
-2026-10-28T07:15:48.076287+00:00 | INFO  | rows_loaded=1914
-2026-10-28T07:15:48.076323+00:00 | INFO  | rows_joined=1914
-2026-10-28T07:15:48.076338+00:00 | INFO  | missing_sdv=0
-2026-10-28T07:15:48.076353+00:00 | INFO  | missing_final_score_file=0
-2026-10-28T07:15:48.076366+00:00 | INFO  | unresolved_gamePk=0
-2026-10-28T07:15:48.076378+00:00 | INFO  | failed_final_score_join=0
-2026-10-28T07:15:48.076391+00:00 | INFO  | duplicate_game_id=0
-2026-10-28T07:15:48.076403+00:00 | INFO  | duplicate_gamePk=0
-2026-10-28T07:15:48.076418+00:00 | INFO  | leakage_rejections=0
-2026-10-28T07:15:48.076431+00:00 | INFO  | rows_written=1914
-2026-10-28T07:15:48.076445+00:00 | INFO  | WROTE docs/win/baseball/mlb/modeling/data/mlb_run_training_set.csv
-2026-10-28T07:16:59.368973+00:00 | INFO  | Skipping prediction dates with no matching final-score file: 2026_10_28
-2026-10-28T07:16:59.396264+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_26_weather.csv
-2026-10-28T07:16:59.422437+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_27_weather.csv
-2026-10-28T07:16:59.448242+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_28_weather.csv
-2026-10-28T07:16:59.473334+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_29_weather.csv
-2026-10-28T07:16:59.498686+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_30_weather.csv
-2026-10-28T07:16:59.523615+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_31_weather.csv
-2026-10-28T07:16:59.548994+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_01_weather.csv
-2026-10-28T07:16:59.574330+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_02_weather.csv
-2026-10-28T07:16:59.599996+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_03_weather.csv
-2026-10-28T07:16:59.626126+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_04_weather.csv
-2026-10-28T07:16:59.651898+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_05_weather.csv
-2026-10-28T07:16:59.677504+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_06_weather.csv
-2026-10-28T07:16:59.703006+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_07_weather.csv
-2026-10-28T07:16:59.728946+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_08_weather.csv
-2026-10-28T07:16:59.754619+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_09_weather.csv
-2026-10-28T07:16:59.780093+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_10_weather.csv
-2026-10-28T07:16:59.805754+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_11_weather.csv
-2026-10-28T07:16:59.831485+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_12_weather.csv
-2026-10-28T07:16:59.857199+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_13_weather.csv
-2026-10-28T07:16:59.882735+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_14_weather.csv
-2026-10-28T07:16:59.908552+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_15_weather.csv
-2026-10-28T07:16:59.934987+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_16_weather.csv
-2026-10-28T07:16:59.961420+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_17_weather.csv
-2026-10-28T07:16:59.987727+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_18_weather.csv
-2026-10-28T07:17:00.013364+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_19_weather.csv
-2026-10-28T07:17:00.039454+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_20_weather.csv
-2026-10-28T07:17:00.065856+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_21_weather.csv
-2026-10-28T07:17:00.093344+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_22_weather.csv
-2026-10-28T07:17:00.120107+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_23_weather.csv
-2026-10-28T07:17:00.193647+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_24_weather.csv
-2026-10-28T07:17:00.228655+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_25_weather.csv
-2026-10-28T07:17:00.271812+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_26_weather.csv
-2026-10-28T07:17:00.298330+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_27_weather.csv
-2026-10-28T07:17:00.323549+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_28_weather.csv
-2026-10-28T07:17:00.349293+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_29_weather.csv
-2026-10-28T07:17:00.375181+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_30_weather.csv
-2026-10-28T07:17:00.400897+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_01_weather.csv
-2026-10-28T07:17:00.426931+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_02_weather.csv
-2026-10-28T07:17:00.452776+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_03_weather.csv
-2026-10-28T07:17:00.478397+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_04_weather.csv
-2026-10-28T07:17:00.504247+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_05_weather.csv
-2026-10-28T07:17:00.530401+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_06_weather.csv
-2026-10-28T07:17:00.555783+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_07_weather.csv
-2026-10-28T07:17:00.580793+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_08_weather.csv
-2026-10-28T07:17:00.606362+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_09_weather.csv
-2026-10-28T07:17:00.631559+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_10_weather.csv
-2026-10-28T07:17:00.656027+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_11_weather.csv
-2026-10-28T07:17:00.680608+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_12_weather.csv
-2026-10-28T07:17:00.705898+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_13_weather.csv
-2026-10-28T07:17:00.731377+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_14_weather.csv
-2026-10-28T07:17:00.757440+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_15_weather.csv
-2026-10-28T07:17:00.783939+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_16_weather.csv
-2026-10-28T07:17:00.809712+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_17_weather.csv
-2026-10-28T07:17:00.835810+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_18_weather.csv
-2026-10-28T07:17:00.864187+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_19_weather.csv
-2026-10-28T07:17:00.898450+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_20_weather.csv
-2026-10-28T07:17:00.937949+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_21_weather.csv
-2026-10-28T07:17:00.970806+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_22_weather.csv
-2026-10-28T07:17:00.996992+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_23_weather.csv
-2026-10-28T07:17:01.023491+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_24_weather.csv
-2026-10-28T07:17:01.049478+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_25_weather.csv
-2026-10-28T07:17:01.075320+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_26_weather.csv
-2026-10-28T07:17:01.100724+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_27_weather.csv
-2026-10-28T07:17:01.125605+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_28_weather.csv
-2026-10-28T07:17:01.150798+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_29_weather.csv
-2026-10-28T07:17:01.175958+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_30_weather.csv
-2026-10-28T07:17:01.201973+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_31_weather.csv
-2026-10-28T07:17:01.227336+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_01_weather.csv
-2026-10-28T07:17:01.252269+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_02_weather.csv
-2026-10-28T07:17:01.276965+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_03_weather.csv
-2026-10-28T07:17:01.301729+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_04_weather.csv
-2026-10-28T07:17:01.327528+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_05_weather.csv
-2026-10-28T07:17:01.352929+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_06_weather.csv
-2026-10-28T07:17:01.377907+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_07_weather.csv
-2026-10-28T07:17:01.402161+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_08_weather.csv
-2026-10-28T07:17:01.426947+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_09_weather.csv
-2026-10-28T07:17:01.452036+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_10_weather.csv
-2026-10-28T07:17:01.476811+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_11_weather.csv
-2026-10-28T07:17:01.501535+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_12_weather.csv
-2026-10-28T07:17:01.526256+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_13_weather.csv
-2026-10-28T07:17:01.551387+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_14_weather.csv
-2026-10-28T07:17:01.576661+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_15_weather.csv
-2026-10-28T07:17:01.602260+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_16_weather.csv
-2026-10-28T07:17:01.627625+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_17_weather.csv
-2026-10-28T07:17:01.652570+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_18_weather.csv
-2026-10-28T07:17:01.677695+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_19_weather.csv
-2026-10-28T07:17:01.702742+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_20_weather.csv
-2026-10-28T07:17:01.728249+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_21_weather.csv
-2026-10-28T07:17:01.753535+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_22_weather.csv
-2026-10-28T07:17:01.779012+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_23_weather.csv
-2026-10-28T07:17:01.804616+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_24_weather.csv
-2026-10-28T07:17:01.830076+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_25_weather.csv
-2026-10-28T07:17:01.855855+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_26_weather.csv
-2026-10-28T07:17:01.881795+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_27_weather.csv
-2026-10-28T07:17:01.907498+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_28_weather.csv
-2026-10-28T07:17:01.933779+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_29_weather.csv
-2026-10-28T07:17:01.959387+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_30_weather.csv
-2026-10-28T07:17:02.038871+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_01_weather.csv
-2026-10-28T07:17:02.065188+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_02_weather.csv
-2026-10-28T07:17:02.091176+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_03_weather.csv
-2026-10-28T07:17:02.117059+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_04_weather.csv
-2026-10-28T07:17:02.142945+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_05_weather.csv
-2026-10-28T07:17:02.168134+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_06_weather.csv
-2026-10-28T07:17:02.193887+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_07_weather.csv
-2026-10-28T07:17:02.219352+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_08_weather.csv
-2026-10-28T07:17:02.244713+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_09_weather.csv
-2026-10-28T07:17:02.270197+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_10_weather.csv
-2026-10-28T07:17:02.295487+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_11_weather.csv
-2026-10-28T07:17:02.321329+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_12_weather.csv
-2026-10-28T07:17:02.346122+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_16_weather.csv
-2026-10-28T07:17:02.371479+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_17_weather.csv
-2026-10-28T07:17:02.396573+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_18_weather.csv
-2026-10-28T07:17:02.421935+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_19_weather.csv
-2026-10-28T07:17:02.447533+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_20_weather.csv
-2026-10-28T07:17:02.472336+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_21_weather.csv
-2026-10-28T07:17:02.497120+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_22_weather.csv
-2026-10-28T07:17:02.522108+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_23_weather.csv
-2026-10-28T07:17:02.547685+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_24_weather.csv
-2026-10-28T07:17:02.572809+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_25_weather.csv
-2026-10-28T07:17:02.598260+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_26_weather.csv
-2026-10-28T07:17:02.624449+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_27_weather.csv
-2026-10-28T07:17:02.651061+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_28_weather.csv
-2026-10-28T07:17:02.677337+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_29_weather.csv
-2026-10-28T07:17:02.703019+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_30_weather.csv
-2026-10-28T07:17:02.728574+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_31_weather.csv
-2026-10-28T07:17:02.754504+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_01_weather.csv
-2026-10-28T07:17:02.780434+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_02_weather.csv
-2026-10-28T07:17:02.805932+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_03_weather.csv
-2026-10-28T07:17:02.831828+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_04_weather.csv
-2026-10-28T07:17:02.858633+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_05_weather.csv
-2026-10-28T07:17:02.884299+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_06_weather.csv
-2026-10-28T07:17:02.910829+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_07_weather.csv
-2026-10-28T07:17:02.938495+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_08_weather.csv
-2026-10-28T07:17:02.966314+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_09_weather.csv
-2026-10-28T07:17:02.993058+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_10_weather.csv
-2026-10-28T07:17:03.018739+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_11_weather.csv
-2026-10-28T07:17:03.044125+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_12_weather.csv
-2026-10-28T07:17:03.069454+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_13_weather.csv
-2026-10-28T07:17:03.100823+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_14_weather.csv
-2026-10-28T07:17:03.126145+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_15_weather.csv
-2026-10-28T07:17:03.151661+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_16_weather.csv
-2026-10-28T07:17:03.177458+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_17_weather.csv
-2026-10-28T07:17:03.202833+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_18_weather.csv
-2026-10-28T07:17:03.228264+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_19_weather.csv
-2026-10-28T07:17:03.254377+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_20_weather.csv
-2026-10-28T07:17:03.280242+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_24_weather.csv
-2026-10-28T07:17:03.305525+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_25_weather.csv
-2026-10-28T07:17:03.330013+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_26_weather.csv
-2026-10-28T07:17:03.354518+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_27_weather.csv
-2026-10-28T07:17:03.379655+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_28_weather.csv
-2026-10-28T07:17:03.405230+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_29_weather.csv
-2026-10-28T07:17:03.430888+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_30_weather.csv
-2026-10-28T07:17:03.457176+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_31_weather.csv
-2026-10-28T07:17:03.483435+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_01_weather.csv
-2026-10-28T07:17:03.509288+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_02_weather.csv
-2026-10-28T07:17:03.535415+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_03_weather.csv
-2026-10-28T07:17:03.564430+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_04_weather.csv
-2026-10-28T07:17:03.591618+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_05_weather.csv
-2026-10-28T07:17:03.618490+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_06_weather.csv
-2026-10-28T07:17:03.645441+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_07_weather.csv
-2026-10-28T07:17:03.674120+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_08_weather.csv
-2026-10-28T07:17:03.700242+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_09_weather.csv
-2026-10-28T07:17:03.805237+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_10_weather.csv
-2026-10-28T07:17:03.831930+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_11_weather.csv
-2026-10-28T07:17:03.858597+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_12_weather.csv
-2026-10-28T07:17:03.884005+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_13_weather.csv
-2026-10-28T07:17:03.908955+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_14_weather.csv
-2026-10-28T07:17:03.934083+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_15_weather.csv
-2026-10-28T07:17:03.964951+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_16_weather.csv
-2026-10-28T07:17:03.989914+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_17_weather.csv
-2026-10-28T07:17:04.014868+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_18_weather.csv
-2026-10-28T07:17:04.039909+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_19_weather.csv
-2026-10-28T07:17:04.065728+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_20_weather.csv
-2026-10-28T07:17:04.090958+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_21_weather.csv
-2026-10-28T07:17:04.115660+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_22_weather.csv
-2026-10-28T07:17:04.140815+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_23_weather.csv
-2026-10-28T07:17:04.165396+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_24_weather.csv
-2026-10-28T07:17:04.190958+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_25_weather.csv
-2026-10-28T07:17:04.216170+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_26_weather.csv
-2026-10-28T07:17:04.241039+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_27_weather.csv
-2026-10-28T07:17:04.265482+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_29_weather.csv
-2026-10-28T07:17:04.289930+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_30_weather.csv
-2026-10-28T07:17:04.313847+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_01_weather.csv
-2026-10-28T07:17:04.337937+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_03_weather.csv
-2026-10-28T07:17:04.362868+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_04_weather.csv
-2026-10-28T07:17:04.390338+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_05_weather.csv
-2026-10-28T07:17:04.415118+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_06_weather.csv
-2026-10-28T07:17:04.439598+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_07_weather.csv
-2026-10-28T07:17:04.463686+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_08_weather.csv
-2026-10-28T07:17:04.487869+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_10_weather.csv
-2026-10-28T07:17:04.512329+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_11_weather.csv
-2026-10-28T07:17:04.536780+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_12_weather.csv
-2026-10-28T07:17:04.560966+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_13_weather.csv
-2026-10-28T07:17:04.585207+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_14_weather.csv
-2026-10-28T07:17:04.609909+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_15_weather.csv
-2026-10-28T07:17:04.634535+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_16_weather.csv
-2026-10-28T07:17:04.658915+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_18_weather.csv
-2026-10-28T07:17:04.683405+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_19_weather.csv
-2026-10-28T07:17:04.707902+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_23_weather.csv
-2026-10-28T07:17:04.732889+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_24_weather.csv
-2026-10-28T07:17:04.757576+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_26_weather.csv
-2026-10-28T07:17:04.782325+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_27_weather.csv
+=== build_run_training_set RUN 2026-10-28T11:46:02.144782+00:00 ===
+2026-10-28T11:46:02.146668+00:00 | INFO  | Skipping prediction dates with no matching final-score file: 2026_10_28
+2026-10-28T11:46:02.146714+00:00 | INFO  | dates_to_process=202
+2026-10-28T11:46:02.146735+00:00 | INFO  | processing date=2026_03_26
+2026-10-28T11:46:02.180031+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_26_weather.csv
+2026-10-28T11:46:02.185496+00:00 | INFO  | processing date=2026_03_27
+2026-10-28T11:46:02.214085+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_27_weather.csv
+2026-10-28T11:46:02.219413+00:00 | INFO  | processing date=2026_03_28
+2026-10-28T11:46:02.248032+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_28_weather.csv
+2026-10-28T11:46:02.253237+00:00 | INFO  | processing date=2026_03_29
+2026-10-28T11:46:02.281158+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_29_weather.csv
+2026-10-28T11:46:02.286352+00:00 | INFO  | processing date=2026_03_30
+2026-10-28T11:46:02.314459+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_30_weather.csv
+2026-10-28T11:46:02.319849+00:00 | INFO  | processing date=2026_03_31
+2026-10-28T11:46:02.347931+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_31_weather.csv
+2026-10-28T11:46:02.353169+00:00 | INFO  | processing date=2026_04_01
+2026-10-28T11:46:02.382145+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_01_weather.csv
+2026-10-28T11:46:02.387593+00:00 | INFO  | processing date=2026_04_02
+2026-10-28T11:46:02.416153+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_02_weather.csv
+2026-10-28T11:46:02.421393+00:00 | INFO  | processing date=2026_04_03
+2026-10-28T11:46:02.449712+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_03_weather.csv
+2026-10-28T11:46:02.455009+00:00 | INFO  | processing date=2026_04_04
+2026-10-28T11:46:02.483134+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_04_weather.csv
+2026-10-28T11:46:02.488455+00:00 | INFO  | processing date=2026_04_05
+2026-10-28T11:46:02.517035+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_05_weather.csv
+2026-10-28T11:46:02.522353+00:00 | INFO  | processing date=2026_04_06
+2026-10-28T11:46:02.551166+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_06_weather.csv
+2026-10-28T11:46:02.556641+00:00 | INFO  | processing date=2026_04_07
+2026-10-28T11:46:02.585393+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_07_weather.csv
+2026-10-28T11:46:02.590780+00:00 | INFO  | processing date=2026_04_08
+2026-10-28T11:46:02.620698+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_08_weather.csv
+2026-10-28T11:46:02.628043+00:00 | INFO  | processing date=2026_04_09
+2026-10-28T11:46:02.655904+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_09_weather.csv
+2026-10-28T11:46:02.661248+00:00 | INFO  | processing date=2026_04_10
+2026-10-28T11:46:02.690198+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_10_weather.csv
+2026-10-28T11:46:02.695530+00:00 | INFO  | processing date=2026_04_11
+2026-10-28T11:46:02.723488+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_11_weather.csv
+2026-10-28T11:46:02.728807+00:00 | INFO  | processing date=2026_04_12
+2026-10-28T11:46:02.756811+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_12_weather.csv
+2026-10-28T11:46:02.762153+00:00 | INFO  | processing date=2026_04_13
+2026-10-28T11:46:02.789870+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_13_weather.csv
+2026-10-28T11:46:02.795075+00:00 | INFO  | processing date=2026_04_14
+2026-10-28T11:46:02.823306+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_14_weather.csv
+2026-10-28T11:46:02.828730+00:00 | INFO  | processing date=2026_04_15
+2026-10-28T11:46:02.858019+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_15_weather.csv
+2026-10-28T11:46:02.863526+00:00 | INFO  | processing date=2026_04_16
+2026-10-28T11:46:02.892351+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_16_weather.csv
+2026-10-28T11:46:02.897708+00:00 | INFO  | processing date=2026_04_17
+2026-10-28T11:46:02.925905+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_17_weather.csv
+2026-10-28T11:46:02.931189+00:00 | INFO  | processing date=2026_04_18
+2026-10-28T11:46:02.959475+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_18_weather.csv
+2026-10-28T11:46:02.964759+00:00 | INFO  | processing date=2026_04_19
+2026-10-28T11:46:02.992826+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_19_weather.csv
+2026-10-28T11:46:02.998136+00:00 | INFO  | processing date=2026_04_20
+2026-10-28T11:46:03.025664+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_20_weather.csv
+2026-10-28T11:46:03.030915+00:00 | INFO  | processing date=2026_04_21
+2026-10-28T11:46:03.059648+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_21_weather.csv
+2026-10-28T11:46:03.065033+00:00 | INFO  | processing date=2026_04_22
+2026-10-28T11:46:03.093405+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_22_weather.csv
+2026-10-28T11:46:03.098672+00:00 | INFO  | processing date=2026_04_23
+2026-10-28T11:46:03.126221+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_23_weather.csv
+2026-10-28T11:46:03.131438+00:00 | INFO  | processing date=2026_04_24
+2026-10-28T11:46:03.159844+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_24_weather.csv
+2026-10-28T11:46:03.165228+00:00 | INFO  | processing date=2026_04_25
+2026-10-28T11:46:03.193780+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_25_weather.csv
+2026-10-28T11:46:03.199178+00:00 | INFO  | processing date=2026_04_26
+2026-10-28T11:46:03.227748+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_26_weather.csv
+2026-10-28T11:46:03.233188+00:00 | INFO  | processing date=2026_04_27
+2026-10-28T11:46:03.261170+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_27_weather.csv
+2026-10-28T11:46:03.266447+00:00 | INFO  | processing date=2026_04_28
+2026-10-28T11:46:03.295191+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_28_weather.csv
+2026-10-28T11:46:03.300560+00:00 | INFO  | processing date=2026_04_29
+2026-10-28T11:46:03.329254+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_29_weather.csv
+2026-10-28T11:46:03.334625+00:00 | INFO  | processing date=2026_04_30
+2026-10-28T11:46:03.379515+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_30_weather.csv
+2026-10-28T11:46:03.384862+00:00 | INFO  | processing date=2026_05_01
+2026-10-28T11:46:03.414435+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_01_weather.csv
+2026-10-28T11:46:03.419911+00:00 | INFO  | processing date=2026_05_02
+2026-10-28T11:46:03.449042+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_02_weather.csv
+2026-10-28T11:46:03.454501+00:00 | INFO  | processing date=2026_05_03
+2026-10-28T11:46:03.483691+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_03_weather.csv
+2026-10-28T11:46:03.489074+00:00 | INFO  | processing date=2026_05_04
+2026-10-28T11:46:03.520314+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_04_weather.csv
+2026-10-28T11:46:03.525862+00:00 | INFO  | processing date=2026_05_05
+2026-10-28T11:46:03.555210+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_05_weather.csv
+2026-10-28T11:46:03.560658+00:00 | INFO  | processing date=2026_05_06
+2026-10-28T11:46:03.589684+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_06_weather.csv
+2026-10-28T11:46:03.595164+00:00 | INFO  | processing date=2026_05_07
+2026-10-28T11:46:03.623623+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_07_weather.csv
+2026-10-28T11:46:03.628977+00:00 | INFO  | processing date=2026_05_08
+2026-10-28T11:46:03.657864+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_08_weather.csv
+2026-10-28T11:46:03.663337+00:00 | INFO  | processing date=2026_05_09
+2026-10-28T11:46:03.692801+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_09_weather.csv
+2026-10-28T11:46:03.698230+00:00 | INFO  | processing date=2026_05_10
+2026-10-28T11:46:03.727812+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_10_weather.csv
+2026-10-28T11:46:03.733262+00:00 | INFO  | processing date=2026_05_11
+2026-10-28T11:46:03.761452+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_11_weather.csv
+2026-10-28T11:46:03.766748+00:00 | INFO  | processing date=2026_05_12
+2026-10-28T11:46:03.795499+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_12_weather.csv
+2026-10-28T11:46:03.800909+00:00 | INFO  | processing date=2026_05_13
+2026-10-28T11:46:03.830064+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_13_weather.csv
+2026-10-28T11:46:03.835499+00:00 | INFO  | processing date=2026_05_14
+2026-10-28T11:46:03.864682+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_14_weather.csv
+2026-10-28T11:46:03.870168+00:00 | INFO  | processing date=2026_05_15
+2026-10-28T11:46:03.899021+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_15_weather.csv
+2026-10-28T11:46:03.904483+00:00 | INFO  | processing date=2026_05_16
+2026-10-28T11:46:03.933252+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_16_weather.csv
+2026-10-28T11:46:03.938882+00:00 | INFO  | processing date=2026_05_17
+2026-10-28T11:46:03.967199+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_17_weather.csv
+2026-10-28T11:46:03.972605+00:00 | INFO  | processing date=2026_05_18
+2026-10-28T11:46:04.000964+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_18_weather.csv
+2026-10-28T11:46:04.006333+00:00 | INFO  | processing date=2026_05_19
+2026-10-28T11:46:04.035200+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_19_weather.csv
+2026-10-28T11:46:04.040685+00:00 | INFO  | processing date=2026_05_20
+2026-10-28T11:46:04.069658+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_20_weather.csv
+2026-10-28T11:46:04.075083+00:00 | INFO  | processing date=2026_05_21
+2026-10-28T11:46:04.103083+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_21_weather.csv
+2026-10-28T11:46:04.108484+00:00 | INFO  | processing date=2026_05_22
+2026-10-28T11:46:04.136685+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_22_weather.csv
+2026-10-28T11:46:04.142008+00:00 | INFO  | processing date=2026_05_23
+2026-10-28T11:46:04.170863+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_23_weather.csv
+2026-10-28T11:46:04.176223+00:00 | INFO  | processing date=2026_05_24
+2026-10-28T11:46:04.204562+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_24_weather.csv
+2026-10-28T11:46:04.209843+00:00 | INFO  | processing date=2026_05_25
+2026-10-28T11:46:04.237883+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_25_weather.csv
+2026-10-28T11:46:04.243147+00:00 | INFO  | processing date=2026_05_26
+2026-10-28T11:46:04.271288+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_26_weather.csv
+2026-10-28T11:46:04.276562+00:00 | INFO  | processing date=2026_05_27
+2026-10-28T11:46:04.304570+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_27_weather.csv
+2026-10-28T11:46:04.309950+00:00 | INFO  | processing date=2026_05_28
+2026-10-28T11:46:04.337546+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_28_weather.csv
+2026-10-28T11:46:04.342770+00:00 | INFO  | processing date=2026_05_29
+2026-10-28T11:46:04.370950+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_29_weather.csv
+2026-10-28T11:46:04.376241+00:00 | INFO  | processing date=2026_05_30
+2026-10-28T11:46:04.404393+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_30_weather.csv
+2026-10-28T11:46:04.409632+00:00 | INFO  | processing date=2026_05_31
+2026-10-28T11:46:04.437568+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_31_weather.csv
+2026-10-28T11:46:04.442887+00:00 | INFO  | processing date=2026_06_01
+2026-10-28T11:46:04.470426+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_01_weather.csv
+2026-10-28T11:46:04.475690+00:00 | INFO  | processing date=2026_06_02
+2026-10-28T11:46:04.504220+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_02_weather.csv
+2026-10-28T11:46:04.509470+00:00 | INFO  | processing date=2026_06_03
+2026-10-28T11:46:04.537346+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_03_weather.csv
+2026-10-28T11:46:04.542717+00:00 | INFO  | processing date=2026_06_04
+2026-10-28T11:46:04.570480+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_04_weather.csv
+2026-10-28T11:46:04.575712+00:00 | INFO  | processing date=2026_06_05
+2026-10-28T11:46:04.603982+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_05_weather.csv
+2026-10-28T11:46:04.609483+00:00 | INFO  | processing date=2026_06_06
+2026-10-28T11:46:04.637517+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_06_weather.csv
+2026-10-28T11:46:04.642803+00:00 | INFO  | processing date=2026_06_07
+2026-10-28T11:46:04.671415+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_07_weather.csv
+2026-10-28T11:46:04.676829+00:00 | INFO  | processing date=2026_06_08
+2026-10-28T11:46:04.704885+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_08_weather.csv
+2026-10-28T11:46:04.710138+00:00 | INFO  | processing date=2026_06_09
+2026-10-28T11:46:04.738434+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_09_weather.csv
+2026-10-28T11:46:04.743761+00:00 | INFO  | processing date=2026_06_10
+2026-10-28T11:46:04.772088+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_10_weather.csv
+2026-10-28T11:46:04.777415+00:00 | INFO  | processing date=2026_06_11
+2026-10-28T11:46:04.804987+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_11_weather.csv
+2026-10-28T11:46:04.810261+00:00 | INFO  | processing date=2026_06_12
+2026-10-28T11:46:04.838336+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_12_weather.csv
+2026-10-28T11:46:04.843571+00:00 | INFO  | processing date=2026_06_13
+2026-10-28T11:46:04.894715+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_13_weather.csv
+2026-10-28T11:46:04.900213+00:00 | INFO  | processing date=2026_06_14
+2026-10-28T11:46:04.928301+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_14_weather.csv
+2026-10-28T11:46:04.933674+00:00 | INFO  | processing date=2026_06_15
+2026-10-28T11:46:04.961863+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_15_weather.csv
+2026-10-28T11:46:04.967210+00:00 | INFO  | processing date=2026_06_16
+2026-10-28T11:46:04.995800+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_16_weather.csv
+2026-10-28T11:46:05.001098+00:00 | INFO  | processing date=2026_06_17
+2026-10-28T11:46:05.031096+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_17_weather.csv
+2026-10-28T11:46:05.036608+00:00 | INFO  | processing date=2026_06_18
+2026-10-28T11:46:05.065550+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_18_weather.csv
+2026-10-28T11:46:05.070939+00:00 | INFO  | processing date=2026_06_19
+2026-10-28T11:46:05.099489+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_19_weather.csv
+2026-10-28T11:46:05.104902+00:00 | INFO  | processing date=2026_06_20
+2026-10-28T11:46:05.134021+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_20_weather.csv
+2026-10-28T11:46:05.139430+00:00 | INFO  | processing date=2026_06_21
+2026-10-28T11:46:05.168587+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_21_weather.csv
+2026-10-28T11:46:05.173964+00:00 | INFO  | processing date=2026_06_22
+2026-10-28T11:46:05.203402+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_22_weather.csv
+2026-10-28T11:46:05.208764+00:00 | INFO  | processing date=2026_06_23
+2026-10-28T11:46:05.237632+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_23_weather.csv
+2026-10-28T11:46:05.243076+00:00 | INFO  | processing date=2026_06_24
+2026-10-28T11:46:05.271667+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_24_weather.csv
+2026-10-28T11:46:05.276924+00:00 | INFO  | processing date=2026_06_25
+2026-10-28T11:46:05.306681+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_25_weather.csv
+2026-10-28T11:46:05.312158+00:00 | INFO  | processing date=2026_06_26
+2026-10-28T11:46:05.343009+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_26_weather.csv
+2026-10-28T11:46:05.348353+00:00 | INFO  | processing date=2026_06_27
+2026-10-28T11:46:05.378025+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_27_weather.csv
+2026-10-28T11:46:05.386743+00:00 | INFO  | processing date=2026_06_28
+2026-10-28T11:46:05.417839+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_28_weather.csv
+2026-10-28T11:46:05.423163+00:00 | INFO  | processing date=2026_06_29
+2026-10-28T11:46:05.451637+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_29_weather.csv
+2026-10-28T11:46:05.457011+00:00 | INFO  | processing date=2026_06_30
+2026-10-28T11:46:05.485201+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_30_weather.csv
+2026-10-28T11:46:05.490523+00:00 | INFO  | processing date=2026_07_01
+2026-10-28T11:46:05.519520+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_01_weather.csv
+2026-10-28T11:46:05.524978+00:00 | INFO  | processing date=2026_07_02
+2026-10-28T11:46:05.553426+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_02_weather.csv
+2026-10-28T11:46:05.558737+00:00 | INFO  | processing date=2026_07_03
+2026-10-28T11:46:05.587205+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_03_weather.csv
+2026-10-28T11:46:05.592584+00:00 | INFO  | processing date=2026_07_04
+2026-10-28T11:46:05.620635+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_04_weather.csv
+2026-10-28T11:46:05.626004+00:00 | INFO  | processing date=2026_07_05
+2026-10-28T11:46:05.653766+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_05_weather.csv
+2026-10-28T11:46:05.659069+00:00 | INFO  | processing date=2026_07_06
+2026-10-28T11:46:05.686815+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_06_weather.csv
+2026-10-28T11:46:05.692078+00:00 | INFO  | processing date=2026_07_07
+2026-10-28T11:46:05.721230+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_07_weather.csv
+2026-10-28T11:46:05.726614+00:00 | INFO  | processing date=2026_07_08
+2026-10-28T11:46:05.755763+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_08_weather.csv
+2026-10-28T11:46:05.761078+00:00 | INFO  | processing date=2026_07_09
+2026-10-28T11:46:05.790634+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_09_weather.csv
+2026-10-28T11:46:05.795929+00:00 | INFO  | processing date=2026_07_10
+2026-10-28T11:46:05.824607+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_10_weather.csv
+2026-10-28T11:46:05.830084+00:00 | INFO  | processing date=2026_07_11
+2026-10-28T11:46:05.858970+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_11_weather.csv
+2026-10-28T11:46:05.864329+00:00 | INFO  | processing date=2026_07_12
+2026-10-28T11:46:05.893511+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_12_weather.csv
+2026-10-28T11:46:05.898893+00:00 | INFO  | processing date=2026_07_16
+2026-10-28T11:46:05.926532+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_16_weather.csv
+2026-10-28T11:46:05.931738+00:00 | INFO  | processing date=2026_07_17
+2026-10-28T11:46:05.960605+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_17_weather.csv
+2026-10-28T11:46:05.965859+00:00 | INFO  | processing date=2026_07_18
+2026-10-28T11:46:05.993887+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_18_weather.csv
+2026-10-28T11:46:05.999156+00:00 | INFO  | processing date=2026_07_19
+2026-10-28T11:46:06.027579+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_19_weather.csv
+2026-10-28T11:46:06.032881+00:00 | INFO  | processing date=2026_07_20
+2026-10-28T11:46:06.061422+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_20_weather.csv
+2026-10-28T11:46:06.066795+00:00 | INFO  | processing date=2026_07_21
+2026-10-28T11:46:06.094663+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_21_weather.csv
+2026-10-28T11:46:06.099904+00:00 | INFO  | processing date=2026_07_22
+2026-10-28T11:46:06.127738+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_22_weather.csv
+2026-10-28T11:46:06.132890+00:00 | INFO  | processing date=2026_07_23
+2026-10-28T11:46:06.160291+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_23_weather.csv
+2026-10-28T11:46:06.165500+00:00 | INFO  | processing date=2026_07_24
+2026-10-28T11:46:06.194105+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_24_weather.csv
+2026-10-28T11:46:06.199426+00:00 | INFO  | processing date=2026_07_25
+2026-10-28T11:46:06.227491+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_25_weather.csv
+2026-10-28T11:46:06.232688+00:00 | INFO  | processing date=2026_07_26
+2026-10-28T11:46:06.261501+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_26_weather.csv
+2026-10-28T11:46:06.266846+00:00 | INFO  | processing date=2026_07_27
+2026-10-28T11:46:06.295244+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_27_weather.csv
+2026-10-28T11:46:06.300569+00:00 | INFO  | processing date=2026_07_28
+2026-10-28T11:46:06.329655+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_28_weather.csv
+2026-10-28T11:46:06.335028+00:00 | INFO  | processing date=2026_07_29
+2026-10-28T11:46:06.365436+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_29_weather.csv
+2026-10-28T11:46:06.370867+00:00 | INFO  | processing date=2026_07_30
+2026-10-28T11:46:06.400023+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_30_weather.csv
+2026-10-28T11:46:06.405286+00:00 | INFO  | processing date=2026_07_31
+2026-10-28T11:46:06.462452+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_31_weather.csv
+2026-10-28T11:46:06.467902+00:00 | INFO  | processing date=2026_08_01
+2026-10-28T11:46:06.497085+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_01_weather.csv
+2026-10-28T11:46:06.502507+00:00 | INFO  | processing date=2026_08_02
+2026-10-28T11:46:06.531318+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_02_weather.csv
+2026-10-28T11:46:06.536766+00:00 | INFO  | processing date=2026_08_03
+2026-10-28T11:46:06.565098+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_03_weather.csv
+2026-10-28T11:46:06.570422+00:00 | INFO  | processing date=2026_08_04
+2026-10-28T11:46:06.599414+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_04_weather.csv
+2026-10-28T11:46:06.605023+00:00 | INFO  | processing date=2026_08_05
+2026-10-28T11:46:06.634545+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_05_weather.csv
+2026-10-28T11:46:06.639963+00:00 | INFO  | processing date=2026_08_06
+2026-10-28T11:46:06.668356+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_06_weather.csv
+2026-10-28T11:46:06.673590+00:00 | INFO  | processing date=2026_08_07
+2026-10-28T11:46:06.702801+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_07_weather.csv
+2026-10-28T11:46:06.708094+00:00 | INFO  | processing date=2026_08_08
+2026-10-28T11:46:06.737044+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_08_weather.csv
+2026-10-28T11:46:06.742227+00:00 | INFO  | processing date=2026_08_09
+2026-10-28T11:46:06.770906+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_09_weather.csv
+2026-10-28T11:46:06.776057+00:00 | INFO  | processing date=2026_08_10
+2026-10-28T11:46:06.804555+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_10_weather.csv
+2026-10-28T11:46:06.809980+00:00 | INFO  | processing date=2026_08_11
+2026-10-28T11:46:06.838277+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_11_weather.csv
+2026-10-28T11:46:06.843836+00:00 | INFO  | processing date=2026_08_12
+2026-10-28T11:46:06.872709+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_12_weather.csv
+2026-10-28T11:46:06.877988+00:00 | INFO  | processing date=2026_08_13
+2026-10-28T11:46:06.906130+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_13_weather.csv
+2026-10-28T11:46:06.911355+00:00 | INFO  | processing date=2026_08_14
+2026-10-28T11:46:06.940263+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_14_weather.csv
+2026-10-28T11:46:06.945664+00:00 | INFO  | processing date=2026_08_15
+2026-10-28T11:46:06.974824+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_15_weather.csv
+2026-10-28T11:46:06.980133+00:00 | INFO  | processing date=2026_08_16
+2026-10-28T11:46:07.008792+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_16_weather.csv
+2026-10-28T11:46:07.014120+00:00 | INFO  | processing date=2026_08_17
+2026-10-28T11:46:07.042596+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_17_weather.csv
+2026-10-28T11:46:07.047925+00:00 | INFO  | processing date=2026_08_18
+2026-10-28T11:46:07.076388+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_18_weather.csv
+2026-10-28T11:46:07.081740+00:00 | INFO  | processing date=2026_08_19
+2026-10-28T11:46:07.111153+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_19_weather.csv
+2026-10-28T11:46:07.116776+00:00 | INFO  | processing date=2026_08_20
+2026-10-28T11:46:07.145052+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_20_weather.csv
+2026-10-28T11:46:07.150322+00:00 | INFO  | processing date=2026_08_24
+2026-10-28T11:46:07.178177+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_24_weather.csv
+2026-10-28T11:46:07.183603+00:00 | INFO  | processing date=2026_08_25
+2026-10-28T11:46:07.211947+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_25_weather.csv
+2026-10-28T11:46:07.217271+00:00 | INFO  | processing date=2026_08_26
+2026-10-28T11:46:07.245905+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_26_weather.csv
+2026-10-28T11:46:07.251182+00:00 | INFO  | processing date=2026_08_27
+2026-10-28T11:46:07.278687+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_27_weather.csv
+2026-10-28T11:46:07.283944+00:00 | INFO  | processing date=2026_08_28
+2026-10-28T11:46:07.312121+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_28_weather.csv
+2026-10-28T11:46:07.317458+00:00 | INFO  | processing date=2026_08_29
+2026-10-28T11:46:07.345663+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_29_weather.csv
+2026-10-28T11:46:07.350888+00:00 | INFO  | processing date=2026_08_30
+2026-10-28T11:46:07.379646+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_30_weather.csv
+2026-10-28T11:46:07.385096+00:00 | INFO  | processing date=2026_08_31
+2026-10-28T11:46:07.412955+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_31_weather.csv
+2026-10-28T11:46:07.418111+00:00 | INFO  | processing date=2026_09_01
+2026-10-28T11:46:07.446205+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_01_weather.csv
+2026-10-28T11:46:07.451572+00:00 | INFO  | processing date=2026_09_02
+2026-10-28T11:46:07.479874+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_02_weather.csv
+2026-10-28T11:46:07.485050+00:00 | INFO  | processing date=2026_09_03
+2026-10-28T11:46:07.512905+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_03_weather.csv
+2026-10-28T11:46:07.518110+00:00 | INFO  | processing date=2026_09_04
+2026-10-28T11:46:07.546458+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_04_weather.csv
+2026-10-28T11:46:07.551800+00:00 | INFO  | processing date=2026_09_05
+2026-10-28T11:46:07.579874+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_05_weather.csv
+2026-10-28T11:46:07.585193+00:00 | INFO  | processing date=2026_09_06
+2026-10-28T11:46:07.613359+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_06_weather.csv
+2026-10-28T11:46:07.618478+00:00 | INFO  | processing date=2026_09_07
+2026-10-28T11:46:07.646294+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_07_weather.csv
+2026-10-28T11:46:07.651386+00:00 | INFO  | processing date=2026_09_08
+2026-10-28T11:46:07.679340+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_08_weather.csv
+2026-10-28T11:46:07.684777+00:00 | INFO  | processing date=2026_09_09
+2026-10-28T11:46:07.713030+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_09_weather.csv
+2026-10-28T11:46:07.718174+00:00 | INFO  | processing date=2026_09_10
+2026-10-28T11:46:07.745598+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_10_weather.csv
+2026-10-28T11:46:07.750791+00:00 | INFO  | processing date=2026_09_11
+2026-10-28T11:46:07.779495+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_11_weather.csv
+2026-10-28T11:46:07.785062+00:00 | INFO  | processing date=2026_09_12
+2026-10-28T11:46:07.813317+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_12_weather.csv
+2026-10-28T11:46:07.818523+00:00 | INFO  | processing date=2026_09_13
+2026-10-28T11:46:07.846611+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_13_weather.csv
+2026-10-28T11:46:07.851807+00:00 | INFO  | processing date=2026_09_14
+2026-10-28T11:46:07.879597+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_14_weather.csv
+2026-10-28T11:46:07.884931+00:00 | INFO  | processing date=2026_09_15
+2026-10-28T11:46:07.913133+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_15_weather.csv
+2026-10-28T11:46:07.918337+00:00 | INFO  | processing date=2026_09_16
+2026-10-28T11:46:07.946859+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_16_weather.csv
+2026-10-28T11:46:07.952124+00:00 | INFO  | processing date=2026_09_17
+2026-10-28T11:46:07.980081+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_17_weather.csv
+2026-10-28T11:46:07.985270+00:00 | INFO  | processing date=2026_09_18
+2026-10-28T11:46:08.013628+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_18_weather.csv
+2026-10-28T11:46:08.019051+00:00 | INFO  | processing date=2026_09_19
+2026-10-28T11:46:08.047610+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_19_weather.csv
+2026-10-28T11:46:08.052811+00:00 | INFO  | processing date=2026_09_20
+2026-10-28T11:46:08.113982+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_20_weather.csv
+2026-10-28T11:46:08.119420+00:00 | INFO  | processing date=2026_09_21
+2026-10-28T11:46:08.147299+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_21_weather.csv
+2026-10-28T11:46:08.152514+00:00 | INFO  | processing date=2026_09_22
+2026-10-28T11:46:08.180889+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_22_weather.csv
+2026-10-28T11:46:08.186273+00:00 | INFO  | processing date=2026_09_23
+2026-10-28T11:46:08.214789+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_23_weather.csv
+2026-10-28T11:46:08.220042+00:00 | INFO  | processing date=2026_09_24
+2026-10-28T11:46:08.248361+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_24_weather.csv
+2026-10-28T11:46:08.253640+00:00 | INFO  | processing date=2026_09_25
+2026-10-28T11:46:08.283227+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_25_weather.csv
+2026-10-28T11:46:08.288563+00:00 | INFO  | processing date=2026_09_26
+2026-10-28T11:46:08.317565+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_26_weather.csv
+2026-10-28T11:46:08.323134+00:00 | INFO  | processing date=2026_09_27
+2026-10-28T11:46:08.353038+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_27_weather.csv
+2026-10-28T11:46:08.358424+00:00 | INFO  | processing date=2026_09_29
+2026-10-28T11:46:08.386867+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_29_weather.csv
+2026-10-28T11:46:08.392138+00:00 | INFO  | processing date=2026_09_30
+2026-10-28T11:46:08.419972+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_30_weather.csv
+2026-10-28T11:46:08.425259+00:00 | INFO  | processing date=2026_10_01
+2026-10-28T11:46:08.452821+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_01_weather.csv
+2026-10-28T11:46:08.458056+00:00 | INFO  | processing date=2026_10_03
+2026-10-28T11:46:08.486751+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_03_weather.csv
+2026-10-28T11:46:08.491998+00:00 | INFO  | processing date=2026_10_04
+2026-10-28T11:46:08.519850+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_04_weather.csv
+2026-10-28T11:46:08.525129+00:00 | INFO  | processing date=2026_10_05
+2026-10-28T11:46:08.553320+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_05_weather.csv
+2026-10-28T11:46:08.558604+00:00 | INFO  | processing date=2026_10_06
+2026-10-28T11:46:08.587850+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_06_weather.csv
+2026-10-28T11:46:08.593140+00:00 | INFO  | processing date=2026_10_07
+2026-10-28T11:46:08.625538+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_07_weather.csv
+2026-10-28T11:46:08.630829+00:00 | INFO  | processing date=2026_10_08
+2026-10-28T11:46:08.664766+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_08_weather.csv
+2026-10-28T11:46:08.671103+00:00 | INFO  | processing date=2026_10_10
+2026-10-28T11:46:08.699118+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_10_weather.csv
+2026-10-28T11:46:08.704410+00:00 | INFO  | processing date=2026_10_11
+2026-10-28T11:46:08.731986+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_11_weather.csv
+2026-10-28T11:46:08.737159+00:00 | INFO  | processing date=2026_10_12
+2026-10-28T11:46:08.764962+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_12_weather.csv
+2026-10-28T11:46:08.770185+00:00 | INFO  | processing date=2026_10_13
+2026-10-28T11:46:08.797718+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_13_weather.csv
+2026-10-28T11:46:08.803050+00:00 | INFO  | processing date=2026_10_14
+2026-10-28T11:46:08.833915+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_14_weather.csv
+2026-10-28T11:46:08.839073+00:00 | INFO  | processing date=2026_10_15
+2026-10-28T11:46:08.866613+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_15_weather.csv
+2026-10-28T11:46:08.871842+00:00 | INFO  | processing date=2026_10_16
+2026-10-28T11:46:08.899159+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_16_weather.csv
+2026-10-28T11:46:08.904271+00:00 | INFO  | processing date=2026_10_18
+2026-10-28T11:46:08.931230+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_18_weather.csv
+2026-10-28T11:46:08.936387+00:00 | INFO  | processing date=2026_10_19
+2026-10-28T11:46:08.963801+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_19_weather.csv
+2026-10-28T11:46:08.968938+00:00 | INFO  | processing date=2026_10_23
+2026-10-28T11:46:08.996181+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_23_weather.csv
+2026-10-28T11:46:09.001319+00:00 | INFO  | processing date=2026_10_24
+2026-10-28T11:46:09.028997+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_24_weather.csv
+2026-10-28T11:46:09.034168+00:00 | INFO  | processing date=2026_10_26
+2026-10-28T11:46:09.061521+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_26_weather.csv
+2026-10-28T11:46:09.066628+00:00 | INFO  | processing date=2026_10_27
+2026-10-28T11:46:09.093722+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_27_weather.csv
+2026-10-28T11:46:09.306431+00:00 | INFO  | rows_loaded=1944
+2026-10-28T11:46:09.306473+00:00 | INFO  | rows_joined=1944
+2026-10-28T11:46:09.306493+00:00 | INFO  | missing_sdv=0
+2026-10-28T11:46:09.306511+00:00 | INFO  | missing_final_score_file=1
+2026-10-28T11:46:09.306528+00:00 | INFO  | unresolved_gamePk=0
+2026-10-28T11:46:09.306544+00:00 | INFO  | failed_final_score_join=0
+2026-10-28T11:46:09.306560+00:00 | INFO  | duplicate_game_id=0
+2026-10-28T11:46:09.306576+00:00 | INFO  | duplicate_gamePk=0
+2026-10-28T11:46:09.306591+00:00 | INFO  | leakage_rejections=0
+2026-10-28T11:46:09.306607+00:00 | INFO  | rows_written=1944
+2026-10-28T11:46:09.306625+00:00 | INFO  | WROTE docs/win/baseball/mlb/modeling/data/mlb_run_training_set.csv
+2026-10-28T11:47:22.907189+00:00 | INFO  | Skipping prediction dates with no matching final-score file: 2026_10_28
+2026-10-28T11:47:22.942641+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_26_weather.csv
+2026-10-28T11:47:22.979349+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_27_weather.csv
+2026-10-28T11:47:23.015102+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_28_weather.csv
+2026-10-28T11:47:23.049900+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_29_weather.csv
+2026-10-28T11:47:23.085509+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_30_weather.csv
+2026-10-28T11:47:23.120834+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_03_31_weather.csv
+2026-10-28T11:47:23.156611+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_01_weather.csv
+2026-10-28T11:47:23.191499+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_02_weather.csv
+2026-10-28T11:47:23.227856+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_03_weather.csv
+2026-10-28T11:47:23.262588+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_04_weather.csv
+2026-10-28T11:47:23.298753+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_05_weather.csv
+2026-10-28T11:47:23.334802+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_06_weather.csv
+2026-10-28T11:47:23.370273+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_07_weather.csv
+2026-10-28T11:47:23.405575+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_08_weather.csv
+2026-10-28T11:47:23.440543+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_09_weather.csv
+2026-10-28T11:47:23.475746+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_10_weather.csv
+2026-10-28T11:47:23.510476+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_11_weather.csv
+2026-10-28T11:47:23.545415+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_12_weather.csv
+2026-10-28T11:47:23.580605+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_13_weather.csv
+2026-10-28T11:47:23.615245+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_14_weather.csv
+2026-10-28T11:47:23.649969+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_15_weather.csv
+2026-10-28T11:47:23.684606+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_16_weather.csv
+2026-10-28T11:47:23.718502+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_17_weather.csv
+2026-10-28T11:47:23.752178+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_18_weather.csv
+2026-10-28T11:47:23.785857+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_19_weather.csv
+2026-10-28T11:47:23.819348+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_20_weather.csv
+2026-10-28T11:47:23.853624+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_21_weather.csv
+2026-10-28T11:47:23.887815+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_22_weather.csv
+2026-10-28T11:47:23.923585+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_23_weather.csv
+2026-10-28T11:47:23.995051+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_24_weather.csv
+2026-10-28T11:47:24.030140+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_25_weather.csv
+2026-10-28T11:47:24.064530+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_26_weather.csv
+2026-10-28T11:47:24.098095+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_27_weather.csv
+2026-10-28T11:47:24.132043+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_28_weather.csv
+2026-10-28T11:47:24.166651+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_29_weather.csv
+2026-10-28T11:47:24.200402+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_04_30_weather.csv
+2026-10-28T11:47:24.234765+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_01_weather.csv
+2026-10-28T11:47:24.269061+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_02_weather.csv
+2026-10-28T11:47:24.304876+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_03_weather.csv
+2026-10-28T11:47:24.340907+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_04_weather.csv
+2026-10-28T11:47:24.376625+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_05_weather.csv
+2026-10-28T11:47:24.411351+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_06_weather.csv
+2026-10-28T11:47:24.445229+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_07_weather.csv
+2026-10-28T11:47:24.479701+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_08_weather.csv
+2026-10-28T11:47:24.514118+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_09_weather.csv
+2026-10-28T11:47:24.549076+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_10_weather.csv
+2026-10-28T11:47:24.583830+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_11_weather.csv
+2026-10-28T11:47:24.618872+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_12_weather.csv
+2026-10-28T11:47:24.653635+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_13_weather.csv
+2026-10-28T11:47:24.688011+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_14_weather.csv
+2026-10-28T11:47:24.723106+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_15_weather.csv
+2026-10-28T11:47:24.758102+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_16_weather.csv
+2026-10-28T11:47:24.792901+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_17_weather.csv
+2026-10-28T11:47:24.827805+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_18_weather.csv
+2026-10-28T11:47:24.861960+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_19_weather.csv
+2026-10-28T11:47:24.896331+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_20_weather.csv
+2026-10-28T11:47:24.929976+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_21_weather.csv
+2026-10-28T11:47:24.964234+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_22_weather.csv
+2026-10-28T11:47:24.999295+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_23_weather.csv
+2026-10-28T11:47:25.034516+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_24_weather.csv
+2026-10-28T11:47:25.069899+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_25_weather.csv
+2026-10-28T11:47:25.105001+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_26_weather.csv
+2026-10-28T11:47:25.139884+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_27_weather.csv
+2026-10-28T11:47:25.174685+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_28_weather.csv
+2026-10-28T11:47:25.209385+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_29_weather.csv
+2026-10-28T11:47:25.243829+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_30_weather.csv
+2026-10-28T11:47:25.278226+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_05_31_weather.csv
+2026-10-28T11:47:25.315443+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_01_weather.csv
+2026-10-28T11:47:25.350415+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_02_weather.csv
+2026-10-28T11:47:25.384586+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_03_weather.csv
+2026-10-28T11:47:25.419658+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_04_weather.csv
+2026-10-28T11:47:25.455569+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_05_weather.csv
+2026-10-28T11:47:25.490125+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_06_weather.csv
+2026-10-28T11:47:25.525059+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_07_weather.csv
+2026-10-28T11:47:25.561093+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_08_weather.csv
+2026-10-28T11:47:25.596051+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_09_weather.csv
+2026-10-28T11:47:25.630508+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_10_weather.csv
+2026-10-28T11:47:25.666292+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_11_weather.csv
+2026-10-28T11:47:25.700379+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_12_weather.csv
+2026-10-28T11:47:25.734087+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_13_weather.csv
+2026-10-28T11:47:25.767448+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_14_weather.csv
+2026-10-28T11:47:25.804690+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_15_weather.csv
+2026-10-28T11:47:25.840575+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_16_weather.csv
+2026-10-28T11:47:25.876076+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_17_weather.csv
+2026-10-28T11:47:25.911598+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_18_weather.csv
+2026-10-28T11:47:25.946754+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_19_weather.csv
+2026-10-28T11:47:25.981801+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_20_weather.csv
+2026-10-28T11:47:26.017905+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_21_weather.csv
+2026-10-28T11:47:26.053594+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_22_weather.csv
+2026-10-28T11:47:26.089882+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_23_weather.csv
+2026-10-28T11:47:26.126144+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_24_weather.csv
+2026-10-28T11:47:26.161728+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_25_weather.csv
+2026-10-28T11:47:26.196644+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_26_weather.csv
+2026-10-28T11:47:26.231106+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_27_weather.csv
+2026-10-28T11:47:26.265337+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_28_weather.csv
+2026-10-28T11:47:26.299601+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_29_weather.csv
+2026-10-28T11:47:26.334147+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_06_30_weather.csv
+2026-10-28T11:47:26.418151+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_01_weather.csv
+2026-10-28T11:47:26.452315+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_02_weather.csv
+2026-10-28T11:47:26.486219+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_03_weather.csv
+2026-10-28T11:47:26.520404+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_04_weather.csv
+2026-10-28T11:47:26.554296+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_05_weather.csv
+2026-10-28T11:47:26.588122+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_06_weather.csv
+2026-10-28T11:47:26.621953+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_07_weather.csv
+2026-10-28T11:47:26.656124+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_08_weather.csv
+2026-10-28T11:47:26.690171+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_09_weather.csv
+2026-10-28T11:47:26.723812+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_10_weather.csv
+2026-10-28T11:47:26.757676+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_11_weather.csv
+2026-10-28T11:47:26.791747+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_12_weather.csv
+2026-10-28T11:47:26.824741+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_16_weather.csv
+2026-10-28T11:47:26.859695+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_17_weather.csv
+2026-10-28T11:47:26.894178+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_18_weather.csv
+2026-10-28T11:47:26.928219+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_19_weather.csv
+2026-10-28T11:47:26.963176+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_20_weather.csv
+2026-10-28T11:47:26.997698+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_21_weather.csv
+2026-10-28T11:47:27.032236+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_22_weather.csv
+2026-10-28T11:47:27.067195+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_23_weather.csv
+2026-10-28T11:47:27.103289+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_24_weather.csv
+2026-10-28T11:47:27.138338+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_25_weather.csv
+2026-10-28T11:47:27.174224+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_26_weather.csv
+2026-10-28T11:47:27.208871+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_27_weather.csv
+2026-10-28T11:47:27.244090+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_28_weather.csv
+2026-10-28T11:47:27.278669+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_29_weather.csv
+2026-10-28T11:47:27.312762+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_30_weather.csv
+2026-10-28T11:47:27.346447+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_07_31_weather.csv
+2026-10-28T11:47:27.381188+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_01_weather.csv
+2026-10-28T11:47:27.415833+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_02_weather.csv
+2026-10-28T11:47:27.451040+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_03_weather.csv
+2026-10-28T11:47:27.485953+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_04_weather.csv
+2026-10-28T11:47:27.521263+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_05_weather.csv
+2026-10-28T11:47:27.556049+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_06_weather.csv
+2026-10-28T11:47:27.591459+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_07_weather.csv
+2026-10-28T11:47:27.626252+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_08_weather.csv
+2026-10-28T11:47:27.660106+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_09_weather.csv
+2026-10-28T11:47:27.694285+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_10_weather.csv
+2026-10-28T11:47:27.730181+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_11_weather.csv
+2026-10-28T11:47:27.766168+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_12_weather.csv
+2026-10-28T11:47:27.800679+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_13_weather.csv
+2026-10-28T11:47:27.834988+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_14_weather.csv
+2026-10-28T11:47:27.870103+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_15_weather.csv
+2026-10-28T11:47:27.906309+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_16_weather.csv
+2026-10-28T11:47:27.942277+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_17_weather.csv
+2026-10-28T11:47:27.978001+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_18_weather.csv
+2026-10-28T11:47:28.013676+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_19_weather.csv
+2026-10-28T11:47:28.048649+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_20_weather.csv
+2026-10-28T11:47:28.083404+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_24_weather.csv
+2026-10-28T11:47:28.118336+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_25_weather.csv
+2026-10-28T11:47:28.152635+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_26_weather.csv
+2026-10-28T11:47:28.185756+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_27_weather.csv
+2026-10-28T11:47:28.219075+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_28_weather.csv
+2026-10-28T11:47:28.253064+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_29_weather.csv
+2026-10-28T11:47:28.287732+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_30_weather.csv
+2026-10-28T11:47:28.322206+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_08_31_weather.csv
+2026-10-28T11:47:28.357533+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_01_weather.csv
+2026-10-28T11:47:28.392627+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_02_weather.csv
+2026-10-28T11:47:28.428824+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_03_weather.csv
+2026-10-28T11:47:28.465658+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_04_weather.csv
+2026-10-28T11:47:28.501311+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_05_weather.csv
+2026-10-28T11:47:28.536864+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_06_weather.csv
+2026-10-28T11:47:28.572782+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_07_weather.csv
+2026-10-28T11:47:28.607057+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_08_weather.csv
+2026-10-28T11:47:28.641467+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_09_weather.csv
+2026-10-28T11:47:28.736703+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_10_weather.csv
+2026-10-28T11:47:28.771631+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_11_weather.csv
+2026-10-28T11:47:28.806754+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_12_weather.csv
+2026-10-28T11:47:28.842233+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_13_weather.csv
+2026-10-28T11:47:28.876723+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_14_weather.csv
+2026-10-28T11:47:28.911029+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_15_weather.csv
+2026-10-28T11:47:28.946010+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_16_weather.csv
+2026-10-28T11:47:28.980608+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_17_weather.csv
+2026-10-28T11:47:29.015144+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_18_weather.csv
+2026-10-28T11:47:29.050490+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_19_weather.csv
+2026-10-28T11:47:29.085023+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_20_weather.csv
+2026-10-28T11:47:29.119252+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_21_weather.csv
+2026-10-28T11:47:29.153546+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_22_weather.csv
+2026-10-28T11:47:29.188352+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_23_weather.csv
+2026-10-28T11:47:29.223222+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_24_weather.csv
+2026-10-28T11:47:29.258917+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_25_weather.csv
+2026-10-28T11:47:29.293379+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_26_weather.csv
+2026-10-28T11:47:29.327629+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_27_weather.csv
+2026-10-28T11:47:29.361244+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_29_weather.csv
+2026-10-28T11:47:29.395430+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_09_30_weather.csv
+2026-10-28T11:47:29.429256+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_01_weather.csv
+2026-10-28T11:47:29.463884+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_03_weather.csv
+2026-10-28T11:47:29.497971+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_04_weather.csv
+2026-10-28T11:47:29.533294+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_05_weather.csv
+2026-10-28T11:47:29.567384+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_06_weather.csv
+2026-10-28T11:47:29.601820+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_07_weather.csv
+2026-10-28T11:47:29.635425+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_08_weather.csv
+2026-10-28T11:47:29.669483+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_10_weather.csv
+2026-10-28T11:47:29.703069+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_11_weather.csv
+2026-10-28T11:47:29.737351+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_12_weather.csv
+2026-10-28T11:47:29.770515+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_13_weather.csv
+2026-10-28T11:47:29.803846+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_14_weather.csv
+2026-10-28T11:47:29.837193+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_15_weather.csv
+2026-10-28T11:47:29.870351+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_16_weather.csv
+2026-10-28T11:47:29.904219+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_18_weather.csv
+2026-10-28T11:47:29.938061+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_19_weather.csv
+2026-10-28T11:47:29.971629+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_23_weather.csv
+2026-10-28T11:47:30.005005+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_24_weather.csv
+2026-10-28T11:47:30.039211+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_26_weather.csv
+2026-10-28T11:47:30.073918+00:00 | WARN  | weather ignored because no pregame-generation provenance timestamp exists: 2026_10_27_weather.csv
