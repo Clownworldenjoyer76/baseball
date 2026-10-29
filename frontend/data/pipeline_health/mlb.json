@@ -1,23 +1,25 @@
 {
   "current_workflow": "pregame",
-  "fatal_errors": [],
-  "game_date_new_york": "2026_10_28",
-  "generated_at_utc": "2026-10-28T11:50:02.585644+00:00",
+  "fatal_errors": [
+    "MLB 02 Pregame workflow status is FAILURE"
+  ],
+  "game_date_new_york": "2026_10_29",
+  "generated_at_utc": "2026-10-29T07:18:31.660882+00:00",
   "leagues": {
     "mlb": {
       "counts": {
         "locked_bets": 0,
-        "merged_games": 1,
+        "merged_games": 0,
         "morning_selected_bets": 0,
-        "prediction_baseline_games": 1,
-        "prediction_games": 1,
-        "prediction_source_games": 1,
-        "scheduled_games": 1,
+        "prediction_baseline_games": 0,
+        "prediction_games": 0,
+        "prediction_source_games": 0,
+        "scheduled_games": 0,
         "selected_bets": 0,
-        "sportsbook_games": 1
+        "sportsbook_games": 0
       },
       "coverage": {
-        "baseline_exists": true,
+        "baseline_exists": false,
         "baseline_missing_prediction_source": [],
         "model_projection_not_in_prediction_source": [],
         "prediction_source_missing_baseline": [],
@@ -45,14 +47,14 @@
       "in_season": true,
       "issues": [],
       "paths": {
-        "daily_games": "docs/win/baseball/mlb/00_intake/games/2026_10_28_games.csv",
-        "merged": "docs/win/baseball/mlb/01_merge/2026_10_28_mlb_moneyline.csv",
-        "morning_selected": "docs/win/baseball/mlb/04_select/morning/2026_10_28_MLB.csv",
-        "prediction_baseline": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/baseline/2026_10_28_MLB.csv",
-        "prediction_source": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/2026_10_28_MLB.csv",
-        "predictions": "docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_10_28_MLB.csv",
-        "selected": "docs/win/baseball/mlb/04_select/2026_10_28_MLB.csv",
-        "sportsbook": "docs/win/baseball/mlb/00_intake/sportsbook/2026_10_28_MLB.csv"
+        "daily_games": "docs/win/baseball/mlb/00_intake/games/2026_10_29_games.csv",
+        "merged": "docs/win/baseball/mlb/01_merge/2026_10_29_mlb_moneyline.csv",
+        "morning_selected": "docs/win/baseball/mlb/04_select/morning/2026_10_29_MLB.csv",
+        "prediction_baseline": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/baseline/2026_10_29_MLB.csv",
+        "prediction_source": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/2026_10_29_MLB.csv",
+        "predictions": "docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_10_29_MLB.csv",
+        "selected": "docs/win/baseball/mlb/04_select/2026_10_29_MLB.csv",
+        "sportsbook": "docs/win/baseball/mlb/00_intake/sportsbook/2026_10_29_MLB.csv"
       }
     }
   },
@@ -70,14 +72,14 @@
     "validation_status": "passed"
   },
   "paths": {
-    "daily_games": "docs/win/baseball/mlb/00_intake/games/2026_10_28_games.csv",
-    "merged": "docs/win/baseball/mlb/01_merge/2026_10_28_mlb_moneyline.csv",
-    "morning_selected": "docs/win/baseball/mlb/04_select/morning/2026_10_28_MLB.csv",
-    "prediction_baseline": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/baseline/2026_10_28_MLB.csv",
-    "prediction_source": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/2026_10_28_MLB.csv",
-    "predictions": "docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_10_28_MLB.csv",
-    "selected": "docs/win/baseball/mlb/04_select/2026_10_28_MLB.csv",
-    "sportsbook": "docs/win/baseball/mlb/00_intake/sportsbook/2026_10_28_MLB.csv"
+    "daily_games": "docs/win/baseball/mlb/00_intake/games/2026_10_29_games.csv",
+    "merged": "docs/win/baseball/mlb/01_merge/2026_10_29_mlb_moneyline.csv",
+    "morning_selected": "docs/win/baseball/mlb/04_select/morning/2026_10_29_MLB.csv",
+    "prediction_baseline": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/baseline/2026_10_29_MLB.csv",
+    "prediction_source": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/2026_10_29_MLB.csv",
+    "predictions": "docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_10_29_MLB.csv",
+    "selected": "docs/win/baseball/mlb/04_select/2026_10_29_MLB.csv",
+    "sportsbook": "docs/win/baseball/mlb/00_intake/sportsbook/2026_10_29_MLB.csv"
   },
   "schema_version": 1,
   "stage_status": [
@@ -215,7 +217,7 @@
     {
       "exists": true,
       "path": "MLB 02 Pregame Workflow",
-      "status": "STATUS: SUCCESS | 2026-10-28T11:50:02.585644+00:00"
+      "status": "STATUS: FAILED | 2026-10-29T07:18:31.660882+00:00"
     },
     {
       "exists": true,
@@ -320,7 +322,7 @@
       "status": "STATUS: SUCCESS"
     }
   ],
-  "status": "healthy",
+  "status": "failed",
   "warnings": [],
   "workflows": {
     "morning": {
@@ -484,13 +486,13 @@
       "workflow": "morning"
     },
     "pregame": {
-      "game_date_new_york": "2026_10_28",
-      "generated_at_utc": "2026-10-28T11:50:02.585644+00:00",
+      "game_date_new_york": "2026_10_29",
+      "generated_at_utc": "2026-10-29T07:18:31.660882+00:00",
       "label": "MLB 02 Pregame",
       "ref_name": "main",
       "run_attempt": "1",
-      "run_id": "40680919492",
-      "sha": "164deae7c295e47fda9ef3b8d1ed3fda22cf25a0",
+      "run_id": "40833160772",
+      "sha": "09d282bfceccba9c0bfeb36736c09547abe6eb30",
       "stages": [
         {
           "display_path": "MLB 02 Pregame - Odds Parse",
@@ -612,7 +614,7 @@
           "status": "STATUS: SUCCESS"
         }
       ],
-      "status": "success",
+      "status": "failure",
       "workflow": "pregame"
     }
   }
