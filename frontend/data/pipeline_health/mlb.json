@@ -1,10 +1,10 @@
 {
   "current_workflow": "pregame",
   "fatal_errors": [
-    "MLB 02 Pregame workflow status is FAILURE"
+    "MLB Pipeline workflow status is FAILURE"
   ],
   "game_date_new_york": "2026_10_29",
-  "generated_at_utc": "2026-10-29T07:18:31.660882+00:00",
+  "generated_at_utc": "2026-10-29T19:28:52.448286+00:00",
   "leagues": {
     "mlb": {
       "counts": {
@@ -216,108 +216,108 @@
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame Workflow",
-      "status": "STATUS: FAILED | 2026-10-29T07:18:31.660882+00:00"
+      "path": "MLB Pipeline Workflow",
+      "status": "STATUS: FAILED | 2026-10-29T19:28:52.448286+00:00"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Odds Parse",
+      "path": "MLB Pipeline - Odds Parse",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/odds_parse.txt",
       "status": "2026-10-28T07:47:09.831747 | STATUS: SUCCESS"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Name Normalization",
+      "path": "MLB Pipeline - Name Normalization",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/name_normalization.txt",
       "status": "2026-10-28T11:47:15.076828+00:00 | INFO  | STATUS: SUCCESS"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - DRatings Scraper",
+      "path": "MLB Pipeline - DRatings Scraper",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/baseball_drat_scraper.txt",
       "status": "2026-10-28T07:47:14.723082-04:00 | STATUS: SUCCESS"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Transform Baseball",
+      "path": "MLB Pipeline - Transform Baseball",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/transform_baseball.txt",
       "status": "2026-10-28T07:47:14.998238 | STATUS: SUCCESS"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Scrape MLB Raw",
+      "path": "MLB Pipeline - Scrape MLB Raw",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/scrape_mlb_raw.txt",
       "status": "2026-10-28T11:47:15.574863+00:00 | INFO  | STATUS: SUCCESS"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Build Games List",
+      "path": "MLB Pipeline - Build Games List",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/build_games_list.txt",
       "status": "STATUS: SUCCESS"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - SportsDataverse Features",
+      "path": "MLB Pipeline - SportsDataverse Features",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/sportsdataverse_mlb.txt",
       "status": "STATUS: LOG PRESENT"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Fetch Park Weather",
+      "path": "MLB Pipeline - Fetch Park Weather",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/fetch_park_weather.txt",
       "status": "STATUS: SUCCESS"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Build Game Weather",
+      "path": "MLB Pipeline - Build Game Weather",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/build_game_weather.txt",
       "status": "STATUS: SUCCESS"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Enrich Game Context",
+      "path": "MLB Pipeline - Enrich Game Context",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/enrich_game_context.txt",
       "status": "STATUS: SUCCESS"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Game ID Predictions",
+      "path": "MLB Pipeline - Game ID Predictions",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/game_id_pred.txt",
       "status": "STATUS: SUCCESS"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Build Run Projection",
+      "path": "MLB Pipeline - Build Run Projection",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/build_run_projection.txt",
       "status": "STATUS: LOG PRESENT"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Merge Intake",
+      "path": "MLB Pipeline - Merge Intake",
       "source_path": "docs/win/baseball/mlb/errors/01_merge/merge_intake.txt",
       "status": "STATUS: LOG PRESENT"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Build Juice Files",
+      "path": "MLB Pipeline - Build Juice Files",
       "source_path": "docs/win/baseball/mlb/errors/01_merge/build_juice_files.txt",
       "status": "2026-10-28T11:49:41.848158+00:00 | STATUS: SUCCESS"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Compute Edges",
+      "path": "MLB Pipeline - Compute Edges",
       "source_path": "docs/win/baseball/mlb/errors/03_edges/compute_edges.txt",
       "status": "STATUS: SUCCESS"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Compute EV Kelly",
+      "path": "MLB Pipeline - Compute EV Kelly",
       "source_path": "docs/win/baseball/mlb/errors/03_edges/compute_ev_kelly.txt",
       "status": "STATUS: SUCCESS"
     },
     {
       "exists": true,
-      "path": "MLB 02 Pregame - Select Bets",
+      "path": "MLB Pipeline - Select Bets",
       "source_path": "docs/win/baseball/mlb/errors/04_select/select_bets.txt",
       "status": "STATUS: SUCCESS"
     }
@@ -487,127 +487,127 @@
     },
     "pregame": {
       "game_date_new_york": "2026_10_29",
-      "generated_at_utc": "2026-10-29T07:18:31.660882+00:00",
-      "label": "MLB 02 Pregame",
+      "generated_at_utc": "2026-10-29T19:28:52.448286+00:00",
+      "label": "MLB Pipeline",
       "ref_name": "main",
       "run_attempt": "1",
-      "run_id": "40833160772",
-      "sha": "09d282bfceccba9c0bfeb36736c09547abe6eb30",
+      "run_id": "40938472177",
+      "sha": "deafa95660cf1727541854f61d79d6a0c0584169",
       "stages": [
         {
-          "display_path": "MLB 02 Pregame - Odds Parse",
+          "display_path": "MLB Pipeline - Odds Parse",
           "exists": true,
           "name": "Odds Parse",
           "path": "docs/win/baseball/mlb/errors/00_intake/odds_parse.txt",
           "status": "2026-10-28T07:47:09.831747 | STATUS: SUCCESS"
         },
         {
-          "display_path": "MLB 02 Pregame - Name Normalization",
+          "display_path": "MLB Pipeline - Name Normalization",
           "exists": true,
           "name": "Name Normalization",
           "path": "docs/win/baseball/mlb/errors/00_intake/name_normalization.txt",
           "status": "2026-10-28T11:47:15.076828+00:00 | INFO  | STATUS: SUCCESS"
         },
         {
-          "display_path": "MLB 02 Pregame - DRatings Scraper",
+          "display_path": "MLB Pipeline - DRatings Scraper",
           "exists": true,
           "name": "DRatings Scraper",
           "path": "docs/win/baseball/mlb/errors/00_intake/baseball_drat_scraper.txt",
           "status": "2026-10-28T07:47:14.723082-04:00 | STATUS: SUCCESS"
         },
         {
-          "display_path": "MLB 02 Pregame - Transform Baseball",
+          "display_path": "MLB Pipeline - Transform Baseball",
           "exists": true,
           "name": "Transform Baseball",
           "path": "docs/win/baseball/mlb/errors/00_intake/transform_baseball.txt",
           "status": "2026-10-28T07:47:14.998238 | STATUS: SUCCESS"
         },
         {
-          "display_path": "MLB 02 Pregame - Scrape MLB Raw",
+          "display_path": "MLB Pipeline - Scrape MLB Raw",
           "exists": true,
           "name": "Scrape MLB Raw",
           "path": "docs/win/baseball/mlb/errors/00_intake/scrape_mlb_raw.txt",
           "status": "2026-10-28T11:47:15.574863+00:00 | INFO  | STATUS: SUCCESS"
         },
         {
-          "display_path": "MLB 02 Pregame - Build Games List",
+          "display_path": "MLB Pipeline - Build Games List",
           "exists": true,
           "name": "Build Games List",
           "path": "docs/win/baseball/mlb/errors/00_intake/build_games_list.txt",
           "status": "STATUS: SUCCESS"
         },
         {
-          "display_path": "MLB 02 Pregame - SportsDataverse Features",
+          "display_path": "MLB Pipeline - SportsDataverse Features",
           "exists": true,
           "name": "SportsDataverse Features",
           "path": "docs/win/baseball/mlb/errors/00_intake/sportsdataverse_mlb.txt",
           "status": "STATUS: LOG PRESENT"
         },
         {
-          "display_path": "MLB 02 Pregame - Fetch Park Weather",
+          "display_path": "MLB Pipeline - Fetch Park Weather",
           "exists": true,
           "name": "Fetch Park Weather",
           "path": "docs/win/baseball/mlb/errors/00_intake/fetch_park_weather.txt",
           "status": "STATUS: SUCCESS"
         },
         {
-          "display_path": "MLB 02 Pregame - Build Game Weather",
+          "display_path": "MLB Pipeline - Build Game Weather",
           "exists": true,
           "name": "Build Game Weather",
           "path": "docs/win/baseball/mlb/errors/00_intake/build_game_weather.txt",
           "status": "STATUS: SUCCESS"
         },
         {
-          "display_path": "MLB 02 Pregame - Enrich Game Context",
+          "display_path": "MLB Pipeline - Enrich Game Context",
           "exists": true,
           "name": "Enrich Game Context",
           "path": "docs/win/baseball/mlb/errors/00_intake/enrich_game_context.txt",
           "status": "STATUS: SUCCESS"
         },
         {
-          "display_path": "MLB 02 Pregame - Game ID Predictions",
+          "display_path": "MLB Pipeline - Game ID Predictions",
           "exists": true,
           "name": "Game ID Predictions",
           "path": "docs/win/baseball/mlb/errors/00_intake/game_id_pred.txt",
           "status": "STATUS: SUCCESS"
         },
         {
-          "display_path": "MLB 02 Pregame - Build Run Projection",
+          "display_path": "MLB Pipeline - Build Run Projection",
           "exists": true,
           "name": "Build Run Projection",
           "path": "docs/win/baseball/mlb/errors/00_intake/build_run_projection.txt",
           "status": "STATUS: LOG PRESENT"
         },
         {
-          "display_path": "MLB 02 Pregame - Merge Intake",
+          "display_path": "MLB Pipeline - Merge Intake",
           "exists": true,
           "name": "Merge Intake",
           "path": "docs/win/baseball/mlb/errors/01_merge/merge_intake.txt",
           "status": "STATUS: LOG PRESENT"
         },
         {
-          "display_path": "MLB 02 Pregame - Build Juice Files",
+          "display_path": "MLB Pipeline - Build Juice Files",
           "exists": true,
           "name": "Build Juice Files",
           "path": "docs/win/baseball/mlb/errors/01_merge/build_juice_files.txt",
           "status": "2026-10-28T11:49:41.848158+00:00 | STATUS: SUCCESS"
         },
         {
-          "display_path": "MLB 02 Pregame - Compute Edges",
+          "display_path": "MLB Pipeline - Compute Edges",
           "exists": true,
           "name": "Compute Edges",
           "path": "docs/win/baseball/mlb/errors/03_edges/compute_edges.txt",
           "status": "STATUS: SUCCESS"
         },
         {
-          "display_path": "MLB 02 Pregame - Compute EV Kelly",
+          "display_path": "MLB Pipeline - Compute EV Kelly",
           "exists": true,
           "name": "Compute EV Kelly",
           "path": "docs/win/baseball/mlb/errors/03_edges/compute_ev_kelly.txt",
           "status": "STATUS: SUCCESS"
         },
         {
-          "display_path": "MLB 02 Pregame - Select Bets",
+          "display_path": "MLB Pipeline - Select Bets",
           "exists": true,
           "name": "Select Bets",
           "path": "docs/win/baseball/mlb/errors/04_select/select_bets.txt",
