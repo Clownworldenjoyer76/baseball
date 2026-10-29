@@ -1,0 +1,93 @@
+name: _Manual Park Factors
+
+on:
+  workflow_dispatch:
+    inputs:
+      league:
+        description: "League"
+        required: true
+        type: string
+      variable_1:
+        description: "Variable 1"
+        required: true
+        type: string
+      variable_2:
+        description: "Variable 2"
+        required: true
+        type: string
+      raw_text:
+        description: "Raw pasted park-factor text"
+        required: true
+        type: string
+      target_path:
+        description: "Output CSV path"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  build-park-factor-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Validate dispatch inputs
+        shell: bash
+        run: |
+          case "${{ inputs.target_path }}" in
+            docs/win/baseball/mlb/data/park_factors/park_*.csv)
+              ;;
+            *)
+              echo "FAILED: invalid target_path: ${{ inputs.target_path }}"
+              exit 1
+              ;;
+          esac
+
+      - name: Write raw input
+        shell: bash
+        env:
+          RAW_TEXT: ${{ inputs.raw_text }}
+        run: |
+          mkdir -p docs/win/baseball/mlb/tmp
+          printf '%s\n' "$RAW_TEXT" > docs/win/baseball/mlb/tmp/manual_park_factor_raw.txt
+
+      - name: Transform park factors
+        shell: bash
+        run: |
+          python docs/win/baseball/mlb/scripts/00_parsing/transform_raw_park_factors.py \
+            --raw docs/win/baseball/mlb/tmp/manual_park_factor_raw.txt \
+            --team-map docs/win/baseball/mlb/maps/mlb_team_ids.csv \
+            --venue-map docs/win/baseball/mlb/maps/mlb_venue_ids.csv \
+            --out "${{ inputs.target_path }}" \
+            --audit "${{ inputs.target_path }}.audit.txt"
+
+      - name: Validate output exists
+        shell: bash
+        run: |
+          test -f "${{ inputs.target_path }}"
+          test -f "${{ inputs.target_path }}.audit.txt"
+
+      - name: Commit generated files
+        shell: bash
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add "${{ inputs.target_path }}" "${{ inputs.target_path }}.audit.txt"
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update MLB park factors: ${{ inputs.variable_1 }} ${{ inputs.variable_2 }}"
+            git push
+          fi
+
