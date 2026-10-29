@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: mlb-02-pregame-pipeline
+  group: mlb-pipeline
   cancel-in-progress: false
 
 jobs:
