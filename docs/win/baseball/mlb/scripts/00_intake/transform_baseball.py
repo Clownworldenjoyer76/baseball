@@ -6,8 +6,9 @@ import os
 import tempfile
 import traceback
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from intake_log import make_logger
 
@@ -20,6 +21,10 @@ RAW_DIR = Path("docs/win/baseball/mlb/00_intake/drat_raw")
 PRED_DIR = Path("docs/win/baseball/mlb/00_intake/predictions")
 TEAM_MAP_FILE = Path("docs/win/baseball/mlb/maps/team_map_mlb.csv")
 PRED_DIR.mkdir(parents=True, exist_ok=True)
+GAMES_DIR = Path("docs/win/baseball/mlb/00_intake/games")
+NY = ZoneInfo("America/New_York")
+_SCHEDULE_CACHE = {}
+
 
 PREDICTION_HEADER = [
     "game_id", "sport", "league", "game_date", "game_time",
@@ -91,6 +96,68 @@ def prediction_key(record, aliases):
     if not home or not away:
         raise ValueError(f"Missing prediction team: {record}")
     return date, time_value, aliases.get(home, home), aliases.get(away, away)
+
+
+
+def _schedule_game_id(record, aliases):
+    """Resolve identity conservatively without changing recorded prediction times.
+
+    A four-/five-hour offset is considered only against a real games row, and
+    a candidate is accepted only if exactly one authoritative game ID fits.
+    Ambiguous doubleheaders are deliberately never deduplicated this way.
+    """
+    date_str = str(record.get("game_date", ""))
+    try:
+        dt = datetime.strptime(
+            f"{date_str} {record['game_time']}", "%Y_%m_%d %I:%M %p",
+        )
+    except (ValueError, KeyError):
+        return None
+    if date_str not in _SCHEDULE_CACHE:
+        path = GAMES_DIR / f"{date_str}_games.csv"
+        rows = []
+        if path.exists():
+            with path.open(newline="", encoding="utf-8-sig") as handle:
+                for source in csv.DictReader(handle):
+                    try:
+                        when = datetime.strptime(
+                            source["game_date"].replace("_", "-") + " "
+                            + source["game_time"], "%Y-%m-%d %H:%M:%S",
+                        )
+                        rows.append((source, when))
+                    except (KeyError, ValueError):
+                        continue
+        _SCHEDULE_CACHE[date_str] = rows
+    home = str(record.get("home_team", "")).strip().casefold()
+    away = str(record.get("away_team", "")).strip().casefold()
+    home = aliases.get(home, home)
+    away = aliases.get(away, away)
+    offset = abs(int(dt.replace(tzinfo=NY).utcoffset().total_seconds() / 3600))
+    candidates = [dt, dt + timedelta(hours=offset), dt - timedelta(hours=offset)]
+    matched = set()
+    for source, official in _SCHEDULE_CACHE[date_str]:
+        gh = source.get("home_team", "").casefold()
+        ga = source.get("away_team", "").casefold()
+        if aliases.get(gh, gh) != home or aliases.get(ga, ga) != away:
+            continue
+        if any(abs((c - official).total_seconds()) <= 15 * 60 for c in candidates):
+            game_id = source.get("game_id", "").strip()
+            if game_id:
+                matched.add(game_id)
+    return next(iter(matched)) if len(matched) == 1 else None
+
+
+def _schedule_preserved_index(merged, aliases):
+    index = {}
+    for record in merged.values():
+        game_id = _schedule_game_id(record, aliases)
+        if not game_id:
+            continue
+        key = (record["game_date"], game_id)
+        if key in index and index[key] != prediction_key(record, aliases):
+            log(f"EXISTING SAME-GAME TIME VARIANTS preserved (review required): {key}")
+        index.setdefault(key, prediction_key(record, aliases))
+    return index
 
 
 def _future_prediction_row(row, game_date, game_time, home_team, away_team):
@@ -169,7 +236,7 @@ def load_existing_predictions(merged, aliases):
     log(f"Existing predictions protected: {len(merged)}")
 
 
-def process_file(file_path, merged, aliases):
+def process_file(file_path, merged, aliases, preserved_by_game):
     path = trusted_raw_file(file_path)
     log(f"Processing {path.name}")
     with path.open(encoding="utf-8") as handle:
@@ -178,7 +245,8 @@ def process_file(file_path, merged, aliases):
         raise ValueError(f"Unexpected raw JSON format: {path}")
 
     counters = {"future": 0, "completed": 0, "summary": 0,
-                "parse_error": 0, "unknown": 0, "skip": 0, "preserved": 0}
+                "parse_error": 0, "unknown": 0, "skip": 0, "preserved": 0,
+                "verified_same_game_skips": 0}
     for row in raw:
         status, _, prediction = _transform_raw_row(row)
         counters[status] += 1
@@ -188,6 +256,16 @@ def process_file(file_path, merged, aliases):
         if key in merged:
             counters["preserved"] += 1
             continue
+        official_id = _schedule_game_id(prediction, aliases)
+        if official_id is not None:
+            identity = (prediction["game_date"], official_id)
+            if identity in preserved_by_game:
+                counters["verified_same_game_skips"] += 1
+                log(f"VERIFIED SAME-GAME TIME VARIANT ignored without overwriting "
+                    f"first prediction: date={identity[0]} game_id={identity[1]} "
+                    f"new_time={prediction['game_time']}")
+                continue
+            preserved_by_game[identity] = key
         merged[key] = prediction
 
     log(f"  {counters}")
@@ -233,11 +311,12 @@ def main():
         aliases = load_team_aliases()
         merged = {}
         load_existing_predictions(merged, aliases)
+        preserved_by_game = _schedule_preserved_index(merged, aliases)
         raw_files = sorted(RAW_DIR.glob("*_mlb_raw.json"))
         log(f"Raw files found: {len(raw_files)}")
         log("Intake writes predictions only; completed rows remain in raw JSON for final scores")
         for path in raw_files:
-            process_file(path, merged, aliases)
+            process_file(path, merged, aliases, preserved_by_game)
 
         by_date = {}
         for key, record in merged.items():

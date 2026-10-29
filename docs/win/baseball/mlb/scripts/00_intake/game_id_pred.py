@@ -60,16 +60,25 @@ BOOK_DIR = Path("docs/win/baseball/mlb/00_intake/sportsbook")
 OUT_DIR = Path("docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id")
 REJECTION_DIR = OUT_DIR / "rejections"
 BASELINE_DIR = OUT_DIR / "baseline"
+TIME_AUDIT_DIR = OUT_DIR / "time_audit"
 ERROR_DIR = Path("docs/win/baseball/mlb/errors/00_intake")
 
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 REJECTION_DIR.mkdir(parents=True, exist_ok=True)
 BASELINE_DIR.mkdir(parents=True, exist_ok=True)
+TIME_AUDIT_DIR.mkdir(parents=True, exist_ok=True)
 ERROR_DIR.mkdir(parents=True, exist_ok=True)
 
 LOG_FILE = ERROR_DIR / "game_id_pred.txt"
 
 MAX_TIME_DIFF_MINUTES = 90
+TZ_OFFSET_TOLERANCE_MINUTES = 15  # allow schedule revisions, never blanket-shift
+TIME_AUDIT_HEADER = [
+    "game_date", "game_id", "source_csv_row", "home_team", "away_team",
+    "source_game_time", "verified_game_time", "diff_minutes",
+    "time_resolution", "evidence",
+]
+
 NY = ZoneInfo("America/New_York")
 
 OUTPUT_HEADER = [
@@ -434,7 +443,10 @@ def make_output_row(pred_entry: dict, game_id: str) -> dict:
         "sport": p.get("sport", ""),
         "league": p.get("league", ""),
         "game_date": p.get("game_date", ""),
-        "game_time": p.get("game_time", ""),
+        "game_time": (
+            pred_entry.get("verified_game_time", p.get("game_time", ""))
+            if game_id else p.get("game_time", "")
+        ),
         "home_team": p.get("home_team", ""),
         "away_team": p.get("away_team", ""),
         "home_pitcher": p.get("home_pitcher", ""),
@@ -694,6 +706,130 @@ def build_book_groups(book_rows: list[dict], date_str: str) -> dict:
 # SPORTSBOOK PRESENCE
 # ─────────────────────────────────────────────
 
+
+def _explicit_book_id_matches(date_str, label, preds, books, presence):
+    """Honor recovered game IDs before time-based matching; never guess another ID."""
+    unmatched = []
+    for pred in preds:
+        supplied_id = (pred["row"].get("game_id") or "").strip()
+        if not supplied_id:
+            unmatched.append(pred)
+            continue
+        candidates = [
+            book for book in books
+            if book["row"].get("game_id", "").strip() == supplied_id
+            and not book["used"]
+        ]
+        if len(candidates) == 1:
+            _record_sportsbook_match(
+                date_str, label, pred, candidates[0], presence, "explicit_game_id"
+            )
+        else:
+            log(
+                f"{date_str} | UNMATCHED EXPLICIT GAME ID: {label} "
+                f"pred_game_id={supplied_id} csv_row={pred['csv_row']} "
+                f"matching_unused_sportsbook_rows={len(candidates)}", "WARN",
+            )
+    return unmatched
+
+
+def _time_audit_record(date_str, entry, official, diff, resolution, evidence):
+    return {
+        "game_date": date_str,
+        "game_id": official.get("game_id", ""),
+        "source_csv_row": entry["csv_row"],
+        "home_team": entry["row"].get("home_team", ""),
+        "away_team": entry["row"].get("away_team", ""),
+        "source_game_time": entry["row"].get("game_time", ""),
+        "verified_game_time": official.get("game_time", ""),
+        "diff_minutes": round(diff, 1),
+        "time_resolution": resolution,
+        "evidence": evidence,
+    }
+
+
+def _verify_prediction_times(date_str, pred_groups, book_groups, games_rows):
+    """Correct only independently-verified UTC/ET offsets in matching state.
+
+    For a blank game ID, a singleton prediction + games + sportsbook with
+    matching authoritative IDs is required. Explicit IDs can be verified
+    across doubleheaders. Original prediction CSVs are never modified.
+    """
+    if not games_rows:
+        return []
+    games_groups = build_games_groups(games_rows, date_str)
+    events = []
+    date = parse_date_value(date_str)
+    expected_offset = abs(
+        int(datetime(date.year, date.month, date.day, 12,
+                     tzinfo=NY).utcoffset().total_seconds() / 60)
+    )
+    for key, predictions in pred_groups.items():
+        games = games_groups.get(key, [])
+        books = book_groups.get(key, [])
+        for pred in predictions:
+            supplied_id = (pred["row"].get("game_id") or "").strip()
+            evidence = ""
+            game = None
+            if supplied_id:
+                verified_games = [
+                    g for g in games if g["row"].get("game_id", "").strip() == supplied_id
+                ]
+                verified_books = [
+                    b for b in books if b["row"].get("game_id", "").strip() == supplied_id
+                ]
+                if len(verified_games) == 1 and len(verified_books) == 1:
+                    game = verified_games[0]
+                    evidence = "explicit_game_id_verified_in_games_and_sportsbook"
+            elif len(predictions) == len(games) == len(books) == 1:
+                if games[0]["row"].get("game_id", "") == books[0]["row"].get("game_id", ""):
+                    game = games[0]
+                    evidence = "unique_matchup_verified_same_id_in_games_and_sportsbook"
+            if game is None or pred.get("dt") is None or game.get("dt") is None:
+                continue
+            diff = minutes_between(pred["dt"], game["dt"])
+            if diff is None or diff <= MAX_TIME_DIFF_MINUTES:
+                continue
+            official = game["row"]
+            if abs(diff - expected_offset) <= TZ_OFFSET_TOLERANCE_MINUTES:
+                # Store canonical schedule time *only* in enriched output.
+                pred["verified_game_time"] = game["dt"].strftime("%I:%M %p")
+                pred["dt"] = game["dt"]
+                resolution = "verified_timezone_offset_corrected"
+                log(
+                    f"{date_str} | VERIFIED TIMEZONE CORRECTION: "
+                    f"{matchup_label(pred['row'])} csv_row={pred['csv_row']} "
+                    f"source={pred['row'].get('game_time', '')} "
+                    f"official={official.get('game_time', '')} "
+                    f"game_id={official.get('game_id', '')} diff_minutes={round(diff, 1)} "
+                    f"evidence={evidence}", "WARN",
+                )
+            else:
+                resolution = "unverified_discrepancy_no_correction"
+                log(
+                    f"{date_str} | UNVERIFIED TIME DISCREPANCY: "
+                    f"{matchup_label(pred['row'])} csv_row={pred['csv_row']} "
+                    f"source={pred['row'].get('game_time', '')} "
+                    f"official={official.get('game_time', '')} "
+                    f"game_id={official.get('game_id', '')} diff_minutes={round(diff, 1)} "
+                    f"evidence={evidence}; manual review required", "WARN",
+                )
+            events.append(_time_audit_record(
+                date_str, pred, official, diff, resolution, evidence,
+            ))
+    return events
+
+
+def _write_time_audit(date_str, records):
+    """Only write when the entire date has successfully completed."""
+    path = TIME_AUDIT_DIR / f"{date_str}_time_audit.csv"
+    if records:
+        write_csv(path, TIME_AUDIT_HEADER, records)
+    elif path.exists():
+        # Prior reports are historical evidence: never delete them automatically.
+        log(f"TIME AUDIT PRESERVED (no new discrepancies): {path}")
+
+
 def _initialize_sportsbook_presence(presence, preds):
     for pred_entry in preds:
         presence[pred_entry["index"]] = {"present": False, "detail": ""}
@@ -823,6 +959,9 @@ def _match_sportsbook_group(date_str, preds, books, presence):
             f"{label} pred_count={len(preds)}",
             "WARN",
         )
+        return
+    preds = _explicit_book_id_matches(date_str, label, preds, books, presence)
+    if not preds:
         return
     unused_books = [book for book in books if not book["used"]]
     if _sportsbook_one_to_one(date_str, label, preds, unused_books, presence):
@@ -1303,9 +1442,12 @@ def _handle_no_prediction_rows(date_str, games_path, rejection_path, summary):
     summary["skipped"] += 1
 
 
-def _prediction_sportsbook_state(date_str, pred_rows, book_rows):
+def _prediction_sportsbook_state(date_str, pred_rows, book_rows, games_rows=None):
     pred_groups, pred_key_order = build_prediction_groups(pred_rows, date_str)
     book_groups = build_book_groups(book_rows, date_str) if book_rows else {}
+    time_audit = _verify_prediction_times(
+        date_str, pred_groups, book_groups, games_rows,
+    )
     presence = build_sportsbook_presence(
         date_str=date_str,
         pred_groups=pred_groups,
@@ -1342,7 +1484,7 @@ def _prediction_sportsbook_state(date_str, pred_rows, book_rows):
         for pred_entry in preds
         if presence.get(pred_entry["index"], {"present": False})["present"]
     }
-    return pred_groups, pred_key_order, presence, rejection_rows, nonfatal, eligible
+    return pred_groups, pred_key_order, presence, rejection_rows, nonfatal, eligible, time_audit
 
 
 def _handle_no_eligible_predictions(
@@ -1626,21 +1768,59 @@ def _match_prediction_group(
         return 0, _reject_prediction_group_without_games(
             date_str, label, preds, sportsbook_presence, rejection_rows
         )
+    explicitly_matched = 0
+    remaining = []
+    for pred in preds:
+        supplied_id = (pred["row"].get("game_id") or "").strip()
+        if not supplied_id:
+            remaining.append(pred)
+            continue
+        matched_games = [
+            game for game in games
+            if not game["used"] and game["row"].get("game_id", "").strip() == supplied_id
+        ]
+        if len(matched_games) != 1:
+            fail(
+                f"{date_str} | sportsbook-eligible supplied game_id cannot be "
+                f"verified in authoritative games: {label} game_id={supplied_id} "
+                f"matches={len(matched_games)}"
+            )
+        game = matched_games[0]
+        actual_id = _claim_matched_game_id(
+            date_str, label, pred, game, sportsbook_presence, rejection_rows,
+        )
+        if actual_id is None:
+            return explicitly_matched, 1
+        _, diff_text, level = record_output_match(
+            output_by_pred_index, pred, game, actual_id,
+        )
+        log(
+            f"{date_str} | MATCHED verified game ID: {label} "
+            f"game_id={actual_id} pred_time={pred['row'].get('game_time', '')} "
+            f"games_time={game['row'].get('game_time', '')}{diff_text}", level,
+        )
+        explicitly_matched += 1
+    preds = remaining
+    if not preds:
+        return explicitly_matched, 0
     unused = [game for game in games if not game["used"]]
     if len(preds) == 1 and len(unused) == 1:
-        return _match_single_prediction_game(
+        m, f = _match_single_prediction_game(
             date_str, label, preds[0], unused[0], sportsbook_presence,
             rejection_rows, output_by_pred_index,
         )
+        return explicitly_matched + m, f
     if 1 < len(preds) == len(unused):
-        return _match_ordered_prediction_games(
+        m, f = _match_ordered_prediction_games(
             date_str, label, preds, unused, sportsbook_presence,
             rejection_rows, output_by_pred_index,
         )
-    return _match_closest_prediction_games(
+        return explicitly_matched + m, f
+    m, f = _match_closest_prediction_games(
         date_str, label, preds, games, sportsbook_presence,
         rejection_rows, output_by_pred_index,
     )
+    return explicitly_matched + m, f
 
 
 def _match_predictions_to_games(
@@ -1786,10 +1966,16 @@ def process_date(date_str: str, pred_path: Path, summary: dict) -> None:
     if not pred_rows:
         _handle_no_prediction_rows(date_str, games_path, rejection_path, summary)
         return
+    # Read schedule for verification; existing missing-games handling remains unchanged.
+    schedule_rows = (
+        load_csv(games_path, REQUIRED_GAMES_COLS, "games time verification")
+        if games_path.exists() else []
+    )
     (
         pred_groups, pred_key_order, sportsbook_presence,
         rejection_rows, nonfatal_rejection_count, eligible_pred_indexes,
-    ) = _prediction_sportsbook_state(date_str, pred_rows, book_rows)
+        time_audit,
+    ) = _prediction_sportsbook_state(date_str, pred_rows, book_rows, schedule_rows)
     eligible_count = len(eligible_pred_indexes)
     if eligible_count == 0:
         _handle_no_eligible_predictions(
@@ -1819,6 +2005,7 @@ def process_date(date_str: str, pred_path: Path, summary: dict) -> None:
         output_by_pred_index, matched, rejection_rows, fatal_rejection_count,
         nonfatal_rejection_count, rejection_path, summary,
     )
+    _write_time_audit(date_str, time_audit)
 
 def main():
     with open(
