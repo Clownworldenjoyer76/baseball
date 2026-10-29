@@ -110,6 +110,7 @@ def _parsed_odds_game_row(game):
 
 
 def _write_grouped_odds_rows(grouped_rows, files_written):
+    # MLB_ODDS_SAFE_MERGE_V2: preserve existing historical game IDs.
     header = [
         "game_id","sport","league","game_date","game_time","home_team","away_team",
         "away_run_line","home_run_line","total",
@@ -124,12 +125,81 @@ def _write_grouped_odds_rows(grouped_rows, files_written):
     base_output_dir.mkdir(parents=True, exist_ok=True)
     for game_date, rows in grouped_rows.items():
         output_path = base_output_dir / f"{game_date}_MLB.csv"
-        with open(output_path, "w", newline="") as handle:
-            writer = csv.writer(handle)
-            writer.writerow(header)
-            writer.writerows(rows)
-        files_written.append((str(output_path), len(rows)))
-        log(f"  WROTE {output_path} ({len(rows)} games)")
+        existing = {}
+        if output_path.exists():
+            with output_path.open(newline="", encoding="utf-8-sig") as handle:
+                old_reader = csv.DictReader(handle)
+                if old_reader.fieldnames != header:
+                    raise ValueError(f"Unexpected sportsbook columns: {output_path}")
+                for old in old_reader:
+                    gid = str(old.get("game_id") or "").strip()
+                    if not gid or gid in existing:
+                        raise ValueError(f"Duplicate/blank game_id in {output_path}: {gid}")
+                    existing[gid] = [old[col] for col in header]
+        additions = 0
+        refreshes = 0
+        for row in rows:
+            gid = str(row[0] or "").strip()
+            if not gid or str(row[3]) != game_date:
+                raise ValueError(f"Invalid sportsbook game_id/date: {output_path}: {row}")
+            if gid not in existing:
+                existing[gid] = row
+                additions += 1
+            else:
+                kickoff = datetime.strptime(
+                    f"{row[3]} {row[4]}", "%Y_%m_%d %H:%M:%S"
+                ).replace(tzinfo=ZoneInfo("America/New_York"))
+                if datetime.now(ZoneInfo("America/New_York")) < kickoff:
+                    if list(map(str,existing[gid])) != list(map(str,row)):
+                        existing[gid] = row
+                        refreshes += 1
+        if not additions and not refreshes:
+            log(f"  UNCHANGED {output_path} ({len(existing)} games)")
+            continue
+        import os
+        import tempfile
+        tmp = None
+        try:
+            with tempfile.NamedTemporaryFile(
+                "w", newline="", encoding="utf-8", dir=base_output_dir,
+                prefix=f".{output_path.name}.", suffix=".tmp", delete=False,
+            ) as handle:
+                tmp = Path(handle.name)
+                writer = csv.writer(handle)
+                writer.writerow(header)
+                writer.writerows(existing.values())
+                handle.flush()
+                os.fsync(handle.fileno())
+            os.replace(tmp, output_path)
+        finally:
+            if tmp is not None:
+                tmp.unlink(missing_ok=True)
+        files_written.append((str(output_path), len(existing)))
+        log(f"  WROTE {output_path} ({len(existing)} games, added={additions}, refreshed={refreshes})")
+
+
+def _safe_pregame_odds(game):
+    try:
+        commence = datetime.fromisoformat(str(game["commence_time"]).replace("Z", "+00:00"))
+        if commence.tzinfo is None:
+            return False
+        books = [b for b in game.get("bookmakers", []) if b.get("key") == "draftkings"]
+        if len(books) != 1:
+            return False
+        book = books[0]
+        markets = {m.get("key"):m for m in book.get("markets", [])}
+        if not {"h2h","spreads","totals"}.issubset(markets):
+            return False
+        for stamp in [book["last_update"]] + [markets[k]["last_update"] for k in ("h2h","spreads","totals")]:
+            updated = datetime.fromisoformat(str(stamp).replace("Z", "+00:00"))
+            if updated.tzinfo is None or updated > commence:
+                return False
+        values = _parse_game_markets(game, game["away_team"], game["home_team"])
+        return all(values[k] is not None and float(values[k]) > 1 for k in (
+            "away_rl_dec","home_rl_dec","over_dec","under_dec","away_ml_dec","home_ml_dec"
+        )) and all(values[k] is not None for k in ("away_run_line","home_run_line","total"))
+    except (KeyError,TypeError,ValueError,IndexError,AttributeError):
+        return False
 
 
 def process_file(file_path, files_written):
@@ -167,8 +237,9 @@ def process_file(file_path, files_written):
     games_parsed = 0
     games_skipped = 0
     for game in data:
-        if not game.get("bookmakers"):
+        if not _safe_pregame_odds(game):
             games_skipped += 1
+            log(f"  SKIP unverified/post-start odds: game_id={game.get('id', '')}")
             continue
         game_date, row = _parsed_odds_game_row(game)
         grouped_rows.setdefault(game_date, []).append(row)
