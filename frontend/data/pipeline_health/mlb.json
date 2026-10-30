@@ -4,7 +4,7 @@
     "MLB Pipeline workflow status is FAILURE"
   ],
   "game_date_new_york": "2026_10_30",
-  "generated_at_utc": "2026-10-30T07:16:04.704599+00:00",
+  "generated_at_utc": "2026-10-30T14:25:28.802805+00:00",
   "leagues": {
     "mlb": {
       "counts": {
@@ -217,7 +217,7 @@
     {
       "exists": true,
       "path": "MLB Pipeline Workflow",
-      "status": "STATUS: FAILED | 2026-10-30T07:16:04.704599+00:00"
+      "status": "STATUS: FAILED | 2026-10-30T14:25:28.802805+00:00"
     },
     {
       "exists": true,
@@ -487,12 +487,12 @@
     },
     "pregame": {
       "game_date_new_york": "2026_10_30",
-      "generated_at_utc": "2026-10-30T07:16:04.704599+00:00",
+      "generated_at_utc": "2026-10-30T14:25:28.802805+00:00",
       "label": "MLB Pipeline",
       "ref_name": "main",
       "run_attempt": "1",
-      "run_id": "41017896247",
-      "sha": "889c4b9e717f311e7a80bc0839e9723223bb81fd",
+      "run_id": "41069287219",
+      "sha": "6dd1dcf558e72e8e2134a5dccc62057e811a22a7",
       "stages": [
         {
           "display_path": "MLB Pipeline - Odds Parse",
