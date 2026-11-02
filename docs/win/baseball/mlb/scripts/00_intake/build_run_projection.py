@@ -1128,6 +1128,44 @@ def _target_timestamp(
     return pd.Timestamp(parsed).normalize()
 
 
+def _write_cold_start_dratings_result(
+    date_str: str,
+    output_path: Path,
+    joined: pd.DataFrame,
+    x_features: pd.DataFrame,
+    prior_unique_dates: int,
+) -> Path:
+    """Use recorded pregame DRatings run estimates when no trainable history exists."""
+    home = pd.to_numeric(joined["dratings_home_projected_runs"], errors="coerce")
+    away = pd.to_numeric(joined["dratings_away_projected_runs"], errors="coerce")
+    total = home + away
+    valid = (
+        np.isfinite(home) & np.isfinite(away)
+        & (home >= 0) & (away >= 0)
+    )
+    result = joined.copy()
+    result["model_home_runs"] = home.where(valid)
+    result["model_away_runs"] = away.where(valid)
+    result["model_total_runs"] = total.where(valid)
+    result["run_model_version"] = (
+        "cold_start_dratings_pregame_baseline"
+        f";date={date_str};prior_unique_dates={prior_unique_dates}"
+    )
+    result["run_model_feature_status"] = (
+        build_feature_status(result, x_features).astype("string")
+        + ";projection_mode=cold_start_dratings_pregame_baseline"
+    )
+    result.to_csv(output_path, index=False)
+    _log(
+        f"WROTE {output_path} rows={len(result)} "
+        f"cold_start_valid_rows={int(valid.sum())} "
+        f"cold_start_invalid_rows={int((~valid).sum())} "
+        f"prior_unique_dates={prior_unique_dates}",
+        "WARN",
+    )
+    return output_path
+
+
 def _write_unavailable_historical_result(
     date_str: str,
     output_path: Path,
@@ -1287,17 +1325,8 @@ def process_date(
         )
 
         if prior_unique_dates < MIN_PRIOR_UNIQUE_DATES:
-            return _write_unavailable_historical_result(
-                date_str,
-                output_path,
-                joined,
-                x_features,
-                (
-                    "insufficient_prior_dates_"
-                    f"{prior_unique_dates}"
-                    "_need_"
-                    f"{MIN_PRIOR_UNIQUE_DATES}"
-                ),
+            return _write_cold_start_dratings_result(
+                date_str, output_path, joined, x_features, prior_unique_dates
             )
 
         try:
