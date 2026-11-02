@@ -48,7 +48,9 @@ def pct_to_decimal(value):
 
 
 def is_future_game(row):
-    return isinstance(row, list) and len(row) == 11
+    # DRatings omits the final optional field for some valid pregame rows.
+    # A 10-field row still has the same probability/run projection positions.
+    return isinstance(row, list) and len(row) in (10, 11)
 
 
 def is_completed_game(row):
