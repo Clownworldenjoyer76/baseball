@@ -162,6 +162,11 @@ jobs:
 
           echo "Verified: ${FINAL_FILE}"
 
+      # Restore verified probabilities into existing historical game-ID rows
+      # before building the model data. Never rematch/rewrite live predictions.
+      - name: MLB Reconcile Historical Prediction Probabilities
+        run: python docs/win/baseball/mlb/scripts/00_intake/game_id_pred.py --reconcile-historical
+
       - name: MLB Build Run Training Set
         run: python docs/win/baseball/mlb/scripts/modeling/build_run_training_set.py
 

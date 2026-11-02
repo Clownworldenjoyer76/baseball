@@ -40,12 +40,14 @@
 #   - Print rejected prediction rows to stdout so GitHub Actions logs show the reason.
 #   - Print fatal exception/traceback directly to stdout so failed GitHub runs show the actual error.
 
+import argparse
 import csv
-from collections import Counter
+from collections import Counter, defaultdict
 import math
 import os
 import re
 import sys
+import tempfile
 import traceback
 from datetime import datetime, timezone
 from pathlib import Path
@@ -433,6 +435,42 @@ def dt_sort_value(dt):
         return math.inf
 
     return dt.timestamp()
+
+
+def validated_probability_pair(row: dict, label: str) -> tuple[float, float] | None:
+    """Validate a pregame probability pair; absent pairs remain explicitly missing."""
+    home_raw = str(row.get("home_prob") or "").strip()
+    away_raw = str(row.get("away_prob") or "").strip()
+    if not home_raw and not away_raw:
+        return None
+    if not home_raw or not away_raw:
+        fail(f"{label} has an incomplete DRatings probability pair")
+    try:
+        home = float(home_raw)
+        away = float(away_raw)
+    except ValueError:
+        fail(f"{label} has nonnumeric DRatings probabilities: {home_raw!r}, {away_raw!r}")
+    if (
+        not math.isfinite(home)
+        or not math.isfinite(away)
+        or not 0.0 <= home <= 1.0
+        or not 0.0 <= away <= 1.0
+        or abs(home + away - 1.0) > 0.002
+    ):
+        fail(f"{label} has invalid DRatings probabilities: {home_raw!r}, {away_raw!r}")
+    return home, away
+
+
+def assert_source_probabilities_preserved(source: dict, output: dict, label: str) -> None:
+    """Never silently lose source probabilities during game-ID enrichment."""
+    source_pair = validated_probability_pair(source, f"{label} source")
+    output_pair = validated_probability_pair(output, f"{label} output")
+    if source_pair is None and output_pair is None:
+        return
+    if source_pair is None or output_pair is None:
+        fail(f"{label} changed probability completeness during game-ID enrichment")
+    if any(abs(a - b) > 1e-12 for a, b in zip(source_pair, output_pair)):
+        fail(f"{label} changed DRatings probabilities during game-ID enrichment")
 
 
 def make_output_row(pred_entry: dict, game_id: str) -> dict:
@@ -1030,6 +1068,7 @@ def validate_output_rows(date_str: str, eligible_count: int, output_rows: list[d
                 f"first_csv_row={seen_game_ids[game_id]} second_csv_row={csv_row}"
             )
 
+        validated_probability_pair(row, f"{date_str} output game_id={game_id}")
         seen_game_ids[game_id] = csv_row
 
 
@@ -1908,6 +1947,11 @@ def _finalize_prediction_date(
         if idx in output_by_pred_index
     ]
     validate_output_rows(date_str, eligible_count, output_rows)
+    for idx, enriched_row in output_by_pred_index.items():
+        assert_source_probabilities_preserved(
+            pred_rows[idx], enriched_row,
+            f"{date_str} game_id={enriched_row.get('game_id', '')}",
+        )
     output_rows, preserved_count = merge_with_same_day_baseline(
         date_str, output_rows, games_rows, eligible_count
     )
@@ -2007,7 +2051,179 @@ def process_date(date_str: str, pred_path: Path, summary: dict) -> None:
     )
     _write_time_audit(date_str, time_audit)
 
+
+def _historical_match_key(row: dict) -> tuple[str, str]:
+    return (norm(row.get("home_team", "")), norm(row.get("away_team", "")))
+
+
+def _historical_source_match(
+    date_str: str,
+    enriched: dict,
+    source_by_id: dict[str, dict],
+    source_by_matchup: dict[tuple[str, str], list[dict]],
+    output_by_matchup: dict[tuple[str, str], list[dict]],
+) -> dict | None:
+    """Require unique, authoritative identity; do not infer doubleheaders."""
+    game_id = (enriched.get("game_id") or "").strip()
+    if game_id in source_by_id:
+        return source_by_id[game_id]
+
+    key = _historical_match_key(enriched)
+    candidates = [
+        row for row in source_by_matchup.get(key, [])
+        if not (row.get("game_id") or "").strip()
+    ]
+    if not candidates:
+        return None
+    if len(candidates) == 1 and len(output_by_matchup[key]) == 1:
+        return candidates[0]
+
+    # If a matchup repeats, only accept an exact unique game-time match.
+    event_time = parse_prediction_datetime(date_str, enriched.get("game_time", ""))
+    if event_time is None:
+        return None
+    time_matches = [
+        row for row in candidates
+        if parse_prediction_datetime(date_str, row.get("game_time", "")) == event_time
+    ]
+    if len(time_matches) != 1:
+        return None
+    competing = [
+        row for row in output_by_matchup[key]
+        if parse_prediction_datetime(date_str, row.get("game_time", "")) == event_time
+    ]
+    return time_matches[0] if len(competing) == 1 else None
+
+
+def reconcile_historical_date(date_str: str, source_path: Path, output_path: Path) -> int:
+    """Restore missing values only; preserve game IDs, existing values, and order."""
+    source = load_csv(source_path, REQUIRED_PRED_COLS, "historical source", required_file=True)
+    enriched = load_csv(output_path, OUTPUT_HEADER, "historical enriched", required_file=True)
+    validate_output_rows(date_str, len(enriched), enriched)
+
+    source_by_id: dict[str, dict] = {}
+    source_by_matchup: dict[tuple[str, str], list[dict]] = defaultdict(list)
+    output_by_matchup: dict[tuple[str, str], list[dict]] = defaultdict(list)
+    for index, row in enumerate(source, start=2):
+        validate_row_date(date_str, row, "historical source", index)
+        validated_probability_pair(row, f"{date_str} source csv_row={index}")
+        game_id = (row.get("game_id") or "").strip()
+        if game_id:
+            if game_id in source_by_id:
+                fail(f"{date_str} source contains duplicate game_id={game_id}")
+            source_by_id[game_id] = row
+        source_by_matchup[_historical_match_key(row)].append(row)
+    for row in enriched:
+        output_by_matchup[_historical_match_key(row)].append(row)
+
+    changed = 0
+    for row in enriched:
+        game_id = (row.get("game_id") or "").strip()
+        original_pair = validated_probability_pair(row, f"{date_str} enriched game_id={game_id}")
+        matched = _historical_source_match(
+            date_str, row, source_by_id, source_by_matchup, output_by_matchup,
+        )
+        if matched is None:
+            if original_pair is None:
+                possible = source_by_matchup.get(_historical_match_key(row), [])
+                if any(
+                    validated_probability_pair(
+                        candidate, f"{date_str} unmatched source candidate"
+                    ) is not None
+                    for candidate in possible
+                ):
+                    fail(
+                        f"{date_str} source has probability values for "
+                        f"game_id={game_id} but game identity is ambiguous; "
+                        "refusing an inferred historical assignment"
+                    )
+                log(f"{date_str} | no verified source probabilities for "
+                    f"game_id={game_id}", "WARN")
+            continue
+        if _historical_match_key(matched) != _historical_match_key(row):
+            fail(f"{date_str} source/enriched team mismatch for game_id={game_id}")
+        source_id = (matched.get("game_id") or "").strip()
+        if source_id and source_id != game_id:
+            fail(f"{date_str} source/enriched game_id mismatch for game_id={game_id}")
+        source_pair = validated_probability_pair(
+            matched, f"{date_str} matched source for game_id={game_id}",
+        )
+        if original_pair is not None:
+            # Historical output is already a pregame snapshot. Never rewrite it
+            # based on a later snapshot; divergences need manual provenance review.
+            if source_pair is not None and any(
+                abs(a - b) > 1e-12 for a, b in zip(original_pair, source_pair)
+            ):
+                log(
+                    f"{date_str} | source/enriched probability disagreement "
+                    f"for game_id={game_id}; preserved existing pregame values",
+                    "WARN",
+                )
+            continue
+        if source_pair is None:
+            continue
+        row["home_prob"] = matched["home_prob"]
+        row["away_prob"] = matched["away_prob"]
+        changed += 1
+
+    if changed:
+        validate_output_rows(date_str, len(enriched), enriched)
+        # Replace the existing file atomically only when there is a real repair.
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        temp_path = None
+        try:
+            with tempfile.NamedTemporaryFile(
+                "w", newline="", encoding="utf-8", dir=output_path.parent,
+                prefix=f".{output_path.name}.", suffix=".csv.tmp", delete=False,
+            ) as handle:
+                temp_path = Path(handle.name)
+                writer = csv.DictWriter(handle, fieldnames=OUTPUT_HEADER)
+                writer.writeheader()
+                writer.writerows(enriched)
+                handle.flush()
+                os.fsync(handle.fileno())
+            os.replace(temp_path, output_path)
+        finally:
+            if temp_path is not None:
+                temp_path.unlink(missing_ok=True)
+        log(f"{date_str} | reconciled {changed} historical probability pairs: {output_path}")
+    return changed
+
+
+def reconcile_historical_predictions() -> tuple[int, int]:
+    """Inspect existing past-date enriched files; do not create or rematch games."""
+    today = current_cutoff_date()
+    files = 0
+    restored = 0
+    for output_path in sorted(OUT_DIR.glob("????_??_??_MLB.csv")):
+        date_str = output_path.stem.removesuffix("_MLB")
+        date = parse_date_value(date_str)
+        if date is None:
+            fail(f"Malformed historical prediction filename: {output_path}")
+        if date >= today:
+            continue
+        source_path = PRED_DIR / output_path.name
+        if not source_path.exists():
+            log(f"{date_str} | historical source missing; skipping reconciliation: "
+                f"{source_path}", "WARN")
+            continue
+        restored += reconcile_historical_date(date_str, source_path, output_path)
+        files += 1
+    log(f"HISTORICAL RECONCILIATION scanned_files={files} restored_pairs={restored}")
+    return files, restored
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--reconcile-historical", action="store_true",
+        help="Restore verified probabilities in existing past-date enriched CSVs "
+             "without reassigning game IDs or changing unrelated fields.",
+    )
+    return parser.parse_args()
+
 def main():
+    args = parse_args()
     with open(
         LOG_FILE,
         "w",
@@ -2030,6 +2246,11 @@ def main():
     }
 
     try:
+        if args.reconcile_historical:
+            files, restored = reconcile_historical_predictions()
+            print(f"game_id_pred historical reconciliation complete: "
+                  f"scanned_files={files} restored_pairs={restored}")
+            return
         pred_files = sorted(
             PRED_DIR.glob(
                 "*_MLB.csv"

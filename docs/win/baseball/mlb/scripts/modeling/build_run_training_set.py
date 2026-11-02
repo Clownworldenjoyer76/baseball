@@ -1072,6 +1072,32 @@ def _merge_training_weather(joined, weather):
     return joined.merge(weather, on="gamePk", how="left", validate="many_to_one")
 
 
+
+def _audit_dratings_probabilities(df: pd.DataFrame, summary: dict, label: str) -> None:
+    home = pd.to_numeric(df["dratings_home_prob"], errors="coerce")
+    away = pd.to_numeric(df["dratings_away_prob"], errors="coerce")
+    home_blank = df["dratings_home_prob"].isna() | (df["dratings_home_prob"].astype(str).str.strip() == "")
+    away_blank = df["dratings_away_prob"].isna() | (df["dratings_away_prob"].astype(str).str.strip() == "")
+    missing_both = home_blank & away_blank
+    incomplete = home_blank ^ away_blank
+    invalid = (
+        (~home_blank & (~np.isfinite(home) | (home < 0) | (home > 1)))
+        | (~away_blank & (~np.isfinite(away) | (away < 0) | (away > 1)))
+        | (~missing_both & ~incomplete & ((home + away - 1).abs() > 0.002))
+    )
+    summary["missing_dratings_prob_rows"] += int(missing_both.sum())
+    summary["invalid_dratings_prob_rows"] += int((invalid | incomplete).sum())
+    if missing_both.any():
+        sample = df.loc[missing_both, ["game_id"]].head(10).to_dict("records")
+        _log(f"{label} missing both DRatings probability features: "
+             f"rows={int(missing_both.sum())}; sample={sample}", "WARN")
+    if (invalid | incomplete).any():
+        sample = df.loc[invalid | incomplete, [
+            "game_id", "dratings_home_prob", "dratings_away_prob",
+        ]].head(10).to_dict("records")
+        fail(f"{label} invalid or partial DRatings probability pair; "
+             f"bad_rows={int((invalid | incomplete).sum())}; sample={sample}")
+
 def _coerce_training_output_columns(output):
     numeric_columns = (
         DRATINGS_COLUMNS
@@ -1175,6 +1201,7 @@ def build_date_training_rows(
     pred = _rename_prediction_features(
         pred
     )
+    _audit_dratings_probabilities(pred, summary, f"predictions {date_str}")
 
     pred_keep = [
         "game_id",
@@ -1674,6 +1701,8 @@ def main() -> None:
         "duplicate_game_id": 0,
         "duplicate_gamePk": 0,
         "leakage_rejections": 0,
+        "missing_dratings_prob_rows": 0,
+        "invalid_dratings_prob_rows": 0,
         "rows_written": 0,
     }
 
@@ -1768,6 +1797,8 @@ def main() -> None:
             "duplicate_game_id",
             "duplicate_gamePk",
             "leakage_rejections",
+            "missing_dratings_prob_rows",
+            "invalid_dratings_prob_rows",
             "rows_written",
         ]:
             _log(
@@ -1804,6 +1835,8 @@ def main() -> None:
             "duplicate_game_id",
             "duplicate_gamePk",
             "leakage_rejections",
+            "missing_dratings_prob_rows",
+            "invalid_dratings_prob_rows",
             "rows_written",
         ]:
             _log(

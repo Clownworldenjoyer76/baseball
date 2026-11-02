@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import csv
 import importlib.util
 import math
 import sys
@@ -85,6 +86,19 @@ PROBS = _load_module(
 EVK = _load_module(
     "mlb_compute_ev_kelly",
     EV_KELLY_SCRIPT,
+)
+
+EVALUATOR = _load_module(
+    "mlb_evaluate_run_model_regression",
+    REPO_ROOT / "docs/win/baseball/mlb/scripts/modeling/evaluate_run_model.py",
+)
+GAME_ID = _load_module(
+    "mlb_game_id_pred_regression",
+    REPO_ROOT / "docs/win/baseball/mlb/scripts/00_intake/game_id_pred.py",
+)
+TRAINING_BUILDER = _load_module(
+    "mlb_build_run_training_set_regression",
+    REPO_ROOT / "docs/win/baseball/mlb/scripts/modeling/build_run_training_set.py",
 )
 
 
@@ -734,3 +748,130 @@ def test_push_aware_total_ev_and_raw_kelly_sign_consistency_grid() -> None:
 
                 else:
                     assert abs(raw_kelly) <= SIGN_TOL
+
+
+# Regression coverage for the 2026-09-20 historical source/enriched mismatch.
+def _regression_market_frame(home_prob=float("nan"), away_prob=float("nan")):
+    return pd.DataFrame([{
+        "game_id": "401817012",
+        "dratings_home_prob": home_prob,
+        "dratings_away_prob": away_prob,
+        "dratings_home_projected_runs": 4.72,
+        "dratings_away_projected_runs": 2.94,
+        "model_home_runs": 4.4,
+        "model_away_runs": 3.2,
+        "home_run_line": -1.5,
+        "away_run_line": 1.5,
+        "total": 7.5,
+    }])
+
+
+def test_evaluator_ignores_missing_input_probabilities_when_validating_derived():
+    # Missing DRatings input features must not be misclassified as bad derived
+    # probabilities. Both independent run projection systems remain validated.
+    result = EVALUATOR.derive_market_probabilities(
+        _regression_market_frame(), PROBS,
+    )
+    assert pd.isna(result.loc[0, "dratings_home_prob"])
+    assert pd.isna(result.loc[0, "dratings_away_prob"])
+    for system in ("dratings", "new_model"):
+        for suffix in (
+            "home_ml_prob", "away_ml_prob", "home_rl_prob", "away_rl_prob",
+            "over_total_win_prob", "under_total_win_prob", "total_push_prob",
+            "over_total_conditional_prob", "under_total_conditional_prob",
+        ):
+            p = float(result.loc[0, f"{system}_{suffix}"])
+            assert math.isfinite(p) and 0 <= p <= 1
+
+
+def test_evaluator_keeps_generated_probability_validation():
+    class BadProbabilities:
+        moneyline_probabilities = staticmethod(lambda *args: (float("nan"), 0.5, 0.0))
+        run_line_probabilities = staticmethod(PROBS.run_line_probabilities)
+        totals_probabilities = staticmethod(PROBS.totals_probabilities)
+
+    import pytest
+    with pytest.raises(RuntimeError, match="Derived probability dratings_home_ml_prob"):
+        EVALUATOR.derive_market_probabilities(
+            _regression_market_frame(0.6, 0.4), BadProbabilities,
+        )
+
+
+def _regression_prediction_row(game_id, home_prob, away_prob):
+    return {
+        "game_id": game_id,
+        "sport": "baseball",
+        "league": "mlb",
+        "game_date": "2026_09_20",
+        "game_time": "01:40 PM",
+        "home_team": "Cleveland Guardians",
+        "away_team": "Athletics",
+        "home_pitcher": "",
+        "away_pitcher": "",
+        "home_prob": home_prob,
+        "away_prob": away_prob,
+        "away_projected_runs": "2.94",
+        "home_projected_runs": "4.72",
+        "total_projected_runs": "7.66",
+    }
+
+
+def _write_regression_csv(path, rows):
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=GAME_ID.OUTPUT_HEADER)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def test_historical_reconciliation_restores_only_missing_probabilities(tmp_path, monkeypatch):
+    monkeypatch.setattr(GAME_ID, "LOG_FILE", tmp_path / "game_id_pred.log")
+    source_path = tmp_path / "original.csv"
+    output_path = tmp_path / "enriched.csv"
+    original = _regression_prediction_row("401817012", "0.674", "0.326")
+    stale = _regression_prediction_row("401817012", "", "")
+    _write_regression_csv(source_path, [original])
+    _write_regression_csv(output_path, [stale])
+
+    assert GAME_ID.reconcile_historical_date(
+        "2026_09_20", source_path, output_path,
+    ) == 1
+    with output_path.open(newline="", encoding="utf-8") as handle:
+        rows = list(csv.DictReader(handle))
+    assert rows == [original]
+    first_bytes = output_path.read_bytes()
+    assert GAME_ID.reconcile_historical_date(
+        "2026_09_20", source_path, output_path,
+    ) == 0
+    assert output_path.read_bytes() == first_bytes
+
+
+def test_historical_reconciliation_preserves_conflicting_existing_probabilities(tmp_path, monkeypatch):
+    monkeypatch.setattr(GAME_ID, "LOG_FILE", tmp_path / "game_id_pred.log")
+    source_path = tmp_path / "original.csv"
+    output_path = tmp_path / "enriched.csv"
+    _write_regression_csv(source_path, [
+        _regression_prediction_row("401817012", "0.674", "0.326"),
+    ])
+    _write_regression_csv(output_path, [
+        _regression_prediction_row("401817012", "0.600", "0.400"),
+    ])
+    original_bytes = output_path.read_bytes()
+    assert GAME_ID.reconcile_historical_date("2026_09_20", source_path, output_path) == 0
+    assert output_path.read_bytes() == original_bytes
+    assert "source/enriched probability disagreement" in (
+        tmp_path / "game_id_pred.log"
+    ).read_text()
+
+
+def test_training_probability_audit_allows_absent_pair_but_rejects_partial(tmp_path, monkeypatch):
+    import pytest
+    monkeypatch.setattr(TRAINING_BUILDER, "LOG_FILE", tmp_path / "build.log")
+    summary = {"missing_dratings_prob_rows": 0, "invalid_dratings_prob_rows": 0}
+    frame = pd.DataFrame([{
+        "game_id": "401817012", "dratings_home_prob": "", "dratings_away_prob": "",
+    }])
+    TRAINING_BUILDER._audit_dratings_probabilities(frame, summary, "test")
+    assert summary["missing_dratings_prob_rows"] == 1
+    frame.loc[0, "dratings_home_prob"] = "0.6"
+    with pytest.raises(RuntimeError, match="invalid or partial"):
+        TRAINING_BUILDER._audit_dratings_probabilities(frame, summary, "test")

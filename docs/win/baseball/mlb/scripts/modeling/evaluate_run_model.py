@@ -1379,13 +1379,24 @@ def derive_market_probabilities(
             / resolved
         )
 
+    # Validate only probabilities calculated above.  The input frame can
+    # include missing DRatings *feature* probabilities (dratings_home_prob and
+    # dratings_away_prob), which are not outputs of this function.
+    derived_probability_suffixes = (
+        "home_ml_prob",
+        "away_ml_prob",
+        "home_rl_prob",
+        "away_rl_prob",
+        "over_total_win_prob",
+        "under_total_win_prob",
+        "total_push_prob",
+        "over_total_conditional_prob",
+        "under_total_conditional_prob",
+    )
     probability_cols = [
-        col for col in out.columns
-        if (
-            col.endswith("_prob")
-            or col.endswith("_win_prob")
-            or col.endswith("_conditional_prob")
-        )
+        f"{system}_{suffix}"
+        for system in systems
+        for suffix in derived_probability_suffixes
     ]
 
     run_line_available = (
