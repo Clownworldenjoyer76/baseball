@@ -1,10 +1,8 @@
 {
   "current_workflow": "pregame",
-  "fatal_errors": [
-    "MLB Pipeline workflow status is FAILURE"
-  ],
+  "fatal_errors": [],
   "game_date_new_york": "2026_11_02",
-  "generated_at_utc": "2026-11-02T12:13:13.523933+00:00",
+  "generated_at_utc": "2026-11-02T16:05:55.926548+00:00",
   "leagues": {
     "mlb": {
       "counts": {
@@ -66,7 +64,7 @@
     "promotion_exists": true,
     "promotion_path": "docs/win/baseball/mlb/modeling/reports/run_model_promotion.json",
     "promotion_status": "candidate_rejected",
-    "validated_at": "2026-11-02T12:12:39.223778+00:00",
+    "validated_at": "2026-11-02T14:17:05.534624+00:00",
     "validation_exists": true,
     "validation_path": "docs/win/baseball/mlb/modeling/reports/run_model_validation.json",
     "validation_status": "passed"
@@ -217,37 +215,37 @@
     {
       "exists": true,
       "path": "MLB Pipeline Workflow",
-      "status": "STATUS: FAILED | 2026-11-02T12:13:13.523933+00:00"
+      "status": "STATUS: SUCCESS | 2026-11-02T16:05:55.926548+00:00"
     },
     {
       "exists": true,
       "path": "MLB Pipeline - Odds Parse",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/odds_parse.txt",
-      "status": "2026-11-02T07:12:59.610733 | STATUS: SUCCESS"
+      "status": "2026-11-02T09:17:26.081459 | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "path": "MLB Pipeline - Name Normalization",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/name_normalization.txt",
-      "status": "2026-11-02T12:13:05.718187+00:00 | INFO  | STATUS: SUCCESS"
+      "status": "2026-11-02T14:17:31.860872+00:00 | INFO  | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "path": "MLB Pipeline - DRatings Scraper",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/baseball_drat_scraper.txt",
-      "status": "2026-11-02T07:13:05.286757-05:00 | STATUS: SUCCESS"
+      "status": "2026-11-02T09:17:31.260641-05:00 | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "path": "MLB Pipeline - Transform Baseball",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/transform_baseball.txt",
-      "status": "2026-11-02T07:13:05.641708 | STATUS: SUCCESS"
+      "status": "2026-11-02T09:17:31.768546 | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "path": "MLB Pipeline - Scrape MLB Raw",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/scrape_mlb_raw.txt",
-      "status": "2026-11-02T12:13:05.957859+00:00 | INFO  | STATUS: SUCCESS"
+      "status": "2026-11-02T14:17:32.036722+00:00 | INFO  | STATUS: SUCCESS"
     },
     {
       "exists": true,
@@ -301,7 +299,7 @@
       "exists": true,
       "path": "MLB Pipeline - Build Juice Files",
       "source_path": "docs/win/baseball/mlb/errors/01_merge/build_juice_files.txt",
-      "status": "2026-10-28T11:49:41.848158+00:00 | STATUS: SUCCESS"
+      "status": "2026-11-02T16:05:23.603015+00:00 | STATUS: SUCCESS"
     },
     {
       "exists": true,
@@ -322,7 +320,7 @@
       "status": "STATUS: SUCCESS"
     }
   ],
-  "status": "failed",
+  "status": "healthy",
   "warnings": [],
   "workflows": {
     "morning": {
@@ -487,47 +485,47 @@
     },
     "pregame": {
       "game_date_new_york": "2026_11_02",
-      "generated_at_utc": "2026-11-02T12:13:13.523933+00:00",
+      "generated_at_utc": "2026-11-02T16:05:55.926548+00:00",
       "label": "MLB Pipeline",
       "ref_name": "main",
       "run_attempt": "1",
-      "run_id": "41441210201",
-      "sha": "d8c700acc8bfaee3b03bd0aca9d366e93bf8c7c4",
+      "run_id": "41458250734",
+      "sha": "8b4bc3e66a35b35e6ae40391625f3dc9cb6c7137",
       "stages": [
         {
           "display_path": "MLB Pipeline - Odds Parse",
           "exists": true,
           "name": "Odds Parse",
           "path": "docs/win/baseball/mlb/errors/00_intake/odds_parse.txt",
-          "status": "2026-11-02T07:12:59.610733 | STATUS: SUCCESS"
+          "status": "2026-11-02T09:17:26.081459 | STATUS: SUCCESS"
         },
         {
           "display_path": "MLB Pipeline - Name Normalization",
           "exists": true,
           "name": "Name Normalization",
           "path": "docs/win/baseball/mlb/errors/00_intake/name_normalization.txt",
-          "status": "2026-11-02T12:13:05.718187+00:00 | INFO  | STATUS: SUCCESS"
+          "status": "2026-11-02T14:17:31.860872+00:00 | INFO  | STATUS: SUCCESS"
         },
         {
           "display_path": "MLB Pipeline - DRatings Scraper",
           "exists": true,
           "name": "DRatings Scraper",
           "path": "docs/win/baseball/mlb/errors/00_intake/baseball_drat_scraper.txt",
-          "status": "2026-11-02T07:13:05.286757-05:00 | STATUS: SUCCESS"
+          "status": "2026-11-02T09:17:31.260641-05:00 | STATUS: SUCCESS"
         },
         {
           "display_path": "MLB Pipeline - Transform Baseball",
           "exists": true,
           "name": "Transform Baseball",
           "path": "docs/win/baseball/mlb/errors/00_intake/transform_baseball.txt",
-          "status": "2026-11-02T07:13:05.641708 | STATUS: SUCCESS"
+          "status": "2026-11-02T09:17:31.768546 | STATUS: SUCCESS"
         },
         {
           "display_path": "MLB Pipeline - Scrape MLB Raw",
           "exists": true,
           "name": "Scrape MLB Raw",
           "path": "docs/win/baseball/mlb/errors/00_intake/scrape_mlb_raw.txt",
-          "status": "2026-11-02T12:13:05.957859+00:00 | INFO  | STATUS: SUCCESS"
+          "status": "2026-11-02T14:17:32.036722+00:00 | INFO  | STATUS: SUCCESS"
         },
         {
           "display_path": "MLB Pipeline - Build Games List",
@@ -590,7 +588,7 @@
           "exists": true,
           "name": "Build Juice Files",
           "path": "docs/win/baseball/mlb/errors/01_merge/build_juice_files.txt",
-          "status": "2026-10-28T11:49:41.848158+00:00 | STATUS: SUCCESS"
+          "status": "2026-11-02T16:05:23.603015+00:00 | STATUS: SUCCESS"
         },
         {
           "display_path": "MLB Pipeline - Compute Edges",
@@ -614,7 +612,7 @@
           "status": "STATUS: SUCCESS"
         }
       ],
-      "status": "failure",
+      "status": "success",
       "workflow": "pregame"
     }
   }
