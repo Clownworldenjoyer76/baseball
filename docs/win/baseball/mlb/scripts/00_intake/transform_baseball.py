@@ -238,6 +238,52 @@ def load_existing_predictions(merged, aliases):
     log(f"Existing predictions protected: {len(merged)}")
 
 
+def deduplicate_verified_schedule_variants(merged, aliases):
+    """Remove only duplicate-time versions of one independently verified game.
+
+    Keep doubleheader games distinct by official game_id. An ambiguous identity
+    or a tie for the closest recorded start time is not safe to consolidate.
+    """
+    grouped = {}
+    for key, row in merged.items():
+        game_id = _schedule_game_id(row, aliases)
+        if game_id:
+            grouped.setdefault((row["game_date"], game_id), []).append(key)
+
+    removed = 0
+    for (date_str, game_id), keys in grouped.items():
+        if len(keys) < 2:
+            continue
+        schedule = _SCHEDULE_CACHE.get(date_str, [])
+        officials = [
+            when for source, when in schedule
+            if source.get("game_id", "").strip() == game_id
+        ]
+        if len(officials) != 1:
+            continue
+        official = officials[0]
+        def distance(key):
+            row = merged[key]
+            stamp = datetime.strptime(
+                f"{row['game_date']} {row['game_time']}",
+                "%Y_%m_%d %I:%M %p",
+            )
+            return abs((stamp - official).total_seconds())
+        ranked = sorted(keys, key=distance)
+        if len(ranked) < 2 or distance(ranked[0]) == distance(ranked[1]):
+            log(f"AMBIGUOUS same-game historical variants preserved: "
+                f"date={date_str} game_id={game_id}")
+            continue
+        preferred = ranked[0]
+        for key in ranked[1:]:
+            merged.pop(key)
+            removed += 1
+            log(f"VERIFIED duplicate prediction time variant omitted: "
+                f"date={date_str} game_id={game_id} "
+                f"discarded_time={key[1]} retained_time={preferred[1]}")
+    log(f"Verified duplicate historical time variants omitted: {removed}")
+
+
 def process_file(file_path, merged, aliases, preserved_by_game):
     path = trusted_raw_file(file_path)
     log(f"Processing {path.name}")
@@ -313,6 +359,7 @@ def main():
         aliases = load_team_aliases()
         merged = {}
         load_existing_predictions(merged, aliases)
+        deduplicate_verified_schedule_variants(merged, aliases)
         preserved_by_game = _schedule_preserved_index(merged, aliases)
         raw_files = sorted(RAW_DIR.glob("*_mlb_raw.json"))
         log(f"Raw files found: {len(raw_files)}")
