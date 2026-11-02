@@ -1085,8 +1085,13 @@ def _audit_dratings_probabilities(df: pd.DataFrame, summary: dict, label: str) -
         | (~away_blank & (~np.isfinite(away) | (away < 0) | (away > 1)))
         | (~missing_both & ~incomplete & ((home + away - 1).abs() > 0.002))
     )
-    summary["missing_dratings_prob_rows"] += int(missing_both.sum())
-    summary["invalid_dratings_prob_rows"] += int((invalid | incomplete).sum())
+    summary["missing_dratings_prob_rows"] = (
+        summary.get("missing_dratings_prob_rows", 0) + int(missing_both.sum())
+    )
+    summary["invalid_dratings_prob_rows"] = (
+        summary.get("invalid_dratings_prob_rows", 0)
+        + int((invalid | incomplete).sum())
+    )
     if missing_both.any():
         sample = df.loc[missing_both, ["game_id"]].head(10).to_dict("records")
         _log(f"{label} missing both DRatings probability features: "
