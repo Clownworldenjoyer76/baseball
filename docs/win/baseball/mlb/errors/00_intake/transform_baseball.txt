@@ -1,623 +1,639 @@
-=== transform_baseball RUN 2026-10-28T07:47:14.787594 ===
-2026-10-28T07:47:14.850247 | Existing predictions protected: 2355
-2026-10-28T07:47:14.851061 | Raw files found: 207
-2026-10-28T07:47:14.851085 | Intake writes predictions only; completed rows remain in raw JSON for final scores
-2026-10-28T07:47:14.851196 | Processing 2026_03_26_mlb_raw.json
-2026-10-28T07:47:14.851922 |   {'future': 11, 'completed': 1, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 11}
-2026-10-28T07:47:14.852045 | Processing 2026_03_27_mlb_raw.json
-2026-10-28T07:47:14.852456 |   {'future': 8, 'completed': 11, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 8}
-2026-10-28T07:47:14.852574 | Processing 2026_03_28_mlb_raw.json
-2026-10-28T07:47:14.853147 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.853258 | Processing 2026_03_29_mlb_raw.json
-2026-10-28T07:47:14.853780 |   {'future': 12, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 12}
-2026-10-28T07:47:14.853895 | Processing 2026_03_30_mlb_raw.json
-2026-10-28T07:47:14.854481 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.854595 | Processing 2026_03_31_mlb_raw.json
-2026-10-28T07:47:14.855127 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14}
-2026-10-28T07:47:14.855234 | Processing 2026_04_01_mlb_raw.json
-2026-10-28T07:47:14.855826 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.855941 | Processing 2026_04_02_mlb_raw.json
-2026-10-28T07:47:14.856224 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 3}
-2026-10-28T07:47:14.856329 | Processing 2026_04_04_mlb_raw.json
-2026-10-28T07:47:14.856924 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.857039 | Processing 2026_04_06_mlb_raw.json
-2026-10-28T07:47:14.857577 |   {'future': 13, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 13}
-2026-10-28T07:47:14.857688 | Processing 2026_04_07_mlb_raw.json
-2026-10-28T07:47:14.858251 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.858358 | Processing 2026_04_08_mlb_raw.json
-2026-10-28T07:47:14.858931 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.859040 | Processing 2026_04_09_mlb_raw.json
-2026-10-28T07:47:14.859398 |   {'future': 6, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 6}
-2026-10-28T07:47:14.859504 | Processing 2026_04_10_mlb_raw.json
-2026-10-28T07:47:14.860060 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.860164 | Processing 2026_04_11_mlb_raw.json
-2026-10-28T07:47:14.860664 |   {'future': 11, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 3, 'skip': 0, 'preserved': 11}
-2026-10-28T07:47:14.860769 | Processing 2026_04_12_mlb_raw.json
-2026-10-28T07:47:14.861314 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.861431 | Processing 2026_04_13_mlb_raw.json
-2026-10-28T07:47:14.861868 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 10}
-2026-10-28T07:47:14.861971 | Processing 2026_04_14_mlb_raw.json
-2026-10-28T07:47:14.862538 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.862645 | Processing 2026_04_15_mlb_raw.json
-2026-10-28T07:47:14.863196 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.863310 | Processing 2026_04_16_mlb_raw.json
-2026-10-28T07:47:14.863757 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 10}
-2026-10-28T07:47:14.863861 | Processing 2026_04_17_mlb_raw.json
-2026-10-28T07:47:14.864432 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.864538 | Processing 2026_04_18_mlb_raw.json
-2026-10-28T07:47:14.865088 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.865191 | Processing 2026_04_19_mlb_raw.json
-2026-10-28T07:47:14.865753 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.865859 | Processing 2026_04_20_mlb_raw.json
-2026-10-28T07:47:14.866288 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 10}
-2026-10-28T07:47:14.866402 | Processing 2026_04_21_mlb_raw.json
-2026-10-28T07:47:14.866957 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.867060 | Processing 2026_04_22_mlb_raw.json
-2026-10-28T07:47:14.867622 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.867725 | Processing 2026_04_23_mlb_raw.json
-2026-10-28T07:47:14.868136 |   {'future': 9, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 9}
-2026-10-28T07:47:14.868238 | Processing 2026_04_24_mlb_raw.json
-2026-10-28T07:47:14.868776 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14}
-2026-10-28T07:47:14.868879 | Processing 2026_04_25_mlb_raw.json
-2026-10-28T07:47:14.869437 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.869542 | Processing 2026_04_27_mlb_raw.json
-2026-10-28T07:47:14.869936 |   {'future': 8, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 8}
-2026-10-28T07:47:14.870039 | Processing 2026_04_28_mlb_raw.json
-2026-10-28T07:47:14.870603 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.870710 | Processing 2026_04_29_mlb_raw.json
-2026-10-28T07:47:14.871258 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.871358 | Processing 2026_04_30_mlb_raw.json
-2026-10-28T07:47:14.871789 |   {'future': 9, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 9}
-2026-10-28T07:47:14.871892 | Processing 2026_05_01_mlb_raw.json
-2026-10-28T07:47:14.872432 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14}
-2026-10-28T07:47:14.872536 | Processing 2026_05_02_mlb_raw.json
-2026-10-28T07:47:14.873091 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.873194 | Processing 2026_05_03_mlb_raw.json
-2026-10-28T07:47:14.873754 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.873856 | Processing 2026_05_04_mlb_raw.json
-2026-10-28T07:47:14.874340 |   {'future': 12, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 12}
-2026-10-28T07:47:14.874454 | Processing 2026_05_05_mlb_raw.json
-2026-10-28T07:47:14.875013 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.875115 | Processing 2026_05_06_mlb_raw.json
-2026-10-28T07:47:14.875687 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.875791 | Processing 2026_05_07_mlb_raw.json
-2026-10-28T07:47:14.876227 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 10}
-2026-10-28T07:47:14.876336 | Processing 2026_05_09_mlb_raw.json
-2026-10-28T07:47:14.876915 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.877024 | Processing 2026_05_10_mlb_raw.json
-2026-10-28T07:47:14.877595 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.877700 | Processing 2026_05_11_mlb_raw.json
-2026-10-28T07:47:14.878041 |   {'future': 6, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 6}
-2026-10-28T07:47:14.878141 | Processing 2026_05_12_mlb_raw.json
-2026-10-28T07:47:14.878710 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.878814 | Processing 2026_05_14_mlb_raw.json
-2026-10-28T07:47:14.879273 |   {'future': 11, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 11}
-2026-10-28T07:47:14.879388 | Processing 2026_05_16_mlb_raw.json
-2026-10-28T07:47:14.879947 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.880052 | Processing 2026_05_17_mlb_raw.json
-2026-10-28T07:47:14.880607 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 14}
-2026-10-28T07:47:14.880714 | Processing 2026_05_18_mlb_raw.json
-2026-10-28T07:47:14.881242 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14}
-2026-10-28T07:47:14.881343 | Processing 2026_05_19_mlb_raw.json
-2026-10-28T07:47:14.881936 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.882045 | Processing 2026_05_20_mlb_raw.json
-2026-10-28T07:47:14.882659 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.882821 | Processing 2026_05_21_mlb_raw.json
-2026-10-28T07:47:14.883220 |   {'future': 7, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 7}
-2026-10-28T07:47:14.883328 | Processing 2026_05_22_mlb_raw.json
-2026-10-28T07:47:14.883904 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.884012 | Processing 2026_05_23_mlb_raw.json
-2026-10-28T07:47:14.884602 |   {'future': 16, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 16}
-2026-10-28T07:47:14.884707 | Processing 2026_05_24_mlb_raw.json
-2026-10-28T07:47:14.885283 |   {'future': 16, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 16}
-2026-10-28T07:47:14.885399 | Processing 2026_05_25_mlb_raw.json
-2026-10-28T07:47:14.885908 |   {'future': 13, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 13}
-2026-10-28T07:47:14.886010 | Processing 2026_05_26_mlb_raw.json
-2026-10-28T07:47:14.886580 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.886682 | Processing 2026_05_27_mlb_raw.json
-2026-10-28T07:47:14.887234 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.887333 | Processing 2026_05_28_mlb_raw.json
-2026-10-28T07:47:14.887685 |   {'future': 6, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 6}
-2026-10-28T07:47:14.887787 | Processing 2026_05_29_mlb_raw.json
-2026-10-28T07:47:14.888346 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.888464 | Processing 2026_05_30_mlb_raw.json
-2026-10-28T07:47:14.889025 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.889137 | Processing 2026_05_31_mlb_raw.json
-2026-10-28T07:47:14.889698 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.889807 | Processing 2026_06_01_mlb_raw.json
-2026-10-28T07:47:14.890220 |   {'future': 9, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 9}
-2026-10-28T07:47:14.890320 | Processing 2026_06_02_mlb_raw.json
-2026-10-28T07:47:14.890886 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.890992 | Processing 2026_06_03_mlb_raw.json
-2026-10-28T07:47:14.891564 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.891669 | Processing 2026_06_04_mlb_raw.json
-2026-10-28T07:47:14.892082 |   {'future': 9, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 9}
-2026-10-28T07:47:14.892184 | Processing 2026_06_05_mlb_raw.json
-2026-10-28T07:47:14.892739 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 0, 'skip': 0, 'preserved': 14}
-2026-10-28T07:47:14.892845 | Processing 2026_06_06_mlb_raw.json
-2026-10-28T07:47:14.893412 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.893518 | Processing 2026_06_07_mlb_raw.json
-2026-10-28T07:47:14.894294 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.894431 | Processing 2026_06_08_mlb_raw.json
-2026-10-28T07:47:14.894831 |   {'future': 8, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 8}
-2026-10-28T07:47:14.894936 | Processing 2026_06_09_mlb_raw.json
-2026-10-28T07:47:14.895502 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.895609 | Processing 2026_06_10_mlb_raw.json
-2026-10-28T07:47:14.896163 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.896265 | Processing 2026_06_11_mlb_raw.json
-2026-10-28T07:47:14.896698 |   {'future': 8, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 8}
-2026-10-28T07:47:14.896807 | Processing 2026_06_12_mlb_raw.json
-2026-10-28T07:47:14.897374 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.897481 | Processing 2026_06_13_mlb_raw.json
-2026-10-28T07:47:14.898039 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.898142 | Processing 2026_06_14_mlb_raw.json
-2026-10-28T07:47:14.898705 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.898810 | Processing 2026_06_15_mlb_raw.json
-2026-10-28T07:47:14.899248 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 10}
-2026-10-28T07:47:14.899352 | Processing 2026_06_16_mlb_raw.json
-2026-10-28T07:47:14.899937 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.900041 | Processing 2026_06_17_mlb_raw.json
-2026-10-28T07:47:14.900581 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14}
-2026-10-28T07:47:14.900686 | Processing 2026_06_18_mlb_raw.json
-2026-10-28T07:47:14.901204 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14}
-2026-10-28T07:47:14.901305 | Processing 2026_06_19_mlb_raw.json
-2026-10-28T07:47:14.901837 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14}
-2026-10-28T07:47:14.901941 | Processing 2026_06_20_mlb_raw.json
-2026-10-28T07:47:14.902509 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.902614 | Processing 2026_06_21_mlb_raw.json
-2026-10-28T07:47:14.903113 |   {'future': 13, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 13}
-2026-10-28T07:47:14.903214 | Processing 2026_06_22_mlb_raw.json
-2026-10-28T07:47:14.903766 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.903869 | Processing 2026_06_23_mlb_raw.json
-2026-10-28T07:47:14.904447 |   {'future': 16, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 16}
-2026-10-28T07:47:14.904549 | Processing 2026_06_24_mlb_raw.json
-2026-10-28T07:47:14.904743 |   {'future': 0, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 0}
-2026-10-28T07:47:14.904839 | Processing 2026_06_25_mlb_raw.json
-2026-10-28T07:47:14.905396 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.905499 | Processing 2026_06_26_mlb_raw.json
-2026-10-28T07:47:14.906039 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.906138 | Processing 2026_06_27_mlb_raw.json
-2026-10-28T07:47:14.906697 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.906799 | Processing 2026_06_28_mlb_raw.json
-2026-10-28T07:47:14.907298 |   {'future': 13, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 13}
-2026-10-28T07:47:14.907410 | Processing 2026_06_29_mlb_raw.json
-2026-10-28T07:47:14.907956 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.908057 | Processing 2026_06_30_mlb_raw.json
-2026-10-28T07:47:14.908589 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14}
-2026-10-28T07:47:14.908691 | Processing 2026_07_01_mlb_raw.json
-2026-10-28T07:47:14.909096 |   {'future': 9, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 9}
-2026-10-28T07:47:14.909195 | Processing 2026_07_02_mlb_raw.json
-2026-10-28T07:47:14.909708 |   {'future': 13, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 13}
-2026-10-28T07:47:14.909815 | Processing 2026_07_03_mlb_raw.json
-2026-10-28T07:47:14.910361 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.910478 | Processing 2026_07_04_mlb_raw.json
-2026-10-28T07:47:14.911027 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.911126 | Processing 2026_07_05_mlb_raw.json
-2026-10-28T07:47:14.911520 |   {'future': 8, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 8}
-2026-10-28T07:47:14.911621 | Processing 2026_07_06_mlb_raw.json
-2026-10-28T07:47:14.912198 |   {'future': 16, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 16}
-2026-10-28T07:47:14.912297 | Processing 2026_07_07_mlb_raw.json
-2026-10-28T07:47:14.912845 |   {'future': 15, 'completed': 15, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.912947 | Processing 2026_07_08_mlb_raw.json
-2026-10-28T07:47:14.913452 |   {'future': 13, 'completed': 15, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 13}
-2026-10-28T07:47:14.913554 | Processing 2026_07_09_mlb_raw.json
-2026-10-28T07:47:14.914101 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.914202 | Processing 2026_07_10_mlb_raw.json
-2026-10-28T07:47:14.914776 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.914889 | Processing 2026_07_11_mlb_raw.json
-2026-10-28T07:47:14.915446 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.915548 | Processing 2026_07_12_mlb_raw.json
-2026-10-28T07:47:14.915740 |   {'future': 0, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 0}
-2026-10-28T07:47:14.915836 | Processing 2026_07_13_mlb_raw.json
-2026-10-28T07:47:14.916392 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.916496 | Processing 2026_07_14_mlb_raw.json
-2026-10-28T07:47:14.917046 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.917147 | Processing 2026_07_15_mlb_raw.json
-2026-10-28T07:47:14.917706 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.917810 | Processing 2026_07_16_mlb_raw.json
-2026-10-28T07:47:14.918346 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.918460 | Processing 2026_07_17_mlb_raw.json
-2026-10-28T07:47:14.919005 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.919106 | Processing 2026_07_18_mlb_raw.json
-2026-10-28T07:47:14.919664 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.919768 | Processing 2026_07_19_mlb_raw.json
-2026-10-28T07:47:14.920324 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.920437 | Processing 2026_07_20_mlb_raw.json
-2026-10-28T07:47:14.920988 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.921090 | Processing 2026_07_21_mlb_raw.json
-2026-10-28T07:47:14.921650 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.921754 | Processing 2026_07_22_mlb_raw.json
-2026-10-28T07:47:14.922073 |   {'future': 5, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 5}
-2026-10-28T07:47:14.922171 | Processing 2026_07_23_mlb_raw.json
-2026-10-28T07:47:14.922730 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.922834 | Processing 2026_07_24_mlb_raw.json
-2026-10-28T07:47:14.923390 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.923493 | Processing 2026_07_25_mlb_raw.json
-2026-10-28T07:47:14.924046 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.924146 | Processing 2026_07_26_mlb_raw.json
-2026-10-28T07:47:14.924632 |   {'future': 12, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 12}
-2026-10-28T07:47:14.924735 | Processing 2026_07_27_mlb_raw.json
-2026-10-28T07:47:14.925281 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.925395 | Processing 2026_07_28_mlb_raw.json
-2026-10-28T07:47:14.925947 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.926051 | Processing 2026_07_29_mlb_raw.json
-2026-10-28T07:47:14.926495 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 10}
-2026-10-28T07:47:14.926597 | Processing 2026_07_30_mlb_raw.json
-2026-10-28T07:47:14.927143 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.927243 | Processing 2026_07_31_mlb_raw.json
-2026-10-28T07:47:14.927810 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.927914 | Processing 2026_08_01_mlb_raw.json
-2026-10-28T07:47:14.928478 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.928581 | Processing 2026_08_02_mlb_raw.json
-2026-10-28T07:47:14.928968 |   {'future': 8, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 8}
-2026-10-28T07:47:14.929066 | Processing 2026_08_03_mlb_raw.json
-2026-10-28T07:47:14.929435 |   {'future': 6, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 2, 'skip': 0, 'preserved': 6}
-2026-10-28T07:47:14.929537 | Processing 2026_08_04_mlb_raw.json
-2026-10-28T07:47:14.930098 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.930200 | Processing 2026_08_05_mlb_raw.json
-2026-10-28T07:47:14.930709 |   {'future': 11, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 4, 'skip': 0, 'preserved': 11}
-2026-10-28T07:47:14.930813 | Processing 2026_08_06_mlb_raw.json
-2026-10-28T07:47:14.931062 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 2, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.931160 | Processing 2026_08_07_mlb_raw.json
-2026-10-28T07:47:14.931575 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 11, 'skip': 0, 'preserved': 4}
-2026-10-28T07:47:14.931678 | Processing 2026_08_08_mlb_raw.json
-2026-10-28T07:47:14.932006 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 11, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.932108 | Processing 2026_08_09_mlb_raw.json
-2026-10-28T07:47:14.932567 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 10}
-2026-10-28T07:47:14.932670 | Processing 2026_08_10_mlb_raw.json
-2026-10-28T07:47:14.933051 |   {'future': 6, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 4, 'skip': 0, 'preserved': 6}
-2026-10-28T07:47:14.933151 | Processing 2026_08_11_mlb_raw.json
-2026-10-28T07:47:14.933664 |   {'future': 11, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 3, 'skip': 0, 'preserved': 11}
-2026-10-28T07:47:14.933768 | Processing 2026_08_12_mlb_raw.json
-2026-10-28T07:47:14.934080 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 7, 'skip': 0, 'preserved': 2}
-2026-10-28T07:47:14.934179 | Processing 2026_08_13_mlb_raw.json
-2026-10-28T07:47:14.934445 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 2}
-2026-10-28T07:47:14.934546 | Processing 2026_08_14_mlb_raw.json
-2026-10-28T07:47:14.934913 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 8, 'skip': 0, 'preserved': 4}
-2026-10-28T07:47:14.935010 | Processing 2026_08_15_mlb_raw.json
-2026-10-28T07:47:14.935325 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 8, 'skip': 0, 'preserved': 2}
-2026-10-28T07:47:14.935438 | Processing 2026_08_16_mlb_raw.json
-2026-10-28T07:47:14.935918 |   {'future': 11, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 11}
-2026-10-28T07:47:14.936020 | Processing 2026_08_17_mlb_raw.json
-2026-10-28T07:47:14.936681 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 10, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.936785 | Processing 2026_08_18_mlb_raw.json
-2026-10-28T07:47:14.937492 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 15, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.937598 | Processing 2026_08_19_mlb_raw.json
-2026-10-28T07:47:14.938096 |   {'future': 9, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 9, 'skip': 0, 'preserved': 9}
-2026-10-28T07:47:14.938195 | Processing 2026_08_20_mlb_raw.json
-2026-10-28T07:47:14.938622 |   {'future': 9, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 9}
-2026-10-28T07:47:14.938736 | Processing 2026_08_24_mlb_raw.json
-2026-10-28T07:47:14.939180 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 10}
-2026-10-28T07:47:14.939281 | Processing 2026_08_25_mlb_raw.json
-2026-10-28T07:47:14.939851 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.939954 | Processing 2026_08_26_mlb_raw.json
-2026-10-28T07:47:14.940474 |   {'future': 12, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 2, 'skip': 0, 'preserved': 12}
-2026-10-28T07:47:14.940578 | Processing 2026_08_27_mlb_raw.json
-2026-10-28T07:47:14.940944 |   {'future': 7, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 7}
-2026-10-28T07:47:14.941042 | Processing 2026_08_28_mlb_raw.json
-2026-10-28T07:47:14.941610 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.941713 | Processing 2026_08_29_mlb_raw.json
-2026-10-28T07:47:14.942013 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 3, 'skip': 0, 'preserved': 3}
-2026-10-28T07:47:14.942117 | Processing 2026_08_30_mlb_raw.json
-2026-10-28T07:47:14.942664 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14}
-2026-10-28T07:47:14.942769 | Processing 2026_08_31_mlb_raw.json
-2026-10-28T07:47:14.943099 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 9, 'skip': 0, 'preserved': 2}
-2026-10-28T07:47:14.943199 | Processing 2026_09_01_mlb_raw.json
-2026-10-28T07:47:14.943619 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 11, 'skip': 0, 'preserved': 4}
-2026-10-28T07:47:14.943724 | Processing 2026_09_02_mlb_raw.json
-2026-10-28T07:47:14.944032 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 7, 'skip': 0, 'preserved': 2}
-2026-10-28T07:47:14.944130 | Processing 2026_09_03_mlb_raw.json
-2026-10-28T07:47:14.944421 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 4, 'skip': 0, 'preserved': 2}
-2026-10-28T07:47:14.944523 | Processing 2026_09_04_mlb_raw.json
-2026-10-28T07:47:14.944922 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 11, 'skip': 0, 'preserved': 4}
-2026-10-28T07:47:14.945022 | Processing 2026_09_05_mlb_raw.json
-2026-10-28T07:47:14.945355 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 8, 'skip': 0, 'preserved': 2}
-2026-10-28T07:47:14.945471 | Processing 2026_09_06_mlb_raw.json
-2026-10-28T07:47:14.945704 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.945802 | Processing 2026_09_07_mlb_raw.json
-2026-10-28T07:47:14.946053 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 2}
-2026-10-28T07:47:14.946151 | Processing 2026_09_08_mlb_raw.json
-2026-10-28T07:47:14.946574 |   {'future': 5, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 10, 'skip': 0, 'preserved': 5}
-2026-10-28T07:47:14.946676 | Processing 2026_09_09_mlb_raw.json
-2026-10-28T07:47:14.946979 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 9, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.947078 | Processing 2026_09_10_mlb_raw.json
-2026-10-28T07:47:14.947701 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 2, 'skip': 0, 'preserved': 15}
-2026-10-28T07:47:14.947813 | Processing 2026_09_11_mlb_raw.json
-2026-10-28T07:47:14.948186 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 10, 'skip': 0, 'preserved': 3}
-2026-10-28T07:47:14.948288 | Processing 2026_09_12_mlb_raw.json
-2026-10-28T07:47:14.948570 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 5, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.948673 | Processing 2026_09_13_mlb_raw.json
-2026-10-28T07:47:14.949136 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 10}
-2026-10-28T07:47:14.949237 | Processing 2026_09_14_mlb_raw.json
-2026-10-28T07:47:14.949586 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 7, 'skip': 0, 'preserved': 3}
-2026-10-28T07:47:14.949687 | Processing 2026_09_15_mlb_raw.json
-2026-10-28T07:47:14.950063 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 13, 'skip': 0, 'preserved': 2}
-2026-10-28T07:47:14.950163 | Processing 2026_09_16_mlb_raw.json
-2026-10-28T07:47:14.950523 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 8, 'skip': 0, 'preserved': 3}
-2026-10-28T07:47:14.950623 | Processing 2026_09_17_mlb_raw.json
-2026-10-28T07:47:14.950884 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 4, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.950981 | Processing 2026_09_18_mlb_raw.json
-2026-10-28T07:47:14.951387 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 11, 'skip': 0, 'preserved': 4}
-2026-10-28T07:47:14.951490 | Processing 2026_09_19_mlb_raw.json
-2026-10-28T07:47:14.951839 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 7, 'skip': 0, 'preserved': 3}
-2026-10-28T07:47:14.951939 | Processing 2026_09_20_mlb_raw.json
-2026-10-28T07:47:14.952231 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 2, 'skip': 0, 'preserved': 3}
-2026-10-28T07:47:14.952330 | Processing 2026_09_21_mlb_raw.json
-2026-10-28T07:47:14.952582 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 2, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.952681 | Processing 2026_09_22_mlb_raw.json
-2026-10-28T07:47:14.953089 |   {'future': 5, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 9, 'skip': 0, 'preserved': 5}
-2026-10-28T07:47:14.953188 | Processing 2026_09_23_mlb_raw.json
-2026-10-28T07:47:14.953581 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 9, 'skip': 0, 'preserved': 4}
-2026-10-28T07:47:14.953682 | Processing 2026_09_24_mlb_raw.json
-2026-10-28T07:47:14.953989 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 4, 'skip': 0, 'preserved': 3}
-2026-10-28T07:47:14.954087 | Processing 2026_09_25_mlb_raw.json
-2026-10-28T07:47:14.954489 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 10, 'skip': 0, 'preserved': 4}
-2026-10-28T07:47:14.954590 | Processing 2026_09_26_mlb_raw.json
-2026-10-28T07:47:14.955078 |   {'future': 11, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 2, 'skip': 0, 'preserved': 11}
-2026-10-28T07:47:14.955177 | Processing 2026_09_27_mlb_raw.json
-2026-10-28T07:47:14.955519 |   {'future': 0, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 14, 'skip': 0, 'preserved': 0}
-2026-10-28T07:47:14.955620 | Processing 2026_09_28_mlb_raw.json
-2026-10-28T07:47:14.955918 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 4}
-2026-10-28T07:47:14.956017 | Processing 2026_09_29_mlb_raw.json
-2026-10-28T07:47:14.956270 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 2}
-2026-10-28T07:47:14.956378 | Processing 2026_09_30_mlb_raw.json
-2026-10-28T07:47:14.956637 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 2}
-2026-10-28T07:47:14.956734 | Processing 2026_10_01_mlb_raw.json
-2026-10-28T07:47:14.956952 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.957046 | Processing 2026_10_02_mlb_raw.json
-2026-10-28T07:47:14.957339 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 4}
-2026-10-28T07:47:14.957448 | Processing 2026_10_03_mlb_raw.json
-2026-10-28T07:47:14.957705 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 2}
-2026-10-28T07:47:14.957810 | Processing 2026_10_04_mlb_raw.json
-2026-10-28T07:47:14.958041 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.958137 | Processing 2026_10_05_mlb_raw.json
-2026-10-28T07:47:14.958381 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.958482 | Processing 2026_10_06_mlb_raw.json
-2026-10-28T07:47:14.958715 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.958812 | Processing 2026_10_07_mlb_raw.json
-2026-10-28T07:47:14.959108 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 4}
-2026-10-28T07:47:14.959204 | Processing 2026_10_08_mlb_raw.json
-2026-10-28T07:47:14.959439 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.959538 | Processing 2026_10_09_mlb_raw.json
-2026-10-28T07:47:14.959764 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.959863 | Processing 2026_10_10_mlb_raw.json
-2026-10-28T07:47:14.960084 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.960178 | Processing 2026_10_11_mlb_raw.json
-2026-10-28T07:47:14.960411 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.960508 | Processing 2026_10_12_mlb_raw.json
-2026-10-28T07:47:14.960751 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 2}
-2026-10-28T07:47:14.960848 | Processing 2026_10_13_mlb_raw.json
-2026-10-28T07:47:14.961066 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.961160 | Processing 2026_10_14_mlb_raw.json
-2026-10-28T07:47:14.961389 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.961486 | Processing 2026_10_15_mlb_raw.json
-2026-10-28T07:47:14.961731 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 2}
-2026-10-28T07:47:14.961827 | Processing 2026_10_16_mlb_raw.json
-2026-10-28T07:47:14.962043 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.962137 | Processing 2026_10_18_mlb_raw.json
-2026-10-28T07:47:14.962353 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.962462 | Processing 2026_10_19_mlb_raw.json
-2026-10-28T07:47:14.962682 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.962777 | Processing 2026_10_20_mlb_raw.json
-2026-10-28T07:47:14.962994 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.963089 | Processing 2026_10_21_mlb_raw.json
-2026-10-28T07:47:14.963305 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.963412 | Processing 2026_10_22_mlb_raw.json
-2026-10-28T07:47:14.963632 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.963728 | Processing 2026_10_23_mlb_raw.json
-2026-10-28T07:47:14.963945 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.964038 | Processing 2026_10_24_mlb_raw.json
-2026-10-28T07:47:14.964255 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.964351 | Processing 2026_10_25_mlb_raw.json
-2026-10-28T07:47:14.964594 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.964697 | Processing 2026_10_26_mlb_raw.json
-2026-10-28T07:47:14.964917 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.965012 | Processing 2026_10_27_mlb_raw.json
-2026-10-28T07:47:14.965228 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.965324 | Processing 2026_10_28_mlb_raw.json
-2026-10-28T07:47:14.965567 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1}
-2026-10-28T07:47:14.966293 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_03_26_MLB.csv (11 rows)
-2026-10-28T07:47:14.966484 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_03_27_MLB.csv (8 rows)
-2026-10-28T07:47:14.966675 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_03_28_MLB.csv (15 rows)
-2026-10-28T07:47:14.966852 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_03_29_MLB.csv (12 rows)
-2026-10-28T07:47:14.967029 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_03_30_MLB.csv (15 rows)
-2026-10-28T07:47:14.967198 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_03_31_MLB.csv (14 rows)
-2026-10-28T07:47:14.967386 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_01_MLB.csv (15 rows)
-2026-10-28T07:47:14.967538 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_02_MLB.csv (3 rows)
-2026-10-28T07:47:14.967711 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_04_MLB.csv (15 rows)
-2026-10-28T07:47:14.967883 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_05_MLB.csv (16 rows)
-2026-10-28T07:47:14.968048 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_06_MLB.csv (13 rows)
-2026-10-28T07:47:14.968216 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_07_MLB.csv (15 rows)
-2026-10-28T07:47:14.968396 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_08_MLB.csv (15 rows)
-2026-10-28T07:47:14.968547 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_09_MLB.csv (6 rows)
-2026-10-28T07:47:14.968714 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_10_MLB.csv (15 rows)
-2026-10-28T07:47:14.968870 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_11_MLB.csv (11 rows)
-2026-10-28T07:47:14.969037 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_12_MLB.csv (15 rows)
-2026-10-28T07:47:14.969191 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_13_MLB.csv (10 rows)
-2026-10-28T07:47:14.969356 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_14_MLB.csv (15 rows)
-2026-10-28T07:47:14.969543 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_15_MLB.csv (15 rows)
-2026-10-28T07:47:14.969701 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_16_MLB.csv (10 rows)
-2026-10-28T07:47:14.969880 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_17_MLB.csv (15 rows)
-2026-10-28T07:47:14.970047 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_18_MLB.csv (15 rows)
-2026-10-28T07:47:14.970212 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_19_MLB.csv (15 rows)
-2026-10-28T07:47:14.970374 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_20_MLB.csv (10 rows)
-2026-10-28T07:47:14.970547 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_21_MLB.csv (15 rows)
-2026-10-28T07:47:14.970715 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_22_MLB.csv (15 rows)
-2026-10-28T07:47:14.970865 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_23_MLB.csv (9 rows)
-2026-10-28T07:47:14.971026 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_24_MLB.csv (14 rows)
-2026-10-28T07:47:14.971190 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_25_MLB.csv (15 rows)
-2026-10-28T07:47:14.971357 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_26_MLB.csv (16 rows)
-2026-10-28T07:47:14.971529 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_27_MLB.csv (8 rows)
-2026-10-28T07:47:14.971700 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_28_MLB.csv (15 rows)
-2026-10-28T07:47:14.971867 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_29_MLB.csv (15 rows)
-2026-10-28T07:47:14.972019 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_30_MLB.csv (9 rows)
-2026-10-28T07:47:14.972185 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_01_MLB.csv (14 rows)
-2026-10-28T07:47:14.972351 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_02_MLB.csv (15 rows)
-2026-10-28T07:47:14.972540 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_03_MLB.csv (15 rows)
-2026-10-28T07:47:14.972700 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_04_MLB.csv (12 rows)
-2026-10-28T07:47:14.972867 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_05_MLB.csv (15 rows)
-2026-10-28T07:47:14.973041 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_06_MLB.csv (15 rows)
-2026-10-28T07:47:14.973191 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_07_MLB.csv (10 rows)
-2026-10-28T07:47:14.973353 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_08_MLB.csv (14 rows)
-2026-10-28T07:47:14.973536 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_09_MLB.csv (15 rows)
-2026-10-28T07:47:14.973702 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_10_MLB.csv (15 rows)
-2026-10-28T07:47:14.973844 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_11_MLB.csv (6 rows)
-2026-10-28T07:47:14.974017 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_12_MLB.csv (15 rows)
-2026-10-28T07:47:14.974179 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_13_MLB.csv (15 rows)
-2026-10-28T07:47:14.974332 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_14_MLB.csv (11 rows)
-2026-10-28T07:47:14.974507 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_15_MLB.csv (14 rows)
-2026-10-28T07:47:14.974674 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_16_MLB.csv (15 rows)
-2026-10-28T07:47:14.974837 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_17_MLB.csv (14 rows)
-2026-10-28T07:47:14.975002 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_18_MLB.csv (14 rows)
-2026-10-28T07:47:14.975170 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_19_MLB.csv (15 rows)
-2026-10-28T07:47:14.975335 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_20_MLB.csv (15 rows)
-2026-10-28T07:47:14.975492 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_21_MLB.csv (7 rows)
-2026-10-28T07:47:14.975657 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_22_MLB.csv (15 rows)
-2026-10-28T07:47:14.975823 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_23_MLB.csv (16 rows)
-2026-10-28T07:47:14.975988 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_24_MLB.csv (16 rows)
-2026-10-28T07:47:14.976147 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_25_MLB.csv (13 rows)
-2026-10-28T07:47:14.976310 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_26_MLB.csv (15 rows)
-2026-10-28T07:47:14.976487 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_27_MLB.csv (15 rows)
-2026-10-28T07:47:14.976628 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_28_MLB.csv (6 rows)
-2026-10-28T07:47:14.976792 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_29_MLB.csv (15 rows)
-2026-10-28T07:47:14.976957 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_30_MLB.csv (15 rows)
-2026-10-28T07:47:14.977123 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_31_MLB.csv (15 rows)
-2026-10-28T07:47:14.977275 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_01_MLB.csv (9 rows)
-2026-10-28T07:47:14.977452 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_02_MLB.csv (15 rows)
-2026-10-28T07:47:14.977620 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_03_MLB.csv (15 rows)
-2026-10-28T07:47:14.977771 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_04_MLB.csv (9 rows)
-2026-10-28T07:47:14.977933 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_05_MLB.csv (14 rows)
-2026-10-28T07:47:14.978105 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_06_MLB.csv (15 rows)
-2026-10-28T07:47:14.978270 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_07_MLB.csv (15 rows)
-2026-10-28T07:47:14.978430 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_08_MLB.csv (8 rows)
-2026-10-28T07:47:14.978596 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_09_MLB.csv (15 rows)
-2026-10-28T07:47:14.978762 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_10_MLB.csv (15 rows)
-2026-10-28T07:47:14.978906 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_11_MLB.csv (8 rows)
-2026-10-28T07:47:14.979069 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_12_MLB.csv (15 rows)
-2026-10-28T07:47:14.979237 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_13_MLB.csv (15 rows)
-2026-10-28T07:47:14.979436 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_14_MLB.csv (15 rows)
-2026-10-28T07:47:14.979604 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_15_MLB.csv (10 rows)
-2026-10-28T07:47:14.979776 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_16_MLB.csv (15 rows)
-2026-10-28T07:47:14.979942 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_17_MLB.csv (14 rows)
-2026-10-28T07:47:14.980089 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_18_MLB.csv (9 rows)
-2026-10-28T07:47:14.980248 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_19_MLB.csv (14 rows)
-2026-10-28T07:47:14.980423 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_20_MLB.csv (14 rows)
-2026-10-28T07:47:14.980588 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_21_MLB.csv (15 rows)
-2026-10-28T07:47:14.980746 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_22_MLB.csv (13 rows)
-2026-10-28T07:47:14.980909 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_23_MLB.csv (15 rows)
-2026-10-28T07:47:14.981072 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_24_MLB.csv (16 rows)
-2026-10-28T07:47:14.981233 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_26_MLB.csv (15 rows)
-2026-10-28T07:47:14.981405 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_27_MLB.csv (15 rows)
-2026-10-28T07:47:14.981568 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_28_MLB.csv (15 rows)
-2026-10-28T07:47:14.981725 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_29_MLB.csv (13 rows)
-2026-10-28T07:47:14.981885 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_30_MLB.csv (15 rows)
-2026-10-28T07:47:14.982044 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_01_MLB.csv (14 rows)
-2026-10-28T07:47:14.982195 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_02_MLB.csv (9 rows)
-2026-10-28T07:47:14.982350 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_03_MLB.csv (13 rows)
-2026-10-28T07:47:14.982526 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_04_MLB.csv (15 rows)
-2026-10-28T07:47:14.982688 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_05_MLB.csv (15 rows)
-2026-10-28T07:47:14.982832 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_06_MLB.csv (8 rows)
-2026-10-28T07:47:14.982995 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_07_MLB.csv (16 rows)
-2026-10-28T07:47:14.983157 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_08_MLB.csv (15 rows)
-2026-10-28T07:47:14.983314 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_09_MLB.csv (13 rows)
-2026-10-28T07:47:14.983491 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_10_MLB.csv (15 rows)
-2026-10-28T07:47:14.983655 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_11_MLB.csv (15 rows)
-2026-10-28T07:47:14.983822 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_12_MLB.csv (15 rows)
-2026-10-28T07:47:14.983982 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_17_MLB.csv (15 rows)
-2026-10-28T07:47:14.984142 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_18_MLB.csv (15 rows)
-2026-10-28T07:47:14.984302 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_19_MLB.csv (15 rows)
-2026-10-28T07:47:14.984475 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_20_MLB.csv (15 rows)
-2026-10-28T07:47:14.984636 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_21_MLB.csv (15 rows)
-2026-10-28T07:47:14.984797 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_22_MLB.csv (15 rows)
-2026-10-28T07:47:14.984933 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_23_MLB.csv (5 rows)
-2026-10-28T07:47:14.985093 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_24_MLB.csv (15 rows)
-2026-10-28T07:47:14.985254 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_25_MLB.csv (15 rows)
-2026-10-28T07:47:14.985425 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_26_MLB.csv (15 rows)
-2026-10-28T07:47:14.985587 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_27_MLB.csv (12 rows)
-2026-10-28T07:47:14.985752 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_28_MLB.csv (15 rows)
-2026-10-28T07:47:14.985919 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_29_MLB.csv (16 rows)
-2026-10-28T07:47:14.986070 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_30_MLB.csv (10 rows)
-2026-10-28T07:47:14.986231 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_31_MLB.csv (15 rows)
-2026-10-28T07:47:14.986412 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_01_MLB.csv (15 rows)
-2026-10-28T07:47:14.986579 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_02_MLB.csv (15 rows)
-2026-10-28T07:47:14.986724 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_03_MLB.csv (8 rows)
-2026-10-28T07:47:14.986891 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_04_MLB.csv (15 rows)
-2026-10-28T07:47:14.987050 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_05_MLB.csv (12 rows)
-2026-10-28T07:47:14.987176 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_06_MLB.csv (1 rows)
-2026-10-28T07:47:14.987335 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_07_MLB.csv (15 rows)
-2026-10-28T07:47:14.987509 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_08_MLB.csv (15 rows)
-2026-10-28T07:47:14.987671 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_09_MLB.csv (15 rows)
-2026-10-28T07:47:14.987823 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_10_MLB.csv (10 rows)
-2026-10-28T07:47:14.987986 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_11_MLB.csv (15 rows)
-2026-10-28T07:47:14.988144 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_12_MLB.csv (15 rows)
-2026-10-28T07:47:14.988283 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_13_MLB.csv (6 rows)
-2026-10-28T07:47:14.988454 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_14_MLB.csv (14 rows)
-2026-10-28T07:47:14.988612 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_15_MLB.csv (15 rows)
-2026-10-28T07:47:14.988772 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_16_MLB.csv (15 rows)
-2026-10-28T07:47:14.988925 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_17_MLB.csv (11 rows)
-2026-10-28T07:47:14.989090 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_18_MLB.csv (15 rows)
-2026-10-28T07:47:14.989256 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_19_MLB.csv (15 rows)
-2026-10-28T07:47:14.989448 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_20_MLB.csv (18 rows)
-2026-10-28T07:47:14.989606 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_24_MLB.csv (10 rows)
-2026-10-28T07:47:14.989774 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_25_MLB.csv (15 rows)
-2026-10-28T07:47:14.989933 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_26_MLB.csv (12 rows)
-2026-10-28T07:47:14.990075 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_27_MLB.csv (7 rows)
-2026-10-28T07:47:14.990240 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_28_MLB.csv (15 rows)
-2026-10-28T07:47:14.990421 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_29_MLB.csv (14 rows)
-2026-10-28T07:47:14.990589 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_30_MLB.csv (14 rows)
-2026-10-28T07:47:14.990745 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_31_MLB.csv (12 rows)
-2026-10-28T07:47:14.990908 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_01_MLB.csv (15 rows)
-2026-10-28T07:47:14.991069 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_02_MLB.csv (13 rows)
-2026-10-28T07:47:14.991208 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_03_MLB.csv (7 rows)
-2026-10-28T07:47:14.991376 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_04_MLB.csv (15 rows)
-2026-10-28T07:47:14.991541 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_05_MLB.csv (15 rows)
-2026-10-28T07:47:14.991699 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_06_MLB.csv (14 rows)
-2026-10-28T07:47:14.991833 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_07_MLB.csv (5 rows)
-2026-10-28T07:47:14.991991 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_08_MLB.csv (15 rows)
-2026-10-28T07:47:14.992144 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_09_MLB.csv (13 rows)
-2026-10-28T07:47:14.992271 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_10_MLB.csv (3 rows)
-2026-10-28T07:47:14.992446 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_11_MLB.csv (15 rows)
-2026-10-28T07:47:14.992607 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_12_MLB.csv (14 rows)
-2026-10-28T07:47:14.992760 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_13_MLB.csv (12 rows)
-2026-10-28T07:47:14.992911 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_14_MLB.csv (10 rows)
-2026-10-28T07:47:14.993068 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_15_MLB.csv (14 rows)
-2026-10-28T07:47:14.993217 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_16_MLB.csv (12 rows)
-2026-10-28T07:47:14.993355 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_17_MLB.csv (6 rows)
-2026-10-28T07:47:14.993530 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_18_MLB.csv (14 rows)
-2026-10-28T07:47:14.993690 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_19_MLB.csv (14 rows)
-2026-10-28T07:47:14.993843 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_20_MLB.csv (13 rows)
-2026-10-28T07:47:14.993974 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_21_MLB.csv (3 rows)
-2026-10-28T07:47:14.994134 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_22_MLB.csv (15 rows)
-2026-10-28T07:47:14.994301 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_23_MLB.csv (14 rows)
-2026-10-28T07:47:14.994461 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_24_MLB.csv (9 rows)
-2026-10-28T07:47:14.994620 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_25_MLB.csv (15 rows)
-2026-10-28T07:47:14.994772 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_26_MLB.csv (11 rows)
-2026-10-28T07:47:14.994930 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_27_MLB.csv (13 rows)
-2026-10-28T07:47:14.995069 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_29_MLB.csv (6 rows)
-2026-10-28T07:47:14.995212 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_30_MLB.csv (3 rows)
-2026-10-28T07:47:14.995405 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_01_MLB.csv (1 rows)
-2026-10-28T07:47:14.995633 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_03_MLB.csv (5 rows)
-2026-10-28T07:47:14.995815 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_04_MLB.csv (2 rows)
-2026-10-28T07:47:14.995954 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_05_MLB.csv (1 rows)
-2026-10-28T07:47:14.996085 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_06_MLB.csv (2 rows)
-2026-10-28T07:47:14.996222 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_07_MLB.csv (4 rows)
-2026-10-28T07:47:14.996348 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_08_MLB.csv (1 rows)
-2026-10-28T07:47:14.996511 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_10_MLB.csv (2 rows)
-2026-10-28T07:47:14.996639 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_11_MLB.csv (1 rows)
-2026-10-28T07:47:14.996767 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_12_MLB.csv (2 rows)
-2026-10-28T07:47:14.996892 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_13_MLB.csv (1 rows)
-2026-10-28T07:47:14.997015 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_14_MLB.csv (1 rows)
-2026-10-28T07:47:14.997142 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_15_MLB.csv (2 rows)
-2026-10-28T07:47:14.997266 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_16_MLB.csv (1 rows)
-2026-10-28T07:47:14.997402 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_18_MLB.csv (1 rows)
-2026-10-28T07:47:14.997529 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_19_MLB.csv (1 rows)
-2026-10-28T07:47:14.997651 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_23_MLB.csv (1 rows)
-2026-10-28T07:47:14.997773 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_24_MLB.csv (1 rows)
-2026-10-28T07:47:14.997907 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_26_MLB.csv (2 rows)
-2026-10-28T07:47:14.998030 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_27_MLB.csv (1 rows)
-2026-10-28T07:47:14.998153 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_28_MLB.csv (1 rows)
-2026-10-28T07:47:14.998178 | --- SUMMARY ---
-2026-10-28T07:47:14.998194 | Raw files processed: 207
-2026-10-28T07:47:14.998209 | Files written: 0
-2026-10-28T07:47:14.998224 | Predictions preserved or recovered: 2355
-2026-10-28T07:47:14.998238 | STATUS: SUCCESS
+=== transform_baseball RUN 2026-11-02T09:17:31.333347 ===
+2026-11-02T09:17:31.425530 | Existing predictions protected: 2355
+2026-11-02T09:17:31.527633 | EXISTING SAME-GAME TIME VARIANTS preserved (review required): ('2026_08_20', '63303533')
+2026-11-02T09:17:31.527741 | EXISTING SAME-GAME TIME VARIANTS preserved (review required): ('2026_08_20', '63302693')
+2026-11-02T09:17:31.527863 | EXISTING SAME-GAME TIME VARIANTS preserved (review required): ('2026_08_20', '63301223')
+2026-11-02T09:17:31.527962 | EXISTING SAME-GAME TIME VARIANTS preserved (review required): ('2026_08_20', '63301385')
+2026-11-02T09:17:31.528054 | EXISTING SAME-GAME TIME VARIANTS preserved (review required): ('2026_08_20', '63302821')
+2026-11-02T09:17:31.528146 | EXISTING SAME-GAME TIME VARIANTS preserved (review required): ('2026_08_20', '72054254')
+2026-11-02T09:17:31.528236 | EXISTING SAME-GAME TIME VARIANTS preserved (review required): ('2026_08_20', '63303811')
+2026-11-02T09:17:31.528327 | EXISTING SAME-GAME TIME VARIANTS preserved (review required): ('2026_08_20', '63301479')
+2026-11-02T09:17:31.528416 | EXISTING SAME-GAME TIME VARIANTS preserved (review required): ('2026_08_20', '63301033')
+2026-11-02T09:17:31.551658 | EXISTING SAME-GAME TIME VARIANTS preserved (review required): ('2026_09_29', '401907924')
+2026-11-02T09:17:31.551759 | EXISTING SAME-GAME TIME VARIANTS preserved (review required): ('2026_09_29', '401907974')
+2026-11-02T09:17:31.552458 | EXISTING SAME-GAME TIME VARIANTS preserved (review required): ('2026_10_03', '401907985')
+2026-11-02T09:17:31.553504 | EXISTING SAME-GAME TIME VARIANTS preserved (review required): ('2026_10_10', '401907994')
+2026-11-02T09:17:31.554976 | EXISTING SAME-GAME TIME VARIANTS preserved (review required): ('2026_10_26', '401908044')
+2026-11-02T09:17:31.556303 | Raw files found: 208
+2026-11-02T09:17:31.556334 | Intake writes predictions only; completed rows remain in raw JSON for final scores
+2026-11-02T09:17:31.556484 | Processing 2026_03_26_mlb_raw.json
+2026-11-02T09:17:31.557432 |   {'future': 11, 'completed': 1, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 11, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.557583 | Processing 2026_03_27_mlb_raw.json
+2026-11-02T09:17:31.558161 |   {'future': 8, 'completed': 11, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 8, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.558304 | Processing 2026_03_28_mlb_raw.json
+2026-11-02T09:17:31.559181 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.559325 | Processing 2026_03_29_mlb_raw.json
+2026-11-02T09:17:31.560079 |   {'future': 12, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 12, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.560220 | Processing 2026_03_30_mlb_raw.json
+2026-11-02T09:17:31.561071 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.561209 | Processing 2026_03_31_mlb_raw.json
+2026-11-02T09:17:31.562020 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.562158 | Processing 2026_04_01_mlb_raw.json
+2026-11-02T09:17:31.563011 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.563151 | Processing 2026_04_02_mlb_raw.json
+2026-11-02T09:17:31.563554 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 3, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.563689 | Processing 2026_04_04_mlb_raw.json
+2026-11-02T09:17:31.564545 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.564680 | Processing 2026_04_06_mlb_raw.json
+2026-11-02T09:17:31.565449 |   {'future': 13, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 13, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.565598 | Processing 2026_04_07_mlb_raw.json
+2026-11-02T09:17:31.566451 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.566586 | Processing 2026_04_08_mlb_raw.json
+2026-11-02T09:17:31.567427 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.567565 | Processing 2026_04_09_mlb_raw.json
+2026-11-02T09:17:31.568100 |   {'future': 6, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 6, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.568234 | Processing 2026_04_10_mlb_raw.json
+2026-11-02T09:17:31.569078 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.569214 | Processing 2026_04_11_mlb_raw.json
+2026-11-02T09:17:31.569955 |   {'future': 11, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 3, 'skip': 0, 'preserved': 11, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.570091 | Processing 2026_04_12_mlb_raw.json
+2026-11-02T09:17:31.570958 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.571095 | Processing 2026_04_13_mlb_raw.json
+2026-11-02T09:17:31.571741 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 10, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.571900 | Processing 2026_04_14_mlb_raw.json
+2026-11-02T09:17:31.572733 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.572892 | Processing 2026_04_15_mlb_raw.json
+2026-11-02T09:17:31.573713 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.573869 | Processing 2026_04_16_mlb_raw.json
+2026-11-02T09:17:31.574502 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 10, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.574636 | Processing 2026_04_17_mlb_raw.json
+2026-11-02T09:17:31.575467 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.575603 | Processing 2026_04_18_mlb_raw.json
+2026-11-02T09:17:31.576444 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.576586 | Processing 2026_04_19_mlb_raw.json
+2026-11-02T09:17:31.577415 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.577550 | Processing 2026_04_20_mlb_raw.json
+2026-11-02T09:17:31.578203 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 10, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.578337 | Processing 2026_04_21_mlb_raw.json
+2026-11-02T09:17:31.579175 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.579309 | Processing 2026_04_22_mlb_raw.json
+2026-11-02T09:17:31.580129 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.580264 | Processing 2026_04_23_mlb_raw.json
+2026-11-02T09:17:31.580884 |   {'future': 9, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 9, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.581024 | Processing 2026_04_24_mlb_raw.json
+2026-11-02T09:17:31.581793 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.581950 | Processing 2026_04_25_mlb_raw.json
+2026-11-02T09:17:31.582780 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.582935 | Processing 2026_04_27_mlb_raw.json
+2026-11-02T09:17:31.583514 |   {'future': 8, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 8, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.583646 | Processing 2026_04_28_mlb_raw.json
+2026-11-02T09:17:31.584482 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.584619 | Processing 2026_04_29_mlb_raw.json
+2026-11-02T09:17:31.585457 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.585591 | Processing 2026_04_30_mlb_raw.json
+2026-11-02T09:17:31.586219 |   {'future': 9, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 9, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.586353 | Processing 2026_05_01_mlb_raw.json
+2026-11-02T09:17:31.587155 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.587291 | Processing 2026_05_02_mlb_raw.json
+2026-11-02T09:17:31.588128 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.588263 | Processing 2026_05_03_mlb_raw.json
+2026-11-02T09:17:31.589097 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.589231 | Processing 2026_05_04_mlb_raw.json
+2026-11-02T09:17:31.589975 |   {'future': 12, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 12, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.590120 | Processing 2026_05_05_mlb_raw.json
+2026-11-02T09:17:31.591045 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.591185 | Processing 2026_05_06_mlb_raw.json
+2026-11-02T09:17:31.592022 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.592158 | Processing 2026_05_07_mlb_raw.json
+2026-11-02T09:17:31.592801 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 10, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.592959 | Processing 2026_05_09_mlb_raw.json
+2026-11-02T09:17:31.593775 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.593932 | Processing 2026_05_10_mlb_raw.json
+2026-11-02T09:17:31.594746 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.594902 | Processing 2026_05_11_mlb_raw.json
+2026-11-02T09:17:31.595402 |   {'future': 6, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 6, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.595534 | Processing 2026_05_12_mlb_raw.json
+2026-11-02T09:17:31.596365 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.596499 | Processing 2026_05_14_mlb_raw.json
+2026-11-02T09:17:31.597199 |   {'future': 11, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 11, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.597341 | Processing 2026_05_16_mlb_raw.json
+2026-11-02T09:17:31.598172 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.598307 | Processing 2026_05_17_mlb_raw.json
+2026-11-02T09:17:31.599122 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 14, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.599257 | Processing 2026_05_18_mlb_raw.json
+2026-11-02T09:17:31.600053 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.600188 | Processing 2026_05_19_mlb_raw.json
+2026-11-02T09:17:31.601038 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.601173 | Processing 2026_05_20_mlb_raw.json
+2026-11-02T09:17:31.602012 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.602149 | Processing 2026_05_21_mlb_raw.json
+2026-11-02T09:17:31.602681 |   {'future': 7, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 7, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.602843 | Processing 2026_05_22_mlb_raw.json
+2026-11-02T09:17:31.603672 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.603834 | Processing 2026_05_23_mlb_raw.json
+2026-11-02T09:17:31.604697 |   {'future': 16, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 16, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.604857 | Processing 2026_05_24_mlb_raw.json
+2026-11-02T09:17:31.605723 |   {'future': 16, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 16, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.605883 | Processing 2026_05_25_mlb_raw.json
+2026-11-02T09:17:31.606640 |   {'future': 13, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 13, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.606774 | Processing 2026_05_26_mlb_raw.json
+2026-11-02T09:17:31.607604 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.607741 | Processing 2026_05_27_mlb_raw.json
+2026-11-02T09:17:31.608571 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.608708 | Processing 2026_05_28_mlb_raw.json
+2026-11-02T09:17:31.609225 |   {'future': 6, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 6, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.609367 | Processing 2026_05_29_mlb_raw.json
+2026-11-02T09:17:31.610207 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.610343 | Processing 2026_05_30_mlb_raw.json
+2026-11-02T09:17:31.611183 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.611317 | Processing 2026_05_31_mlb_raw.json
+2026-11-02T09:17:31.612162 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.612296 | Processing 2026_06_01_mlb_raw.json
+2026-11-02T09:17:31.612935 |   {'future': 9, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 9, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.613070 | Processing 2026_06_02_mlb_raw.json
+2026-11-02T09:17:31.613912 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.614054 | Processing 2026_06_03_mlb_raw.json
+2026-11-02T09:17:31.614894 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.615030 | Processing 2026_06_04_mlb_raw.json
+2026-11-02T09:17:31.615635 |   {'future': 9, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 9, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.615769 | Processing 2026_06_05_mlb_raw.json
+2026-11-02T09:17:31.616598 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 0, 'skip': 0, 'preserved': 14, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.616735 | Processing 2026_06_06_mlb_raw.json
+2026-11-02T09:17:31.617573 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.617708 | Processing 2026_06_07_mlb_raw.json
+2026-11-02T09:17:31.618579 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.618720 | Processing 2026_06_08_mlb_raw.json
+2026-11-02T09:17:31.619318 |   {'future': 8, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 8, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.619454 | Processing 2026_06_09_mlb_raw.json
+2026-11-02T09:17:31.620297 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.620435 | Processing 2026_06_10_mlb_raw.json
+2026-11-02T09:17:31.621277 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.621412 | Processing 2026_06_11_mlb_raw.json
+2026-11-02T09:17:31.622013 |   {'future': 8, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 8, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.622148 | Processing 2026_06_12_mlb_raw.json
+2026-11-02T09:17:31.623004 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.623140 | Processing 2026_06_13_mlb_raw.json
+2026-11-02T09:17:31.623982 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.624117 | Processing 2026_06_14_mlb_raw.json
+2026-11-02T09:17:31.624955 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.625090 | Processing 2026_06_15_mlb_raw.json
+2026-11-02T09:17:31.625728 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 10, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.625885 | Processing 2026_06_16_mlb_raw.json
+2026-11-02T09:17:31.626705 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.626861 | Processing 2026_06_17_mlb_raw.json
+2026-11-02T09:17:31.627632 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.627764 | Processing 2026_06_18_mlb_raw.json
+2026-11-02T09:17:31.628550 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.628691 | Processing 2026_06_19_mlb_raw.json
+2026-11-02T09:17:31.629496 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.629631 | Processing 2026_06_20_mlb_raw.json
+2026-11-02T09:17:31.630479 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.630614 | Processing 2026_06_21_mlb_raw.json
+2026-11-02T09:17:31.631382 |   {'future': 13, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 13, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.631517 | Processing 2026_06_22_mlb_raw.json
+2026-11-02T09:17:31.632342 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.632476 | Processing 2026_06_23_mlb_raw.json
+2026-11-02T09:17:31.633349 |   {'future': 16, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 16, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.633485 | Processing 2026_06_24_mlb_raw.json
+2026-11-02T09:17:31.633756 |   {'future': 0, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 0, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.633909 | Processing 2026_06_25_mlb_raw.json
+2026-11-02T09:17:31.634713 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.634869 | Processing 2026_06_26_mlb_raw.json
+2026-11-02T09:17:31.635671 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.635820 | Processing 2026_06_27_mlb_raw.json
+2026-11-02T09:17:31.636644 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.636776 | Processing 2026_06_28_mlb_raw.json
+2026-11-02T09:17:31.637573 |   {'future': 13, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 13, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.637710 | Processing 2026_06_29_mlb_raw.json
+2026-11-02T09:17:31.638544 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.638689 | Processing 2026_06_30_mlb_raw.json
+2026-11-02T09:17:31.639491 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.639626 | Processing 2026_07_01_mlb_raw.json
+2026-11-02T09:17:31.640253 |   {'future': 9, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 9, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.640389 | Processing 2026_07_02_mlb_raw.json
+2026-11-02T09:17:31.641157 |   {'future': 13, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 13, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.641291 | Processing 2026_07_03_mlb_raw.json
+2026-11-02T09:17:31.642130 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.642266 | Processing 2026_07_04_mlb_raw.json
+2026-11-02T09:17:31.643118 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.643254 | Processing 2026_07_05_mlb_raw.json
+2026-11-02T09:17:31.643834 |   {'future': 8, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 8, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.643970 | Processing 2026_07_06_mlb_raw.json
+2026-11-02T09:17:31.644833 |   {'future': 16, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 16, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.644972 | Processing 2026_07_07_mlb_raw.json
+2026-11-02T09:17:31.645777 |   {'future': 15, 'completed': 15, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.645938 | Processing 2026_07_08_mlb_raw.json
+2026-11-02T09:17:31.646679 |   {'future': 13, 'completed': 15, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 13, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.646833 | Processing 2026_07_09_mlb_raw.json
+2026-11-02T09:17:31.647645 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.647778 | Processing 2026_07_10_mlb_raw.json
+2026-11-02T09:17:31.648615 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.648749 | Processing 2026_07_11_mlb_raw.json
+2026-11-02T09:17:31.649599 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.649736 | Processing 2026_07_12_mlb_raw.json
+2026-11-02T09:17:31.650033 |   {'future': 0, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 0, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.650166 | Processing 2026_07_13_mlb_raw.json
+2026-11-02T09:17:31.651001 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.651136 | Processing 2026_07_14_mlb_raw.json
+2026-11-02T09:17:31.651965 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.652099 | Processing 2026_07_15_mlb_raw.json
+2026-11-02T09:17:31.652934 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.653069 | Processing 2026_07_16_mlb_raw.json
+2026-11-02T09:17:31.653896 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.654030 | Processing 2026_07_17_mlb_raw.json
+2026-11-02T09:17:31.654855 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.654990 | Processing 2026_07_18_mlb_raw.json
+2026-11-02T09:17:31.655799 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.655953 | Processing 2026_07_19_mlb_raw.json
+2026-11-02T09:17:31.656757 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.656911 | Processing 2026_07_20_mlb_raw.json
+2026-11-02T09:17:31.657727 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.657893 | Processing 2026_07_21_mlb_raw.json
+2026-11-02T09:17:31.658717 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.658872 | Processing 2026_07_22_mlb_raw.json
+2026-11-02T09:17:31.659348 |   {'future': 5, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 5, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.659479 | Processing 2026_07_23_mlb_raw.json
+2026-11-02T09:17:31.660316 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.660450 | Processing 2026_07_24_mlb_raw.json
+2026-11-02T09:17:31.661276 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.661410 | Processing 2026_07_25_mlb_raw.json
+2026-11-02T09:17:31.662251 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.662392 | Processing 2026_07_26_mlb_raw.json
+2026-11-02T09:17:31.663134 |   {'future': 12, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 12, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.663268 | Processing 2026_07_27_mlb_raw.json
+2026-11-02T09:17:31.664095 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.664227 | Processing 2026_07_28_mlb_raw.json
+2026-11-02T09:17:31.665142 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.665283 | Processing 2026_07_29_mlb_raw.json
+2026-11-02T09:17:31.665976 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 10, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.666115 | Processing 2026_07_30_mlb_raw.json
+2026-11-02T09:17:31.666990 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.667130 | Processing 2026_07_31_mlb_raw.json
+2026-11-02T09:17:31.667977 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.668113 | Processing 2026_08_01_mlb_raw.json
+2026-11-02T09:17:31.669008 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.669148 | Processing 2026_08_02_mlb_raw.json
+2026-11-02T09:17:31.669719 |   {'future': 8, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 8, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.669897 | Processing 2026_08_03_mlb_raw.json
+2026-11-02T09:17:31.670436 |   {'future': 6, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 2, 'skip': 0, 'preserved': 6, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.670572 | Processing 2026_08_04_mlb_raw.json
+2026-11-02T09:17:31.671423 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.671561 | Processing 2026_08_05_mlb_raw.json
+2026-11-02T09:17:31.672316 |   {'future': 11, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 4, 'skip': 0, 'preserved': 11, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.672452 | Processing 2026_08_06_mlb_raw.json
+2026-11-02T09:17:31.672834 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 2, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.672974 | Processing 2026_08_07_mlb_raw.json
+2026-11-02T09:17:31.673539 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 11, 'skip': 0, 'preserved': 4, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.673672 | Processing 2026_08_08_mlb_raw.json
+2026-11-02T09:17:31.674149 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 11, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.674284 | Processing 2026_08_09_mlb_raw.json
+2026-11-02T09:17:31.674959 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 10, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.675096 | Processing 2026_08_10_mlb_raw.json
+2026-11-02T09:17:31.675642 |   {'future': 6, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 4, 'skip': 0, 'preserved': 6, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.675774 | Processing 2026_08_11_mlb_raw.json
+2026-11-02T09:17:31.676532 |   {'future': 11, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 3, 'skip': 0, 'preserved': 11, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.676670 | Processing 2026_08_12_mlb_raw.json
+2026-11-02T09:17:31.677142 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 7, 'skip': 0, 'preserved': 2, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.677276 | Processing 2026_08_13_mlb_raw.json
+2026-11-02T09:17:31.677640 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 2, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.677772 | Processing 2026_08_14_mlb_raw.json
+2026-11-02T09:17:31.678322 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 8, 'skip': 0, 'preserved': 4, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.678455 | Processing 2026_08_15_mlb_raw.json
+2026-11-02T09:17:31.678951 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 8, 'skip': 0, 'preserved': 2, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.679084 | Processing 2026_08_16_mlb_raw.json
+2026-11-02T09:17:31.679778 |   {'future': 11, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 11, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.679933 | Processing 2026_08_17_mlb_raw.json
+2026-11-02T09:17:31.680921 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 10, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.681058 | Processing 2026_08_18_mlb_raw.json
+2026-11-02T09:17:31.682107 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 15, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.682248 | Processing 2026_08_19_mlb_raw.json
+2026-11-02T09:17:31.682996 |   {'future': 9, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 9, 'skip': 0, 'preserved': 9, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.683133 | Processing 2026_08_20_mlb_raw.json
+2026-11-02T09:17:31.683735 |   {'future': 9, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 9, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.683892 | Processing 2026_08_24_mlb_raw.json
+2026-11-02T09:17:31.684533 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 10, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.684667 | Processing 2026_08_25_mlb_raw.json
+2026-11-02T09:17:31.685509 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.685644 | Processing 2026_08_26_mlb_raw.json
+2026-11-02T09:17:31.686400 |   {'future': 12, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 2, 'skip': 0, 'preserved': 12, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.686536 | Processing 2026_08_27_mlb_raw.json
+2026-11-02T09:17:31.687092 |   {'future': 7, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 7, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.687225 | Processing 2026_08_28_mlb_raw.json
+2026-11-02T09:17:31.688058 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.688194 | Processing 2026_08_29_mlb_raw.json
+2026-11-02T09:17:31.688621 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 3, 'skip': 0, 'preserved': 3, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.688752 | Processing 2026_08_30_mlb_raw.json
+2026-11-02T09:17:31.689556 |   {'future': 14, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 14, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.689692 | Processing 2026_08_31_mlb_raw.json
+2026-11-02T09:17:31.690180 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 9, 'skip': 0, 'preserved': 2, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.690314 | Processing 2026_09_01_mlb_raw.json
+2026-11-02T09:17:31.690898 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 11, 'skip': 0, 'preserved': 4, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.691040 | Processing 2026_09_02_mlb_raw.json
+2026-11-02T09:17:31.691482 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 7, 'skip': 0, 'preserved': 2, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.691613 | Processing 2026_09_03_mlb_raw.json
+2026-11-02T09:17:31.692041 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 4, 'skip': 0, 'preserved': 2, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.692174 | Processing 2026_09_04_mlb_raw.json
+2026-11-02T09:17:31.692747 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 11, 'skip': 0, 'preserved': 4, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.692902 | Processing 2026_09_05_mlb_raw.json
+2026-11-02T09:17:31.693368 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 8, 'skip': 0, 'preserved': 2, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.693500 | Processing 2026_09_06_mlb_raw.json
+2026-11-02T09:17:31.693849 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.693980 | Processing 2026_09_07_mlb_raw.json
+2026-11-02T09:17:31.694339 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 2, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.694467 | Processing 2026_09_08_mlb_raw.json
+2026-11-02T09:17:31.695074 |   {'future': 5, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 10, 'skip': 0, 'preserved': 5, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.695208 | Processing 2026_09_09_mlb_raw.json
+2026-11-02T09:17:31.695647 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 9, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.695778 | Processing 2026_09_10_mlb_raw.json
+2026-11-02T09:17:31.696642 |   {'future': 15, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 2, 'skip': 0, 'preserved': 15, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.696776 | Processing 2026_09_11_mlb_raw.json
+2026-11-02T09:17:31.697321 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 10, 'skip': 0, 'preserved': 3, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.697456 | Processing 2026_09_12_mlb_raw.json
+2026-11-02T09:17:31.697852 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 5, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.697986 | Processing 2026_09_13_mlb_raw.json
+2026-11-02T09:17:31.698641 |   {'future': 10, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 10, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.698773 | Processing 2026_09_14_mlb_raw.json
+2026-11-02T09:17:31.699273 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 7, 'skip': 0, 'preserved': 3, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.699408 | Processing 2026_09_15_mlb_raw.json
+2026-11-02T09:17:31.699964 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 13, 'skip': 0, 'preserved': 2, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.700102 | Processing 2026_09_16_mlb_raw.json
+2026-11-02T09:17:31.700592 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 8, 'skip': 0, 'preserved': 3, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.700723 | Processing 2026_09_17_mlb_raw.json
+2026-11-02T09:17:31.701113 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 4, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.701245 | Processing 2026_09_18_mlb_raw.json
+2026-11-02T09:17:31.701820 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 11, 'skip': 0, 'preserved': 4, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.701958 | Processing 2026_09_19_mlb_raw.json
+2026-11-02T09:17:31.702454 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 7, 'skip': 0, 'preserved': 3, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.702592 | Processing 2026_09_20_mlb_raw.json
+2026-11-02T09:17:31.703038 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 2, 'skip': 0, 'preserved': 3, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.703172 | Processing 2026_09_21_mlb_raw.json
+2026-11-02T09:17:31.703509 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 2, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.703639 | Processing 2026_09_22_mlb_raw.json
+2026-11-02T09:17:31.704242 |   {'future': 5, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 9, 'skip': 0, 'preserved': 5, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.704377 | Processing 2026_09_23_mlb_raw.json
+2026-11-02T09:17:31.704957 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 9, 'skip': 0, 'preserved': 4, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.705090 | Processing 2026_09_24_mlb_raw.json
+2026-11-02T09:17:31.705531 |   {'future': 3, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 4, 'skip': 0, 'preserved': 3, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.705663 | Processing 2026_09_25_mlb_raw.json
+2026-11-02T09:17:31.706231 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 10, 'skip': 0, 'preserved': 4, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.706366 | Processing 2026_09_26_mlb_raw.json
+2026-11-02T09:17:31.707260 |   {'future': 11, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 2, 'skip': 0, 'preserved': 11, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.707407 | Processing 2026_09_27_mlb_raw.json
+2026-11-02T09:17:31.707955 |   {'future': 0, 'completed': 16, 'summary': 3, 'parse_error': 1, 'unknown': 14, 'skip': 0, 'preserved': 0, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.708134 | Processing 2026_09_28_mlb_raw.json
+2026-11-02T09:17:31.708731 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 4, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.708917 | Processing 2026_09_29_mlb_raw.json
+2026-11-02T09:17:31.709309 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 2, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.709443 | Processing 2026_09_30_mlb_raw.json
+2026-11-02T09:17:31.709835 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 2, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.709971 | Processing 2026_10_01_mlb_raw.json
+2026-11-02T09:17:31.710295 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.710433 | Processing 2026_10_02_mlb_raw.json
+2026-11-02T09:17:31.710890 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 4, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.711026 | Processing 2026_10_03_mlb_raw.json
+2026-11-02T09:17:31.711395 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 2, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.711526 | Processing 2026_10_04_mlb_raw.json
+2026-11-02T09:17:31.711884 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.712029 | Processing 2026_10_05_mlb_raw.json
+2026-11-02T09:17:31.712360 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.712491 | Processing 2026_10_06_mlb_raw.json
+2026-11-02T09:17:31.712844 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 1, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.712977 | Processing 2026_10_07_mlb_raw.json
+2026-11-02T09:17:31.713406 |   {'future': 4, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 4, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.713546 | Processing 2026_10_08_mlb_raw.json
+2026-11-02T09:17:31.713907 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.714040 | Processing 2026_10_09_mlb_raw.json
+2026-11-02T09:17:31.714359 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.714490 | Processing 2026_10_10_mlb_raw.json
+2026-11-02T09:17:31.714831 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.714968 | Processing 2026_10_11_mlb_raw.json
+2026-11-02T09:17:31.715288 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.715418 | Processing 2026_10_12_mlb_raw.json
+2026-11-02T09:17:31.715771 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 2, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.715926 | Processing 2026_10_13_mlb_raw.json
+2026-11-02T09:17:31.716248 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.716377 | Processing 2026_10_14_mlb_raw.json
+2026-11-02T09:17:31.716692 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.716843 | Processing 2026_10_15_mlb_raw.json
+2026-11-02T09:17:31.717202 |   {'future': 2, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 2, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.717332 | Processing 2026_10_16_mlb_raw.json
+2026-11-02T09:17:31.717648 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.717779 | Processing 2026_10_18_mlb_raw.json
+2026-11-02T09:17:31.718117 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.718249 | Processing 2026_10_19_mlb_raw.json
+2026-11-02T09:17:31.718565 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.718695 | Processing 2026_10_20_mlb_raw.json
+2026-11-02T09:17:31.719033 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.719165 | Processing 2026_10_21_mlb_raw.json
+2026-11-02T09:17:31.719478 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.719606 | Processing 2026_10_22_mlb_raw.json
+2026-11-02T09:17:31.719947 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.720077 | Processing 2026_10_23_mlb_raw.json
+2026-11-02T09:17:31.720390 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.720520 | Processing 2026_10_24_mlb_raw.json
+2026-11-02T09:17:31.720853 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.720983 | Processing 2026_10_25_mlb_raw.json
+2026-11-02T09:17:31.721299 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.721427 | Processing 2026_10_26_mlb_raw.json
+2026-11-02T09:17:31.721749 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.721911 | Processing 2026_10_27_mlb_raw.json
+2026-11-02T09:17:31.722230 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.722360 | Processing 2026_10_28_mlb_raw.json
+2026-11-02T09:17:31.722688 |   {'future': 1, 'completed': 16, 'summary': 3, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 1, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.722849 | Processing 2026_11_02_mlb_raw.json
+2026-11-02T09:17:31.723136 |   {'future': 0, 'completed': 16, 'summary': 2, 'parse_error': 0, 'unknown': 0, 'skip': 0, 'preserved': 0, 'verified_same_game_skips': 0}
+2026-11-02T09:17:31.724340 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_03_26_MLB.csv (11 rows)
+2026-11-02T09:17:31.724571 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_03_27_MLB.csv (8 rows)
+2026-11-02T09:17:31.724837 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_03_28_MLB.csv (15 rows)
+2026-11-02T09:17:31.725071 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_03_29_MLB.csv (12 rows)
+2026-11-02T09:17:31.725308 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_03_30_MLB.csv (15 rows)
+2026-11-02T09:17:31.725537 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_03_31_MLB.csv (14 rows)
+2026-11-02T09:17:31.725777 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_01_MLB.csv (15 rows)
+2026-11-02T09:17:31.726008 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_02_MLB.csv (3 rows)
+2026-11-02T09:17:31.726241 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_04_MLB.csv (15 rows)
+2026-11-02T09:17:31.726474 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_05_MLB.csv (16 rows)
+2026-11-02T09:17:31.726704 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_06_MLB.csv (13 rows)
+2026-11-02T09:17:31.726963 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_07_MLB.csv (15 rows)
+2026-11-02T09:17:31.727194 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_08_MLB.csv (15 rows)
+2026-11-02T09:17:31.727396 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_09_MLB.csv (6 rows)
+2026-11-02T09:17:31.727626 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_10_MLB.csv (15 rows)
+2026-11-02T09:17:31.727869 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_11_MLB.csv (11 rows)
+2026-11-02T09:17:31.728105 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_12_MLB.csv (15 rows)
+2026-11-02T09:17:31.728322 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_13_MLB.csv (10 rows)
+2026-11-02T09:17:31.728557 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_14_MLB.csv (15 rows)
+2026-11-02T09:17:31.728789 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_15_MLB.csv (15 rows)
+2026-11-02T09:17:31.729040 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_16_MLB.csv (10 rows)
+2026-11-02T09:17:31.729274 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_17_MLB.csv (15 rows)
+2026-11-02T09:17:31.729505 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_18_MLB.csv (15 rows)
+2026-11-02T09:17:31.729733 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_19_MLB.csv (15 rows)
+2026-11-02T09:17:31.729973 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_20_MLB.csv (10 rows)
+2026-11-02T09:17:31.730204 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_21_MLB.csv (15 rows)
+2026-11-02T09:17:31.730433 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_22_MLB.csv (15 rows)
+2026-11-02T09:17:31.730642 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_23_MLB.csv (9 rows)
+2026-11-02T09:17:31.730888 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_24_MLB.csv (14 rows)
+2026-11-02T09:17:31.731121 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_25_MLB.csv (15 rows)
+2026-11-02T09:17:31.731348 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_26_MLB.csv (16 rows)
+2026-11-02T09:17:31.731553 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_27_MLB.csv (8 rows)
+2026-11-02T09:17:31.731780 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_28_MLB.csv (15 rows)
+2026-11-02T09:17:31.732033 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_29_MLB.csv (15 rows)
+2026-11-02T09:17:31.732242 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_04_30_MLB.csv (9 rows)
+2026-11-02T09:17:31.732464 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_01_MLB.csv (14 rows)
+2026-11-02T09:17:31.732688 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_02_MLB.csv (15 rows)
+2026-11-02T09:17:31.732968 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_03_MLB.csv (15 rows)
+2026-11-02T09:17:31.733192 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_04_MLB.csv (12 rows)
+2026-11-02T09:17:31.733419 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_05_MLB.csv (15 rows)
+2026-11-02T09:17:31.733646 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_06_MLB.csv (15 rows)
+2026-11-02T09:17:31.733877 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_07_MLB.csv (10 rows)
+2026-11-02T09:17:31.734104 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_08_MLB.csv (14 rows)
+2026-11-02T09:17:31.734331 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_09_MLB.csv (15 rows)
+2026-11-02T09:17:31.734557 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_10_MLB.csv (15 rows)
+2026-11-02T09:17:31.734759 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_11_MLB.csv (6 rows)
+2026-11-02T09:17:31.735011 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_12_MLB.csv (15 rows)
+2026-11-02T09:17:31.735233 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_13_MLB.csv (15 rows)
+2026-11-02T09:17:31.735447 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_14_MLB.csv (11 rows)
+2026-11-02T09:17:31.735666 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_15_MLB.csv (14 rows)
+2026-11-02T09:17:31.735916 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_16_MLB.csv (15 rows)
+2026-11-02T09:17:31.736143 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_17_MLB.csv (14 rows)
+2026-11-02T09:17:31.736366 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_18_MLB.csv (14 rows)
+2026-11-02T09:17:31.736593 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_19_MLB.csv (15 rows)
+2026-11-02T09:17:31.736843 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_20_MLB.csv (15 rows)
+2026-11-02T09:17:31.737050 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_21_MLB.csv (7 rows)
+2026-11-02T09:17:31.737278 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_22_MLB.csv (15 rows)
+2026-11-02T09:17:31.737515 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_23_MLB.csv (16 rows)
+2026-11-02T09:17:31.737749 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_24_MLB.csv (16 rows)
+2026-11-02T09:17:31.737996 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_25_MLB.csv (13 rows)
+2026-11-02T09:17:31.738226 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_26_MLB.csv (15 rows)
+2026-11-02T09:17:31.738451 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_27_MLB.csv (15 rows)
+2026-11-02T09:17:31.738646 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_28_MLB.csv (6 rows)
+2026-11-02T09:17:31.738891 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_29_MLB.csv (15 rows)
+2026-11-02T09:17:31.739121 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_30_MLB.csv (15 rows)
+2026-11-02T09:17:31.739345 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_05_31_MLB.csv (15 rows)
+2026-11-02T09:17:31.739552 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_01_MLB.csv (9 rows)
+2026-11-02T09:17:31.739777 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_02_MLB.csv (15 rows)
+2026-11-02T09:17:31.740027 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_03_MLB.csv (15 rows)
+2026-11-02T09:17:31.740236 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_04_MLB.csv (9 rows)
+2026-11-02T09:17:31.740456 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_05_MLB.csv (14 rows)
+2026-11-02T09:17:31.740688 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_06_MLB.csv (15 rows)
+2026-11-02T09:17:31.740936 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_07_MLB.csv (15 rows)
+2026-11-02T09:17:31.741143 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_08_MLB.csv (8 rows)
+2026-11-02T09:17:31.741369 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_09_MLB.csv (15 rows)
+2026-11-02T09:17:31.741595 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_10_MLB.csv (15 rows)
+2026-11-02T09:17:31.741798 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_11_MLB.csv (8 rows)
+2026-11-02T09:17:31.742049 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_12_MLB.csv (15 rows)
+2026-11-02T09:17:31.742277 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_13_MLB.csv (15 rows)
+2026-11-02T09:17:31.742504 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_14_MLB.csv (15 rows)
+2026-11-02T09:17:31.742721 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_15_MLB.csv (10 rows)
+2026-11-02T09:17:31.742978 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_16_MLB.csv (15 rows)
+2026-11-02T09:17:31.743204 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_17_MLB.csv (14 rows)
+2026-11-02T09:17:31.743411 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_18_MLB.csv (9 rows)
+2026-11-02T09:17:31.743630 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_19_MLB.csv (14 rows)
+2026-11-02T09:17:31.743873 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_20_MLB.csv (14 rows)
+2026-11-02T09:17:31.744100 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_21_MLB.csv (15 rows)
+2026-11-02T09:17:31.744319 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_22_MLB.csv (13 rows)
+2026-11-02T09:17:31.744540 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_23_MLB.csv (15 rows)
+2026-11-02T09:17:31.744764 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_24_MLB.csv (16 rows)
+2026-11-02T09:17:31.745010 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_26_MLB.csv (15 rows)
+2026-11-02T09:17:31.745232 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_27_MLB.csv (15 rows)
+2026-11-02T09:17:31.745461 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_28_MLB.csv (15 rows)
+2026-11-02T09:17:31.745678 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_29_MLB.csv (13 rows)
+2026-11-02T09:17:31.745929 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_06_30_MLB.csv (15 rows)
+2026-11-02T09:17:31.746152 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_01_MLB.csv (14 rows)
+2026-11-02T09:17:31.746370 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_02_MLB.csv (9 rows)
+2026-11-02T09:17:31.746586 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_03_MLB.csv (13 rows)
+2026-11-02T09:17:31.746825 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_04_MLB.csv (15 rows)
+2026-11-02T09:17:31.747054 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_05_MLB.csv (15 rows)
+2026-11-02T09:17:31.747255 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_06_MLB.csv (8 rows)
+2026-11-02T09:17:31.747479 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_07_MLB.csv (16 rows)
+2026-11-02T09:17:31.747702 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_08_MLB.csv (15 rows)
+2026-11-02T09:17:31.747940 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_09_MLB.csv (13 rows)
+2026-11-02T09:17:31.748162 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_10_MLB.csv (15 rows)
+2026-11-02T09:17:31.748383 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_11_MLB.csv (15 rows)
+2026-11-02T09:17:31.748606 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_12_MLB.csv (15 rows)
+2026-11-02T09:17:31.748847 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_17_MLB.csv (15 rows)
+2026-11-02T09:17:31.749074 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_18_MLB.csv (15 rows)
+2026-11-02T09:17:31.749294 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_19_MLB.csv (15 rows)
+2026-11-02T09:17:31.749517 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_20_MLB.csv (15 rows)
+2026-11-02T09:17:31.749738 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_21_MLB.csv (15 rows)
+2026-11-02T09:17:31.749984 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_22_MLB.csv (15 rows)
+2026-11-02T09:17:31.750176 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_23_MLB.csv (5 rows)
+2026-11-02T09:17:31.750396 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_24_MLB.csv (15 rows)
+2026-11-02T09:17:31.750618 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_25_MLB.csv (15 rows)
+2026-11-02T09:17:31.750862 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_26_MLB.csv (15 rows)
+2026-11-02T09:17:31.751079 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_27_MLB.csv (12 rows)
+2026-11-02T09:17:31.751301 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_28_MLB.csv (15 rows)
+2026-11-02T09:17:31.751525 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_29_MLB.csv (16 rows)
+2026-11-02T09:17:31.751733 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_30_MLB.csv (10 rows)
+2026-11-02T09:17:31.751984 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_07_31_MLB.csv (15 rows)
+2026-11-02T09:17:31.752209 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_01_MLB.csv (15 rows)
+2026-11-02T09:17:31.752429 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_02_MLB.csv (15 rows)
+2026-11-02T09:17:31.752629 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_03_MLB.csv (8 rows)
+2026-11-02T09:17:31.752885 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_04_MLB.csv (15 rows)
+2026-11-02T09:17:31.753107 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_05_MLB.csv (12 rows)
+2026-11-02T09:17:31.753288 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_06_MLB.csv (1 rows)
+2026-11-02T09:17:31.753510 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_07_MLB.csv (15 rows)
+2026-11-02T09:17:31.753730 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_08_MLB.csv (15 rows)
+2026-11-02T09:17:31.753981 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_09_MLB.csv (15 rows)
+2026-11-02T09:17:31.754192 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_10_MLB.csv (10 rows)
+2026-11-02T09:17:31.754421 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_11_MLB.csv (15 rows)
+2026-11-02T09:17:31.754645 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_12_MLB.csv (15 rows)
+2026-11-02T09:17:31.754863 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_13_MLB.csv (6 rows)
+2026-11-02T09:17:31.755101 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_14_MLB.csv (14 rows)
+2026-11-02T09:17:31.755330 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_15_MLB.csv (15 rows)
+2026-11-02T09:17:31.755561 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_16_MLB.csv (15 rows)
+2026-11-02T09:17:31.755775 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_17_MLB.csv (11 rows)
+2026-11-02T09:17:31.756027 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_18_MLB.csv (15 rows)
+2026-11-02T09:17:31.756255 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_19_MLB.csv (15 rows)
+2026-11-02T09:17:31.756494 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_20_MLB.csv (18 rows)
+2026-11-02T09:17:31.756704 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_24_MLB.csv (10 rows)
+2026-11-02T09:17:31.756955 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_25_MLB.csv (15 rows)
+2026-11-02T09:17:31.757173 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_26_MLB.csv (12 rows)
+2026-11-02T09:17:31.757371 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_27_MLB.csv (7 rows)
+2026-11-02T09:17:31.757602 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_28_MLB.csv (15 rows)
+2026-11-02T09:17:31.757843 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_29_MLB.csv (14 rows)
+2026-11-02T09:17:31.758070 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_30_MLB.csv (14 rows)
+2026-11-02T09:17:31.758285 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_08_31_MLB.csv (12 rows)
+2026-11-02T09:17:31.758510 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_01_MLB.csv (15 rows)
+2026-11-02T09:17:31.758727 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_02_MLB.csv (13 rows)
+2026-11-02T09:17:31.758950 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_03_MLB.csv (7 rows)
+2026-11-02T09:17:31.759175 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_04_MLB.csv (15 rows)
+2026-11-02T09:17:31.759403 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_05_MLB.csv (15 rows)
+2026-11-02T09:17:31.759620 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_06_MLB.csv (14 rows)
+2026-11-02T09:17:31.759830 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_07_MLB.csv (5 rows)
+2026-11-02T09:17:31.760060 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_08_MLB.csv (15 rows)
+2026-11-02T09:17:31.760278 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_09_MLB.csv (13 rows)
+2026-11-02T09:17:31.760464 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_10_MLB.csv (3 rows)
+2026-11-02T09:17:31.760686 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_11_MLB.csv (15 rows)
+2026-11-02T09:17:31.760924 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_12_MLB.csv (14 rows)
+2026-11-02T09:17:31.761137 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_13_MLB.csv (12 rows)
+2026-11-02T09:17:31.761346 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_14_MLB.csv (10 rows)
+2026-11-02T09:17:31.761566 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_15_MLB.csv (14 rows)
+2026-11-02T09:17:31.761777 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_16_MLB.csv (12 rows)
+2026-11-02T09:17:31.762003 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_17_MLB.csv (6 rows)
+2026-11-02T09:17:31.762223 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_18_MLB.csv (14 rows)
+2026-11-02T09:17:31.762442 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_19_MLB.csv (14 rows)
+2026-11-02T09:17:31.762657 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_20_MLB.csv (13 rows)
+2026-11-02T09:17:31.762868 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_21_MLB.csv (3 rows)
+2026-11-02T09:17:31.763102 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_22_MLB.csv (15 rows)
+2026-11-02T09:17:31.763323 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_23_MLB.csv (14 rows)
+2026-11-02T09:17:31.763529 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_24_MLB.csv (9 rows)
+2026-11-02T09:17:31.763749 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_25_MLB.csv (15 rows)
+2026-11-02T09:17:31.763988 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_26_MLB.csv (11 rows)
+2026-11-02T09:17:31.764207 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_27_MLB.csv (13 rows)
+2026-11-02T09:17:31.764403 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_29_MLB.csv (6 rows)
+2026-11-02T09:17:31.764587 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_09_30_MLB.csv (3 rows)
+2026-11-02T09:17:31.764763 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_01_MLB.csv (1 rows)
+2026-11-02T09:17:31.764975 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_03_MLB.csv (5 rows)
+2026-11-02T09:17:31.765155 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_04_MLB.csv (2 rows)
+2026-11-02T09:17:31.765330 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_05_MLB.csv (1 rows)
+2026-11-02T09:17:31.765510 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_06_MLB.csv (2 rows)
+2026-11-02T09:17:31.765694 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_07_MLB.csv (4 rows)
+2026-11-02T09:17:31.765913 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_08_MLB.csv (1 rows)
+2026-11-02T09:17:31.766097 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_10_MLB.csv (2 rows)
+2026-11-02T09:17:31.766272 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_11_MLB.csv (1 rows)
+2026-11-02T09:17:31.766452 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_12_MLB.csv (2 rows)
+2026-11-02T09:17:31.766627 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_13_MLB.csv (1 rows)
+2026-11-02T09:17:31.766802 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_14_MLB.csv (1 rows)
+2026-11-02T09:17:31.767007 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_15_MLB.csv (2 rows)
+2026-11-02T09:17:31.767182 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_16_MLB.csv (1 rows)
+2026-11-02T09:17:31.767356 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_18_MLB.csv (1 rows)
+2026-11-02T09:17:31.767530 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_19_MLB.csv (1 rows)
+2026-11-02T09:17:31.767703 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_23_MLB.csv (1 rows)
+2026-11-02T09:17:31.767910 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_24_MLB.csv (1 rows)
+2026-11-02T09:17:31.768089 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_26_MLB.csv (2 rows)
+2026-11-02T09:17:31.768265 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_27_MLB.csv (1 rows)
+2026-11-02T09:17:31.768441 | UNCHANGED predictions -> /home/runner/work/baseball/baseball/docs/win/baseball/mlb/00_intake/predictions/2026_10_28_MLB.csv (1 rows)
+2026-11-02T09:17:31.768471 | --- SUMMARY ---
+2026-11-02T09:17:31.768492 | Raw files processed: 208
+2026-11-02T09:17:31.768510 | Files written: 0
+2026-11-02T09:17:31.768529 | Predictions preserved or recovered: 2355
+2026-11-02T09:17:31.768546 | STATUS: SUCCESS

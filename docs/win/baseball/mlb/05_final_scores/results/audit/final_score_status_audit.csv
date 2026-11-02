@@ -4375,17 +4375,17 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 2026_06_09,63301141,824999,1,Milwaukee Brewers,Oakland Athletics,5,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_09,,,,Washington Nationals,San Francisco Giants,6,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_09,,,,Cincinnati Reds,San Diego Padres,5,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_09,823214,823214,1,Washington Nationals,San Francisco Giants,6,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_09,823290,823290,1,Cincinnati Reds,San Diego Padres,5,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_09,63303449,824023,1,Houston Astros,Los Angeles Angels,1,10,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_09,63302479,824347,1,Chicago Cubs,Colorado Rockies,3,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_09,,,,Minnesota Twins,Detroit Tigers,4,10,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
 2026_06_09,63302839,824591,1,Atlanta Braves,Chicago White Sox,5,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_09,,,,Texas Rangers,Kansas City Royals,3,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_09,,,,St. Louis Cardinals,New York Mets,7,0,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_09,,,,Philadelphia Phillies,Toronto Blue Jays,2,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_09,824105,824105,1,Texas Rangers,Kansas City Royals,3,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_09,823620,823620,1,St. Louis Cardinals,New York Mets,7,0,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_09,822805,822805,1,Philadelphia Phillies,Toronto Blue Jays,2,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_09,63302059,824429,1,New York Yankees,Cleveland Guardians,3,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_09,,,,Boston Red Sox,Tampa Bay Rays,3,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_09,822969,822969,1,Boston Red Sox,Tampa Bay Rays,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_09,63303851,823858,1,Arizona Diamondbacks,Miami Marlins,6,10,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_09,63302797,823374,1,Los Angeles Dodgers,Pittsburgh Pirates,12,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_09,63301687,824830,1,Seattle Mariners,Baltimore Orioles,6,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -4402,16 +4402,16 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_06_10,63302609,824996,1,Milwaukee Brewers,Oakland Athletics,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_10,63302269,824348,1,Chicago Cubs,Colorado Rockies,2,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_10,63303445,824590,1,Atlanta Braves,Chicago White Sox,1,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_10,,,,Texas Rangers,Kansas City Royals,6,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_10,,,,St. Louis Cardinals,New York Mets,9,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_10,,,,Philadelphia Phillies,Toronto Blue Jays,7,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_10,824103,824103,1,Texas Rangers,Kansas City Royals,6,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_10,823618,823618,1,St. Louis Cardinals,New York Mets,9,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_10,822804,822804,1,Philadelphia Phillies,Toronto Blue Jays,7,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_10,63302367,824266,1,Minnesota Twins,Detroit Tigers,6,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_10,63301019,823856,1,Arizona Diamondbacks,Miami Marlins,0,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_10,63301321,823372,1,Los Angeles Dodgers,Pittsburgh Pirates,8,9,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_10,63303869,824831,1,Seattle Mariners,Baltimore Orioles,2,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_10,,,,Cincinnati Reds,San Diego Padres,4,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_10,,,,Washington Nationals,San Francisco Giants,10,11,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_10,,,,Boston Red Sox,Tampa Bay Rays,5,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_10,823287,823287,1,Cincinnati Reds,San Diego Padres,4,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_10,823215,823215,1,Washington Nationals,San Francisco Giants,10,11,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_10,822970,822970,1,Boston Red Sox,Tampa Bay Rays,5,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_10,63303615,824428,1,New York Yankees,Cleveland Guardians,8,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_09,63301141,824999,1,Milwaukee Brewers,Oakland Athletics,5,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -4435,14 +4435,14 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_06_11,63303779,824346,1,Chicago Cubs,Colorado Rockies,9,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_11,63301431,824265,1,Minnesota Twins,Detroit Tigers,0,11,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_11,63303803,823855,1,Arizona Diamondbacks,Miami Marlins,0,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_11,,,,St. Louis Cardinals,New York Mets,4,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_11,823619,823619,1,St. Louis Cardinals,New York Mets,4,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_10,63301375,824022,1,Houston Astros,Los Angeles Angels,2,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_10,63302609,824996,1,Milwaukee Brewers,Oakland Athletics,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_10,63302269,824348,1,Chicago Cubs,Colorado Rockies,2,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_10,63303445,824590,1,Atlanta Braves,Chicago White Sox,1,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_10,,,,Texas Rangers,Kansas City Royals,6,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_10,,,,St. Louis Cardinals,New York Mets,9,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_10,,,,Philadelphia Phillies,Toronto Blue Jays,7,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_10,824103,824103,1,Texas Rangers,Kansas City Royals,6,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_10,823618,823618,1,St. Louis Cardinals,New York Mets,9,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_10,822804,822804,1,Philadelphia Phillies,Toronto Blue Jays,7,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_10,63302367,824266,1,Minnesota Twins,Detroit Tigers,6,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_10,63301019,823856,1,Arizona Diamondbacks,Miami Marlins,0,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -4460,20 +4460,20 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
-2026_06_12,,,,Chicago Cubs,San Francisco Giants,5,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_12,823211,823211,1,Chicago Cubs,San Francisco Giants,5,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_12,63300881,824997,1,Colorado Rockies,Oakland Athletics,4,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_12,,,,Tampa Bay Rays,Los Angeles Angels,3,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_12,824020,824020,1,Tampa Bay Rays,Los Angeles Angels,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_12,,,,Seattle Mariners,Washington Nationals,10,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
 2026_06_12,63299233,823617,1,Atlanta Braves,New York Mets,5,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_12,,,,St. Louis Cardinals,Minnesota Twins,8,9,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_12,,,,Houston Astros,Kansas City Royals,10,8,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_12,823695,823695,1,St. Louis Cardinals,Minnesota Twins,8,9,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_12,824102,824102,1,Houston Astros,Kansas City Royals,10,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_12,63302273,824588,1,Los Angeles Dodgers,Chicago White Sox,2,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_12,63303195,823778,1,Philadelphia Phillies,Milwaukee Brewers,0,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_12,63302871,822803,1,New York Yankees,Toronto Blue Jays,5,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_12,63299179,824507,1,Arizona Diamondbacks,Cincinnati Reds,5,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_12,,,,Texas Rangers,Boston Red Sox,1,10,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_12,824752,824752,1,Texas Rangers,Boston Red Sox,1,10,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_12,63302575,824425,1,Detroit Tigers,Cleveland Guardians,2,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_12,,,,San Diego Padres,Baltimore Orioles,3,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_12,824826,824826,1,San Diego Padres,Baltimore Orioles,3,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_12,63303583,823370,1,Miami Marlins,Pittsburgh Pirates,8,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_11,63302121,824827,1,Seattle Mariners,Baltimore Orioles,5,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -4491,22 +4491,22 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
-2026_06_13,,,,Tampa Bay Rays,Los Angeles Angels,0,8,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_13,824019,824019,1,Tampa Bay Rays,Los Angeles Angels,0,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_13,63301217,824995,1,Colorado Rockies,Oakland Athletics,5,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_13,,,,Chicago Cubs,San Francisco Giants,6,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_13,,,,Houston Astros,Kansas City Royals,8,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_13,823213,823213,1,Chicago Cubs,San Francisco Giants,6,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_13,824100,824100,1,Houston Astros,Kansas City Royals,8,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_13,63300913,823776,1,Philadelphia Phillies,Milwaukee Brewers,9,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_13,63302699,824587,1,Los Angeles Dodgers,Chicago White Sox,7,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_13,63299171,824426,1,Detroit Tigers,Cleveland Guardians,1,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_13,,,,Texas Rangers,Boston Red Sox,3,6,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_13,824749,824749,1,Texas Rangers,Boston Red Sox,3,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_13,63302587,823616,1,Atlanta Braves,New York Mets,3,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_13,63302453,824508,1,Arizona Diamondbacks,Cincinnati Reds,1,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_13,,,,San Diego Padres,Baltimore Orioles,9,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_13,,,,Seattle Mariners,Washington Nationals,3,8,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_13,824828,824828,1,San Diego Padres,Baltimore Orioles,9,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_13,822725,822725,1,Seattle Mariners,Washington Nationals,3,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_13,63301585,823369,1,Miami Marlins,Pittsburgh Pirates,2,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_13,63299299,822802,1,New York Yankees,Toronto Blue Jays,3,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_13,,,,St. Louis Cardinals,Minnesota Twins,9,6,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_12,,,,Chicago Cubs,San Francisco Giants,5,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_13,823694,823694,1,St. Louis Cardinals,Minnesota Twins,9,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_12,823211,823211,1,Chicago Cubs,San Francisco Giants,5,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -4517,21 +4517,21 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
-2026_06_14,,,,Texas Rangers,Boston Red Sox,6,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_14,,,,Tampa Bay Rays,Los Angeles Angels,8,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_14,,,,Chicago Cubs,San Francisco Giants,1,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_14,63302247,824751,1,Texas Rangers,Boston Red Sox,6,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_14,63301095,824021,1,Tampa Bay Rays,Los Angeles Angels,8,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_14,63303795,823212,1,Chicago Cubs,San Francisco Giants,1,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_14,63302655,824994,1,Colorado Rockies,Oakland Athletics,23,9,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_14,,,,St. Louis Cardinals,Minnesota Twins,4,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_14,823693,823693,1,St. Louis Cardinals,Minnesota Twins,4,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_14,63302091,824586,1,Los Angeles Dodgers,Chicago White Sox,4,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_14,,,,Houston Astros,Kansas City Royals,0,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_14,824099,824099,1,Houston Astros,Kansas City Royals,0,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_14,63302869,823777,1,Philadelphia Phillies,Milwaukee Brewers,0,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_14,63299225,823615,1,Atlanta Braves,New York Mets,1,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_14,63302635,824506,1,Arizona Diamondbacks,Cincinnati Reds,5,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_14,63303833,822801,1,New York Yankees,Toronto Blue Jays,8,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_14,,,,Seattle Mariners,Washington Nationals,1,10,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_14,,,,San Diego Padres,Baltimore Orioles,5,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_14,822722,822722,1,Seattle Mariners,Washington Nationals,1,10,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_14,824823,824823,1,San Diego Padres,Baltimore Orioles,5,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_14,63301783,823368,1,Miami Marlins,Pittsburgh Pirates,4,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_13,,,,Tampa Bay Rays,Los Angeles Angels,0,8,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_13,824019,824019,1,Tampa Bay Rays,Los Angeles Angels,0,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_13,63301217,824995,1,Colorado Rockies,Oakland Athletics,5,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -4556,13 +4556,13 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_06_15,63300953,824666,1,Colorado Rockies,Chicago Cubs,4,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_15,63301751,823046,1,San Diego Padres,St. Louis Cardinals,0,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_15,63302919,824505,1,New York Mets,Cincinnati Reds,0,12,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_15,,,,Kansas City Royals,Washington Nationals,3,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_15,822724,822724,1,Kansas City Royals,Washington Nationals,3,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_15,63301303,823452,1,Miami Marlins,Philadelphia Phillies,0,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_14,,,,Texas Rangers,Boston Red Sox,6,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_14,,,,Tampa Bay Rays,Los Angeles Angels,8,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_06_14,,,,Chicago Cubs,San Francisco Giants,1,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_14,63302247,824751,1,Texas Rangers,Boston Red Sox,6,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_14,63301095,824021,1,Tampa Bay Rays,Los Angeles Angels,8,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_06_14,63303795,823212,1,Chicago Cubs,San Francisco Giants,1,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_14,63302655,824994,1,Colorado Rockies,Oakland Athletics,23,9,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_14,,,,St. Louis Cardinals,Minnesota Twins,4,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_14,823693,823693,1,St. Louis Cardinals,Minnesota Twins,4,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_14,63302091,824586,1,Los Angeles Dodgers,Chicago White Sox,4,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -4589,7 +4589,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_06_16,63303411,823775,1,Cleveland Guardians,Milwaukee Brewers,1,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_16,63301883,824504,1,New York Mets,Cincinnati Reds,3,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_16,63302381,823535,1,Chicago White Sox,New York Yankees,2,12,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_16,,,,Kansas City Royals,Washington Nationals,4,6,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_16,822723,822723,1,Kansas City Royals,Washington Nationals,4,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_16,63301927,824750,1,Toronto Blue Jays,Boston Red Sox,6,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_16,63301337,823451,1,Miami Marlins,Philadelphia Phillies,2,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_15,63300977,823938,1,Tampa Bay Rays,Los Angeles Dodgers,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -4619,7 +4619,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_06_17,63299121,823940,1,Tampa Bay Rays,Los Angeles Dodgers,4,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_17,63301015,823044,1,San Diego Padres,St. Louis Cardinals,6,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_17,63299187,824178,1,Detroit Tigers,Houston Astros,2,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_17,,,,Kansas City Royals,Washington Nationals,6,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_17,822721,822721,1,Kansas City Royals,Washington Nationals,6,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_17,63302151,823450,1,Miami Marlins,Philadelphia Phillies,12,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_17,63301609,824503,1,New York Mets,Cincinnati Reds,9,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_16,63303733,823939,1,Tampa Bay Rays,Los Angeles Dodgers,0,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -4679,7 +4679,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_06_19,63301437,822886,1,San Diego Padres,Texas Rangers,7,9,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_19,63302793,824910,1,Milwaukee Brewers,Atlanta Braves,2,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_19,63299291,822966,1,Washington Nationals,Tampa Bay Rays,2,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_19,,,,San Francisco Giants,Miami Marlins,3,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_19,63303247,823853,1,San Francisco Giants,Miami Marlins,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_19,63303341,823534,1,Cincinnati Reds,New York Yankees,0,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_19,63303633,824264,1,Chicago White Sox,Detroit Tigers,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_19,63301885,824663,1,Toronto Blue Jays,Chicago Cubs,2,16,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -4733,7 +4733,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_06_21,63301723,823934,1,Baltimore Orioles,Los Angeles Dodgers,12,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_21,63303711,823123,1,Boston Red Sox,Seattle Mariners,1,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_21,63302323,824987,1,Los Angeles Angels,Oakland Athletics,9,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_21,,,,Minnesota Twins,Arizona Diamondbacks,4,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_21,63303339,825067,1,Minnesota Twins,Arizona Diamondbacks,4,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_21,63301731,824343,1,Pittsburgh Pirates,Colorado Rockies,8,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_21,63301739,822883,1,San Diego Padres,Texas Rangers,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_21,63303551,824095,1,St. Louis Cardinals,Kansas City Royals,12,10,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -4778,7 +4778,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_06_21,63303711,823123,1,Boston Red Sox,Seattle Mariners,1,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_21,63302323,824987,1,Los Angeles Angels,Oakland Athletics,9,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_23,63299317,823210,1,Oakland Athletics,San Francisco Giants,1,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_23,,,,Atlanta Braves,San Diego Padres,6,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_23,63299449,823286,1,Atlanta Braves,San Diego Padres,6,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_23,63299283,824017,1,Baltimore Orioles,Los Angeles Angels,1,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_23,63301767,824340,1,Boston Red Sox,Colorado Rockies,5,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_23,63302069,823690,1,Los Angeles Dodgers,Minnesota Twins,12,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -4812,7 +4812,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_06_24,63303367,823284,1,Atlanta Braves,San Diego Padres,2,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_24,63302013,823041,1,Arizona Diamondbacks,St. Louis Cardinals,9,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_24,63301513,823691,1,Los Angeles Dodgers,Minnesota Twins,4,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_24,,,,Chicago Cubs,New York Mets,10,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_24,63301423,823611,2,Chicago Cubs,New York Mets,10,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_24,63302973,824500,1,Milwaukee Brewers,Cincinnati Reds,6,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_24,63302397,822798,1,Houston Astros,Toronto Blue Jays,3,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_24,63301239,822719,1,Philadelphia Phillies,Washington Nationals,5,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -4822,7 +4822,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_06_24,,,,Cleveland Guardians,Chicago White Sox,4,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
 2026_06_24,63303619,824018,1,Baltimore Orioles,Los Angeles Angels,6,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_24,63301559,824341,1,Boston Red Sox,Colorado Rockies,6,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_24,,,,Chicago Cubs,New York Mets,10,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_24,72290938,823613,1,Chicago Cubs,New York Mets,10,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_24,63302371,823850,1,Texas Rangers,Miami Marlins,2,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -4851,7 +4851,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_06_24,63303367,823284,1,Atlanta Braves,San Diego Padres,2,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_24,63302013,823041,1,Arizona Diamondbacks,St. Louis Cardinals,9,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_24,63301513,823691,1,Los Angeles Dodgers,Minnesota Twins,4,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_24,,,,Chicago Cubs,New York Mets,10,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_24,63301423,823611,2,Chicago Cubs,New York Mets,10,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_24,63302973,824500,1,Milwaukee Brewers,Cincinnati Reds,6,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_24,63302397,822798,1,Houston Astros,Toronto Blue Jays,3,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_24,63301239,822719,1,Philadelphia Phillies,Washington Nationals,5,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -4870,7 +4870,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
-2026_06_26,,,,Atlanta Braves,San Francisco Giants,3,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_26,63301487,823206,1,Atlanta Braves,San Francisco Giants,3,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_26,63303257,823285,1,Los Angeles Dodgers,San Diego Padres,1,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_26,63301269,824014,1,Oakland Athletics,Los Angeles Angels,9,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_26,63303403,823039,1,Miami Marlins,St. Louis Cardinals,4,0,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -4914,7 +4914,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_06_27,63301379,822794,1,Texas Rangers,Toronto Blue Jays,7,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_27,63301663,824745,1,New York Yankees,Boston Red Sox,1,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_06_27,63301533,824257,1,Houston Astros,Detroit Tigers,8,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_06_26,,,,Atlanta Braves,San Francisco Giants,3,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_26,63301487,823206,1,Atlanta Braves,San Francisco Giants,3,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -5139,7 +5139,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_07_05,63301165,824333,1,San Francisco Giants,Colorado Rockies,6,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_05,63303255,825061,1,Milwaukee Brewers,Arizona Diamondbacks,3,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_05,63301635,824413,1,Chicago White Sox,Cleveland Guardians,7,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_05,,,,Tampa Bay Rays,Houston Astros,0,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_05,63299351,824172,1,Tampa Bay Rays,Houston Astros,0,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_05,63301519,822879,1,Detroit Tigers,Texas Rangers,6,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_05,63301191,824091,1,Philadelphia Phillies,Kansas City Royals,2,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_05,63301729,824656,1,St. Louis Cardinals,Chicago Cubs,4,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -5177,7 +5177,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_07_05,63301165,824333,1,San Francisco Giants,Colorado Rockies,6,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_05,63303255,825061,1,Milwaukee Brewers,Arizona Diamondbacks,3,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_05,63301635,824413,1,Chicago White Sox,Cleveland Guardians,7,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_05,,,,Tampa Bay Rays,Houston Astros,0,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_05,63299351,824172,1,Tampa Bay Rays,Houston Astros,0,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -5300,18 +5300,18 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_07_09,63302027,823201,1,Colorado Rockies,San Francisco Giants,2,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_09,63301879,823277,1,Arizona Diamondbacks,San Diego Padres,3,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_11,63303307,823926,1,Arizona Diamondbacks,Los Angeles Dodgers,9,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_11,,,,Toronto Blue Jays,San Diego Padres,7,8,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_11,,,,Atlanta Braves,St. Louis Cardinals,1,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_11,63301207,823276,1,Toronto Blue Jays,San Diego Padres,7,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_11,63301145,823030,1,Atlanta Braves,St. Louis Cardinals,1,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_11,63299343,824492,1,Chicago Cubs,Cincinnati Reds,5,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_11,63301975,824813,1,Kansas City Royals,Baltimore Orioles,1,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_11,,,,Houston Astros,Texas Rangers,9,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_11,63301689,822875,1,Houston Astros,Texas Rangers,9,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_11,63302127,824249,1,Philadelphia Phillies,Detroit Tigers,4,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_11,63302567,822953,1,Seattle Mariners,Tampa Bay Rays,1,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_11,63299227,823356,2,Milwaukee Brewers,Pittsburgh Pirates,2,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_11,63302643,823844,1,Cleveland Guardians,Miami Marlins,4,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_11,63303763,823603,1,Boston Red Sox,New York Mets,4,0,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_11,,,,New York Yankees,Washington Nationals,4,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_11,,,,Colorado Rockies,San Francisco Giants,2,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_11,63301183,822711,1,New York Yankees,Washington Nationals,4,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_11,63302859,823198,1,Colorado Rockies,San Francisco Giants,2,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_11,63302619,823682,1,Los Angeles Angels,Minnesota Twins,3,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_11,63301211,824576,1,Oakland Athletics,Chicago White Sox,0,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_11,,,,Milwaukee Brewers,Pittsburgh Pirates,6,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
@@ -5330,7 +5330,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
-2026_07_12,,,,Toronto Blue Jays,San Diego Padres,4,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_12,63303485,823274,1,Toronto Blue Jays,San Diego Padres,4,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63300981,823925,1,Arizona Diamondbacks,Los Angeles Dodgers,5,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63303105,823199,1,Colorado Rockies,San Francisco Giants,1,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63301945,822876,1,Houston Astros,Texas Rangers,5,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -5361,7 +5361,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
-2026_07_12,,,,Toronto Blue Jays,San Diego Padres,4,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_12,63303485,823274,1,Toronto Blue Jays,San Diego Padres,4,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63300981,823925,1,Arizona Diamondbacks,Los Angeles Dodgers,5,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63303105,823199,1,Colorado Rockies,San Francisco Giants,1,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63301945,822876,1,Houston Astros,Texas Rangers,5,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -5392,7 +5392,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
-2026_07_12,,,,Toronto Blue Jays,San Diego Padres,4,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_12,63303485,823274,1,Toronto Blue Jays,San Diego Padres,4,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63300981,823925,1,Arizona Diamondbacks,Los Angeles Dodgers,5,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63303105,823199,1,Colorado Rockies,San Francisco Giants,1,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63301945,822876,1,Houston Astros,Texas Rangers,5,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -5423,7 +5423,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
-2026_07_12,,,,Toronto Blue Jays,San Diego Padres,4,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_12,63303485,823274,1,Toronto Blue Jays,San Diego Padres,4,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63300981,823925,1,Arizona Diamondbacks,Los Angeles Dodgers,5,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63303105,823199,1,Colorado Rockies,San Francisco Giants,1,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63301945,822876,1,Houston Astros,Texas Rangers,5,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -5455,7 +5455,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 2026_07_16,63301305,823440,1,New York Mets,Philadelphia Phillies,4,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_12,,,,Toronto Blue Jays,San Diego Padres,4,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_12,63303485,823274,1,Toronto Blue Jays,San Diego Padres,4,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63300981,823925,1,Arizona Diamondbacks,Los Angeles Dodgers,5,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63303105,823199,1,Colorado Rockies,San Francisco Giants,1,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_12,63301945,822876,1,Houston Astros,Texas Rangers,5,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -5500,7 +5500,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_07_17,63303845,823524,1,Los Angeles Dodgers,New York Yankees,2,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_17,71409220,824766,1,Tampa Bay Rays,Boston Red Sox,0,10,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_16,63301305,823440,1,New York Mets,Philadelphia Phillies,4,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_12,,,,Toronto Blue Jays,San Diego Padres,4,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_12,63303485,823274,1,Toronto Blue Jays,San Diego Padres,4,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -5519,17 +5519,17 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_07_18,63301135,824008,1,Detroit Tigers,Los Angeles Angels,7,0,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_18,63301893,824979,1,Washington Nationals,Oakland Athletics,1,15,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_18,,,,Pittsburgh Pirates,Cleveland Guardians,3,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_18,,,,San Francisco Giants,Seattle Mariners,3,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_18,63302611,823116,1,San Francisco Giants,Seattle Mariners,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_18,63301029,824738,1,Tampa Bay Rays,Boston Red Sox,6,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_18,,,,San Diego Padres,Kansas City Royals,1,6,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_18,63300943,824088,1,San Diego Padres,Kansas City Royals,1,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_18,63301591,824899,1,Texas Rangers,Atlanta Braves,7,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_18,,,,Baltimore Orioles,Houston Astros,4,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_18,63302553,824169,1,Baltimore Orioles,Houston Astros,4,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_18,63302351,823763,1,Miami Marlins,Milwaukee Brewers,6,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_18,,,,St. Louis Cardinals,Arizona Diamondbacks,3,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_18,63300947,825059,1,St. Louis Cardinals,Arizona Diamondbacks,3,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_18,63302305,822790,1,Chicago White Sox,Toronto Blue Jays,0,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_18,,,,Cincinnati Reds,Colorado Rockies,3,10,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_18,63303625,824331,1,Cincinnati Reds,Colorado Rockies,3,10,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_18,63303141,823441,1,New York Mets,Philadelphia Phillies,1,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_18,,,,Minnesota Twins,Chicago Cubs,2,6,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_18,63302449,824657,1,Minnesota Twins,Chicago Cubs,2,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_18,72946026,824414,1,Pittsburgh Pirates,Cleveland Guardians,7,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_17,63302551,823115,1,San Francisco Giants,Seattle Mariners,7,0,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -5548,16 +5548,16 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 2026_07_19,63303685,823521,2,Los Angeles Dodgers,New York Yankees,1,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_19,,,,San Francisco Giants,Seattle Mariners,3,6,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_19,63302431,823113,1,San Francisco Giants,Seattle Mariners,3,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_19,63303433,825057,1,St. Louis Cardinals,Arizona Diamondbacks,7,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_19,63301319,824007,1,Detroit Tigers,Los Angeles Angels,2,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_19,,,,Washington Nationals,Oakland Athletics,5,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_19,63301405,824978,1,Washington Nationals,Oakland Athletics,5,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_19,63302801,824330,1,Cincinnati Reds,Colorado Rockies,9,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_19,63302001,824653,1,Minnesota Twins,Chicago Cubs,1,10,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_19,63302615,824086,1,San Diego Padres,Kansas City Royals,19,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_19,63301313,824168,1,Baltimore Orioles,Houston Astros,5,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_19,63301979,823764,1,Miami Marlins,Milwaukee Brewers,1,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_19,,,,Pittsburgh Pirates,Cleveland Guardians,7,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_19,63302383,824411,1,Pittsburgh Pirates,Cleveland Guardians,7,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_19,63303267,824897,1,Texas Rangers,Atlanta Braves,5,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_19,63299259,824739,1,Tampa Bay Rays,Boston Red Sox,1,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_19,63302739,823439,1,New York Mets,Philadelphia Phillies,6,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -5599,13 +5599,13 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
-2026_07_21,,,,Cincinnati Reds,Seattle Mariners,4,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_21,,,,Oakland Athletics,Arizona Diamondbacks,5,6,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_21,63303661,823114,1,Cincinnati Reds,Seattle Mariners,4,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_21,63299163,825056,1,Oakland Athletics,Arizona Diamondbacks,5,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_21,63301797,824005,1,St. Louis Cardinals,Los Angeles Angels,1,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_21,,,,Washington Nationals,Colorado Rockies,7,8,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_21,,,,Miami Marlins,Houston Astros,3,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_21,,,,Detroit Tigers,Chicago Cubs,2,11,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_21,,,,Chicago White Sox,Texas Rangers,0,10,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_21,63303597,824329,1,Washington Nationals,Colorado Rockies,7,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_21,63302385,824165,1,Miami Marlins,Houston Astros,3,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_21,63300911,824652,1,Detroit Tigers,Chicago Cubs,2,11,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_21,63302571,822871,1,Chicago White Sox,Texas Rangers,0,10,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_21,63301331,823437,1,Los Angeles Dodgers,Philadelphia Phillies,2,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_21,63302261,824085,1,San Francisco Giants,Kansas City Royals,2,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_21,63301503,823760,1,New York Mets,Milwaukee Brewers,4,0,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -5630,21 +5630,21 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
-2026_07_22,,,,Miami Marlins,Houston Astros,2,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_22,63302581,824166,1,Miami Marlins,Houston Astros,2,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_22,63303751,824650,1,Detroit Tigers,Chicago Cubs,5,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_22,,,,Chicago White Sox,Texas Rangers,4,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_22,,,,San Diego Padres,Atlanta Braves,6,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_22,,,,Baltimore Orioles,Boston Red Sox,5,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_22,,,,Tampa Bay Rays,Toronto Blue Jays,4,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_22,63301543,822873,1,Chicago White Sox,Texas Rangers,4,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_22,63301799,824896,1,San Diego Padres,Atlanta Braves,6,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_22,63301509,824732,2,Baltimore Orioles,Boston Red Sox,5,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_22,63303109,822784,1,Tampa Bay Rays,Toronto Blue Jays,4,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_22,,,,Pittsburgh Pirates,New York Yankees,0,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_22,,,,Minnesota Twins,Cleveland Guardians,10,6,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_22,63301919,824408,1,Minnesota Twins,Cleveland Guardians,10,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_22,63302691,823438,1,Los Angeles Dodgers,Philadelphia Phillies,9,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_22,63302795,824004,1,St. Louis Cardinals,Los Angeles Angels,1,0,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_22,,,,Cincinnati Reds,Seattle Mariners,5,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_22,,,,Oakland Athletics,Arizona Diamondbacks,5,15,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_22,,,,Washington Nationals,Colorado Rockies,8,0,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_22,,,,San Francisco Giants,Kansas City Royals,4,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_22,,,,New York Mets,Milwaukee Brewers,3,4,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_22,63299295,823110,1,Cincinnati Reds,Seattle Mariners,5,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_22,63302585,825055,1,Oakland Athletics,Arizona Diamondbacks,5,15,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_22,63303335,824327,1,Washington Nationals,Colorado Rockies,8,0,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_22,63299241,824083,1,San Francisco Giants,Kansas City Royals,4,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_22,63303505,823761,1,New York Mets,Milwaukee Brewers,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_22,,,,Baltimore Orioles,Boston Red Sox,3,6,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -5666,17 +5666,17 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_07_23,63301471,822785,1,Tampa Bay Rays,Toronto Blue Jays,1,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_23,63303877,824406,1,Minnesota Twins,Cleveland Guardians,3,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_23,63301391,824893,1,San Diego Padres,Atlanta Braves,5,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_22,,,,Miami Marlins,Houston Astros,2,5,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_22,63302581,824166,1,Miami Marlins,Houston Astros,2,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_22,63303751,824650,1,Detroit Tigers,Chicago Cubs,5,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_22,,,,Chicago White Sox,Texas Rangers,4,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_22,,,,San Diego Padres,Atlanta Braves,6,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_22,,,,Baltimore Orioles,Boston Red Sox,5,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_22,,,,Tampa Bay Rays,Toronto Blue Jays,4,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_22,63301543,822873,1,Chicago White Sox,Texas Rangers,4,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_22,63301799,824896,1,San Diego Padres,Atlanta Braves,6,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_22,63301509,824732,2,Baltimore Orioles,Boston Red Sox,5,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
+2026_07_22,63303109,822784,1,Tampa Bay Rays,Toronto Blue Jays,4,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_22,,,,Pittsburgh Pirates,New York Yankees,0,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
-2026_07_22,,,,Minnesota Twins,Cleveland Guardians,10,6,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_22,63301919,824408,1,Minnesota Twins,Cleveland Guardians,10,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_22,63302691,823438,1,Los Angeles Dodgers,Philadelphia Phillies,9,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_07_22,63302795,824004,1,St. Louis Cardinals,Los Angeles Angels,1,0,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_07_22,,,,Cincinnati Reds,Seattle Mariners,5,3,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_07_22,63299295,823110,1,Cincinnati Reds,Seattle Mariners,5,3,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -6341,7 +6341,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
-2026_08_17,,,,St. Louis Cardinals,Cincinnati Reds,2,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_08_17,71703148,824514,1,St. Louis Cardinals,Cincinnati Reds,2,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_08_16,63303001,824156,1,Seattle Mariners,Houston Astros,3,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_08_16,,,,San Diego Padres,Cleveland Guardians,5,0,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
 2026_08_16,63301483,823912,1,Milwaukee Brewers,Los Angeles Dodgers,6,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -6395,9 +6395,9 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_08_17,63302053,823589,1,San Diego Padres,New York Mets,1,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_08_17,63301899,823343,1,Detroit Tigers,Pittsburgh Pirates,8,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_08_17,63301243,823427,1,Miami Marlins,Philadelphia Phillies,5,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_08_17,,,,St. Louis Cardinals,Cincinnati Reds,5,6,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_08_17,63300833,824478,2,St. Louis Cardinals,Cincinnati Reds,5,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_08_17,63302815,822939,1,Baltimore Orioles,Tampa Bay Rays,6,7,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_08_17,,,,St. Louis Cardinals,Cincinnati Reds,2,1,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_08_17,71703148,824514,1,St. Louis Cardinals,Cincinnati Reds,2,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_08_16,63303001,824156,1,Seattle Mariners,Houston Astros,3,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_08_16,,,,San Diego Padres,Cleveland Guardians,5,0,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
 2026_08_16,63301483,823912,1,Milwaukee Brewers,Los Angeles Dodgers,6,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -6959,7 +6959,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
-2026_09_11,,,,Pittsburgh Pirates,Chicago Cubs,2,12,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_09_11,401816899,824631,1,Pittsburgh Pirates,Chicago Cubs,2,12,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_09_10,401816886,824550,1,Pittsburgh Pirates,Chicago White Sox,2,0,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_09_10,401816883,823499,1,Colorado Rockies,New York Yankees,3,10,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_09_10,401816887,823088,1,Texas Rangers,Seattle Mariners,3,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -7355,7 +7355,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 2026_09_25,401817086,823167,1,Los Angeles Dodgers,San Francisco Giants,2,0,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_09_25,401817083,823085,1,Los Angeles Angels,Seattle Mariners,7,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_09_25,,,,Houston Astros,Oakland Athletics,5,6,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_09_25,401817085,824947,1,Houston Astros,Oakland Athletics,5,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_09_25,401817084,823248,1,Arizona Diamondbacks,San Diego Padres,11,4,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_09_25,401817079,824058,1,Cleveland Guardians,Kansas City Royals,12,9,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_09_25,401817082,823652,1,Texas Rangers,Minnesota Twins,2,10,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -7384,7 +7384,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
-2026_09_26,,,,Houston Astros,Oakland Athletics,13,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_09_26,401817100,824949,1,Houston Astros,Oakland Athletics,13,2,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_09_26,401817098,823083,1,Los Angeles Angels,Seattle Mariners,4,8,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_09_26,401817099,823245,1,Arizona Diamondbacks,San Diego Padres,7,10,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_09_26,401817093,823407,1,Tampa Bay Rays,Philadelphia Phillies,12,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
@@ -7399,7 +7399,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_09_26,401817091,822678,1,New York Mets,Washington Nationals,7,1,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_09_25,401817086,823167,1,Los Angeles Dodgers,San Francisco Giants,2,0,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 2026_09_25,401817083,823085,1,Los Angeles Angels,Seattle Mariners,7,5,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
-2026_09_25,,,,Houston Astros,Oakland Athletics,5,6,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_09_25,401817085,824947,1,Houston Astros,Oakland Athletics,5,6,final,row_len_8_completed_score,False,resolved_ids=games_date_teams_scheduled_time; status inferred as final from completed DRatings row shape
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
 ,,,,,,,,unknown,not_available_in_current_raw_shape,False,non-final row not written to final-score output
@@ -7930,3 +7930,7 @@ game_date,game_id,gamePk,gameNumber,away_team,home_team,final_away_score,final_h
 2026_10_12,401908031,,,Los Angeles Dodgers,Milwaukee Brewers,4,7,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
 2026_10_11,401908030,,,Los Angeles Dodgers,Milwaukee Brewers,1,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
 2026_10_10,,,,Chicago White Sox,Cleveland Guardians,0,2,final,row_len_8_completed_score,False,completed game unresolved; excluded from final-score output and written to unresolved_completed_games.csv
+2026_06_11,824101,824101,1,Texas Rangers,Kansas City Royals,4,2,final,MLB StatsAPI gamePk fallback,True,DRatings/existing finals did not contain this game; official MLB final score added using gamePk=824101
+2026_06_12,822726,822726,1,Seattle Mariners,Washington Nationals,10,2,final,MLB StatsAPI gamePk fallback,True,DRatings/existing finals did not contain this game; official MLB final score added using gamePk=822726
+2026_07_22,63303605,823518,1,Pittsburgh Pirates,New York Yankees,5,3,final,MLB StatsAPI gamePk fallback,True,DRatings/existing finals did not contain this game; official MLB final score added using gamePk=823518
+2026_10_28,401908046,849799,1,Milwaukee Brewers,Tampa Bay Rays,4,1,final,MLB StatsAPI gamePk fallback,True,DRatings/existing finals did not contain this game; official MLB final score added using gamePk=849799

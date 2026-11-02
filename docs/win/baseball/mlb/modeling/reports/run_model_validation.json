@@ -14,7 +14,7 @@
       "mean_poisson_deviance": 2.473104467667501,
       "mean_predicted_runs": 4.253318379897634
     },
-    "smoke_prediction": 3.888601081387058
+    "smoke_prediction": 3.8886010813870575
   },
   "feature_columns": [
     "dratings_home_prob",
@@ -91,24 +91,24 @@
   "promotion_comparison": {
     "away": {
       "baseline_system": "dratings",
-      "baseline_value": 1.8657821274614217,
-      "candidate_lte_baseline": false,
-      "candidate_value": 1.867822666310446,
-      "difference_candidate_minus_baseline": 0.0020405388490243315,
+      "baseline_value": 2.126983250183449,
+      "candidate_lte_baseline": true,
+      "candidate_value": 2.035213307493317,
+      "difference_candidate_minus_baseline": -0.09176994269013194,
       "metric": "mean_poisson_deviance"
     },
     "home": {
       "baseline_system": "dratings",
-      "baseline_value": 1.8191173379158363,
+      "baseline_value": 2.0523908644575752,
       "candidate_lte_baseline": false,
-      "candidate_value": 1.955579072789156,
-      "difference_candidate_minus_baseline": 0.1364617348733197,
+      "candidate_value": 2.2065144460681294,
+      "difference_candidate_minus_baseline": 0.15412358161055417,
       "metric": "mean_poisson_deviance"
     }
   },
   "promotion_status": "candidate_rejected",
   "status": "passed",
-  "training_rows": 1944,
+  "training_rows": 2363,
   "training_set": "docs/win/baseball/mlb/modeling/data/mlb_run_training_set.csv",
-  "validated_at": "2026-10-28T11:46:44.678178+00:00"
+  "validated_at": "2026-11-02T14:17:05.534624+00:00"
 }
