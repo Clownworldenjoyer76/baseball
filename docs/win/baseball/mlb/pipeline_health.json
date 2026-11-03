@@ -1,8 +1,8 @@
 {
   "current_workflow": "pregame",
   "fatal_errors": [],
-  "game_date_new_york": "2026_11_02",
-  "generated_at_utc": "2026-11-02T16:05:55.926548+00:00",
+  "game_date_new_york": "2026_11_03",
+  "generated_at_utc": "2026-11-03T19:17:53.737867+00:00",
   "leagues": {
     "mlb": {
       "counts": {
@@ -45,14 +45,14 @@
       "in_season": true,
       "issues": [],
       "paths": {
-        "daily_games": "docs/win/baseball/mlb/00_intake/games/2026_11_02_games.csv",
-        "merged": "docs/win/baseball/mlb/01_merge/2026_11_02_mlb_moneyline.csv",
-        "morning_selected": "docs/win/baseball/mlb/04_select/morning/2026_11_02_MLB.csv",
-        "prediction_baseline": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/baseline/2026_11_02_MLB.csv",
-        "prediction_source": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/2026_11_02_MLB.csv",
-        "predictions": "docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_11_02_MLB.csv",
-        "selected": "docs/win/baseball/mlb/04_select/2026_11_02_MLB.csv",
-        "sportsbook": "docs/win/baseball/mlb/00_intake/sportsbook/2026_11_02_MLB.csv"
+        "daily_games": "docs/win/baseball/mlb/00_intake/games/2026_11_03_games.csv",
+        "merged": "docs/win/baseball/mlb/01_merge/2026_11_03_mlb_moneyline.csv",
+        "morning_selected": "docs/win/baseball/mlb/04_select/morning/2026_11_03_MLB.csv",
+        "prediction_baseline": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/baseline/2026_11_03_MLB.csv",
+        "prediction_source": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/2026_11_03_MLB.csv",
+        "predictions": "docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_11_03_MLB.csv",
+        "selected": "docs/win/baseball/mlb/04_select/2026_11_03_MLB.csv",
+        "sportsbook": "docs/win/baseball/mlb/00_intake/sportsbook/2026_11_03_MLB.csv"
       }
     }
   },
@@ -64,20 +64,20 @@
     "promotion_exists": true,
     "promotion_path": "docs/win/baseball/mlb/modeling/reports/run_model_promotion.json",
     "promotion_status": "candidate_rejected",
-    "validated_at": "2026-11-02T14:17:05.534624+00:00",
+    "validated_at": "2026-11-03T19:15:34.593718+00:00",
     "validation_exists": true,
     "validation_path": "docs/win/baseball/mlb/modeling/reports/run_model_validation.json",
     "validation_status": "passed"
   },
   "paths": {
-    "daily_games": "docs/win/baseball/mlb/00_intake/games/2026_11_02_games.csv",
-    "merged": "docs/win/baseball/mlb/01_merge/2026_11_02_mlb_moneyline.csv",
-    "morning_selected": "docs/win/baseball/mlb/04_select/morning/2026_11_02_MLB.csv",
-    "prediction_baseline": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/baseline/2026_11_02_MLB.csv",
-    "prediction_source": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/2026_11_02_MLB.csv",
-    "predictions": "docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_11_02_MLB.csv",
-    "selected": "docs/win/baseball/mlb/04_select/2026_11_02_MLB.csv",
-    "sportsbook": "docs/win/baseball/mlb/00_intake/sportsbook/2026_11_02_MLB.csv"
+    "daily_games": "docs/win/baseball/mlb/00_intake/games/2026_11_03_games.csv",
+    "merged": "docs/win/baseball/mlb/01_merge/2026_11_03_mlb_moneyline.csv",
+    "morning_selected": "docs/win/baseball/mlb/04_select/morning/2026_11_03_MLB.csv",
+    "prediction_baseline": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/baseline/2026_11_03_MLB.csv",
+    "prediction_source": "docs/win/baseball/mlb/00_intake/predictions/pred_with_game_id/2026_11_03_MLB.csv",
+    "predictions": "docs/win/baseball/mlb/00_intake/predictions/model_projection/2026_11_03_MLB.csv",
+    "selected": "docs/win/baseball/mlb/04_select/2026_11_03_MLB.csv",
+    "sportsbook": "docs/win/baseball/mlb/00_intake/sportsbook/2026_11_03_MLB.csv"
   },
   "schema_version": 1,
   "stage_status": [
@@ -215,37 +215,37 @@
     {
       "exists": true,
       "path": "MLB Pipeline Workflow",
-      "status": "STATUS: SUCCESS | 2026-11-02T16:05:55.926548+00:00"
+      "status": "STATUS: SUCCESS | 2026-11-03T19:17:53.737867+00:00"
     },
     {
       "exists": true,
       "path": "MLB Pipeline - Odds Parse",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/odds_parse.txt",
-      "status": "2026-11-02T09:17:26.081459 | STATUS: SUCCESS"
+      "status": "2026-11-03T14:16:06.349306 | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "path": "MLB Pipeline - Name Normalization",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/name_normalization.txt",
-      "status": "2026-11-02T14:17:31.860872+00:00 | INFO  | STATUS: SUCCESS"
+      "status": "2026-11-03T19:16:15.818305+00:00 | INFO  | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "path": "MLB Pipeline - DRatings Scraper",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/baseball_drat_scraper.txt",
-      "status": "2026-11-02T09:17:31.260641-05:00 | STATUS: SUCCESS"
+      "status": "2026-11-03T14:16:15.250480-05:00 | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "path": "MLB Pipeline - Transform Baseball",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/transform_baseball.txt",
-      "status": "2026-11-02T09:17:31.768546 | STATUS: SUCCESS"
+      "status": "2026-11-03T14:16:15.719600 | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "path": "MLB Pipeline - Scrape MLB Raw",
       "source_path": "docs/win/baseball/mlb/errors/00_intake/scrape_mlb_raw.txt",
-      "status": "2026-11-02T14:17:32.036722+00:00 | INFO  | STATUS: SUCCESS"
+      "status": "2026-11-03T19:16:16.079119+00:00 | INFO  | STATUS: SUCCESS"
     },
     {
       "exists": true,
@@ -299,7 +299,7 @@
       "exists": true,
       "path": "MLB Pipeline - Build Juice Files",
       "source_path": "docs/win/baseball/mlb/errors/01_merge/build_juice_files.txt",
-      "status": "2026-11-02T16:05:23.603015+00:00 | STATUS: SUCCESS"
+      "status": "2026-11-03T19:17:25.706838+00:00 | STATUS: SUCCESS"
     },
     {
       "exists": true,
@@ -484,48 +484,48 @@
       "workflow": "morning"
     },
     "pregame": {
-      "game_date_new_york": "2026_11_02",
-      "generated_at_utc": "2026-11-02T16:05:55.926548+00:00",
+      "game_date_new_york": "2026_11_03",
+      "generated_at_utc": "2026-11-03T19:17:53.737867+00:00",
       "label": "MLB Pipeline",
       "ref_name": "main",
       "run_attempt": "1",
-      "run_id": "41458250734",
-      "sha": "8b4bc3e66a35b35e6ae40391625f3dc9cb6c7137",
+      "run_id": "41694723828",
+      "sha": "e131004d01093abddd324776f4104564dace6566",
       "stages": [
         {
           "display_path": "MLB Pipeline - Odds Parse",
           "exists": true,
           "name": "Odds Parse",
           "path": "docs/win/baseball/mlb/errors/00_intake/odds_parse.txt",
-          "status": "2026-11-02T09:17:26.081459 | STATUS: SUCCESS"
+          "status": "2026-11-03T14:16:06.349306 | STATUS: SUCCESS"
         },
         {
           "display_path": "MLB Pipeline - Name Normalization",
           "exists": true,
           "name": "Name Normalization",
           "path": "docs/win/baseball/mlb/errors/00_intake/name_normalization.txt",
-          "status": "2026-11-02T14:17:31.860872+00:00 | INFO  | STATUS: SUCCESS"
+          "status": "2026-11-03T19:16:15.818305+00:00 | INFO  | STATUS: SUCCESS"
         },
         {
           "display_path": "MLB Pipeline - DRatings Scraper",
           "exists": true,
           "name": "DRatings Scraper",
           "path": "docs/win/baseball/mlb/errors/00_intake/baseball_drat_scraper.txt",
-          "status": "2026-11-02T09:17:31.260641-05:00 | STATUS: SUCCESS"
+          "status": "2026-11-03T14:16:15.250480-05:00 | STATUS: SUCCESS"
         },
         {
           "display_path": "MLB Pipeline - Transform Baseball",
           "exists": true,
           "name": "Transform Baseball",
           "path": "docs/win/baseball/mlb/errors/00_intake/transform_baseball.txt",
-          "status": "2026-11-02T09:17:31.768546 | STATUS: SUCCESS"
+          "status": "2026-11-03T14:16:15.719600 | STATUS: SUCCESS"
         },
         {
           "display_path": "MLB Pipeline - Scrape MLB Raw",
           "exists": true,
           "name": "Scrape MLB Raw",
           "path": "docs/win/baseball/mlb/errors/00_intake/scrape_mlb_raw.txt",
-          "status": "2026-11-02T14:17:32.036722+00:00 | INFO  | STATUS: SUCCESS"
+          "status": "2026-11-03T19:16:16.079119+00:00 | INFO  | STATUS: SUCCESS"
         },
         {
           "display_path": "MLB Pipeline - Build Games List",
@@ -588,7 +588,7 @@
           "exists": true,
           "name": "Build Juice Files",
           "path": "docs/win/baseball/mlb/errors/01_merge/build_juice_files.txt",
-          "status": "2026-11-02T16:05:23.603015+00:00 | STATUS: SUCCESS"
+          "status": "2026-11-03T19:17:25.706838+00:00 | STATUS: SUCCESS"
         },
         {
           "display_path": "MLB Pipeline - Compute Edges",
