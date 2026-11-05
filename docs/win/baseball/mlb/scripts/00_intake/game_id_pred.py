@@ -2053,7 +2053,7 @@ def process_date(date_str: str, pred_path: Path, summary: dict) -> None:
 
 
 def _historical_match_key(row: dict) -> tuple[str, str]:
-    return (norm(row.get("home_team", "")), norm(row.get("away_team", "")))
+    return norm(row.get("home_team", "")), norm(row.get("away_team", ""))
 
 
 def _historical_source_match(
