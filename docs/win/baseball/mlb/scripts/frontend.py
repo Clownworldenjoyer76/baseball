@@ -127,10 +127,10 @@ def build(date: str, *, pitchers: dict, teams: dict, venues: dict) -> bool:
     schedule_headers, schedule_rows = read_csv(schedule_path, required=True)
     column_order = list(GAME_FIRST_COLUMNS)
 
-    def include_columns(fields: list[str]) -> None:
-        for field in fields:
-            if field not in column_order:
-                column_order.append(field)
+    def include_columns(incoming_headers: list[str]) -> None:
+        for incoming_header in incoming_headers:
+            if incoming_header not in column_order:
+                column_order.append(incoming_header)
 
     include_columns(schedule_headers)
     schedule_by_pk = unique_index(schedule_rows, "gamePk", schedule_path)
