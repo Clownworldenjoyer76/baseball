@@ -1,119 +1,119 @@
-=== prep_savant_data RUN 2026-11-05T14:34:57.694535+00:00 ===
-2026-11-05T14:34:57.694618+00:00 | INFO  | === BATTING ===
-2026-11-05T14:34:57.694907+00:00 | INFO  | Files found: 5
-2026-11-05T14:34:57.694945+00:00 | INFO  | --- batting_2022.csv
-2026-11-05T14:34:57.699403+00:00 | INFO  |   Rows raw: 644
-2026-11-05T14:34:57.701314+00:00 | INFO  |   Rows after PA filter (>=150): 417 (dropped 227)
-2026-11-05T14:34:57.702094+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
-2026-11-05T14:34:57.702505+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
-2026-11-05T14:34:57.711105+00:00 | INFO  |   WROTE: batting_2022_clean.csv (417 rows)
-2026-11-05T14:34:57.711168+00:00 | INFO  | --- batting_2023.csv
-2026-11-05T14:34:57.714708+00:00 | INFO  |   Rows raw: 623
-2026-11-05T14:34:57.716161+00:00 | INFO  |   Rows after PA filter (>=150): 404 (dropped 219)
-2026-11-05T14:34:57.716754+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
-2026-11-05T14:34:57.717320+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
-2026-11-05T14:34:57.734732+00:00 | INFO  |   WROTE: batting_2023_clean.csv (404 rows)
-2026-11-05T14:34:57.734831+00:00 | INFO  | --- batting_2024.csv
-2026-11-05T14:34:57.739675+00:00 | INFO  |   Rows raw: 617
-2026-11-05T14:34:57.741147+00:00 | INFO  |   Rows after PA filter (>=150): 410 (dropped 207)
-2026-11-05T14:34:57.741666+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
-2026-11-05T14:34:57.742128+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
-2026-11-05T14:34:57.750747+00:00 | INFO  |   WROTE: batting_2024_clean.csv (410 rows)
-2026-11-05T14:34:57.750810+00:00 | INFO  | --- batting_2025.csv
-2026-11-05T14:34:57.754183+00:00 | INFO  |   Rows raw: 632
-2026-11-05T14:34:57.755583+00:00 | INFO  |   Rows after PA filter (>=100): 461 (dropped 171)
-2026-11-05T14:34:57.756088+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
-2026-11-05T14:34:57.756445+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
-2026-11-05T14:34:57.757132+00:00 | INFO  |   sample_flag=low count: 113 (threshold PA<200)
-2026-11-05T14:34:57.766604+00:00 | INFO  |   WROTE: batting_2025_clean.csv (461 rows)
-2026-11-05T14:34:57.766669+00:00 | INFO  | --- batting_2026.csv
-2026-11-05T14:34:57.769937+00:00 | INFO  |   Rows raw: 597
-2026-11-05T14:34:57.771343+00:00 | INFO  |   Rows after PA filter (>=25): 558 (dropped 39)
-2026-11-05T14:34:57.771757+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
-2026-11-05T14:34:57.772147+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
-2026-11-05T14:34:57.772772+00:00 | INFO  |   sample_flag=low count: 105 (threshold PA<75)
-2026-11-05T14:34:57.783906+00:00 | INFO  |   WROTE: batting_2026_clean.csv (558 rows)
-2026-11-05T14:34:57.783993+00:00 | INFO  | === PITCHING ===
-2026-11-05T14:34:57.784243+00:00 | INFO  | Files found: 5
-2026-11-05T14:34:57.784276+00:00 | INFO  | --- pitching_2022.csv
-2026-11-05T14:34:57.788121+00:00 | INFO  |   Rows raw: 808
-2026-11-05T14:34:57.789525+00:00 | INFO  |   Rows after PA filter (>=150): 446 (dropped 362)
-2026-11-05T14:34:57.789952+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
-2026-11-05T14:34:57.790335+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
-2026-11-05T14:34:57.798764+00:00 | INFO  |   WROTE: pitching_2022_clean.csv (446 rows)
-2026-11-05T14:34:57.798828+00:00 | INFO  | --- pitching_2023.csv
-2026-11-05T14:34:57.803046+00:00 | INFO  |   Rows raw: 799
-2026-11-05T14:34:57.804389+00:00 | INFO  |   Rows after PA filter (>=150): 443 (dropped 356)
-2026-11-05T14:34:57.804854+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
-2026-11-05T14:34:57.805223+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
-2026-11-05T14:34:57.814636+00:00 | INFO  |   WROTE: pitching_2023_clean.csv (443 rows)
-2026-11-05T14:34:57.814700+00:00 | INFO  | --- pitching_2024.csv
-2026-11-05T14:34:57.818614+00:00 | INFO  |   Rows raw: 800
-2026-11-05T14:34:57.820023+00:00 | INFO  |   Rows after PA filter (>=150): 446 (dropped 354)
-2026-11-05T14:34:57.820468+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
-2026-11-05T14:34:57.820817+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
-2026-11-05T14:34:57.830397+00:00 | INFO  |   WROTE: pitching_2024_clean.csv (446 rows)
-2026-11-05T14:34:57.830459+00:00 | INFO  | --- pitching_2025.csv
-2026-11-05T14:34:57.834336+00:00 | INFO  |   Rows raw: 809
-2026-11-05T14:34:57.835736+00:00 | INFO  |   Rows after PA filter (>=100): 523 (dropped 286)
-2026-11-05T14:34:57.836208+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
-2026-11-05T14:34:57.836560+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
-2026-11-05T14:34:57.837210+00:00 | INFO  |   sample_flag=low count: 170 (threshold PA<200)
-2026-11-05T14:34:57.848082+00:00 | INFO  |   WROTE: pitching_2025_clean.csv (523 rows)
-2026-11-05T14:34:57.848145+00:00 | INFO  | --- pitching_2026.csv
-2026-11-05T14:34:57.851986+00:00 | INFO  |   Rows raw: 759
-2026-11-05T14:34:57.853445+00:00 | INFO  |   Rows after PA filter (>=25): 661 (dropped 98)
-2026-11-05T14:34:57.853914+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
-2026-11-05T14:34:57.854341+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
-2026-11-05T14:34:57.855044+00:00 | INFO  |   sample_flag=low count: 156 (threshold PA<75)
-2026-11-05T14:34:57.868552+00:00 | INFO  |   WROTE: pitching_2026_clean.csv (661 rows)
-2026-11-05T14:34:57.868620+00:00 | INFO  | === FIELDING ===
-2026-11-05T14:34:57.868864+00:00 | INFO  | Files found: 5
-2026-11-05T14:34:57.868905+00:00 | INFO  | --- fielding_2022.csv
-2026-11-05T14:34:57.870391+00:00 | INFO  |   Rows raw: 308
-2026-11-05T14:34:57.870439+00:00 | INFO  |   Join key 'id' present — verify these are MLBAM player IDs before joining
-2026-11-05T14:34:57.870924+00:00 | INFO  |   Dropped columns: ['outs_2', 'outs_3', 'outs_4', 'outs_5', 'outs_6', 'outs_7', 'outs_8', 'outs_9']
-2026-11-05T14:34:57.874211+00:00 | INFO  |   WROTE: fielding_2022_clean.csv (308 rows)
-2026-11-05T14:34:57.874265+00:00 | INFO  | --- fielding_2023.csv
-2026-11-05T14:34:57.875723+00:00 | INFO  |   Rows raw: 311
-2026-11-05T14:34:57.875777+00:00 | INFO  |   Join key 'id' present — verify these are MLBAM player IDs before joining
-2026-11-05T14:34:57.876281+00:00 | INFO  |   Dropped columns: ['outs_2', 'outs_3', 'outs_4', 'outs_5', 'outs_6', 'outs_7', 'outs_8', 'outs_9']
-2026-11-05T14:34:57.879585+00:00 | INFO  |   WROTE: fielding_2023_clean.csv (311 rows)
-2026-11-05T14:34:57.879642+00:00 | INFO  | --- fielding_2024.csv
-2026-11-05T14:34:57.881129+00:00 | INFO  |   Rows raw: 311
-2026-11-05T14:34:57.881179+00:00 | INFO  |   Join key 'id' present — verify these are MLBAM player IDs before joining
-2026-11-05T14:34:57.881656+00:00 | INFO  |   Dropped columns: ['outs_2', 'outs_3', 'outs_4', 'outs_5', 'outs_6', 'outs_7', 'outs_8', 'outs_9']
-2026-11-05T14:34:57.885322+00:00 | INFO  |   WROTE: fielding_2024_clean.csv (311 rows)
-2026-11-05T14:34:57.885376+00:00 | INFO  | --- fielding_2025.csv
-2026-11-05T14:34:57.887191+00:00 | INFO  |   Rows raw: 659
-2026-11-05T14:34:57.887242+00:00 | INFO  |   Join key 'id' present — verify these are MLBAM player IDs before joining
-2026-11-05T14:34:57.887713+00:00 | INFO  |   Dropped columns: ['outs_2', 'outs_3', 'outs_4', 'outs_5', 'outs_6', 'outs_7', 'outs_8', 'outs_9']
-2026-11-05T14:34:57.893661+00:00 | INFO  |   WROTE: fielding_2025_clean.csv (659 rows)
-2026-11-05T14:34:57.893721+00:00 | INFO  | --- fielding_2026.csv
-2026-11-05T14:34:57.895609+00:00 | INFO  |   Rows raw: 640
-2026-11-05T14:34:57.895661+00:00 | INFO  |   Join key 'id' present — verify these are MLBAM player IDs before joining
-2026-11-05T14:34:57.896191+00:00 | INFO  |   Dropped columns: ['outs_2', 'outs_3', 'outs_4', 'outs_5', 'outs_6', 'outs_7', 'outs_8', 'outs_9']
-2026-11-05T14:34:57.902615+00:00 | INFO  |   WROTE: fielding_2026_clean.csv (640 rows)
-2026-11-05T14:34:57.902704+00:00 | INFO  | === BASERUNNING ===
-2026-11-05T14:34:57.902936+00:00 | INFO  | Files found: 2
-2026-11-05T14:34:57.903012+00:00 | INFO  | --- baserunning_2025.csv
-2026-11-05T14:34:57.904548+00:00 | INFO  |   Rows raw: 252
-2026-11-05T14:34:57.904938+00:00 | INFO  |   Renamed: entity_name → player_name
-2026-11-05T14:34:57.909540+00:00 | INFO  |   WROTE: baserunning_2025_clean.csv (252 rows)
-2026-11-05T14:34:57.909595+00:00 | INFO  | --- baserunning_2026.csv
-2026-11-05T14:34:57.911537+00:00 | INFO  |   Rows raw: 600
-2026-11-05T14:34:57.911919+00:00 | INFO  |   Renamed: entity_name → player_name
-2026-11-05T14:34:57.921280+00:00 | INFO  |   WROTE: baserunning_2026_clean.csv (600 rows)
-2026-11-05T14:34:57.921340+00:00 | INFO  | === PARK FACTORS ===
-2026-11-05T14:34:57.921368+00:00 | INFO  | Skipped intentionally. This script does not read, write, clean, or modify docs/win/baseball/mlb/data/park_factors.
+=== prep_savant_data RUN 2026-11-05T14:37:33.398899+00:00 ===
+2026-11-05T14:37:33.398994+00:00 | INFO  | === BATTING ===
+2026-11-05T14:37:33.399292+00:00 | INFO  | Files found: 5
+2026-11-05T14:37:33.399337+00:00 | INFO  | --- batting_2022.csv
+2026-11-05T14:37:33.404219+00:00 | INFO  |   Rows raw: 644
+2026-11-05T14:37:33.406202+00:00 | INFO  |   Rows after PA filter (>=150): 417 (dropped 227)
+2026-11-05T14:37:33.406972+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
+2026-11-05T14:37:33.407435+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
+2026-11-05T14:37:33.416199+00:00 | INFO  |   WROTE: batting_2022_clean.csv (417 rows)
+2026-11-05T14:37:33.416306+00:00 | INFO  | --- batting_2023.csv
+2026-11-05T14:37:33.419872+00:00 | INFO  |   Rows raw: 623
+2026-11-05T14:37:33.421347+00:00 | INFO  |   Rows after PA filter (>=150): 404 (dropped 219)
+2026-11-05T14:37:33.421825+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
+2026-11-05T14:37:33.422216+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
+2026-11-05T14:37:33.430980+00:00 | INFO  |   WROTE: batting_2023_clean.csv (404 rows)
+2026-11-05T14:37:33.431043+00:00 | INFO  | --- batting_2024.csv
+2026-11-05T14:37:33.434487+00:00 | INFO  |   Rows raw: 617
+2026-11-05T14:37:33.435951+00:00 | INFO  |   Rows after PA filter (>=150): 410 (dropped 207)
+2026-11-05T14:37:33.436448+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
+2026-11-05T14:37:33.436828+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
+2026-11-05T14:37:33.445593+00:00 | INFO  |   WROTE: batting_2024_clean.csv (410 rows)
+2026-11-05T14:37:33.445656+00:00 | INFO  | --- batting_2025.csv
+2026-11-05T14:37:33.449033+00:00 | INFO  |   Rows raw: 632
+2026-11-05T14:37:33.450532+00:00 | INFO  |   Rows after PA filter (>=100): 461 (dropped 171)
+2026-11-05T14:37:33.450986+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
+2026-11-05T14:37:33.451443+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
+2026-11-05T14:37:33.452148+00:00 | INFO  |   sample_flag=low count: 113 (threshold PA<200)
+2026-11-05T14:37:33.461816+00:00 | INFO  |   WROTE: batting_2025_clean.csv (461 rows)
+2026-11-05T14:37:33.461881+00:00 | INFO  | --- batting_2026.csv
+2026-11-05T14:37:33.465310+00:00 | INFO  |   Rows raw: 630
+2026-11-05T14:37:33.466810+00:00 | INFO  |   Rows after PA filter (>=25): 592 (dropped 38)
+2026-11-05T14:37:33.467330+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
+2026-11-05T14:37:33.467773+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
+2026-11-05T14:37:33.468577+00:00 | INFO  |   sample_flag=low count: 93 (threshold PA<75)
+2026-11-05T14:37:33.480615+00:00 | INFO  |   WROTE: batting_2026_clean.csv (592 rows)
+2026-11-05T14:37:33.480706+00:00 | INFO  | === PITCHING ===
+2026-11-05T14:37:33.480973+00:00 | INFO  | Files found: 5
+2026-11-05T14:37:33.481005+00:00 | INFO  | --- pitching_2022.csv
+2026-11-05T14:37:33.485098+00:00 | INFO  |   Rows raw: 808
+2026-11-05T14:37:33.486581+00:00 | INFO  |   Rows after PA filter (>=150): 446 (dropped 362)
+2026-11-05T14:37:33.487061+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
+2026-11-05T14:37:33.487497+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
+2026-11-05T14:37:33.496118+00:00 | INFO  |   WROTE: pitching_2022_clean.csv (446 rows)
+2026-11-05T14:37:33.496183+00:00 | INFO  | --- pitching_2023.csv
+2026-11-05T14:37:33.500693+00:00 | INFO  |   Rows raw: 799
+2026-11-05T14:37:33.502159+00:00 | INFO  |   Rows after PA filter (>=150): 443 (dropped 356)
+2026-11-05T14:37:33.502704+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
+2026-11-05T14:37:33.503147+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
+2026-11-05T14:37:33.512821+00:00 | INFO  |   WROTE: pitching_2023_clean.csv (443 rows)
+2026-11-05T14:37:33.512892+00:00 | INFO  | --- pitching_2024.csv
+2026-11-05T14:37:33.517005+00:00 | INFO  |   Rows raw: 800
+2026-11-05T14:37:33.518488+00:00 | INFO  |   Rows after PA filter (>=150): 446 (dropped 354)
+2026-11-05T14:37:33.519020+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
+2026-11-05T14:37:33.519487+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
+2026-11-05T14:37:33.529661+00:00 | INFO  |   WROTE: pitching_2024_clean.csv (446 rows)
+2026-11-05T14:37:33.529725+00:00 | INFO  | --- pitching_2025.csv
+2026-11-05T14:37:33.533834+00:00 | INFO  |   Rows raw: 809
+2026-11-05T14:37:33.535342+00:00 | INFO  |   Rows after PA filter (>=100): 523 (dropped 286)
+2026-11-05T14:37:33.535862+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
+2026-11-05T14:37:33.536320+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
+2026-11-05T14:37:33.537164+00:00 | INFO  |   sample_flag=low count: 170 (threshold PA<200)
+2026-11-05T14:37:33.548142+00:00 | INFO  |   WROTE: pitching_2025_clean.csv (523 rows)
+2026-11-05T14:37:33.548206+00:00 | INFO  | --- pitching_2026.csv
+2026-11-05T14:37:33.552275+00:00 | INFO  |   Rows raw: 812
+2026-11-05T14:37:33.553819+00:00 | INFO  |   Rows after PA filter (>=25): 725 (dropped 87)
+2026-11-05T14:37:33.554344+00:00 | INFO  |   Dropped columns: ['year', 'player_age', 'single', 'double', 'triple', 'hit', 'ab', 'swords', 'attack_direction', 'vertical_swing_path']
+2026-11-05T14:37:33.554771+00:00 | INFO  |   Renamed columns: ['last_name, first_name', 'k_percent', 'bb_percent', 'barrel_batted_rate', 'hard_hit_percent', 'whiff_percent', 'exit_velocity_avg', 'sweet_spot_percent', 'avg_swing_speed', 'slg_percent', 'on_base_percent', 'on_base_plus_slg']
+2026-11-05T14:37:33.555652+00:00 | INFO  |   sample_flag=low count: 150 (threshold PA<75)
+2026-11-05T14:37:33.570623+00:00 | INFO  |   WROTE: pitching_2026_clean.csv (725 rows)
+2026-11-05T14:37:33.570699+00:00 | INFO  | === FIELDING ===
+2026-11-05T14:37:33.570951+00:00 | INFO  | Files found: 5
+2026-11-05T14:37:33.570982+00:00 | INFO  | --- fielding_2022.csv
+2026-11-05T14:37:33.572509+00:00 | INFO  |   Rows raw: 308
+2026-11-05T14:37:33.572558+00:00 | INFO  |   Join key 'id' present — verify these are MLBAM player IDs before joining
+2026-11-05T14:37:33.573061+00:00 | INFO  |   Dropped columns: ['outs_2', 'outs_3', 'outs_4', 'outs_5', 'outs_6', 'outs_7', 'outs_8', 'outs_9']
+2026-11-05T14:37:33.576373+00:00 | INFO  |   WROTE: fielding_2022_clean.csv (308 rows)
+2026-11-05T14:37:33.576428+00:00 | INFO  | --- fielding_2023.csv
+2026-11-05T14:37:33.577872+00:00 | INFO  |   Rows raw: 311
+2026-11-05T14:37:33.577920+00:00 | INFO  |   Join key 'id' present — verify these are MLBAM player IDs before joining
+2026-11-05T14:37:33.578446+00:00 | INFO  |   Dropped columns: ['outs_2', 'outs_3', 'outs_4', 'outs_5', 'outs_6', 'outs_7', 'outs_8', 'outs_9']
+2026-11-05T14:37:33.581702+00:00 | INFO  |   WROTE: fielding_2023_clean.csv (311 rows)
+2026-11-05T14:37:33.581755+00:00 | INFO  | --- fielding_2024.csv
+2026-11-05T14:37:33.583310+00:00 | INFO  |   Rows raw: 311
+2026-11-05T14:37:33.583359+00:00 | INFO  |   Join key 'id' present — verify these are MLBAM player IDs before joining
+2026-11-05T14:37:33.583859+00:00 | INFO  |   Dropped columns: ['outs_2', 'outs_3', 'outs_4', 'outs_5', 'outs_6', 'outs_7', 'outs_8', 'outs_9']
+2026-11-05T14:37:33.587095+00:00 | INFO  |   WROTE: fielding_2024_clean.csv (311 rows)
+2026-11-05T14:37:33.587153+00:00 | INFO  | --- fielding_2025.csv
+2026-11-05T14:37:33.589073+00:00 | INFO  |   Rows raw: 659
+2026-11-05T14:37:33.589124+00:00 | INFO  |   Join key 'id' present — verify these are MLBAM player IDs before joining
+2026-11-05T14:37:33.589652+00:00 | INFO  |   Dropped columns: ['outs_2', 'outs_3', 'outs_4', 'outs_5', 'outs_6', 'outs_7', 'outs_8', 'outs_9']
+2026-11-05T14:37:33.595550+00:00 | INFO  |   WROTE: fielding_2025_clean.csv (659 rows)
+2026-11-05T14:37:33.595611+00:00 | INFO  | --- fielding_2026.csv
+2026-11-05T14:37:33.597615+00:00 | INFO  |   Rows raw: 654
+2026-11-05T14:37:33.597666+00:00 | INFO  |   Join key 'id' present — verify these are MLBAM player IDs before joining
+2026-11-05T14:37:33.598186+00:00 | INFO  |   Dropped columns: ['outs_2', 'outs_3', 'outs_4', 'outs_5', 'outs_6', 'outs_7', 'outs_8', 'outs_9']
+2026-11-05T14:37:33.604726+00:00 | INFO  |   WROTE: fielding_2026_clean.csv (654 rows)
+2026-11-05T14:37:33.604789+00:00 | INFO  | === BASERUNNING ===
+2026-11-05T14:37:33.605036+00:00 | INFO  | Files found: 2
+2026-11-05T14:37:33.605069+00:00 | INFO  | --- baserunning_2025.csv
+2026-11-05T14:37:33.606621+00:00 | INFO  |   Rows raw: 252
+2026-11-05T14:37:33.606964+00:00 | INFO  |   Renamed: entity_name → player_name
+2026-11-05T14:37:33.611350+00:00 | INFO  |   WROTE: baserunning_2025_clean.csv (252 rows)
+2026-11-05T14:37:33.611408+00:00 | INFO  | --- baserunning_2026.csv
+2026-11-05T14:37:33.613429+00:00 | INFO  |   Rows raw: 612
+2026-11-05T14:37:33.613843+00:00 | INFO  |   Renamed: entity_name → player_name
+2026-11-05T14:37:33.623522+00:00 | INFO  |   WROTE: baserunning_2026_clean.csv (612 rows)
+2026-11-05T14:37:33.623591+00:00 | INFO  | === PARK FACTORS ===
+2026-11-05T14:37:33.623619+00:00 | INFO  | Skipped intentionally. This script does not read, write, clean, or modify docs/win/baseball/mlb/data/park_factors.
 
 ============================================================
-SUMMARY  2026-11-05T14:34:57.921380+00:00
+SUMMARY  2026-11-05T14:37:33.623632+00:00
 ============================================================
   files_written   : 17
-  rows_written    : 7850
-  rows_dropped_pa : 2319
-  sample_flag_low : 544
+  rows_written    : 7974
+  rows_dropped_pa : 2307
+  sample_flag_low : 526
   skipped         : 0
   errors          : 0
 
