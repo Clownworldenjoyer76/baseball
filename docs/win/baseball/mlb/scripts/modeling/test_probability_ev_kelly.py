@@ -824,7 +824,8 @@ def _write_regression_csv(path, rows):
 
 
 def test_historical_reconciliation_restores_only_missing_probabilities(tmp_path, monkeypatch):
-    monkeypatch.setattr(GAME_ID, "LOG_FILE", tmp_path / "game_id_pred.log")
+    assert "LOG_FILE" in vars(GAME_ID)
+    monkeypatch.setitem(vars(GAME_ID), "LOG_FILE", tmp_path / "game_id_pred.log")
     source_path = tmp_path / "original.csv"
     output_path = tmp_path / "enriched.csv"
     original = _regression_prediction_row("401817012", "0.674", "0.326")
@@ -846,7 +847,8 @@ def test_historical_reconciliation_restores_only_missing_probabilities(tmp_path,
 
 
 def test_historical_reconciliation_preserves_conflicting_existing_probabilities(tmp_path, monkeypatch):
-    monkeypatch.setattr(GAME_ID, "LOG_FILE", tmp_path / "game_id_pred.log")
+    assert "LOG_FILE" in vars(GAME_ID)
+    monkeypatch.setitem(vars(GAME_ID), "LOG_FILE", tmp_path / "game_id_pred.log")
     source_path = tmp_path / "original.csv"
     output_path = tmp_path / "enriched.csv"
     _write_regression_csv(source_path, [
@@ -865,7 +867,8 @@ def test_historical_reconciliation_preserves_conflicting_existing_probabilities(
 
 def test_training_probability_audit_allows_absent_pair_but_rejects_partial(tmp_path, monkeypatch):
     import pytest
-    monkeypatch.setattr(TRAINING_BUILDER, "LOG_FILE", tmp_path / "build.log")
+    assert "LOG_FILE" in vars(TRAINING_BUILDER)
+    monkeypatch.setitem(vars(TRAINING_BUILDER), "LOG_FILE", tmp_path / "build.log")
     summary = {"missing_dratings_prob_rows": 0, "invalid_dratings_prob_rows": 0}
     frame = pd.DataFrame([{
         "game_id": "401817012", "dratings_home_prob": "", "dratings_away_prob": "",
