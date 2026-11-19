@@ -1,121 +1,84 @@
 === 04_mlb_results_dashboard ===
-START_TIMESTAMP_UTC: 2026-11-03T19:17:53.558124+00:00
-2026-11-03T19:17:53.558505+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_overall.csv | exists=0 | rows=0
-2026-11-03T19:17:53.558542+00:00 | WARNING | Required dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_overall.csv
-2026-11-03T19:17:53.559226+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/mlb_summary_overall.csv | exists=0 | rows=0
-2026-11-03T19:17:53.559262+00:00 | WARNING | Required dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/mlb_summary_overall.csv
-2026-11-03T19:17:53.559506+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_market.csv | exists=0 | rows=0
-2026-11-03T19:17:53.559542+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_market.csv
-2026-11-03T19:17:53.559791+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_side_group.csv | exists=0 | rows=0
-2026-11-03T19:17:53.559824+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_side_group.csv
-2026-11-03T19:17:53.560035+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_date.csv | exists=0 | rows=0
-2026-11-03T19:17:53.560070+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_date.csv
-2026-11-03T19:17:53.560242+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_day_night.csv | exists=0 | rows=0
-2026-11-03T19:17:53.560270+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_day_night.csv
-2026-11-03T19:17:53.560440+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_low_confidence.csv | exists=0 | rows=0
-2026-11-03T19:17:53.560470+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_low_confidence.csv
-2026-11-03T19:17:53.560674+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_ev.csv | exists=0 | rows=0
-2026-11-03T19:17:53.560704+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_ev.csv
-2026-11-03T19:17:53.560912+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_ev_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.560941+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_ev_home_away_summary.csv
-2026-11-03T19:17:53.561102+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_odds.csv | exists=0 | rows=0
-2026-11-03T19:17:53.561129+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_odds.csv
-2026-11-03T19:17:53.561281+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_odds_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.561308+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_odds_home_away_summary.csv
-2026-11-03T19:17:53.561458+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_kelly.csv | exists=0 | rows=0
-2026-11-03T19:17:53.561484+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_kelly.csv
-2026-11-03T19:17:53.561706+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_kelly_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.561736+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_kelly_home_away_summary.csv
-2026-11-03T19:17:53.561884+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_win_prob.csv | exists=0 | rows=0
-2026-11-03T19:17:53.561911+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_win_prob.csv
-2026-11-03T19:17:53.562049+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_win_prob_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.562075+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_win_prob_home_away_summary.csv
-2026-11-03T19:17:53.562219+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_ev.csv | exists=0 | rows=0
-2026-11-03T19:17:53.562244+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_ev.csv
-2026-11-03T19:17:53.562381+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_ev_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.562407+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_ev_home_away_summary.csv
-2026-11-03T19:17:53.562576+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_odds.csv | exists=0 | rows=0
-2026-11-03T19:17:53.562606+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_odds.csv
-2026-11-03T19:17:53.562763+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_odds_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.562789+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_odds_home_away_summary.csv
-2026-11-03T19:17:53.562947+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_kelly.csv | exists=0 | rows=0
-2026-11-03T19:17:53.562973+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_kelly.csv
-2026-11-03T19:17:53.563119+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_kelly_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.563145+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_kelly_home_away_summary.csv
-2026-11-03T19:17:53.563281+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_win_prob.csv | exists=0 | rows=0
-2026-11-03T19:17:53.563306+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_win_prob.csv
-2026-11-03T19:17:53.563443+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_win_prob_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.563470+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_win_prob_home_away_summary.csv
-2026-11-03T19:17:53.563630+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_side.csv | exists=0 | rows=0
-2026-11-03T19:17:53.563658+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_side.csv
-2026-11-03T19:17:53.563809+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_side_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.563834+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_side_home_away_summary.csv
-2026-11-03T19:17:53.563977+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_ev.csv | exists=0 | rows=0
-2026-11-03T19:17:53.564003+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_ev.csv
-2026-11-03T19:17:53.564137+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_ev_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.564162+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_ev_home_away_summary.csv
-2026-11-03T19:17:53.564314+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_odds.csv | exists=0 | rows=0
-2026-11-03T19:17:53.564347+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_odds.csv
-2026-11-03T19:17:53.564484+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_odds_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.564510+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_odds_home_away_summary.csv
-2026-11-03T19:17:53.564669+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_kelly.csv | exists=0 | rows=0
-2026-11-03T19:17:53.564696+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_kelly.csv
-2026-11-03T19:17:53.564833+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_kelly_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.564858+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_kelly_home_away_summary.csv
-2026-11-03T19:17:53.564991+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_win_prob.csv | exists=0 | rows=0
-2026-11-03T19:17:53.565016+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_win_prob.csv
-2026-11-03T19:17:53.565149+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_win_prob_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.565175+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_win_prob_home_away_summary.csv
-2026-11-03T19:17:53.565310+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_total_range.csv | exists=0 | rows=0
-2026-11-03T19:17:53.565336+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_total_range.csv
-2026-11-03T19:17:53.565478+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_total_range_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.565502+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_total_range_home_away_summary.csv
-2026-11-03T19:17:53.565653+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_side.csv | exists=0 | rows=0
-2026-11-03T19:17:53.565680+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_side.csv
-2026-11-03T19:17:53.565833+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_side_home_away_summary.csv | exists=0 | rows=0
-2026-11-03T19:17:53.565859+00:00 | INFO | Optional dashboard input missing: docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_side_home_away_summary.csv
-2026-11-03T19:17:53.567494+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/overview/mlb_summary_overall.csv | exists=1 | rows=1
-2026-11-03T19:17:53.569740+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/mlb_summary_overall.csv | exists=1 | rows=3
-2026-11-03T19:17:53.571302+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/overview/mlb_summary_by_market.csv | exists=1 | rows=3
-2026-11-03T19:17:53.572790+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/overview/mlb_summary_by_side_group.csv | exists=1 | rows=4
-2026-11-03T19:17:53.574313+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/overview/mlb_summary_by_date.csv | exists=1 | rows=71
-2026-11-03T19:17:53.576348+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/overview/mlb_summary_by_day_night.csv | exists=1 | rows=2
-2026-11-03T19:17:53.577762+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/overview/mlb_summary_by_low_confidence.csv | exists=1 | rows=1
-2026-11-03T19:17:53.579255+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_ev.csv | exists=1 | rows=5
-2026-11-03T19:17:53.580734+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_ev_home_away_summary.csv | exists=1 | rows=6
-2026-11-03T19:17:53.582177+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_odds.csv | exists=1 | rows=3
-2026-11-03T19:17:53.583572+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_odds_home_away_summary.csv | exists=1 | rows=4
-2026-11-03T19:17:53.585880+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_kelly.csv | exists=1 | rows=5
-2026-11-03T19:17:53.587292+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_kelly_home_away_summary.csv | exists=1 | rows=5
-2026-11-03T19:17:53.588754+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_win_prob.csv | exists=1 | rows=2
-2026-11-03T19:17:53.590134+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_win_prob_home_away_summary.csv | exists=1 | rows=3
-2026-11-03T19:17:53.591647+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_ev.csv | exists=1 | rows=8
-2026-11-03T19:17:53.593156+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_ev_home_away_summary.csv | exists=1 | rows=11
-2026-11-03T19:17:53.594677+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_odds.csv | exists=1 | rows=6
-2026-11-03T19:17:53.596127+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_odds_home_away_summary.csv | exists=1 | rows=11
-2026-11-03T19:17:53.597635+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_kelly.csv | exists=1 | rows=8
-2026-11-03T19:17:53.599071+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_kelly_home_away_summary.csv | exists=1 | rows=12
-2026-11-03T19:17:53.600585+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_win_prob.csv | exists=1 | rows=5
-2026-11-03T19:17:53.602007+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_win_prob_home_away_summary.csv | exists=1 | rows=6
-2026-11-03T19:17:53.603682+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_side.csv | exists=1 | rows=1
-2026-11-03T19:17:53.605152+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_side_home_away_summary.csv | exists=1 | rows=2
-2026-11-03T19:17:53.606566+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_ev.csv | exists=1 | rows=5
-2026-11-03T19:17:53.607970+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_ev_home_away_summary.csv | exists=1 | rows=5
-2026-11-03T19:17:53.609402+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_odds.csv | exists=1 | rows=5
-2026-11-03T19:17:53.610855+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_odds_home_away_summary.csv | exists=1 | rows=7
-2026-11-03T19:17:53.612288+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_kelly.csv | exists=1 | rows=5
-2026-11-03T19:17:53.613710+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_kelly_home_away_summary.csv | exists=1 | rows=5
-2026-11-03T19:17:53.615101+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_win_prob.csv | exists=1 | rows=4
-2026-11-03T19:17:53.616482+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_win_prob_home_away_summary.csv | exists=1 | rows=4
-2026-11-03T19:17:53.617927+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_total_range.csv | exists=1 | rows=10
-2026-11-03T19:17:53.619365+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_total_range_home_away_summary.csv | exists=1 | rows=10
-2026-11-03T19:17:53.620849+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_side.csv | exists=1 | rows=2
-2026-11-03T19:17:53.622241+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_side_home_away_summary.csv | exists=1 | rows=2
-2026-11-03T19:17:53.626401+00:00 | INFO | OUTPUT | file=frontend/data/dashboards/baseball.json | rows=1 | bytes=79353
-2026-11-03T19:17:53.626439+00:00 | INFO | dashboard data -> frontend/data/dashboards/baseball.json
-INPUT_SUMMARY | files=74 | rows=252
+START_TIMESTAMP_UTC: 2026-11-19T12:35:19.018352+00:00
+2026-11-19T12:35:19.020048+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_overall.csv | exists=1 | rows=1
+2026-11-19T12:35:19.021634+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/mlb_summary_overall.csv | exists=1 | rows=3
+2026-11-19T12:35:19.022792+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_market.csv | exists=1 | rows=3
+2026-11-19T12:35:19.023976+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_side_group.csv | exists=1 | rows=4
+2026-11-19T12:35:19.025220+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_date.csv | exists=1 | rows=120
+2026-11-19T12:35:19.027097+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_day_night.csv | exists=1 | rows=2
+2026-11-19T12:35:19.028168+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/overview/mlb_summary_by_low_confidence.csv | exists=1 | rows=1
+2026-11-19T12:35:19.029871+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_ev.csv | exists=1 | rows=5
+2026-11-19T12:35:19.031030+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_ev_home_away_summary.csv | exists=1 | rows=9
+2026-11-19T12:35:19.032286+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_odds.csv | exists=1 | rows=3
+2026-11-19T12:35:19.033359+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_odds_home_away_summary.csv | exists=1 | rows=5
+2026-11-19T12:35:19.034446+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_kelly.csv | exists=1 | rows=5
+2026-11-19T12:35:19.035540+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_kelly_home_away_summary.csv | exists=1 | rows=9
+2026-11-19T12:35:19.036654+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_win_prob.csv | exists=1 | rows=2
+2026-11-19T12:35:19.037705+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/moneyline/mlb_moneyline_by_win_prob_home_away_summary.csv | exists=1 | rows=3
+2026-11-19T12:35:19.038773+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_ev.csv | exists=1 | rows=8
+2026-11-19T12:35:19.039901+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_ev_home_away_summary.csv | exists=1 | rows=11
+2026-11-19T12:35:19.041057+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_odds.csv | exists=1 | rows=6
+2026-11-19T12:35:19.042156+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_odds_home_away_summary.csv | exists=1 | rows=11
+2026-11-19T12:35:19.043316+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_kelly.csv | exists=1 | rows=8
+2026-11-19T12:35:19.044436+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_kelly_home_away_summary.csv | exists=1 | rows=13
+2026-11-19T12:35:19.045587+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_win_prob.csv | exists=1 | rows=5
+2026-11-19T12:35:19.046655+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_win_prob_home_away_summary.csv | exists=1 | rows=6
+2026-11-19T12:35:19.047827+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_side.csv | exists=1 | rows=1
+2026-11-19T12:35:19.048963+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/run_line/mlb_run_line_by_side_home_away_summary.csv | exists=1 | rows=2
+2026-11-19T12:35:19.050024+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_ev.csv | exists=1 | rows=5
+2026-11-19T12:35:19.051097+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_ev_home_away_summary.csv | exists=1 | rows=5
+2026-11-19T12:35:19.052178+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_odds.csv | exists=1 | rows=5
+2026-11-19T12:35:19.053289+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_odds_home_away_summary.csv | exists=1 | rows=8
+2026-11-19T12:35:19.054405+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_kelly.csv | exists=1 | rows=5
+2026-11-19T12:35:19.055485+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_kelly_home_away_summary.csv | exists=1 | rows=5
+2026-11-19T12:35:19.056592+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_win_prob.csv | exists=1 | rows=4
+2026-11-19T12:35:19.057664+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_win_prob_home_away_summary.csv | exists=1 | rows=4
+2026-11-19T12:35:19.058771+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_total_range.csv | exists=1 | rows=14
+2026-11-19T12:35:19.059957+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_total_range_home_away_summary.csv | exists=1 | rows=14
+2026-11-19T12:35:19.061117+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_side.csv | exists=1 | rows=2
+2026-11-19T12:35:19.062169+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/morning/reports/totals/mlb_total_by_side_home_away_summary.csv | exists=1 | rows=2
+2026-11-19T12:35:19.063203+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/overview/mlb_summary_overall.csv | exists=1 | rows=1
+2026-11-19T12:35:19.064215+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/mlb_summary_overall.csv | exists=1 | rows=3
+2026-11-19T12:35:19.065222+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/overview/mlb_summary_by_market.csv | exists=1 | rows=3
+2026-11-19T12:35:19.066227+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/overview/mlb_summary_by_side_group.csv | exists=1 | rows=4
+2026-11-19T12:35:19.067525+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/overview/mlb_summary_by_date.csv | exists=1 | rows=200
+2026-11-19T12:35:19.069830+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/overview/mlb_summary_by_day_night.csv | exists=1 | rows=2
+2026-11-19T12:35:19.070861+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/overview/mlb_summary_by_low_confidence.csv | exists=1 | rows=1
+2026-11-19T12:35:19.071896+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_ev.csv | exists=1 | rows=8
+2026-11-19T12:35:19.073030+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_ev_home_away_summary.csv | exists=1 | rows=16
+2026-11-19T12:35:19.074201+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_odds.csv | exists=1 | rows=9
+2026-11-19T12:35:19.075352+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_odds_home_away_summary.csv | exists=1 | rows=18
+2026-11-19T12:35:19.076573+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_kelly.csv | exists=1 | rows=8
+2026-11-19T12:35:19.077756+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_kelly_home_away_summary.csv | exists=1 | rows=16
+2026-11-19T12:35:19.078984+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_win_prob.csv | exists=1 | rows=6
+2026-11-19T12:35:19.080086+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/moneyline/mlb_moneyline_by_win_prob_home_away_summary.csv | exists=1 | rows=11
+2026-11-19T12:35:19.081218+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_ev.csv | exists=1 | rows=8
+2026-11-19T12:35:19.082337+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_ev_home_away_summary.csv | exists=1 | rows=16
+2026-11-19T12:35:19.083534+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_odds.csv | exists=1 | rows=9
+2026-11-19T12:35:19.084648+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_odds_home_away_summary.csv | exists=1 | rows=17
+2026-11-19T12:35:19.085860+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_kelly.csv | exists=1 | rows=8
+2026-11-19T12:35:19.086985+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_kelly_home_away_summary.csv | exists=1 | rows=16
+2026-11-19T12:35:19.088161+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_win_prob.csv | exists=1 | rows=6
+2026-11-19T12:35:19.089252+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_win_prob_home_away_summary.csv | exists=1 | rows=11
+2026-11-19T12:35:19.090453+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_side.csv | exists=1 | rows=1
+2026-11-19T12:35:19.091577+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/run_line/mlb_run_line_by_side_home_away_summary.csv | exists=1 | rows=2
+2026-11-19T12:35:19.092659+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_ev.csv | exists=1 | rows=8
+2026-11-19T12:35:19.093779+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_ev_home_away_summary.csv | exists=1 | rows=16
+2026-11-19T12:35:19.094974+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_odds.csv | exists=1 | rows=5
+2026-11-19T12:35:19.096071+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_odds_home_away_summary.csv | exists=1 | rows=10
+2026-11-19T12:35:19.097195+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_kelly.csv | exists=1 | rows=8
+2026-11-19T12:35:19.098359+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_kelly_home_away_summary.csv | exists=1 | rows=16
+2026-11-19T12:35:19.099556+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_win_prob.csv | exists=1 | rows=8
+2026-11-19T12:35:19.100649+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_win_prob_home_away_summary.csv | exists=1 | rows=16
+2026-11-19T12:35:19.101843+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_total_range.csv | exists=1 | rows=20
+2026-11-19T12:35:19.103093+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_total_range_home_away_summary.csv | exists=1 | rows=34
+2026-11-19T12:35:19.104389+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_side.csv | exists=1 | rows=2
+2026-11-19T12:35:19.105434+00:00 | INFO | INPUT | file=docs/win/baseball/mlb/05_final_scores/reports/totals/mlb_total_by_side_home_away_summary.csv | exists=1 | rows=2
+2026-11-19T12:35:19.114148+00:00 | INFO | OUTPUT | file=frontend/data/dashboards/baseball.json | rows=1 | bytes=274142
+2026-11-19T12:35:19.114177+00:00 | INFO | dashboard data -> frontend/data/dashboards/baseball.json
+INPUT_SUMMARY | files=74 | rows=864
 OUTPUT_SUMMARY | files=1 | rows=1
-WARNING_COUNT: 2
+WARNING_COUNT: 0
 ERROR_COUNT: 0
-END_TIMESTAMP_UTC: 2026-11-03T19:17:53.626522+00:00
+END_TIMESTAMP_UTC: 2026-11-19T12:35:19.114305+00:00
 STATUS: SUCCESS
