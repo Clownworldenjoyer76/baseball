@@ -34,7 +34,7 @@ markets:
 
     # Require complete lineup and starting-pitcher data.
     context_data_filters:
-      enabled: true
+      enabled: false
       home_batters_found_min: 5
       away_batters_found_min: 5
       home_sp_found_required: 1
@@ -61,7 +61,7 @@ markets:
         kelly_bands:
           - [0.00, 1000.009]
         prob_bands:
-          - [0.65, 1.00]
+          - [0.0, 1.00]
 
       away:
         enabled: true
@@ -70,9 +70,9 @@ markets:
         ev_bands:
           - [0.00, 1000.00]
         kelly_bands:
-          - [0.00, 1000.00]
+          - [0.00, 1000.009]
         prob_bands:
-          - [0.65, 1.00]
+          - [0.0, 1.00]
     ###################################################
     # ── Run Line ─────────────────────────────────────
     ###################################################
@@ -88,12 +88,11 @@ markets:
         odds_bands:
           - [-999, 999]
         ev_bands:
-          - [0.01, 0.04]
-          - [0.075, 1000.00]
-        kelly_bands:
           - [0.00, 1000.00]
+        kelly_bands:
+          - [0.00, 1000.009]
         prob_bands:
-          - [0.60, 0.65]
+          - [0.0, 1.00]
 
       away:
         enabled: true
@@ -102,11 +101,11 @@ markets:
         odds_bands:
           - [-999, 999]
         ev_bands:
-          - [0.00, 0.075]
-        kelly_bands:
           - [0.00, 1000.00]
+        kelly_bands:
+          - [0.00, 1000.009]
         prob_bands:
-          - [0.00, 1.00]
+          - [0.0, 1.00]
 
     ###################################################
     # ── Totals ───────────────────────────────────────
@@ -119,25 +118,25 @@ markets:
       over:
         enabled: true
         line_bands:
-          - [1.0, 8.0]
+          - [1.0, 99.0]
         odds_bands:
           - [-999, 999]
         ev_bands:
-          - [0.02, 0.075]
-        kelly_bands:
           - [0.00, 1000.00]
+        kelly_bands:
+          - [0.00, 1000.009]
         prob_bands:
-          - [0.50, 0.75]
+          - [0.0, 1.00]
 
       under:
         enabled: true
         line_bands:
-          - [9.0, 99.0]
+          - [1.0, 99.0]
         odds_bands:
           - [-999, 999]
         ev_bands:
           - [0.00, 1000.00]
         kelly_bands:
-          - [0.00, 1000.00]
+          - [0.00, 1000.009]
         prob_bands:
-          - [0.70, 0.80]
+          - [0.0, 1.00]
